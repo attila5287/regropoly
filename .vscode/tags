@@ -85,7 +85,7 @@ date_posted	../app\models.py	/^    date_posted = datetime.utcnow().date()$/;"	ki
 date_posted	../app\models.py	/^    date_posted = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)$/;"	kind:variable	line:28
 datetime	../app\models.py	/^from datetime import datetime$/;"	kind:namespace	line:1
 db	../app\__init__.py	/^db = SQLAlchemy()$/;"	kind:variable	line:8
-db	../app\models.py	/^from appimport db, login_manager$/;"	kind:namespace	line:4
+db	../app\models.py	/^from app import db, login_manager$/;"	kind:namespace	line:4
 db	../app\posts\routes.py	/^from app import db$/;"	kind:namespace	line:4
 db	../app\users\routes.py	/^from pythonFlaskApp import db, bcrypt$/;"	kind:namespace	line:3
 delete_dummy_posts_from	../app\posts\routes.py	/^def delete_dummy_posts_from(user_1d):$/;"	kind:function	line:64
@@ -114,7 +114,7 @@ inject_PostDemoList	../app\main\routes.py	/^def inject_PostDemoList():$/;"	kind:
 load_user	../app\models.py	/^def load_user(user_id):$/;"	kind:function	line:9
 login	../app\users\routes.py	/^def login():$/;"	kind:function	line:29
 login_manager	../app\__init__.py	/^login_manager = LoginManager()$/;"	kind:variable	line:10
-login_manager	../app\models.py	/^from appimport db, login_manager$/;"	kind:namespace	line:4
+login_manager	../app\models.py	/^from app import db, login_manager$/;"	kind:namespace	line:4
 login_required	../app\posts\routes.py	/^from flask_login import current_user, login_required$/;"	kind:namespace	line:3
 login_required	../app\users\routes.py	/^from flask_login import login_user, current_user, logout_user, login_required$/;"	kind:namespace	line:2
 login_user	../app\users\routes.py	/^from flask_login import login_user, current_user, logout_user, login_required$/;"	kind:namespace	line:2
