@@ -29,7 +29,7 @@ PasswordField	../app\users\forms.py	/^from wtforms import StringField, PasswordF
 Post	../app\main\routes.py	/^from app.models import Post, PostDemo$/;"	kind:namespace	line:2
 Post	../app\models.py	/^class Post(db.Model):$/;"	kind:class	line:25
 Post	../app\posts\routes.py	/^from app.models import Post$/;"	kind:namespace	line:5
-Post	../app\users\routes.py	/^from pythonFlaskApp.models import User, Post$/;"	kind:namespace	line:4
+Post	../app\users\routes.py	/^from app.models import User, Post$/;"	kind:namespace	line:4
 PostDemo	../app\main\routes.py	/^from app.models import Post, PostDemo$/;"	kind:namespace	line:2
 PostDemo	../app\models.py	/^class PostDemo():$/;"	kind:class	line:36
 PostForm	../app\posts\forms.py	/^class PostForm(FlaskForm):$/;"	kind:class	line:6
@@ -50,7 +50,7 @@ TextAreaField	../app\posts\forms.py	/^from wtforms import StringField, SubmitFie
 UpdateAccountForm	../app\users\forms.py	/^class UpdateAccountForm(FlaskForm):$/;"	kind:class	line:38
 User	../app\models.py	/^class User(db.Model, UserMixin):$/;"	kind:class	line:13
 User	../app\users\forms.py	/^from app.models import User$/;"	kind:namespace	line:6
-User	../app\users\routes.py	/^from pythonFlaskApp.models import User, Post$/;"	kind:namespace	line:4
+User	../app\users\routes.py	/^from app.models import User, Post$/;"	kind:namespace	line:4
 UserMixin	../app\models.py	/^from flask_login import UserMixin$/;"	kind:namespace	line:5
 ValidationError	../app\users\forms.py	/^from wtforms.validators import DataRequired, Length, Email, EqualTo, ValidationError$/;"	kind:namespace	line:4
 __init__	../app\models.py	/^    def __init__(self, title='demo title', content='demo content'):$/;"	kind:member	line:42
@@ -68,7 +68,7 @@ account	../app\users\routes.py	/^def account():$/;"	kind:function	line:52
 app	../run.py	/^app = create_app()$/;"	kind:variable	line:3
 author	../app\models.py	/^    author = 'attila'$/;"	kind:variable	line:40
 bcrypt	../app\__init__.py	/^bcrypt = Bcrypt()$/;"	kind:variable	line:9
-bcrypt	../app\users\routes.py	/^from pythonFlaskApp import db, bcrypt$/;"	kind:namespace	line:3
+bcrypt	../app\users\routes.py	/^from app import db, bcrypt$/;"	kind:namespace	line:3
 config.py	../app\config.py	1;"	kind:file	line:1
 confirm_password	../app\users\forms.py	/^    confirm_password = PasswordField('Confirm Password',$/;"	kind:variable	line:15
 confirm_password	../app\users\forms.py	/^    confirm_password = PasswordField('Confirm Password',$/;"	kind:variable	line:72
@@ -87,7 +87,7 @@ datetime	../app\models.py	/^from datetime import datetime$/;"	kind:namespace	lin
 db	../app\__init__.py	/^db = SQLAlchemy()$/;"	kind:variable	line:8
 db	../app\models.py	/^from app import db, login_manager$/;"	kind:namespace	line:4
 db	../app\posts\routes.py	/^from app import db$/;"	kind:namespace	line:4
-db	../app\users\routes.py	/^from pythonFlaskApp import db, bcrypt$/;"	kind:namespace	line:3
+db	../app\users\routes.py	/^from app import db, bcrypt$/;"	kind:namespace	line:3
 delete_dummy_posts_from	../app\posts\routes.py	/^def delete_dummy_posts_from(user_1d):$/;"	kind:function	line:64
 delete_post	../app\posts\routes.py	/^def delete_post(post_id):$/;"	kind:function	line:53
 delete_user_by_ID	../app\users\routes.py	/^def delete_user_by_ID(user_1d):$/;"	kind:function	line:81
@@ -148,7 +148,7 @@ routes.py	../app\main\routes.py	1;"	kind:file	line:1
 routes.py	../app\posts\routes.py	1;"	kind:file	line:1
 routes.py	../app\users\routes.py	1;"	kind:file	line:1
 run.py	../run.py	1;"	kind:file	line:1
-save_picture	../app\users\routes.py	/^from pythonFlaskApp.users.utils import save_picture$/;"	kind:namespace	line:8
+save_picture	../app\users\routes.py	/^from app.users.utils import save_picture$/;"	kind:namespace	line:8
 save_picture	../app\users\utils.py	/^def save_picture(form_picture):$/;"	kind:function	line:7
 secrets	../app\users\utils.py	/^import secrets$/;"	kind:namespace	line:2
 submit	../app\posts\forms.py	/^    submit = SubmitField('Post')$/;"	kind:variable	line:9
