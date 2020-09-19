@@ -127,3 +127,23 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+app/_ref_/_d3/sel-complex.js
+app/_ref_/_js/arrow-map.js
+app/_ref_/_pg/postgres.sql
+app/_ref_/_pg/psql_cmd.sql
+app/_ref_/_pg/psql_stmt.sql
+app/_ref_/_py/_berM.py
+app/_ref_/_py/_dispM.py
+app/_ref_/_py/_dispR.py
+app/_ref_/_py/_ndoRp.py
+app/_ref_/_py/_ndoRt.py
+app/_ref_/_py/BootstrapText.txt
+app/_ref_/_py/dict_rev_lookup.txt
+app/_ref_/_py/dict_rev_pair.txt
+app/_ref_/_py/inject_ItemDemoList.txt
+app/_ref_/_py/jinja2TipsTricks.txt
+app/_ref_/_py/pyEscape.txt
+app/_ref_/_py/pyNamingConv.txt
+app/_ref_/_py/pyRayTips.md
+app/_ref_/_py/qrySelctFldEx.txt
+app/_ref_/_py/sqlAlchemyDB.txt
