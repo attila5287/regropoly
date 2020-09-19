@@ -1,0 +1,187 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Bcrypt	../app\__init__.py	/^from flask_bcrypt import Bcrypt$/;"	kind:namespace	line:3
+Blueprint	../app\errors\handlers.py	/^from flask import Blueprint, render_template$/;"	kind:namespace	line:1
+Blueprint	../app\main\routes.py	/^from flask import render_template, request, Blueprint$/;"	kind:namespace	line:1
+Blueprint	../app\users\routes.py	/^from flask import render_template, url_for, flash, redirect, request, Blueprint$/;"	kind:namespace	line:1
+BooleanField	../app\users\forms.py	/^from wtforms import StringField, PasswordField, SubmitField, BooleanField$/;"	kind:namespace	line:3
+Config	../app\__init__.py	/^from app.config import Config$/;"	kind:namespace	line:5
+Config	../app\config.py	/^class Config:$/;"	kind:class	line:4
+DataRequired	../app\posts\forms.py	/^from wtforms.validators import DataRequired$/;"	kind:namespace	line:3
+DataRequired	../app\users\forms.py	/^from wtforms.validators import DataRequired, Length, Email, EqualTo, ValidationError$/;"	kind:namespace	line:4
+Email	../app\users\forms.py	/^from wtforms.validators import DataRequired, Length, Email, EqualTo, ValidationError$/;"	kind:namespace	line:4
+EqualTo	../app\users\forms.py	/^from wtforms.validators import DataRequired, Length, Email, EqualTo, ValidationError$/;"	kind:namespace	line:4
+FLASK_ENV	../app\config.py	/^    FLASK_ENV=os.environ.get('FLASK_ENV')$/;"	kind:variable	line:6
+FileAllowed	../app\users\forms.py	/^from flask_wtf.file import FileField, FileAllowed$/;"	kind:namespace	line:2
+FileField	../app\users\forms.py	/^from flask_wtf.file import FileField, FileAllowed$/;"	kind:namespace	line:2
+Flask	../app\__init__.py	/^from flask import Flask$/;"	kind:namespace	line:1
+FlaskForm	../app\posts\forms.py	/^from flask_wtf import FlaskForm$/;"	kind:namespace	line:1
+FlaskForm	../app\users\forms.py	/^from flask_wtf import FlaskForm$/;"	kind:namespace	line:1
+Image	../app\users\utils.py	/^from PIL import Image$/;"	kind:namespace	line:3
+Length	../app\users\forms.py	/^from wtforms.validators import DataRequired, Length, Email, EqualTo, ValidationError$/;"	kind:namespace	line:4
+LoginForm	../app\users\forms.py	/^class LoginForm(FlaskForm):$/;"	kind:class	line:30
+LoginManager	../app\__init__.py	/^from flask_login import LoginManager$/;"	kind:namespace	line:4
+PasswordField	../app\users\forms.py	/^from wtforms import StringField, PasswordField, SubmitField, BooleanField$/;"	kind:namespace	line:3
+Post	../app\main\routes.py	/^from app.models import Post, PostDemo$/;"	kind:namespace	line:2
+Post	../app\models.py	/^class Post(db.Model):$/;"	kind:class	line:25
+Post	../app\posts\routes.py	/^from app.models import Post$/;"	kind:namespace	line:5
+Post	../app\users\routes.py	/^from pythonFlaskApp.models import User, Post$/;"	kind:namespace	line:4
+PostDemo	../app\main\routes.py	/^from app.models import Post, PostDemo$/;"	kind:namespace	line:2
+PostDemo	../app\models.py	/^class PostDemo():$/;"	kind:class	line:36
+PostForm	../app\posts\forms.py	/^class PostForm(FlaskForm):$/;"	kind:class	line:6
+PostForm	../app\posts\routes.py	/^from app.posts.forms import PostForm$/;"	kind:namespace	line:6
+RegistrationForm	../app\users\forms.py	/^class RegistrationForm(FlaskForm):$/;"	kind:class	line:9
+RequestResetForm	../app\users\forms.py	/^class RequestResetForm(FlaskForm):$/;"	kind:class	line:59
+ResetPasswordForm	../app\users\forms.py	/^class ResetPasswordForm(FlaskForm):$/;"	kind:class	line:70
+SECRET_KEY	../app\config.py	/^    SECRET_KEY = os.environ.get('SECRET_KEY')$/;"	kind:variable	line:5
+SQLALCHEMY_DATABASE_URI	../app\config.py	/^    SQLALCHEMY_DATABASE_URI = os.environ.get('SQLALCHEMY_DATABASE_URI')$/;"	kind:variable	line:7
+SQLALCHEMY_TRACK_MODIFICATIONS	../app\config.py	/^    SQLALCHEMY_TRACK_MODIFICATIONS = False$/;"	kind:variable	line:8
+SQLAlchemy	../app\__init__.py	/^from flask_sqlalchemy import SQLAlchemy$/;"	kind:namespace	line:2
+Serializer	../app\models.py	/^from itsdangerous import TimedJSONWebSignatureSerializer as Serializer$/;"	kind:namespace	line:2
+StringField	../app\posts\forms.py	/^from wtforms import StringField, SubmitField, TextAreaField$/;"	kind:namespace	line:2
+StringField	../app\users\forms.py	/^from wtforms import StringField, PasswordField, SubmitField, BooleanField$/;"	kind:namespace	line:3
+SubmitField	../app\posts\forms.py	/^from wtforms import StringField, SubmitField, TextAreaField$/;"	kind:namespace	line:2
+SubmitField	../app\users\forms.py	/^from wtforms import StringField, PasswordField, SubmitField, BooleanField$/;"	kind:namespace	line:3
+TextAreaField	../app\posts\forms.py	/^from wtforms import StringField, SubmitField, TextAreaField$/;"	kind:namespace	line:2
+UpdateAccountForm	../app\users\forms.py	/^class UpdateAccountForm(FlaskForm):$/;"	kind:class	line:38
+User	../app\models.py	/^class User(db.Model, UserMixin):$/;"	kind:class	line:13
+User	../app\users\forms.py	/^from app.models import User$/;"	kind:namespace	line:6
+User	../app\users\routes.py	/^from pythonFlaskApp.models import User, Post$/;"	kind:namespace	line:4
+UserMixin	../app\models.py	/^from flask_login import UserMixin$/;"	kind:namespace	line:5
+ValidationError	../app\users\forms.py	/^from wtforms.validators import DataRequired, Length, Email, EqualTo, ValidationError$/;"	kind:namespace	line:4
+__init__	../app\models.py	/^    def __init__(self, title='demo title', content='demo content'):$/;"	kind:member	line:42
+__init__.py	../app\__init__.py	1;"	kind:file	line:1
+__init__.py	../app\errors\__init__.py	1;"	kind:file	line:1
+__init__.py	../app\main\__init__.py	1;"	kind:file	line:1
+__init__.py	../app\posts\__init__.py	1;"	kind:file	line:1
+__init__.py	../app\users\__init__.py	1;"	kind:file	line:1
+__repr__	../app\models.py	/^    def __repr__(self):$/;"	kind:member	line:21
+__repr__	../app\models.py	/^    def __repr__(self):$/;"	kind:member	line:32
+__repr__	../app\models.py	/^    def __repr__(self):$/;"	kind:member	line:47
+about	../app\main\routes.py	/^def about():$/;"	kind:function	line:47
+aboutdev	../app\main\routes.py	/^def aboutdev():$/;"	kind:function	line:51
+account	../app\users\routes.py	/^def account():$/;"	kind:function	line:52
+app	../run.py	/^app = create_app()$/;"	kind:variable	line:3
+author	../app\models.py	/^    author = 'attila'$/;"	kind:variable	line:40
+bcrypt	../app\__init__.py	/^bcrypt = Bcrypt()$/;"	kind:variable	line:9
+bcrypt	../app\users\routes.py	/^from pythonFlaskApp import db, bcrypt$/;"	kind:namespace	line:3
+config.py	../app\config.py	1;"	kind:file	line:1
+confirm_password	../app\users\forms.py	/^    confirm_password = PasswordField('Confirm Password',$/;"	kind:variable	line:15
+confirm_password	../app\users\forms.py	/^    confirm_password = PasswordField('Confirm Password',$/;"	kind:variable	line:72
+content	../app\models.py	/^    content = db.Column(db.Text, nullable=False)$/;"	kind:variable	line:29
+content	../app\posts\forms.py	/^    content = TextAreaField('Content', validators=[DataRequired()])$/;"	kind:variable	line:8
+create_app	../app\__init__.py	/^def create_app(config_class=Config):$/;"	kind:function	line:15
+create_app	../run.py	/^from app import create_app$/;"	kind:namespace	line:1
+current_app	../app\models.py	/^from flask import current_app$/;"	kind:namespace	line:3
+current_app	../app\users\utils.py	/^from flask import url_for, current_app$/;"	kind:namespace	line:4
+current_user	../app\posts\routes.py	/^from flask_login import current_user, login_required$/;"	kind:namespace	line:3
+current_user	../app\users\forms.py	/^from flask_login import current_user$/;"	kind:namespace	line:5
+current_user	../app\users\routes.py	/^from flask_login import login_user, current_user, logout_user, login_required$/;"	kind:namespace	line:2
+date_posted	../app\models.py	/^    date_posted = datetime.utcnow().date()$/;"	kind:variable	line:38
+date_posted	../app\models.py	/^    date_posted = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)$/;"	kind:variable	line:28
+datetime	../app\models.py	/^from datetime import datetime$/;"	kind:namespace	line:1
+db	../app\__init__.py	/^db = SQLAlchemy()$/;"	kind:variable	line:8
+db	../app\models.py	/^from appimport db, login_manager$/;"	kind:namespace	line:4
+db	../app\posts\routes.py	/^from app import db$/;"	kind:namespace	line:4
+db	../app\users\routes.py	/^from pythonFlaskApp import db, bcrypt$/;"	kind:namespace	line:3
+delete_dummy_posts_from	../app\posts\routes.py	/^def delete_dummy_posts_from(user_1d):$/;"	kind:function	line:64
+delete_post	../app\posts\routes.py	/^def delete_post(post_id):$/;"	kind:function	line:53
+delete_user_by_ID	../app\users\routes.py	/^def delete_user_by_ID(user_1d):$/;"	kind:function	line:81
+email	../app\models.py	/^    email = db.Column(db.String(120), unique=True, nullable=False)$/;"	kind:variable	line:16
+email	../app\users\forms.py	/^    email = StringField('Email',$/;"	kind:variable	line:12
+email	../app\users\forms.py	/^    email = StringField('Email',$/;"	kind:variable	line:31
+email	../app\users\forms.py	/^    email = StringField('Email',$/;"	kind:variable	line:41
+email	../app\users\forms.py	/^    email = StringField('Email',$/;"	kind:variable	line:60
+error_403	../app\errors\handlers.py	/^def error_403(error):$/;"	kind:function	line:12
+error_404	../app\errors\handlers.py	/^def error_404(error):$/;"	kind:function	line:7
+error_500	../app\errors\handlers.py	/^def error_500(error):$/;"	kind:function	line:17
+errors	../app\__init__.py	/^    from app.errors.handlers import errors$/;"	kind:namespace	line:26
+errors	../app\errors\handlers.py	/^errors = Blueprint('errors', __name__)$/;"	kind:variable	line:3
+flash	../app\posts\routes.py	/^from flask import (render_template, url_for, flash,$/;"	kind:namespace	line:1
+flash	../app\users\routes.py	/^from flask import render_template, url_for, flash, redirect, request, Blueprint$/;"	kind:namespace	line:1
+forms.py	../app\posts\forms.py	1;"	kind:file	line:1
+forms.py	../app\users\forms.py	1;"	kind:file	line:1
+handlers.py	../app\errors\handlers.py	1;"	kind:file	line:1
+home	../app\main\routes.py	/^def home():$/;"	kind:function	line:32
+id	../app\models.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:14
+id	../app\models.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:26
+image_file	../app\models.py	/^    image_file = db.Column(db.String(20), nullable=False, default='default.png')$/;"	kind:variable	line:17
+inject_PostDemoList	../app\main\routes.py	/^def inject_PostDemoList():$/;"	kind:function	line:7
+load_user	../app\models.py	/^def load_user(user_id):$/;"	kind:function	line:9
+login	../app\users\routes.py	/^def login():$/;"	kind:function	line:29
+login_manager	../app\__init__.py	/^login_manager = LoginManager()$/;"	kind:variable	line:10
+login_manager	../app\models.py	/^from appimport db, login_manager$/;"	kind:namespace	line:4
+login_required	../app\posts\routes.py	/^from flask_login import current_user, login_required$/;"	kind:namespace	line:3
+login_required	../app\users\routes.py	/^from flask_login import login_user, current_user, logout_user, login_required$/;"	kind:namespace	line:2
+login_user	../app\users\routes.py	/^from flask_login import login_user, current_user, logout_user, login_required$/;"	kind:namespace	line:2
+logout	../app\users\routes.py	/^def logout():$/;"	kind:function	line:45
+logout_user	../app\users\routes.py	/^from flask_login import login_user, current_user, logout_user, login_required$/;"	kind:namespace	line:2
+main	../app\__init__.py	/^    from app.main.routes import main$/;"	kind:namespace	line:25
+main	../app\main\routes.py	/^main = Blueprint('main', __name__)$/;"	kind:variable	line:4
+models.py	../app\models.py	1;"	kind:file	line:1
+new_post	../app\posts\routes.py	/^def new_post():$/;"	kind:function	line:13
+os	../app\config.py	/^import os$/;"	kind:namespace	line:1
+os	../app\users\utils.py	/^import os$/;"	kind:namespace	line:1
+password	../app\models.py	/^    password = db.Column(db.String(60), nullable=False)$/;"	kind:variable	line:18
+password	../app\users\forms.py	/^    password = PasswordField('Password', validators=[DataRequired()])$/;"	kind:variable	line:14
+password	../app\users\forms.py	/^    password = PasswordField('Password', validators=[DataRequired()])$/;"	kind:variable	line:33
+password	../app\users\forms.py	/^    password = PasswordField('Password', validators=[DataRequired()])$/;"	kind:variable	line:71
+picture	../app\users\forms.py	/^    picture = FileField('Update Profile Picture', validators=[FileAllowed(['jpg', 'png'])])$/;"	kind:variable	line:43
+post	../app\posts\routes.py	/^def post(post_id):$/;"	kind:function	line:26
+posts	../app\__init__.py	/^    from app.posts.routes import posts$/;"	kind:namespace	line:24
+posts	../app\models.py	/^    posts = db.relationship('Post', backref='author', lazy=True)$/;"	kind:variable	line:19
+posts	../app\posts\routes.py	/^posts = Blueprint('posts', __name__)$/;"	kind:variable	line:8
+redirect	../app\users\routes.py	/^from flask import render_template, url_for, flash, redirect, request, Blueprint$/;"	kind:namespace	line:1
+register	../app\users\routes.py	/^def register():$/;"	kind:function	line:14
+remember	../app\users\forms.py	/^    remember = BooleanField('Remember Me')$/;"	kind:variable	line:34
+render_template	../app\errors\handlers.py	/^from flask import Blueprint, render_template$/;"	kind:namespace	line:1
+render_template	../app\main\routes.py	/^from flask import render_template, request, Blueprint$/;"	kind:namespace	line:1
+render_template	../app\posts\routes.py	/^from flask import (render_template, url_for, flash,$/;"	kind:namespace	line:1
+render_template	../app\users\routes.py	/^from flask import render_template, url_for, flash, redirect, request, Blueprint$/;"	kind:namespace	line:1
+request	../app\main\routes.py	/^from flask import render_template, request, Blueprint$/;"	kind:namespace	line:1
+request	../app\users\routes.py	/^from flask import render_template, url_for, flash, redirect, request, Blueprint$/;"	kind:namespace	line:1
+routes.py	../app\main\routes.py	1;"	kind:file	line:1
+routes.py	../app\posts\routes.py	1;"	kind:file	line:1
+routes.py	../app\users\routes.py	1;"	kind:file	line:1
+run.py	../run.py	1;"	kind:file	line:1
+save_picture	../app\users\routes.py	/^from pythonFlaskApp.users.utils import save_picture$/;"	kind:namespace	line:8
+save_picture	../app\users\utils.py	/^def save_picture(form_picture):$/;"	kind:function	line:7
+secrets	../app\users\utils.py	/^import secrets$/;"	kind:namespace	line:2
+submit	../app\posts\forms.py	/^    submit = SubmitField('Post')$/;"	kind:variable	line:9
+submit	../app\users\forms.py	/^    submit = SubmitField('Login')$/;"	kind:variable	line:35
+submit	../app\users\forms.py	/^    submit = SubmitField('Request Password Reset')$/;"	kind:variable	line:62
+submit	../app\users\forms.py	/^    submit = SubmitField('Reset Password')$/;"	kind:variable	line:74
+submit	../app\users\forms.py	/^    submit = SubmitField('Sign Up')$/;"	kind:variable	line:17
+submit	../app\users\forms.py	/^    submit = SubmitField('Update')$/;"	kind:variable	line:44
+title	../app\models.py	/^    title = db.Column(db.String(100), nullable=False)$/;"	kind:variable	line:27
+title	../app\posts\forms.py	/^    title = StringField('Title', validators=[DataRequired()])$/;"	kind:variable	line:7
+update_post	../app\posts\routes.py	/^def update_post(post_id):$/;"	kind:function	line:33
+url_for	../app\posts\routes.py	/^from flask import (render_template, url_for, flash,$/;"	kind:namespace	line:1
+url_for	../app\users\routes.py	/^from flask import render_template, url_for, flash, redirect, request, Blueprint$/;"	kind:namespace	line:1
+url_for	../app\users\utils.py	/^from flask import url_for, current_app$/;"	kind:namespace	line:4
+user_id	../app\models.py	/^    user_id = '00'$/;"	kind:variable	line:39
+user_id	../app\models.py	/^    user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)$/;"	kind:variable	line:30
+user_posts	../app\users\routes.py	/^def user_posts(username):$/;"	kind:function	line:72
+username	../app\models.py	/^    username = db.Column(db.String(20), unique=True, nullable=False)$/;"	kind:variable	line:15
+username	../app\users\forms.py	/^    username = StringField('Username',$/;"	kind:variable	line:10
+username	../app\users\forms.py	/^    username = StringField('Username',$/;"	kind:variable	line:39
+users	../app\__init__.py	/^    from app.users.routes import users$/;"	kind:namespace	line:23
+users	../app\users\routes.py	/^users = Blueprint('users', __name__)$/;"	kind:variable	line:10
+utils.py	../app\users\utils.py	1;"	kind:file	line:1
+validate_email	../app\users\forms.py	/^    def validate_email(self, email):$/;"	kind:member	line:24
+validate_email	../app\users\forms.py	/^    def validate_email(self, email):$/;"	kind:member	line:52
+validate_email	../app\users\forms.py	/^    def validate_email(self, email):$/;"	kind:member	line:64
+validate_username	../app\users\forms.py	/^    def validate_username(self, username):$/;"	kind:member	line:19
+validate_username	../app\users\forms.py	/^    def validate_username(self, username):$/;"	kind:member	line:46
+validators	../app\users\forms.py	/^                                     validators=[DataRequired(), EqualTo('password')])$/;"	kind:variable	line:16
+validators	../app\users\forms.py	/^                                     validators=[DataRequired(), EqualTo('password')])$/;"	kind:variable	line:73
+validators	../app\users\forms.py	/^                           validators=[DataRequired(), Length(min=2, max=20)])$/;"	kind:variable	line:11
+validators	../app\users\forms.py	/^                           validators=[DataRequired(), Length(min=2, max=20)])$/;"	kind:variable	line:40
+validators	../app\users\forms.py	/^                        validators=[DataRequired(), Email()])$/;"	kind:variable	line:13
+validators	../app\users\forms.py	/^                        validators=[DataRequired(), Email()])$/;"	kind:variable	line:32
+validators	../app\users\forms.py	/^                        validators=[DataRequired(), Email()])$/;"	kind:variable	line:42
+validators	../app\users\forms.py	/^                        validators=[DataRequired(), Email()])$/;"	kind:variable	line:61
