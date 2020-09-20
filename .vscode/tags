@@ -497,6 +497,7 @@ update_proday	../app\_ref_\_py\_ndoRp.py	/^def update_proday(proday_id):$/;"	kin
 update_task	../app\_ref_\_py\_ndoRt.py	/^def update_task(task_id):$/;"	kind:function	line:60
 update_via_wtforms	../app\_ref_\_py\_dispM.py	/^    def update_via_wtforms(self, form):$/;"	kind:member	line:167
 upload_demo	../app\items\DemoUploadRoute.py	/^def upload_demo():$/;"	kind:function	line:4
+upload_demo	../app\items\routes.py	/^def upload_demo():$/;"	kind:function	line:218
 url_for	../app\_ref_\_py\_dispM.py	/^from flask import url_for$/;"	kind:namespace	line:4
 url_for	../app\_ref_\_py\_ndoRp.py	/^from flask import (render_template, url_for, flash,$/;"	kind:namespace	line:1
 url_for	../app\posts\routes.py	/^from flask import (render_template, url_for, flash,$/;"	kind:namespace	line:1
