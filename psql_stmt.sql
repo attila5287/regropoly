@@ -1,5 +1,6 @@
 -- WORKS
 -- now drop the table try add again
+DROP TABLE public.item  CASCADE;
 DROP TABLE public.user CASCADE;
 
 
@@ -13,8 +14,6 @@ CREATE TABLE "user" (
 		"is_shipper"	VARCHAR(8),
 		"location_id"	SMALLINT 
 	);
-
-
 
 -- delete all data and related records
 TRUNCATE TABLE public.user CASCADE;
@@ -41,7 +40,8 @@ CREATE TABLE item (
 	dest_id VARCHAR(16) , 
 	ship_status VARCHAR(16) , 
 	date_posted TIMESTAMP  
-);
+)
+;
 
 -- sqlite 
 CREATE TABLE "item" (

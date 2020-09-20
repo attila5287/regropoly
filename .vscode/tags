@@ -5,10 +5,12 @@
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
 Bcrypt	../app\__init__.py	/^from flask_bcrypt import Bcrypt$/;"	kind:namespace	line:3
+Blueprint	../_ref\_py\routes - Copy.py	/^from flask import render_template, url_for, flash, request, Blueprint$/;"	kind:namespace	line:1
 Blueprint	../app\errors\handlers.py	/^from flask import Blueprint, render_template$/;"	kind:namespace	line:1
 Blueprint	../app\main\routes.py	/^from flask import render_template, request, Blueprint$/;"	kind:namespace	line:1
 Blueprint	../app\users\routes.py	/^from flask import render_template, url_for, flash, redirect, request, Blueprint$/;"	kind:namespace	line:1
 BooleanField	../app\users\forms.py	/^from wtforms import StringField, PasswordField, SubmitField, BooleanField, SelectField$/;"	kind:namespace	line:3
+Column	../_ref\_py\_berM.py	/^from sqlalchemy import Table, Column, Integer, String, MetaData, ForeignKey$/;"	kind:namespace	line:1
 Column	../app\_ref_\_py\_berM.py	/^from sqlalchemy import Table, Column, Integer, String, MetaData, ForeignKey$/;"	kind:namespace	line:1
 Column	../app\models.py	/^from sqlalchemy import Table, Column, Integer, String, MetaData, ForeignKey$/;"	kind:namespace	line:1
 Config	../app\__init__.py	/^from app.config import Config$/;"	kind:namespace	line:5
@@ -23,15 +25,21 @@ EqualTo	../app\users\forms.py	/^from wtforms.validators import DataRequired, Len
 FLASK_ENV	../app\config.py	/^    FLASK_ENV=os.environ.get('FLASK_ENV')$/;"	kind:variable	line:6
 FileAllowed	../app\users\forms.py	/^from flask_wtf.file import FileField, FileAllowed$/;"	kind:namespace	line:2
 FileField	../app\users\forms.py	/^from flask_wtf.file import FileField, FileAllowed$/;"	kind:namespace	line:2
+Flask	../_ref\int-hw\hw01\Data-Journalism-and-D3-master\app.py	/^from flask import Flask, render_template, jsonify$/;"	kind:namespace	line:1
+Flask	../_ref\int-hw\hw02\Data-Journalism-and-D3-master\app.py	/^from flask import Flask,render_template,jsonify$/;"	kind:namespace	line:1
 Flask	../app\__init__.py	/^from flask import Flask$/;"	kind:namespace	line:1
 FlaskForm	../app\items\forms.py	/^from flask_wtf import FlaskForm$/;"	kind:namespace	line:2
 FlaskForm	../app\posts\forms.py	/^from flask_wtf import FlaskForm$/;"	kind:namespace	line:2
 FlaskForm	../app\users\forms.py	/^from flask_wtf import FlaskForm$/;"	kind:namespace	line:1
+ForeignKey	../_ref\_py\_berM.py	/^from sqlalchemy import Table, Column, Integer, String, MetaData, ForeignKey$/;"	kind:namespace	line:1
 ForeignKey	../app\_ref_\_py\_berM.py	/^from sqlalchemy import Table, Column, Integer, String, MetaData, ForeignKey$/;"	kind:namespace	line:1
 ForeignKey	../app\models.py	/^from sqlalchemy import Table, Column, Integer, String, MetaData, ForeignKey$/;"	kind:namespace	line:1
 Image	../app\users\utils.py	/^from PIL import Image$/;"	kind:namespace	line:3
+Integer	../_ref\_py\_berM.py	/^from sqlalchemy import Table, Column, Integer, String, MetaData, ForeignKey$/;"	kind:namespace	line:1
 Integer	../app\_ref_\_py\_berM.py	/^from sqlalchemy import Table, Column, Integer, String, MetaData, ForeignKey$/;"	kind:namespace	line:1
 Integer	../app\models.py	/^from sqlalchemy import Table, Column, Integer, String, MetaData, ForeignKey$/;"	kind:namespace	line:1
+Item	../_ref\_py\_berM.py	/^class Item(db.Model):$/;"	kind:class	line:8
+Item	../_ref\_py\_dispM.py	/^class Item(db.Model):$/;"	kind:class	line:37
 Item	../app\_ref_\_py\_berM.py	/^class Item(db.Model):$/;"	kind:class	line:8
 Item	../app\_ref_\_py\_dispM.py	/^class Item(db.Model):$/;"	kind:class	line:37
 Item	../app\models.py	/^class Item(db.Model):$/;"	kind:class	line:8
@@ -40,15 +48,24 @@ ItemForm	../app\items\forms.py	/^class ItemForm(FlaskForm):$/;"	kind:class	line:
 Length	../app\users\forms.py	/^from wtforms.validators import DataRequired, Length, Email, EqualTo, ValidationError$/;"	kind:namespace	line:4
 LoginForm	../app\users\forms.py	/^class LoginForm(FlaskForm):$/;"	kind:class	line:37
 LoginManager	../app\__init__.py	/^from flask_login import LoginManager$/;"	kind:namespace	line:4
+LowInStckStyler	../_ref\_py\_dispR.py	/^    def LowInStckStyler(yes_or_no):$/;"	kind:function	line:361
 LowInStckStyler	../app\_ref_\_py\_dispR.py	/^    def LowInStckStyler(yes_or_no):$/;"	kind:function	line:361
+LowInStckStylerGrid	../_ref\_py\_dispR.py	/^    def LowInStckStylerGrid(yes_or_no):$/;"	kind:function	line:436
 LowInStckStylerGrid	../app\_ref_\_py\_dispR.py	/^    def LowInStckStylerGrid(yes_or_no):$/;"	kind:function	line:436
+LowInvIconizer	../_ref\_py\_dispR.py	/^    def LowInvIconizer(yes_or_no):$/;"	kind:function	line:466
 LowInvIconizer	../app\_ref_\_py\_dispR.py	/^    def LowInvIconizer(yes_or_no):$/;"	kind:function	line:466
+MetaData	../_ref\_py\_berM.py	/^from sqlalchemy import Table, Column, Integer, String, MetaData, ForeignKey$/;"	kind:namespace	line:1
 MetaData	../app\_ref_\_py\_berM.py	/^from sqlalchemy import Table, Column, Integer, String, MetaData, ForeignKey$/;"	kind:namespace	line:1
 MetaData	../app\models.py	/^from sqlalchemy import Table, Column, Integer, String, MetaData, ForeignKey$/;"	kind:namespace	line:1
+OutInvIconizer	../_ref\_py\_dispR.py	/^    def OutInvIconizer(yes_or_no):$/;"	kind:function	line:481
 OutInvIconizer	../app\_ref_\_py\_dispR.py	/^    def OutInvIconizer(yes_or_no):$/;"	kind:function	line:481
+OutOfStckStyler	../_ref\_py\_dispR.py	/^    def OutOfStckStyler(yes_or_no):$/;"	kind:function	line:406
 OutOfStckStyler	../app\_ref_\_py\_dispR.py	/^    def OutOfStckStyler(yes_or_no):$/;"	kind:function	line:406
+OutOfStckStylerGrid	../_ref\_py\_dispR.py	/^    def OutOfStckStylerGrid(yes_or_no):$/;"	kind:function	line:421
 OutOfStckStylerGrid	../app\_ref_\_py\_dispR.py	/^    def OutOfStckStylerGrid(yes_or_no):$/;"	kind:function	line:421
 PasswordField	../app\users\forms.py	/^from wtforms import StringField, PasswordField, SubmitField, BooleanField, SelectField$/;"	kind:namespace	line:3
+Post	../_ref\_py\_berM.py	/^class Post(db.Model):$/;"	kind:class	line:40
+Post	../_ref\_py\_dispM.py	/^class Post(db.Model):$/;"	kind:class	line:25
 Post	../app\_ref_\_py\_berM.py	/^class Post(db.Model):$/;"	kind:class	line:40
 Post	../app\_ref_\_py\_dispM.py	/^class Post(db.Model):$/;"	kind:class	line:25
 Post	../app\main\routes.py	/^from app.models import Post$/;"	kind:namespace	line:2
@@ -60,8 +77,12 @@ PostDemo	../app\posts\forms.py	/^class PostDemo():$/;"	kind:class	line:14
 PostDemo	../app\posts\routes.py	/^from app.posts.forms import PostForm, PostDemo$/;"	kind:namespace	line:6
 PostForm	../app\posts\forms.py	/^class PostForm(FlaskForm):$/;"	kind:class	line:7
 PostForm	../app\posts\routes.py	/^from app.posts.forms import PostForm, PostDemo$/;"	kind:namespace	line:6
+ProDayForm	../_ref\_py\_ndoRp.py	/^from nodaysoff.prodays.forms import ProDayForm $/;"	kind:namespace	line:6
 ProDayForm	../app\_ref_\_py\_ndoRp.py	/^from nodaysoff.prodays.forms import ProDayForm $/;"	kind:namespace	line:6
+Proday	../_ref\_py\_ndoRp.py	/^from nodaysoff.models import Proday, User$/;"	kind:namespace	line:5
 Proday	../app\_ref_\_py\_ndoRp.py	/^from nodaysoff.models import Proday, User$/;"	kind:namespace	line:5
+Py_ConditionalCheck.py	../_ref\12_JS\02_Evr_PythonToJavaScript\Py_ConditionalCheck.py	1;"	kind:file	line:1
+Py_HelloVariableWorld.py	../_ref\12_JS\02_Evr_PythonToJavaScript\Py_HelloVariableWorld.py	1;"	kind:file	line:1
 RegistrationForm	../app\users\forms.py	/^class RegistrationForm(FlaskForm):$/;"	kind:class	line:9
 RequestResetForm	../app\users\forms.py	/^class RequestResetForm(FlaskForm):$/;"	kind:class	line:66
 ResetPasswordForm	../app\users\forms.py	/^class ResetPasswordForm(FlaskForm):$/;"	kind:class	line:77
@@ -72,10 +93,13 @@ SQLAlchemy	../app\__init__.py	/^from flask_sqlalchemy import SQLAlchemy$/;"	kind
 SelectField	../app\items\forms.py	/^from wtforms import StringField, SubmitField, TextAreaField, SelectField$/;"	kind:namespace	line:3
 SelectField	../app\posts\forms.py	/^from wtforms import StringField, SubmitField, TextAreaField, SelectField$/;"	kind:namespace	line:3
 SelectField	../app\users\forms.py	/^from wtforms import StringField, PasswordField, SubmitField, BooleanField, SelectField$/;"	kind:namespace	line:3
+Serializer	../_ref\_py\_berM.py	/^from itsdangerous import TimedJSONWebSignatureSerializer as Serializer$/;"	kind:namespace	line:3
 Serializer	../app\_ref_\_py\_berM.py	/^from itsdangerous import TimedJSONWebSignatureSerializer as Serializer$/;"	kind:namespace	line:3
 Serializer	../app\models.py	/^from itsdangerous import TimedJSONWebSignatureSerializer as Serializer$/;"	kind:namespace	line:3
 ShipperDisplayForm	../app\items\forms.py	/^class ShipperDisplayForm(FlaskForm):$/;"	kind:class	line:51
+Square	../_ref\_py\_dispM.py	/^class Square(db.Model):$/;"	kind:class	line:260
 Square	../app\_ref_\_py\_dispM.py	/^class Square(db.Model):$/;"	kind:class	line:260
+String	../_ref\_py\_berM.py	/^from sqlalchemy import Table, Column, Integer, String, MetaData, ForeignKey$/;"	kind:namespace	line:1
 String	../app\_ref_\_py\_berM.py	/^from sqlalchemy import Table, Column, Integer, String, MetaData, ForeignKey$/;"	kind:namespace	line:1
 String	../app\models.py	/^from sqlalchemy import Table, Column, Integer, String, MetaData, ForeignKey$/;"	kind:namespace	line:1
 StringField	../app\items\forms.py	/^from wtforms import StringField, SubmitField, TextAreaField, SelectField$/;"	kind:namespace	line:3
@@ -84,18 +108,31 @@ StringField	../app\users\forms.py	/^from wtforms import StringField, PasswordFie
 SubmitField	../app\items\forms.py	/^from wtforms import StringField, SubmitField, TextAreaField, SelectField$/;"	kind:namespace	line:3
 SubmitField	../app\posts\forms.py	/^from wtforms import StringField, SubmitField, TextAreaField, SelectField$/;"	kind:namespace	line:3
 SubmitField	../app\users\forms.py	/^from wtforms import StringField, PasswordField, SubmitField, BooleanField, SelectField$/;"	kind:namespace	line:3
+Table	../_ref\_py\_berM.py	/^from sqlalchemy import Table, Column, Integer, String, MetaData, ForeignKey$/;"	kind:namespace	line:1
 Table	../app\_ref_\_py\_berM.py	/^from sqlalchemy import Table, Column, Integer, String, MetaData, ForeignKey$/;"	kind:namespace	line:1
 Table	../app\models.py	/^from sqlalchemy import Table, Column, Integer, String, MetaData, ForeignKey$/;"	kind:namespace	line:1
+Task	../_ref\_py\_ndoRt.py	/^from nodaysoff.models import Task, UserDemo, TaskDemo$/;"	kind:namespace	line:6
 Task	../app\_ref_\_py\_ndoRt.py	/^from nodaysoff.models import Task, UserDemo, TaskDemo$/;"	kind:namespace	line:6
+TaskDemo	../_ref\_py\_ndoRt.py	/^from nodaysoff.models import Task, UserDemo, TaskDemo$/;"	kind:namespace	line:6
 TaskDemo	../app\_ref_\_py\_ndoRt.py	/^from nodaysoff.models import Task, UserDemo, TaskDemo$/;"	kind:namespace	line:6
+TaskDemoForm	../_ref\_py\_ndoRt.py	/^from nodaysoff.tasks.forms import TaskForm, TaskDemoForm$/;"	kind:namespace	line:7
 TaskDemoForm	../app\_ref_\_py\_ndoRt.py	/^from nodaysoff.tasks.forms import TaskForm, TaskDemoForm$/;"	kind:namespace	line:7
+TaskForm	../_ref\_py\_ndoRt.py	/^from nodaysoff.tasks.forms import TaskForm, TaskDemoForm$/;"	kind:namespace	line:7
 TaskForm	../app\_ref_\_py\_ndoRt.py	/^from nodaysoff.tasks.forms import TaskForm, TaskDemoForm$/;"	kind:namespace	line:7
 TextAreaField	../app\items\forms.py	/^from wtforms import StringField, SubmitField, TextAreaField, SelectField$/;"	kind:namespace	line:3
 TextAreaField	../app\posts\forms.py	/^from wtforms import StringField, SubmitField, TextAreaField, SelectField$/;"	kind:namespace	line:3
+TimesheetForm	../_ref\_py\forms - Copy.py	/^class TimesheetForm(FlaskForm):$/;"	kind:class	line:8
+TimesheetForm	../_ref\_py\routes - Copy.py	/^from jam.timesheet.forms import TimesheetForm$/;"	kind:namespace	line:2
+Unit	../_ref\_py\_dispM.py	/^class Unit(db.Model):$/;"	kind:class	line:274
 Unit	../app\_ref_\_py\_dispM.py	/^class Unit(db.Model):$/;"	kind:class	line:274
+UnitInvOutIconizer	../_ref\_py\_dispR.py	/^    def UnitInvOutIconizer(yes_or_no):$/;"	kind:function	line:391
 UnitInvOutIconizer	../app\_ref_\_py\_dispR.py	/^    def UnitInvOutIconizer(yes_or_no):$/;"	kind:function	line:391
+UnitInvOutStyler	../_ref\_py\_dispR.py	/^    def UnitInvOutStyler(yes_or_no):$/;"	kind:function	line:376
 UnitInvOutStyler	../app\_ref_\_py\_dispR.py	/^    def UnitInvOutStyler(yes_or_no):$/;"	kind:function	line:376
 UpdateAccountForm	../app\users\forms.py	/^class UpdateAccountForm(FlaskForm):$/;"	kind:class	line:45
+User	../_ref\_py\_berM.py	/^class User(db.Model, UserMixin):$/;"	kind:class	line:27
+User	../_ref\_py\_dispM.py	/^class User(db.Model, UserMixin):$/;"	kind:class	line:12
+User	../_ref\_py\_ndoRp.py	/^from nodaysoff.models import Proday, User$/;"	kind:namespace	line:5
 User	../app\_ref_\_py\_berM.py	/^class User(db.Model, UserMixin):$/;"	kind:class	line:27
 User	../app\_ref_\_py\_dispM.py	/^class User(db.Model, UserMixin):$/;"	kind:class	line:12
 User	../app\_ref_\_py\_ndoRp.py	/^from nodaysoff.models import Proday, User$/;"	kind:namespace	line:5
@@ -103,11 +140,15 @@ User	../app\models.py	/^class User(db.Model, UserMixin):$/;"	kind:class	line:27
 User	../app\posts\routes.py	/^from app.models import User, Post$/;"	kind:namespace	line:5
 User	../app\users\forms.py	/^from app.models import User$/;"	kind:namespace	line:6
 User	../app\users\routes.py	/^from app.models import User, Post$/;"	kind:namespace	line:4
+UserDemo	../_ref\_py\_ndoRt.py	/^from nodaysoff.models import Task, UserDemo, TaskDemo$/;"	kind:namespace	line:6
 UserDemo	../app\_ref_\_py\_ndoRt.py	/^from nodaysoff.models import Task, UserDemo, TaskDemo$/;"	kind:namespace	line:6
+UserMixin	../_ref\_py\_berM.py	/^from flask_login import UserMixin$/;"	kind:namespace	line:6
+UserMixin	../_ref\_py\_dispM.py	/^from flask_login import UserMixin$/;"	kind:namespace	line:3
 UserMixin	../app\_ref_\_py\_berM.py	/^from flask_login import UserMixin$/;"	kind:namespace	line:6
 UserMixin	../app\_ref_\_py\_dispM.py	/^from flask_login import UserMixin$/;"	kind:namespace	line:3
 UserMixin	../app\models.py	/^from flask_login import UserMixin$/;"	kind:namespace	line:6
 ValidationError	../app\users\forms.py	/^from wtforms.validators import DataRequired, Length, Email, EqualTo, ValidationError$/;"	kind:namespace	line:4
+YesNoIconizer	../_ref\_py\_dispR.py	/^    def YesNoIconizer(yes_or_no):$/;"	kind:function	line:451
 YesNoIconizer	../app\_ref_\_py\_dispR.py	/^    def YesNoIconizer(yes_or_no):$/;"	kind:function	line:451
 __init__	../app\items\forms.py	/^    def __init__(self, make='', model='', year='', body_type='', dest_id='', ship_status=''):$/;"	kind:member	line:36
 __init__	../app\posts\forms.py	/^    def __init__(self, title='demo title', content='demo content'):$/;"	kind:member	line:20
@@ -118,6 +159,14 @@ __init__.py	../app\items\__init__.py	1;"	kind:file	line:1
 __init__.py	../app\main\__init__.py	1;"	kind:file	line:1
 __init__.py	../app\posts\__init__.py	1;"	kind:file	line:1
 __init__.py	../app\users\__init__.py	1;"	kind:file	line:1
+__repr__	../_ref\_py\_berM.py	/^    def __repr__(self):$/;"	kind:member	line:20
+__repr__	../_ref\_py\_berM.py	/^    def __repr__(self):$/;"	kind:member	line:37
+__repr__	../_ref\_py\_berM.py	/^    def __repr__(self):$/;"	kind:member	line:48
+__repr__	../_ref\_py\_dispM.py	/^    def __repr__(self):$/;"	kind:member	line:21
+__repr__	../_ref\_py\_dispM.py	/^    def __repr__(self):$/;"	kind:member	line:249
+__repr__	../_ref\_py\_dispM.py	/^    def __repr__(self):$/;"	kind:member	line:269
+__repr__	../_ref\_py\_dispM.py	/^    def __repr__(self):$/;"	kind:member	line:299
+__repr__	../_ref\_py\_dispM.py	/^    def __repr__(self):$/;"	kind:member	line:33
 __repr__	../app\_ref_\_py\_berM.py	/^    def __repr__(self):$/;"	kind:member	line:20
 __repr__	../app\_ref_\_py\_berM.py	/^    def __repr__(self):$/;"	kind:member	line:37
 __repr__	../app\_ref_\_py\_berM.py	/^    def __repr__(self):$/;"	kind:member	line:48
@@ -131,29 +180,66 @@ __repr__	../app\models.py	/^    def __repr__(self):$/;"	kind:member	line:20
 __repr__	../app\models.py	/^    def __repr__(self):$/;"	kind:member	line:37
 __repr__	../app\models.py	/^    def __repr__(self):$/;"	kind:member	line:48
 __repr__	../app\posts\forms.py	/^    def __repr__(self):$/;"	kind:member	line:25
+__rpr__	../_ref\_py\forms - Copy.py	/^    def __rpr__(self):$/;"	kind:member	line:66
+__tablename__	../_ref\_py\_dispM.py	/^    __tablename__ = 'square'$/;"	kind:variable	line:263
+__tablename__	../_ref\_py\_dispM.py	/^    __tablename__ = 'unit'$/;"	kind:variable	line:278
 __tablename__	../app\_ref_\_py\_dispM.py	/^    __tablename__ = 'square'$/;"	kind:variable	line:263
 __tablename__	../app\_ref_\_py\_dispM.py	/^    __tablename__ = 'unit'$/;"	kind:variable	line:278
+_berM.py	../_ref\_py\_berM.py	1;"	kind:file	line:1
 _berM.py	../app\_ref_\_py\_berM.py	1;"	kind:file	line:1
+_dispM.py	../_ref\_py\_dispM.py	1;"	kind:file	line:1
 _dispM.py	../app\_ref_\_py\_dispM.py	1;"	kind:file	line:1
+_dispR.py	../_ref\_py\_dispR.py	1;"	kind:file	line:1
 _dispR.py	../app\_ref_\_py\_dispR.py	1;"	kind:file	line:1
+_ndoRp.py	../_ref\_py\_ndoRp.py	1;"	kind:file	line:1
 _ndoRp.py	../app\_ref_\_py\_ndoRp.py	1;"	kind:file	line:1
+_ndoRt.py	../_ref\_py\_ndoRt.py	1;"	kind:file	line:1
 _ndoRt.py	../app\_ref_\_py\_ndoRt.py	1;"	kind:file	line:1
+about	../_ref\_py\_dispR.py	/^def about():$/;"	kind:function	line:185
 about	../app\_ref_\_py\_dispR.py	/^def about():$/;"	kind:function	line:185
 about	../app\main\routes.py	/^def about():$/;"	kind:function	line:47
 aboutdev	../app\main\routes.py	/^def aboutdev():$/;"	kind:function	line:51
+account	../_ref\_py\_dispR.py	/^def account():$/;"	kind:function	line:266
 account	../app\_ref_\_py\_dispR.py	/^def account():$/;"	kind:function	line:266
 account	../app\users\routes.py	/^def account():$/;"	kind:function	line:77
+add_task	../_ref\_py\_ndoRt.py	/^def add_task():$/;"	kind:function	line:99
 add_task	../app\_ref_\_py\_ndoRt.py	/^def add_task():$/;"	kind:function	line:99
+age	../_ref\12_JS\02_Evr_PythonToJavaScript\Py_HelloVariableWorld.py	/^age = 25$/;"	kind:variable	line:9
+ap_beg_01	../_ref\_py\forms - Copy.py	/^    ap_beg_01 = SelectField(choices=[('0', 'a'), ('12', 'p')])$/;"	kind:variable	line:12
+ap_beg_02	../_ref\_py\forms - Copy.py	/^    ap_beg_02 = SelectField(choices=[('0', 'a'), ('12', 'p')])$/;"	kind:variable	line:19
+ap_beg_03	../_ref\_py\forms - Copy.py	/^    ap_beg_03 = SelectField(choices=[('0', 'a'), ('12', 'p')])$/;"	kind:variable	line:26
+ap_beg_03	../_ref\_py\forms - Copy.py	/^    ap_beg_03 = SelectField(choices=[('0', 'a'), ('12', 'p')])$/;"	kind:variable	line:33
+ap_beg_04	../_ref\_py\forms - Copy.py	/^    ap_beg_04 = SelectField(choices=[('0', 'a'), ('12', 'p')])$/;"	kind:variable	line:40
+ap_beg_05	../_ref\_py\forms - Copy.py	/^    ap_beg_05 = SelectField(choices=[('0', 'a'), ('12', 'p')])$/;"	kind:variable	line:47
+ap_beg_06	../_ref\_py\forms - Copy.py	/^    ap_beg_06 = SelectField(choices=[('0', 'a'), ('12', 'p')])$/;"	kind:variable	line:54
+ap_beg_07	../_ref\_py\forms - Copy.py	/^    ap_beg_07 = SelectField(choices=[('0', 'a'), ('12', 'p')])$/;"	kind:variable	line:61
+ap_fin_01	../_ref\_py\forms - Copy.py	/^    ap_fin_01 = SelectField(choices=[('0', 'a'), ('12', 'p')])$/;"	kind:variable	line:15
+ap_fin_02	../_ref\_py\forms - Copy.py	/^    ap_fin_02 = SelectField(choices=[('0', 'a'), ('12', 'p')])$/;"	kind:variable	line:22
+ap_fin_03	../_ref\_py\forms - Copy.py	/^    ap_fin_03 = SelectField(choices=[('0', 'a'), ('12', 'p')])$/;"	kind:variable	line:29
+ap_fin_03	../_ref\_py\forms - Copy.py	/^    ap_fin_03 = SelectField(choices=[('0', 'a'), ('12', 'p')])$/;"	kind:variable	line:36
+ap_fin_04	../_ref\_py\forms - Copy.py	/^    ap_fin_04 = SelectField(choices=[('0', 'a'), ('12', 'p')])$/;"	kind:variable	line:43
+ap_fin_05	../_ref\_py\forms - Copy.py	/^    ap_fin_05 = SelectField(choices=[('0', 'a'), ('12', 'p')])$/;"	kind:variable	line:50
+ap_fin_06	../_ref\_py\forms - Copy.py	/^    ap_fin_06 = SelectField(choices=[('0', 'a'), ('12', 'p')])$/;"	kind:variable	line:57
+ap_fin_07	../_ref\_py\forms - Copy.py	/^    ap_fin_07 = SelectField(choices=[('0', 'a'), ('12', 'p')])$/;"	kind:variable	line:64
+app	../_ref\int-hw\hw01\Data-Journalism-and-D3-master\app.py	/^app = Flask(__name__)$/;"	kind:variable	line:4
+app	../_ref\int-hw\hw02\Data-Journalism-and-D3-master\app.py	/^app = Flask(__name__)$/;"	kind:variable	line:4
 app	../run.py	/^app = create_app()$/;"	kind:variable	line:3
+app.py	../_ref\int-hw\hw01\Data-Journalism-and-D3-master\app.py	1;"	kind:file	line:1
+app.py	../_ref\int-hw\hw02\Data-Journalism-and-D3-master\app.py	1;"	kind:file	line:1
 author	../app\posts\forms.py	/^    author = 'attila'$/;"	kind:variable	line:18
 bcrypt	../app\__init__.py	/^bcrypt = Bcrypt()$/;"	kind:variable	line:9
 bcrypt	../app\users\routes.py	/^from app import db, bcrypt$/;"	kind:namespace	line:3
+body_type	../_ref\_py\_berM.py	/^    body_type = db.Column(db.String(16), nullable=False, default='3')$/;"	kind:variable	line:14
 body_type	../app\_ref_\_py\_berM.py	/^    body_type = db.Column(db.String(16), nullable=False, default='3')$/;"	kind:variable	line:14
 body_type	../app\items\DemoCarsLists.py	/^body_type = [$/;"	kind:variable	line:1127
 body_type	../app\items\forms.py	/^    body_type = SelectField($/;"	kind:variable	line:11
 body_type	../app\items\forms.py	/^    body_type = SelectField($/;"	kind:variable	line:57
 body_type	../app\models.py	/^    body_type = db.Column(db.String(16), nullable=False, default='3')$/;"	kind:variable	line:14
+calc_daily_total	../_ref\_py\forms - Copy.py	/^    def calc_daily_total(self):$/;"	kind:member	line:140
+calc_daily_totals	../_ref\_py\forms - Copy.py	/^    def calc_daily_totals(self):$/;"	kind:member	line:70
+catalog_fullname	../_ref\_py\_dispM.py	/^    catalog_fullname = db.Column(db.String(256))$/;"	kind:variable	line:42
 catalog_fullname	../app\_ref_\_py\_dispM.py	/^    catalog_fullname = db.Column(db.String(256))$/;"	kind:variable	line:42
+catalog_no	../_ref\_py\_dispM.py	/^    catalog_no = db.Column(db.String(32))$/;"	kind:variable	line:41
 catalog_no	../app\_ref_\_py\_dispM.py	/^    catalog_no = db.Column(db.String(32))$/;"	kind:variable	line:41
 choices	../app\items\forms.py	/^        choices=[$/;"	kind:variable	line:12
 choices	../app\items\forms.py	/^        choices=[$/;"	kind:variable	line:22
@@ -163,36 +249,60 @@ choices	../app\items\forms.py	/^        choices=[('0', 'Alabama'), ('1', 'Baltim
 choices	../app\items\forms.py	/^        choices=[('0', 'Alabama'),('1', 'Baltimore'),$/;"	kind:variable	line:19
 choices	../app\users\forms.py	/^        choices=[('99', 'Shipper'), ('0', 'Alabama'), ('1', 'Baltimore'),$/;"	kind:variable	line:21
 cityFinder	../app\items\routes.py	/^    def cityFinder(item_dest_id):$/;"	kind:function	line:203
+codecs	../_ref\_py\_dispR.py	/^import codecs$/;"	kind:namespace	line:8
 codecs	../app\_ref_\_py\_dispR.py	/^import codecs$/;"	kind:namespace	line:8
+col_count	../_ref\_py\_dispM.py	/^    col_count = db.Column(db.Integer)$/;"	kind:variable	line:267
 col_count	../app\_ref_\_py\_dispM.py	/^    col_count = db.Column(db.Integer)$/;"	kind:variable	line:267
+color_finder	../_ref\_py\_dispR.py	/^def color_finder():$/;"	kind:function	line:689
 color_finder	../app\_ref_\_py\_dispR.py	/^def color_finder():$/;"	kind:function	line:689
+color_primary	../_ref\_py\_dispM.py	/^    color_primary = db.Column(db.String(32))$/;"	kind:variable	line:43
 color_primary	../app\_ref_\_py\_dispM.py	/^    color_primary = db.Column(db.String(32))$/;"	kind:variable	line:43
+color_secondary	../_ref\_py\_dispM.py	/^    color_secondary = db.Column(db.String(32))$/;"	kind:variable	line:44
 color_secondary	../app\_ref_\_py\_dispM.py	/^    color_secondary = db.Column(db.String(32))$/;"	kind:variable	line:44
 config.py	../app\config.py	1;"	kind:file	line:1
 confirm_password	../app\users\forms.py	/^    confirm_password = PasswordField('Confirm Password',$/;"	kind:variable	line:15
 confirm_password	../app\users\forms.py	/^    confirm_password = PasswordField('Confirm Password',$/;"	kind:variable	line:79
+content	../_ref\_py\_berM.py	/^    content = db.Column(db.Text, nullable=False)$/;"	kind:variable	line:45
+content	../_ref\_py\_dispM.py	/^    content = db.Column(db.Text, nullable=False)$/;"	kind:variable	line:30
 content	../app\_ref_\_py\_berM.py	/^    content = db.Column(db.Text, nullable=False)$/;"	kind:variable	line:45
 content	../app\_ref_\_py\_dispM.py	/^    content = db.Column(db.Text, nullable=False)$/;"	kind:variable	line:30
 content	../app\models.py	/^    content = db.Column(db.Text, nullable=False)$/;"	kind:variable	line:45
 content	../app\posts\forms.py	/^    content = TextAreaField('Content', validators=[DataRequired()])$/;"	kind:variable	line:9
+country	../_ref\12_JS\02_Evr_PythonToJavaScript\Py_HelloVariableWorld.py	/^country = "United States"$/;"	kind:variable	line:6
 create_app	../app\__init__.py	/^def create_app(config_class=Config):$/;"	kind:function	line:15
 create_app	../run.py	/^from app import create_app$/;"	kind:namespace	line:1
+create_item	../_ref\_py\_dispR.py	/^def create_item():$/;"	kind:function	line:191
 create_item	../app\_ref_\_py\_dispR.py	/^def create_item():$/;"	kind:function	line:191
+create_proday	../_ref\_py\_ndoRp.py	/^def create_proday():$/;"	kind:function	line:57
 create_proday	../app\_ref_\_py\_ndoRp.py	/^def create_proday():$/;"	kind:function	line:57
+create_timesheet	../_ref\_py\routes - Copy.py	/^def create_timesheet():$/;"	kind:function	line:9
+createall_squares	../_ref\_py\_dispR.py	/^def createall_squares():$/;"	kind:function	line:1024
 createall_squares	../app\_ref_\_py\_dispR.py	/^def createall_squares():$/;"	kind:function	line:1024
+csv	../_ref\_py\_dispR.py	/^import csv$/;"	kind:namespace	line:7
 csv	../app\_ref_\_py\_dispR.py	/^import csv$/;"	kind:namespace	line:7
+csv_feed	../_ref\_py\_dispR.py	/^def csv_feed():$/;"	kind:function	line:142
 csv_feed	../app\_ref_\_py\_dispR.py	/^def csv_feed():$/;"	kind:function	line:142
+current_app	../_ref\_py\_berM.py	/^from flask import current_app$/;"	kind:namespace	line:4
 current_app	../app\_ref_\_py\_berM.py	/^from flask import current_app$/;"	kind:namespace	line:4
 current_app	../app\models.py	/^from flask import current_app$/;"	kind:namespace	line:4
 current_app	../app\users\utils.py	/^from flask import url_for, current_app$/;"	kind:namespace	line:4
+current_user	../_ref\_py\_ndoRp.py	/^from flask_login import current_user, login_required$/;"	kind:namespace	line:3
+current_user	../_ref\_py\_ndoRt.py	/^from flask_login import current_user, login_required$/;"	kind:namespace	line:4
 current_user	../app\_ref_\_py\_ndoRp.py	/^from flask_login import current_user, login_required$/;"	kind:namespace	line:3
 current_user	../app\_ref_\_py\_ndoRt.py	/^from flask_login import current_user, login_required$/;"	kind:namespace	line:4
 current_user	../app\posts\routes.py	/^from flask_login import current_user, login_required$/;"	kind:namespace	line:3
 current_user	../app\users\forms.py	/^from flask_login import current_user$/;"	kind:namespace	line:5
 current_user	../app\users\routes.py	/^from flask_login import login_user, current_user, logout_user, login_required$/;"	kind:namespace	line:2
+daily_wage	../_ref\12_JS\02_Evr_PythonToJavaScript\Py_HelloVariableWorld.py	/^daily_wage = hourly_wage * 8$/;"	kind:variable	line:15
 dash_app	../app\__init__.py	/^    from app.dash_app.routes import dash_app$/;"	kind:namespace	line:27
 dash_app	../app\dash_app\routes.py	/^dash_app = Blueprint('dash_app', __name__)$/;"	kind:variable	line:16
+dashboard	../_ref\_py\_dispR.py	/^def dashboard():$/;"	kind:function	line:1312
 dashboard	../app\_ref_\_py\_dispR.py	/^def dashboard():$/;"	kind:function	line:1312
+data	../_ref\int-hw\hw01\Data-Journalism-and-D3-master\app.py	/^def data():$/;"	kind:function	line:13
+data	../_ref\int-hw\hw02\Data-Journalism-and-D3-master\app.py	/^def data():$/;"	kind:function	line:12
+date_posted	../_ref\_py\_berM.py	/^    date_posted = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)$/;"	kind:variable	line:17
+date_posted	../_ref\_py\_berM.py	/^    date_posted = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)$/;"	kind:variable	line:44
+date_posted	../_ref\_py\_dispM.py	/^    date_posted = db.Column(db.DateTime, nullable=False,$/;"	kind:variable	line:28
 date_posted	../app\_ref_\_py\_berM.py	/^    date_posted = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)$/;"	kind:variable	line:17
 date_posted	../app\_ref_\_py\_berM.py	/^    date_posted = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)$/;"	kind:variable	line:44
 date_posted	../app\_ref_\_py\_dispM.py	/^    date_posted = db.Column(db.DateTime, nullable=False,$/;"	kind:variable	line:28
@@ -200,11 +310,17 @@ date_posted	../app\items\forms.py	/^    date_posted = datetime.utcnow$/;"	kind:v
 date_posted	../app\models.py	/^    date_posted = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)$/;"	kind:variable	line:17
 date_posted	../app\models.py	/^    date_posted = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)$/;"	kind:variable	line:44
 date_posted	../app\posts\forms.py	/^    date_posted = datetime.utcnow().date()$/;"	kind:variable	line:16
+datetime	../_ref\_py\_berM.py	/^from datetime import datetime$/;"	kind:namespace	line:2
+datetime	../_ref\_py\_dispM.py	/^from datetime import datetime$/;"	kind:namespace	line:1
 datetime	../app\_ref_\_py\_berM.py	/^from datetime import datetime$/;"	kind:namespace	line:2
 datetime	../app\_ref_\_py\_dispM.py	/^from datetime import datetime$/;"	kind:namespace	line:1
 datetime	../app\items\forms.py	/^from datetime import datetime$/;"	kind:namespace	line:1
 datetime	../app\models.py	/^from datetime import datetime$/;"	kind:namespace	line:2
 datetime	../app\posts\forms.py	/^from datetime import datetime$/;"	kind:namespace	line:1
+db	../_ref\_py\_berM.py	/^from berenice import db, login_manager$/;"	kind:namespace	line:5
+db	../_ref\_py\_dispM.py	/^from squares import db, login_manager$/;"	kind:namespace	line:2
+db	../_ref\_py\_ndoRp.py	/^from nodaysoff import db$/;"	kind:namespace	line:4
+db	../_ref\_py\_ndoRt.py	/^from nodaysoff import db$/;"	kind:namespace	line:5
 db	../app\__init__.py	/^db = SQLAlchemy()$/;"	kind:variable	line:8
 db	../app\_ref_\_py\_berM.py	/^from berenice import db, login_manager$/;"	kind:namespace	line:5
 db	../app\_ref_\_py\_dispM.py	/^from squares import db, login_manager$/;"	kind:namespace	line:2
@@ -215,30 +331,47 @@ db	../app\items\routes.py	/^from app import db$/;"	kind:namespace	line:8
 db	../app\models.py	/^from app import db, login_manager$/;"	kind:namespace	line:5
 db	../app\posts\routes.py	/^from app import db$/;"	kind:namespace	line:4
 db	../app\users\routes.py	/^from app import db, bcrypt$/;"	kind:namespace	line:3
+ddslick_master	../_ref\_py\_dispR.py	/^def ddslick_master():$/;"	kind:function	line:775
 ddslick_master	../app\_ref_\_py\_dispR.py	/^def ddslick_master():$/;"	kind:function	line:775
+default	../_ref\_py\_dispM.py	/^                            default=datetime.utcnow)$/;"	kind:variable	line:29
+default	../_ref\_py\_dispM.py	/^                           default='default.png')$/;"	kind:variable	line:17
 default	../app\_ref_\_py\_dispM.py	/^                            default=datetime.utcnow)$/;"	kind:variable	line:29
 default	../app\_ref_\_py\_dispM.py	/^                           default='default.png')$/;"	kind:variable	line:17
+defaultdict	../_ref\_py\_dispR.py	/^from collections import defaultdict$/;"	kind:namespace	line:3
 defaultdict	../app\_ref_\_py\_dispR.py	/^from collections import defaultdict$/;"	kind:namespace	line:3
 delete_dummy_posts_from	../app\posts\routes.py	/^def delete_dummy_posts_from(user_1d):$/;"	kind:function	line:64
+delete_item	../_ref\_py\_dispR.py	/^def delete_item(item_id):$/;"	kind:function	line:34
 delete_item	../app\_ref_\_py\_dispR.py	/^def delete_item(item_id):$/;"	kind:function	line:34
+delete_post	../_ref\_py\_dispR.py	/^def delete_post(post_id):$/;"	kind:function	line:329
 delete_post	../app\_ref_\_py\_dispR.py	/^def delete_post(post_id):$/;"	kind:function	line:329
 delete_post	../app\posts\routes.py	/^def delete_post(post_id):$/;"	kind:function	line:52
+delete_proday	../_ref\_py\_ndoRp.py	/^def delete_proday(proday_id):$/;"	kind:function	line:117
 delete_proday	../app\_ref_\_py\_ndoRp.py	/^def delete_proday(proday_id):$/;"	kind:function	line:117
+delete_task	../_ref\_py\_ndoRt.py	/^def delete_task(task_id):$/;"	kind:function	line:154
 delete_task	../app\_ref_\_py\_ndoRt.py	/^def delete_task(task_id):$/;"	kind:function	line:154
 delete_user_by_ID	../app\users\routes.py	/^def delete_user_by_ID(user_1d):$/;"	kind:function	line:106
+describe_attrs	../_ref\_py\_dispM.py	/^    def describe_attrs(self):$/;"	kind:member	line:219
 describe_attrs	../app\_ref_\_py\_dispM.py	/^    def describe_attrs(self):$/;"	kind:member	line:219
 destStyler	../app\items\routes.py	/^    def destStyler(item_dest_index):$/;"	kind:function	line:131
+dest_id	../_ref\_py\_berM.py	/^    dest_id = db.Column(db.String(16), nullable=False, default='0')$/;"	kind:variable	line:15
 dest_id	../app\_ref_\_py\_berM.py	/^    dest_id = db.Column(db.String(16), nullable=False, default='0')$/;"	kind:variable	line:15
 dest_id	../app\items\DemoCarsLists.py	/^dest_id = [$/;"	kind:variable	line:1502
 dest_id	../app\items\forms.py	/^    dest_id = SelectField($/;"	kind:variable	line:18
 dest_id	../app\models.py	/^    dest_id = db.Column(db.String(16), nullable=False, default='0')$/;"	kind:variable	line:15
 destination	../app\items\forms.py	/^    destination = SelectField($/;"	kind:variable	line:64
+dispitem_id	../_ref\_py\_dispM.py	/^    dispitem_id = db.Column(db.Integer, db.ForeignKey('item.id'))$/;"	kind:variable	line:286
 dispitem_id	../app\_ref_\_py\_dispM.py	/^    dispitem_id = db.Column(db.Integer, db.ForeignKey('item.id'))$/;"	kind:variable	line:286
 displayMyCarsOnly	../app\items\routes.py	/^def displayMyCarsOnly(my_location_id):$/;"	kind:function	line:53
+display_mainitem	../_ref\_py\_dispR.py	/^def display_mainitem(square_id):$/;"	kind:function	line:1140
 display_mainitem	../app\_ref_\_py\_dispR.py	/^def display_mainitem(square_id):$/;"	kind:function	line:1140
+display_properties	../_ref\_py\_dispM.py	/^    def display_properties(self):$/;"	kind:member	line:61
 display_properties	../app\_ref_\_py\_dispM.py	/^    def display_properties(self):$/;"	kind:member	line:61
+display_tablerow	../_ref\_py\_dispM.py	/^    def display_tablerow(self):$/;"	kind:member	line:88
 display_tablerow	../app\_ref_\_py\_dispM.py	/^    def display_tablerow(self):$/;"	kind:member	line:88
+edit_item	../_ref\_py\_dispR.py	/^def edit_item(item_id):$/;"	kind:function	line:44
 edit_item	../app\_ref_\_py\_dispR.py	/^def edit_item(item_id):$/;"	kind:function	line:44
+email	../_ref\_py\_berM.py	/^    email = db.Column(db.String(120), unique=True, nullable=False)$/;"	kind:variable	line:33
+email	../_ref\_py\_dispM.py	/^    email = db.Column(db.String(120), unique=True, nullable=False)$/;"	kind:variable	line:15
 email	../app\_ref_\_py\_berM.py	/^    email = db.Column(db.String(120), unique=True, nullable=False)$/;"	kind:variable	line:33
 email	../app\_ref_\_py\_dispM.py	/^    email = db.Column(db.String(120), unique=True, nullable=False)$/;"	kind:variable	line:15
 email	../app\models.py	/^    email = db.Column(db.String(120), unique=True, nullable=False)$/;"	kind:variable	line:33
@@ -251,39 +384,93 @@ error_404	../app\errors\handlers.py	/^def error_404(error):$/;"	kind:function	li
 error_500	../app\errors\handlers.py	/^def error_500(error):$/;"	kind:function	line:17
 errors	../app\__init__.py	/^    from app.errors.handlers import errors$/;"	kind:namespace	line:28
 errors	../app\errors\handlers.py	/^errors = Blueprint('errors', __name__)$/;"	kind:variable	line:3
+fetch_d3_grid	../_ref\_py\_dispR.py	/^def fetch_d3_grid(square_id):$/;"	kind:function	line:1387
 fetch_d3_grid	../app\_ref_\_py\_dispR.py	/^def fetch_d3_grid(square_id):$/;"	kind:function	line:1387
+fetch_ddslick	../_ref\_py\_dispR.py	/^def fetch_ddslick(manufacturer):$/;"	kind:function	line:1291
 fetch_ddslick	../app\_ref_\_py\_dispR.py	/^def fetch_ddslick(manufacturer):$/;"	kind:function	line:1291
+fetch_ddslick_square	../_ref\_py\_dispR.py	/^def fetch_ddslick_square(square_id):$/;"	kind:function	line:1331
 fetch_ddslick_square	../app\_ref_\_py\_dispR.py	/^def fetch_ddslick_square(square_id):$/;"	kind:function	line:1331
+fetch_itemattrs_bysqr	../_ref\_py\_dispR.py	/^def fetch_itemattrs_bysqr(square_id):$/;"	kind:function	line:807
 fetch_itemattrs_bysqr	../app\_ref_\_py\_dispR.py	/^def fetch_itemattrs_bysqr(square_id):$/;"	kind:function	line:807
+fetch_items4bubble_bysqr	../_ref\_py\_dispR.py	/^def fetch_items4bubble_bysqr(square_id):$/;"	kind:function	line:942
 fetch_items4bubble_bysqr	../app\_ref_\_py\_dispR.py	/^def fetch_items4bubble_bysqr(square_id):$/;"	kind:function	line:942
+fetch_mainavlb_count	../_ref\_py\_dispR.py	/^def fetch_mainavlb_count(square_id):$/;"	kind:function	line:919
 fetch_mainavlb_count	../app\_ref_\_py\_dispR.py	/^def fetch_mainavlb_count(square_id):$/;"	kind:function	line:919
+fetch_mainavlb_perc	../_ref\_py\_dispR.py	/^def fetch_mainavlb_perc(square_id):$/;"	kind:function	line:897
 fetch_mainavlb_perc	../app\_ref_\_py\_dispR.py	/^def fetch_mainavlb_perc(square_id):$/;"	kind:function	line:897
+fetch_manuf_bysqr	../_ref\_py\_dispR.py	/^def fetch_manuf_bysqr(square_id):$/;"	kind:function	line:856
 fetch_manuf_bysqr	../app\_ref_\_py\_dispR.py	/^def fetch_manuf_bysqr(square_id):$/;"	kind:function	line:856
+fetch_manuf_info	../_ref\_py\_dispR.py	/^def fetch_manuf_info(square_id):$/;"	kind:function	line:1194
 fetch_manuf_info	../app\_ref_\_py\_dispR.py	/^def fetch_manuf_info(square_id):$/;"	kind:function	line:1194
+fetch_mostcommon_attr	../_ref\_py\_dispR.py	/^def fetch_mostcommon_attr(square_id):$/;"	kind:function	line:1237
 fetch_mostcommon_attr	../app\_ref_\_py\_dispR.py	/^def fetch_mostcommon_attr(square_id):$/;"	kind:function	line:1237
+fetch_square_all	../_ref\_py\_dispR.py	/^def fetch_square_all():$/;"	kind:function	line:1456
 fetch_square_all	../app\_ref_\_py\_dispR.py	/^def fetch_square_all():$/;"	kind:function	line:1456
+fetch_square_info	../_ref\_py\_dispR.py	/^def fetch_square_info(square_id):$/;"	kind:function	line:980
 fetch_square_info	../app\_ref_\_py\_dispR.py	/^def fetch_square_info(square_id):$/;"	kind:function	line:980
+fetchitems_by	../_ref\_py\_dispR.py	/^def fetchitems_by(manufacturer):$/;"	kind:function	line:781
 fetchitems_by	../app\_ref_\_py\_dispR.py	/^def fetchitems_by(manufacturer):$/;"	kind:function	line:781
+filterby_manuf	../_ref\_py\_dispR.py	/^def filterby_manuf(item_manufacturer):$/;"	kind:function	line:493
 filterby_manuf	../app\_ref_\_py\_dispR.py	/^def filterby_manuf(item_manufacturer):$/;"	kind:function	line:493
+findnext_byid	../_ref\_py\_dispR.py	/^def findnext_byid(item_id=10):$/;"	kind:function	line:537
 findnext_byid	../app\_ref_\_py\_dispR.py	/^def findnext_byid(item_id=10):$/;"	kind:function	line:537
+first_act_done	../_ref\_py\_ndoRp.py	/^def first_act_done(proday_id):$/;"	kind:function	line:126
 first_act_done	../app\_ref_\_py\_ndoRp.py	/^def first_act_done(proday_id):$/;"	kind:function	line:126
+flash	../_ref\_py\_ndoRp.py	/^from flask import (render_template, url_for, flash,$/;"	kind:namespace	line:1
+flash	../_ref\_py\routes - Copy.py	/^from flask import render_template, url_for, flash, request, Blueprint$/;"	kind:namespace	line:1
 flash	../app\_ref_\_py\_ndoRp.py	/^from flask import (render_template, url_for, flash,$/;"	kind:namespace	line:1
 flash	../app\posts\routes.py	/^from flask import (render_template, url_for, flash,$/;"	kind:namespace	line:1
 flash	../app\users\routes.py	/^from flask import render_template, url_for, flash, redirect, request, Blueprint$/;"	kind:namespace	line:1
+forms - Copy.py	../_ref\_py\forms - Copy.py	1;"	kind:file	line:1
 forms.py	../app\items\forms.py	1;"	kind:file	line:1
 forms.py	../app\posts\forms.py	1;"	kind:file	line:1
 forms.py	../app\users\forms.py	1;"	kind:file	line:1
+fourth_act_done	../_ref\_py\_ndoRp.py	/^def fourth_act_done(proday_id):$/;"	kind:function	line:226
 fourth_act_done	../app\_ref_\_py\_ndoRp.py	/^def fourth_act_done(proday_id):$/;"	kind:function	line:226
+gen_attr_dict	../_ref\_py\_dispM.py	/^    def gen_attr_dict(self):$/;"	kind:member	line:121
 gen_attr_dict	../app\_ref_\_py\_dispM.py	/^    def gen_attr_dict(self):$/;"	kind:member	line:121
+h0me	../_ref\_py\_ndoRt.py	/^def h0me():$/;"	kind:function	line:13
 h0me	../app\_ref_\_py\_ndoRt.py	/^def h0me():$/;"	kind:function	line:13
 h0me	../app\items\routes.py	/^def h0me():$/;"	kind:function	line:65
 handlers.py	../app\errors\handlers.py	1;"	kind:file	line:1
+has_curvedbill	../_ref\_py\_dispM.py	/^    has_curvedbill = db.Column(db.String(32))$/;"	kind:variable	line:54
 has_curvedbill	../app\_ref_\_py\_dispM.py	/^    has_curvedbill = db.Column(db.String(32))$/;"	kind:variable	line:54
+has_flatbill	../_ref\_py\_dispM.py	/^    has_flatbill = db.Column(db.String(32))$/;"	kind:variable	line:55
 has_flatbill	../app\_ref_\_py\_dispM.py	/^    has_flatbill = db.Column(db.String(32))$/;"	kind:variable	line:55
+has_meshback	../_ref\_py\_dispM.py	/^    has_meshback = db.Column(db.String(32))$/;"	kind:variable	line:53
 has_meshback	../app\_ref_\_py\_dispM.py	/^    has_meshback = db.Column(db.String(32))$/;"	kind:variable	line:53
+hello	../_ref\int-hw\hw01\Data-Journalism-and-D3-master\app.py	/^def hello():$/;"	kind:function	line:8
+hello	../_ref\int-hw\hw02\Data-Journalism-and-D3-master\app.py	/^def hello():$/;"	kind:function	line:7
+hh_beg_01	../_ref\_py\forms - Copy.py	/^    hh_beg_01 = IntegerField(default='09')$/;"	kind:variable	line:10
+hh_beg_02	../_ref\_py\forms - Copy.py	/^    hh_beg_02 = IntegerField(default='09')$/;"	kind:variable	line:17
+hh_beg_03	../_ref\_py\forms - Copy.py	/^    hh_beg_03 = IntegerField(default='09')$/;"	kind:variable	line:24
+hh_beg_03	../_ref\_py\forms - Copy.py	/^    hh_beg_03 = IntegerField(default='09')$/;"	kind:variable	line:31
+hh_beg_04	../_ref\_py\forms - Copy.py	/^    hh_beg_04 = IntegerField(default='09')$/;"	kind:variable	line:38
+hh_beg_05	../_ref\_py\forms - Copy.py	/^    hh_beg_05 = IntegerField(default='09')$/;"	kind:variable	line:45
+hh_beg_06	../_ref\_py\forms - Copy.py	/^    hh_beg_06 = IntegerField(default='09')$/;"	kind:variable	line:52
+hh_beg_07	../_ref\_py\forms - Copy.py	/^    hh_beg_07 = IntegerField(default='09')$/;"	kind:variable	line:59
+hh_fin_01	../_ref\_py\forms - Copy.py	/^    hh_fin_01 = IntegerField(default='09')$/;"	kind:variable	line:13
+hh_fin_02	../_ref\_py\forms - Copy.py	/^    hh_fin_02 = IntegerField(default='09')$/;"	kind:variable	line:20
+hh_fin_03	../_ref\_py\forms - Copy.py	/^    hh_fin_03 = IntegerField(default='09')$/;"	kind:variable	line:27
+hh_fin_03	../_ref\_py\forms - Copy.py	/^    hh_fin_03 = IntegerField(default='09')$/;"	kind:variable	line:34
+hh_fin_04	../_ref\_py\forms - Copy.py	/^    hh_fin_04 = IntegerField(default='09')$/;"	kind:variable	line:41
+hh_fin_05	../_ref\_py\forms - Copy.py	/^    hh_fin_05 = IntegerField(default='09')$/;"	kind:variable	line:48
+hh_fin_06	../_ref\_py\forms - Copy.py	/^    hh_fin_06 = IntegerField(default='09')$/;"	kind:variable	line:55
+hh_fin_07	../_ref\_py\forms - Copy.py	/^    hh_fin_07 = IntegerField(default='09')$/;"	kind:variable	line:62
+hom3	../_ref\_py\_ndoRp.py	/^def hom3():$/;"	kind:function	line:32
 hom3	../app\_ref_\_py\_ndoRp.py	/^def hom3():$/;"	kind:function	line:32
+home	../_ref\_py\_dispR.py	/^def home():$/;"	kind:function	line:179
 home	../app\_ref_\_py\_dispR.py	/^def home():$/;"	kind:function	line:179
 home	../app\main\routes.py	/^def home():$/;"	kind:function	line:32
+hourly_wage	../_ref\12_JS\02_Evr_PythonToJavaScript\Py_HelloVariableWorld.py	/^hourly_wage = 15$/;"	kind:variable	line:12
+id	../_ref\_py\_berM.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:10
+id	../_ref\_py\_berM.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:29
+id	../_ref\_py\_berM.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:42
+id	../_ref\_py\_dispM.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:13
+id	../_ref\_py\_dispM.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:26
+id	../_ref\_py\_dispM.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:264
+id	../_ref\_py\_dispM.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:39
+id	../_ref\_py\_dispM.py	/^    id = db.Column(db.Integer, unique=True, primary_key=True)$/;"	kind:variable	line:280
 id	../app\_ref_\_py\_berM.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:10
 id	../app\_ref_\_py\_berM.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:29
 id	../app\_ref_\_py\_berM.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:42
@@ -296,123 +483,222 @@ id	../app\models.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:
 id	../app\models.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:29
 id	../app\models.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:42
 imageFinder	../app\items\routes.py	/^    def imageFinder(item_bodyType_index):$/;"	kind:function	line:152
+image_file	../_ref\_py\_berM.py	/^    image_file = db.Column(db.String(20), nullable=False, default='default.png')$/;"	kind:variable	line:34
+image_file	../_ref\_py\_dispM.py	/^    image_file = db.Column(db.String(20), nullable=False,$/;"	kind:variable	line:16
 image_file	../app\_ref_\_py\_berM.py	/^    image_file = db.Column(db.String(20), nullable=False, default='default.png')$/;"	kind:variable	line:34
 image_file	../app\_ref_\_py\_dispM.py	/^    image_file = db.Column(db.String(20), nullable=False,$/;"	kind:variable	line:16
 image_file	../app\models.py	/^    image_file = db.Column(db.String(20), nullable=False, default='default.png')$/;"	kind:variable	line:34
+imagegrid_url	../_ref\_py\_dispM.py	/^    imagegrid_url = db.Column(db.String(256))$/;"	kind:variable	line:56
 imagegrid_url	../app\_ref_\_py\_dispM.py	/^    imagegrid_url = db.Column(db.String(256))$/;"	kind:variable	line:56
+imagelist_url	../_ref\_py\_dispM.py	/^    imagelist_url = db.Column(db.String(256))$/;"	kind:variable	line:57
 imagelist_url	../app\_ref_\_py\_dispM.py	/^    imagelist_url = db.Column(db.String(256))$/;"	kind:variable	line:57
 inject_ItemDemoList	../app\items\routes.py	/^def inject_ItemDemoList():$/;"	kind:function	line:99
+inject_LowInvBts4Grid	../_ref\_py\_dispR.py	/^def inject_LowInvBts4Grid():$/;"	kind:function	line:433
 inject_LowInvBts4Grid	../app\_ref_\_py\_dispR.py	/^def inject_LowInvBts4Grid():$/;"	kind:function	line:433
+inject_LowInvButtons	../_ref\_py\_dispR.py	/^def inject_LowInvButtons():$/;"	kind:function	line:358
 inject_LowInvButtons	../app\_ref_\_py\_dispR.py	/^def inject_LowInvButtons():$/;"	kind:function	line:358
+inject_LowInvIcons	../_ref\_py\_dispR.py	/^def inject_LowInvIcons():$/;"	kind:function	line:463
 inject_LowInvIcons	../app\_ref_\_py\_dispR.py	/^def inject_LowInvIcons():$/;"	kind:function	line:463
+inject_OutInvBtns4Grid	../_ref\_py\_dispR.py	/^def inject_OutInvBtns4Grid():$/;"	kind:function	line:418
 inject_OutInvBtns4Grid	../app\_ref_\_py\_dispR.py	/^def inject_OutInvBtns4Grid():$/;"	kind:function	line:418
+inject_OutInvButtons	../_ref\_py\_dispR.py	/^def inject_OutInvButtons():$/;"	kind:function	line:403
 inject_OutInvButtons	../app\_ref_\_py\_dispR.py	/^def inject_OutInvButtons():$/;"	kind:function	line:403
+inject_OutInvIcons	../_ref\_py\_dispR.py	/^def inject_OutInvIcons():$/;"	kind:function	line:478
 inject_OutInvIcons	../app\_ref_\_py\_dispR.py	/^def inject_OutInvIcons():$/;"	kind:function	line:478
 inject_PostDemoList	../app\main\routes.py	/^def inject_PostDemoList():$/;"	kind:function	line:8
 inject_PostDemoList	../app\posts\routes.py	/^def inject_PostDemoList():$/;"	kind:function	line:74
+inject_TableHeaders	../_ref\_py\_dispR.py	/^def inject_TableHeaders():$/;"	kind:function	line:340
 inject_TableHeaders	../app\_ref_\_py\_dispR.py	/^def inject_TableHeaders():$/;"	kind:function	line:340
+inject_UnitInvOutIconizer	../_ref\_py\_dispR.py	/^def inject_UnitInvOutIconizer():$/;"	kind:function	line:388
 inject_UnitInvOutIconizer	../app\_ref_\_py\_dispR.py	/^def inject_UnitInvOutIconizer():$/;"	kind:function	line:388
+inject_UnitInvOutStyler	../_ref\_py\_dispR.py	/^def inject_UnitInvOutStyler():$/;"	kind:function	line:373
 inject_UnitInvOutStyler	../app\_ref_\_py\_dispR.py	/^def inject_UnitInvOutStyler():$/;"	kind:function	line:373
+inject_YesNoIcons	../_ref\_py\_dispR.py	/^def inject_YesNoIcons():$/;"	kind:function	line:448
 inject_YesNoIcons	../app\_ref_\_py\_dispR.py	/^def inject_YesNoIcons():$/;"	kind:function	line:448
 inject_bodyTypeImgDict	../app\items\routes.py	/^def inject_bodyTypeImgDict():$/;"	kind:function	line:149
 inject_bodyTypeTextDict	../app\items\routes.py	/^def inject_bodyTypeTextDict():$/;"	kind:function	line:167
 inject_destCityDict	../app\items\routes.py	/^def inject_destCityDict():$/;"	kind:function	line:201
 inject_destStyleDict	../app\items\routes.py	/^def inject_destStyleDict():$/;"	kind:function	line:129
+inject_imppts_dict	../_ref\_py\_ndoRt.py	/^def inject_imppts_dict():$/;"	kind:function	line:208
 inject_imppts_dict	../app\_ref_\_py\_ndoRt.py	/^def inject_imppts_dict():$/;"	kind:function	line:208
 inject_shipStatMsgDict	../app\items\routes.py	/^def inject_shipStatMsgDict():$/;"	kind:function	line:184
+inject_style_dict	../_ref\_py\_ndoRt.py	/^def inject_style_dict():$/;"	kind:function	line:189
 inject_style_dict	../app\_ref_\_py\_ndoRt.py	/^def inject_style_dict():$/;"	kind:function	line:189
+inject_urgpts_dict	../_ref\_py\_ndoRt.py	/^def inject_urgpts_dict():$/;"	kind:function	line:197
 inject_urgpts_dict	../app\_ref_\_py\_ndoRt.py	/^def inject_urgpts_dict():$/;"	kind:function	line:197
+inv_home	../_ref\_py\_dispR.py	/^def inv_home():$/;"	kind:function	line:165
 inv_home	../app\_ref_\_py\_dispR.py	/^def inv_home():$/;"	kind:function	line:165
+inv_lister	../_ref\_py\_dispR.py	/^def inv_lister():$/;"	kind:function	line:71
 inv_lister	../app\_ref_\_py\_dispR.py	/^def inv_lister():$/;"	kind:function	line:71
+inv_lowinstock	../_ref\_py\_dispM.py	/^    inv_lowinstock = db.Column(db.String(32))$/;"	kind:variable	line:45
 inv_lowinstock	../app\_ref_\_py\_dispM.py	/^    inv_lowinstock = db.Column(db.String(32))$/;"	kind:variable	line:45
+inv_outofstock	../_ref\_py\_dispM.py	/^    inv_outofstock = db.Column(db.String(32))$/;"	kind:variable	line:46
 inv_outofstock	../app\_ref_\_py\_dispM.py	/^    inv_outofstock = db.Column(db.String(32))$/;"	kind:variable	line:46
+is_adjustable	../_ref\_py\_dispM.py	/^    is_adjustable = db.Column(db.String(32))$/;"	kind:variable	line:47
 is_adjustable	../app\_ref_\_py\_dispM.py	/^    is_adjustable = db.Column(db.String(32))$/;"	kind:variable	line:47
+is_fitted	../_ref\_py\_dispM.py	/^    is_fitted = db.Column(db.String(32))$/;"	kind:variable	line:50
 is_fitted	../app\_ref_\_py\_dispM.py	/^    is_fitted = db.Column(db.String(32))$/;"	kind:variable	line:50
+is_flexfit	../_ref\_py\_dispM.py	/^    is_flexfit = db.Column(db.String(32))$/;"	kind:variable	line:49
 is_flexfit	../app\_ref_\_py\_dispM.py	/^    is_flexfit = db.Column(db.String(32))$/;"	kind:variable	line:49
+is_shipper	../_ref\_py\_berM.py	/^    is_shipper = db.Column(db.Text)$/;"	kind:variable	line:30
 is_shipper	../app\_ref_\_py\_berM.py	/^    is_shipper = db.Column(db.Text)$/;"	kind:variable	line:30
 is_shipper	../app\models.py	/^    is_shipper = db.Column(db.Text)$/;"	kind:variable	line:30
 is_shipper	../app\users\forms.py	/^    is_shipper = SelectField(choices=[('0', 'n'), ('1', 'y')], default='0')$/;"	kind:variable	line:18
+is_snapback	../_ref\_py\_dispM.py	/^    is_snapback = db.Column(db.String(32))$/;"	kind:variable	line:48
 is_snapback	../app\_ref_\_py\_dispM.py	/^    is_snapback = db.Column(db.String(32))$/;"	kind:variable	line:48
+is_unstructured	../_ref\_py\_dispM.py	/^    is_unstructured = db.Column(db.String(32))$/;"	kind:variable	line:52
 is_unstructured	../app\_ref_\_py\_dispM.py	/^    is_unstructured = db.Column(db.String(32))$/;"	kind:variable	line:52
+is_youth	../_ref\_py\_dispM.py	/^    is_youth = db.Column(db.String(32))$/;"	kind:variable	line:51
 is_youth	../app\_ref_\_py\_dispM.py	/^    is_youth = db.Column(db.String(32))$/;"	kind:variable	line:51
 items	../app\__init__.py	/^    from app.items.routes import items$/;"	kind:namespace	line:26
 items	../app\items\routes.py	/^items = Blueprint('items', __name__)$/;"	kind:variable	line:15
+json	../_ref\_py\_dispR.py	/^import json$/;"	kind:namespace	line:9
 json	../app\_ref_\_py\_dispR.py	/^import json$/;"	kind:namespace	line:9
+jsonify	../_ref\int-hw\hw01\Data-Journalism-and-D3-master\app.py	/^from flask import Flask, render_template, jsonify$/;"	kind:namespace	line:1
+jsonify	../_ref\int-hw\hw02\Data-Journalism-and-D3-master\app.py	/^from flask import Flask,render_template,jsonify$/;"	kind:namespace	line:1
+just_ran_out	../_ref\_py\_dispM.py	/^    def just_ran_out(self):$/;"	kind:member	line:112
 just_ran_out	../app\_ref_\_py\_dispM.py	/^    def just_ran_out(self):$/;"	kind:member	line:112
+load_user	../_ref\_py\_berM.py	/^def load_user(user_id):$/;"	kind:function	line:24
+load_user	../_ref\_py\_dispM.py	/^def load_user(user_id):$/;"	kind:function	line:8
 load_user	../app\_ref_\_py\_berM.py	/^def load_user(user_id):$/;"	kind:function	line:24
 load_user	../app\_ref_\_py\_dispM.py	/^def load_user(user_id):$/;"	kind:function	line:8
 load_user	../app\models.py	/^def load_user(user_id):$/;"	kind:function	line:24
+location_id	../_ref\_py\_berM.py	/^    location_id = db.Column(db.String(1), nullable=False)$/;"	kind:variable	line:31
 location_id	../app\_ref_\_py\_berM.py	/^    location_id = db.Column(db.String(1), nullable=False)$/;"	kind:variable	line:31
 location_id	../app\models.py	/^    location_id = db.Column(db.String(1), nullable=False)$/;"	kind:variable	line:31
 location_id	../app\users\forms.py	/^    location_id = SelectField($/;"	kind:variable	line:20
+login	../_ref\_py\_dispR.py	/^def login():$/;"	kind:function	line:228
 login	../app\_ref_\_py\_dispR.py	/^def login():$/;"	kind:function	line:228
 login	../app\users\routes.py	/^def login():$/;"	kind:function	line:51
+login_manager	../_ref\_py\_berM.py	/^from berenice import db, login_manager$/;"	kind:namespace	line:5
+login_manager	../_ref\_py\_dispM.py	/^from squares import db, login_manager$/;"	kind:namespace	line:2
 login_manager	../app\__init__.py	/^login_manager = LoginManager()$/;"	kind:variable	line:10
 login_manager	../app\_ref_\_py\_berM.py	/^from berenice import db, login_manager$/;"	kind:namespace	line:5
 login_manager	../app\_ref_\_py\_dispM.py	/^from squares import db, login_manager$/;"	kind:namespace	line:2
 login_manager	../app\models.py	/^from app import db, login_manager$/;"	kind:namespace	line:5
+login_required	../_ref\_py\_ndoRp.py	/^from flask_login import current_user, login_required$/;"	kind:namespace	line:3
+login_required	../_ref\_py\_ndoRt.py	/^from flask_login import current_user, login_required$/;"	kind:namespace	line:4
 login_required	../app\_ref_\_py\_ndoRp.py	/^from flask_login import current_user, login_required$/;"	kind:namespace	line:3
 login_required	../app\_ref_\_py\_ndoRt.py	/^from flask_login import current_user, login_required$/;"	kind:namespace	line:4
 login_required	../app\posts\routes.py	/^from flask_login import current_user, login_required$/;"	kind:namespace	line:3
 login_required	../app\users\routes.py	/^from flask_login import login_user, current_user, logout_user, login_required$/;"	kind:namespace	line:2
 login_user	../app\users\routes.py	/^from flask_login import login_user, current_user, logout_user, login_required$/;"	kind:namespace	line:2
+logout	../_ref\_py\_dispR.py	/^def logout():$/;"	kind:function	line:244
 logout	../app\_ref_\_py\_dispR.py	/^def logout():$/;"	kind:function	line:244
 logout	../app\users\routes.py	/^def logout():$/;"	kind:function	line:70
 logout_user	../app\users\routes.py	/^from flask_login import login_user, current_user, logout_user, login_required$/;"	kind:namespace	line:2
 main	../app\__init__.py	/^    from app.main.routes import main$/;"	kind:namespace	line:25
 main	../app\main\routes.py	/^main = Blueprint('main', __name__)$/;"	kind:variable	line:5
+maininv_out	../_ref\_py\_dispM.py	/^    maininv_out = db.Column(db.String(32))$/;"	kind:variable	line:285
 maininv_out	../app\_ref_\_py\_dispM.py	/^    maininv_out = db.Column(db.String(32))$/;"	kind:variable	line:285
+mainitem_id	../_ref\_py\_dispM.py	/^    mainitem_id = db.Column(db.Integer)$/;"	kind:variable	line:284
 mainitem_id	../app\_ref_\_py\_dispM.py	/^    mainitem_id = db.Column(db.Integer)$/;"	kind:variable	line:284
+mainitem_out	../_ref\_py\_dispM.py	/^    def mainitem_out(self):$/;"	kind:member	line:289
 mainitem_out	../app\_ref_\_py\_dispM.py	/^    def mainitem_out(self):$/;"	kind:member	line:289
+mainitem_restck	../_ref\_py\_dispM.py	/^    def mainitem_restck(self):$/;"	kind:member	line:293
 mainitem_restck	../app\_ref_\_py\_dispM.py	/^    def mainitem_restck(self):$/;"	kind:member	line:293
+make	../_ref\_py\_berM.py	/^    make = db.Column(db.String(16), nullable=False, default='Ford')$/;"	kind:variable	line:11
 make	../app\_ref_\_py\_berM.py	/^    make = db.Column(db.String(16), nullable=False, default='Ford')$/;"	kind:variable	line:11
 make	../app\items\DemoCarsLists.py	/^make = [$/;"	kind:variable	line:2
 make	../app\items\forms.py	/^    make = StringField('make')$/;"	kind:variable	line:54
 make	../app\items\forms.py	/^    make = StringField('make', validators=[DataRequired()], default='Ford')$/;"	kind:variable	line:8
 make	../app\models.py	/^    make = db.Column(db.String(16), nullable=False, default='Ford')$/;"	kind:variable	line:11
+manufacturer	../_ref\_py\_dispM.py	/^    manufacturer = db.Column(db.String(32))$/;"	kind:variable	line:40
 manufacturer	../app\_ref_\_py\_dispM.py	/^    manufacturer = db.Column(db.String(32))$/;"	kind:variable	line:40
+mark_as_lowinv	../_ref\_py\_dispR.py	/^def mark_as_lowinv(item_id):$/;"	kind:function	line:113
 mark_as_lowinv	../app\_ref_\_py\_dispR.py	/^def mark_as_lowinv(item_id):$/;"	kind:function	line:113
+mark_as_outofstock	../_ref\_py\_dispR.py	/^def mark_as_outofstock(item_id):$/;"	kind:function	line:85
 mark_as_outofstock	../app\_ref_\_py\_dispR.py	/^def mark_as_outofstock(item_id):$/;"	kind:function	line:85
+mm_beg_01	../_ref\_py\forms - Copy.py	/^    mm_beg_01 = IntegerField(default='00')$/;"	kind:variable	line:11
+mm_beg_02	../_ref\_py\forms - Copy.py	/^    mm_beg_02 = IntegerField(default='00')$/;"	kind:variable	line:18
+mm_beg_03	../_ref\_py\forms - Copy.py	/^    mm_beg_03 = IntegerField(default='00')$/;"	kind:variable	line:25
+mm_beg_03	../_ref\_py\forms - Copy.py	/^    mm_beg_03 = IntegerField(default='00')$/;"	kind:variable	line:32
+mm_beg_04	../_ref\_py\forms - Copy.py	/^    mm_beg_04 = IntegerField(default='00')$/;"	kind:variable	line:39
+mm_beg_05	../_ref\_py\forms - Copy.py	/^    mm_beg_05 = IntegerField(default='00')$/;"	kind:variable	line:46
+mm_beg_06	../_ref\_py\forms - Copy.py	/^    mm_beg_06 = IntegerField(default='00')$/;"	kind:variable	line:53
+mm_beg_07	../_ref\_py\forms - Copy.py	/^    mm_beg_07 = IntegerField(default='00')$/;"	kind:variable	line:60
+mm_fin_01	../_ref\_py\forms - Copy.py	/^    mm_fin_01 = IntegerField(default='00')$/;"	kind:variable	line:14
+mm_fin_02	../_ref\_py\forms - Copy.py	/^    mm_fin_02 = IntegerField(default='00')$/;"	kind:variable	line:21
+mm_fin_03	../_ref\_py\forms - Copy.py	/^    mm_fin_03 = IntegerField(default='00')$/;"	kind:variable	line:28
+mm_fin_03	../_ref\_py\forms - Copy.py	/^    mm_fin_03 = IntegerField(default='00')$/;"	kind:variable	line:35
+mm_fin_04	../_ref\_py\forms - Copy.py	/^    mm_fin_04 = IntegerField(default='00')$/;"	kind:variable	line:42
+mm_fin_05	../_ref\_py\forms - Copy.py	/^    mm_fin_05 = IntegerField(default='00')$/;"	kind:variable	line:49
+mm_fin_06	../_ref\_py\forms - Copy.py	/^    mm_fin_06 = IntegerField(default='00')$/;"	kind:variable	line:56
+mm_fin_07	../_ref\_py\forms - Copy.py	/^    mm_fin_07 = IntegerField(default='00')$/;"	kind:variable	line:63
+model	../_ref\_py\_berM.py	/^    model = db.Column(db.String(16), nullable=False, default='Mustang')$/;"	kind:variable	line:12
 model	../app\_ref_\_py\_berM.py	/^    model = db.Column(db.String(16), nullable=False, default='Mustang')$/;"	kind:variable	line:12
 model	../app\items\DemoCarsLists.py	/^model = [$/;"	kind:variable	line:377
 model	../app\items\forms.py	/^    model = StringField('model')$/;"	kind:variable	line:55
 model	../app\items\forms.py	/^    model = StringField('model', validators=[DataRequired()], default='Mustang')$/;"	kind:variable	line:9
 model	../app\models.py	/^    model = db.Column(db.String(16), nullable=False, default='Mustang')$/;"	kind:variable	line:12
 models.py	../app\models.py	1;"	kind:file	line:1
+name	../_ref\12_JS\02_Evr_PythonToJavaScript\Py_HelloVariableWorld.py	/^name = "Jacob Deming"$/;"	kind:variable	line:3
+name	../_ref\_py\_dispM.py	/^    name = db.Column(db.String(32))$/;"	kind:variable	line:265
 name	../app\_ref_\_py\_dispM.py	/^    name = db.Column(db.String(32))$/;"	kind:variable	line:265
 new_item	../app\items\routes.py	/^def new_item():$/;"	kind:function	line:79
+new_post	../_ref\_py\_dispR.py	/^def new_post():$/;"	kind:function	line:288
 new_post	../app\_ref_\_py\_dispR.py	/^def new_post():$/;"	kind:function	line:288
 new_post	../app\posts\routes.py	/^def new_post():$/;"	kind:function	line:12
+new_proday	../_ref\_py\_ndoRp.py	/^def new_proday():$/;"	kind:function	line:48
 new_proday	../app\_ref_\_py\_ndoRp.py	/^def new_proday():$/;"	kind:function	line:48
+new_task	../_ref\_py\_ndoRt.py	/^def new_task():$/;"	kind:function	line:29
 new_task	../app\_ref_\_py\_ndoRt.py	/^def new_task():$/;"	kind:function	line:29
+now_restock3d	../_ref\_py\_dispM.py	/^    def now_restock3d(self):$/;"	kind:member	line:117
 now_restock3d	../app\_ref_\_py\_dispM.py	/^    def now_restock3d(self):$/;"	kind:member	line:117
+now_restocked	../_ref\_py\_dispM.py	/^    def now_restocked(self):$/;"	kind:member	line:108
 now_restocked	../app\_ref_\_py\_dispM.py	/^    def now_restocked(self):$/;"	kind:member	line:108
+os	../_ref\_py\_dispR.py	/^import os$/;"	kind:namespace	line:5
+os	../_ref\_py\_ndoRt.py	/^import os $/;"	kind:namespace	line:8
 os	../app\_ref_\_py\_dispR.py	/^import os$/;"	kind:namespace	line:5
 os	../app\_ref_\_py\_ndoRt.py	/^import os $/;"	kind:namespace	line:8
 os	../app\config.py	/^import os$/;"	kind:namespace	line:1
 os	../app\users\utils.py	/^import os$/;"	kind:namespace	line:1
+password	../_ref\_py\_berM.py	/^    password = db.Column(db.String(60), nullable=False)$/;"	kind:variable	line:35
+password	../_ref\_py\_dispM.py	/^    password = db.Column(db.String(60), nullable=False)$/;"	kind:variable	line:18
 password	../app\_ref_\_py\_berM.py	/^    password = db.Column(db.String(60), nullable=False)$/;"	kind:variable	line:35
 password	../app\_ref_\_py\_dispM.py	/^    password = db.Column(db.String(60), nullable=False)$/;"	kind:variable	line:18
 password	../app\models.py	/^    password = db.Column(db.String(60), nullable=False)$/;"	kind:variable	line:35
 password	../app\users\forms.py	/^    password = PasswordField('Password', validators=[DataRequired()])$/;"	kind:variable	line:14
 password	../app\users\forms.py	/^    password = PasswordField('Password', validators=[DataRequired()])$/;"	kind:variable	line:40
 password	../app\users\forms.py	/^    password = PasswordField('Password', validators=[DataRequired()])$/;"	kind:variable	line:78
+pd	../_ref\int-hw\hw01\Data-Journalism-and-D3-master\app.py	/^import pandas as pd$/;"	kind:namespace	line:2
+pd	../_ref\int-hw\hw02\Data-Journalism-and-D3-master\app.py	/^import pandas as pd$/;"	kind:namespace	line:2
+percEmUp	../_ref\_py\_dispR.py	/^from squares.utils import percEmUp$/;"	kind:namespace	line:2
 percEmUp	../app\_ref_\_py\_dispR.py	/^from squares.utils import percEmUp$/;"	kind:namespace	line:2
 picture	../app\users\forms.py	/^    picture = FileField('Update Profile Picture', validators=[FileAllowed(['jpg', 'png'])])$/;"	kind:variable	line:50
+post	../_ref\_py\_dispR.py	/^def post(post_id):$/;"	kind:function	line:302
 post	../app\_ref_\_py\_dispR.py	/^def post(post_id):$/;"	kind:function	line:302
 post	../app\posts\routes.py	/^def post(post_id):$/;"	kind:function	line:25
+posts	../_ref\_py\_berM.py	/^    posts = db.relationship('Post', backref='author', lazy=True)$/;"	kind:variable	line:36
+posts	../_ref\_py\_dispM.py	/^    posts = db.relationship('Post', backref='author', lazy=True)$/;"	kind:variable	line:19
 posts	../app\__init__.py	/^    from app.posts.routes import posts$/;"	kind:namespace	line:24
 posts	../app\_ref_\_py\_berM.py	/^    posts = db.relationship('Post', backref='author', lazy=True)$/;"	kind:variable	line:36
 posts	../app\_ref_\_py\_dispM.py	/^    posts = db.relationship('Post', backref='author', lazy=True)$/;"	kind:variable	line:19
 posts	../app\models.py	/^    posts = db.relationship('Post', backref='author', lazy=True)$/;"	kind:variable	line:36
 posts	../app\posts\routes.py	/^posts = Blueprint('posts', __name__)$/;"	kind:variable	line:8
+proday	../_ref\_py\_ndoRp.py	/^def proday(proday_id):$/;"	kind:function	line:71
 proday	../app\_ref_\_py\_ndoRp.py	/^def proday(proday_id):$/;"	kind:function	line:71
+proday_demo	../_ref\_py\_ndoRp.py	/^def proday_demo():$/;"	kind:function	line:10
 proday_demo	../app\_ref_\_py\_ndoRp.py	/^def proday_demo():$/;"	kind:function	line:10
+prodays	../_ref\_py\_ndoRp.py	/^prodays = Blueprint('prodays', __name__)$/;"	kind:variable	line:7
 prodays	../app\_ref_\_py\_ndoRp.py	/^prodays = Blueprint('prodays', __name__)$/;"	kind:variable	line:7
+product_url	../_ref\_py\_dispM.py	/^    product_url = db.Column(db.String(256))$/;"	kind:variable	line:58
 product_url	../app\_ref_\_py\_dispM.py	/^    product_url = db.Column(db.String(256))$/;"	kind:variable	line:58
+pstn_rowcol	../_ref\_py\_dispM.py	/^    pstn_rowcol = db.Column(db.String(32))$/;"	kind:variable	line:282
 pstn_rowcol	../app\_ref_\_py\_dispM.py	/^    pstn_rowcol = db.Column(db.String(32))$/;"	kind:variable	line:282
+random	../_ref\_py\_dispR.py	/^import random$/;"	kind:namespace	line:4
 random	../app\_ref_\_py\_dispR.py	/^import random$/;"	kind:namespace	line:4
+random_populate	../_ref\_py\_dispR.py	/^def random_populate(square_id):$/;"	kind:function	line:1049
 random_populate	../app\_ref_\_py\_dispR.py	/^def random_populate(square_id):$/;"	kind:function	line:1049
+redir3ct_url	../_ref\_py\_dispR.py	/^    def redir3ct_url(default='inv_lister'):$/;"	kind:function	line:116
+redir3ct_url	../_ref\_py\_dispR.py	/^    def redir3ct_url(default='inv_lister'):$/;"	kind:function	line:541
+redir3ct_url	../_ref\_py\_dispR.py	/^    def redir3ct_url(default='inv_lister'):$/;"	kind:function	line:718
+redir3ct_url	../_ref\_py\_dispR.py	/^    def redir3ct_url(default='inv_lister'):$/;"	kind:function	line:88
+redir3ct_url	../_ref\_py\_dispR.py	/^    def redir3ct_url(default='sqr_home'):$/;"	kind:function	line:749
+redir3ct_url	../_ref\_py\_ndoRp.py	/^    def redir3ct_url(default=url_for('prodays.hom3')):$/;"	kind:function	line:129
+redir3ct_url	../_ref\_py\_ndoRp.py	/^    def redir3ct_url(default=url_for('prodays.hom3')):$/;"	kind:function	line:164
+redir3ct_url	../_ref\_py\_ndoRp.py	/^    def redir3ct_url(default=url_for('prodays.hom3')):$/;"	kind:function	line:198
+redir3ct_url	../_ref\_py\_ndoRp.py	/^    def redir3ct_url(default=url_for('prodays.hom3')):$/;"	kind:function	line:229
 redir3ct_url	../app\_ref_\_py\_dispR.py	/^    def redir3ct_url(default='inv_lister'):$/;"	kind:function	line:116
 redir3ct_url	../app\_ref_\_py\_dispR.py	/^    def redir3ct_url(default='inv_lister'):$/;"	kind:function	line:541
 redir3ct_url	../app\_ref_\_py\_dispR.py	/^    def redir3ct_url(default='inv_lister'):$/;"	kind:function	line:718
@@ -424,31 +710,46 @@ redir3ct_url	../app\_ref_\_py\_ndoRp.py	/^    def redir3ct_url(default=url_for('
 redir3ct_url	../app\_ref_\_py\_ndoRp.py	/^    def redir3ct_url(default=url_for('prodays.hom3')):$/;"	kind:function	line:229
 redirect	../app\users\routes.py	/^from flask import render_template, url_for, flash, redirect, request, Blueprint$/;"	kind:namespace	line:1
 regist3r	../app\users\routes.py	/^def regist3r():$/;"	kind:function	line:15
+register	../_ref\_py\_dispR.py	/^def register():$/;"	kind:function	line:210
 register	../app\_ref_\_py\_dispR.py	/^def register():$/;"	kind:function	line:210
 register	../app\users\routes.py	/^def register():$/;"	kind:function	line:36
 remember	../app\users\forms.py	/^    remember = BooleanField('Remember Me')$/;"	kind:variable	line:41
+render_template	../_ref\_py\_ndoRp.py	/^from flask import (render_template, url_for, flash,$/;"	kind:namespace	line:1
+render_template	../_ref\_py\routes - Copy.py	/^from flask import render_template, url_for, flash, request, Blueprint$/;"	kind:namespace	line:1
+render_template	../_ref\int-hw\hw01\Data-Journalism-and-D3-master\app.py	/^from flask import Flask, render_template, jsonify$/;"	kind:namespace	line:1
+render_template	../_ref\int-hw\hw02\Data-Journalism-and-D3-master\app.py	/^from flask import Flask,render_template,jsonify$/;"	kind:namespace	line:1
 render_template	../app\_ref_\_py\_ndoRp.py	/^from flask import (render_template, url_for, flash,$/;"	kind:namespace	line:1
 render_template	../app\errors\handlers.py	/^from flask import Blueprint, render_template$/;"	kind:namespace	line:1
 render_template	../app\main\routes.py	/^from flask import render_template, request, Blueprint$/;"	kind:namespace	line:1
 render_template	../app\posts\routes.py	/^from flask import (render_template, url_for, flash,$/;"	kind:namespace	line:1
 render_template	../app\users\routes.py	/^from flask import render_template, url_for, flash, redirect, request, Blueprint$/;"	kind:namespace	line:1
+request	../_ref\_py\routes - Copy.py	/^from flask import render_template, url_for, flash, request, Blueprint$/;"	kind:namespace	line:1
 request	../app\main\routes.py	/^from flask import render_template, request, Blueprint$/;"	kind:namespace	line:1
 request	../app\users\routes.py	/^from flask import render_template, url_for, flash, redirect, request, Blueprint$/;"	kind:namespace	line:1
+resolve_task	../_ref\_py\_ndoRt.py	/^def resolve_task(task_id):$/;"	kind:function	line:123
 resolve_task	../app\_ref_\_py\_ndoRt.py	/^def resolve_task(task_id):$/;"	kind:function	line:123
+routes - Copy.py	../_ref\_py\routes - Copy.py	1;"	kind:file	line:1
 routes.py	../app\dash_app\routes.py	1;"	kind:file	line:1
 routes.py	../app\items\routes.py	1;"	kind:file	line:1
 routes.py	../app\main\routes.py	1;"	kind:file	line:1
 routes.py	../app\posts\routes.py	1;"	kind:file	line:1
 routes.py	../app\users\routes.py	1;"	kind:file	line:1
+row_count	../_ref\_py\_dispM.py	/^    row_count = db.Column(db.Integer)$/;"	kind:variable	line:266
 row_count	../app\_ref_\_py\_dispM.py	/^    row_count = db.Column(db.Integer)$/;"	kind:variable	line:266
 run.py	../run.py	1;"	kind:file	line:1
+running_low	../_ref\_py\_dispM.py	/^    def running_low(self):$/;"	kind:member	line:103
 running_low	../app\_ref_\_py\_dispM.py	/^    def running_low(self):$/;"	kind:member	line:103
+satisfied	../_ref\12_JS\02_Evr_PythonToJavaScript\Py_HelloVariableWorld.py	/^satisfied = True$/;"	kind:variable	line:18
+save_picture	../_ref\_py\_dispR.py	/^def save_picture(form_picture):$/;"	kind:function	line:249
 save_picture	../app\_ref_\_py\_dispR.py	/^def save_picture(form_picture):$/;"	kind:function	line:249
 save_picture	../app\users\routes.py	/^from app.users.utils import save_picture$/;"	kind:namespace	line:8
 save_picture	../app\users\utils.py	/^def save_picture(form_picture):$/;"	kind:function	line:7
+second_act_done	../_ref\_py\_ndoRp.py	/^def second_act_done(proday_id):$/;"	kind:function	line:161
 second_act_done	../app\_ref_\_py\_ndoRp.py	/^def second_act_done(proday_id):$/;"	kind:function	line:161
+secrets	../_ref\_py\_dispR.py	/^import secrets$/;"	kind:namespace	line:6
 secrets	../app\_ref_\_py\_dispR.py	/^import secrets$/;"	kind:namespace	line:6
 secrets	../app\users\utils.py	/^import secrets$/;"	kind:namespace	line:2
+ship_status	../_ref\_py\_berM.py	/^    ship_status = db.Column(db.String(16), nullable=False,default='0')$/;"	kind:variable	line:16
 ship_status	../app\_ref_\_py\_berM.py	/^    ship_status = db.Column(db.String(16), nullable=False,default='0')$/;"	kind:variable	line:16
 ship_status	../app\items\DemoCarsLists.py	/^ship_status = [$/;"	kind:variable	line:1877
 ship_status	../app\items\forms.py	/^    ship_status = SelectField($/;"	kind:variable	line:21
@@ -456,13 +757,21 @@ ship_status	../app\items\forms.py	/^    ship_status = SelectField($/;"	kind:vari
 ship_status	../app\models.py	/^    ship_status = db.Column(db.String(16), nullable=False,default='0')$/;"	kind:variable	line:16
 shipper_home	../app\dash_app\routes.py	/^def shipper_home():$/;"	kind:function	line:21
 shipper_home	../app\items\routes.py	/^def shipper_home():$/;"	kind:function	line:20
+show_item	../_ref\_py\_dispR.py	/^def show_item(item_id):$/;"	kind:function	line:65
 show_item	../app\_ref_\_py\_dispR.py	/^def show_item(item_id):$/;"	kind:function	line:65
+showonly_invlow	../_ref\_py\_dispR.py	/^def showonly_invlow():$/;"	kind:function	line:509
 showonly_invlow	../app\_ref_\_py\_dispR.py	/^def showonly_invlow():$/;"	kind:function	line:509
+showonly_invout	../_ref\_py\_dispR.py	/^def showonly_invout():$/;"	kind:function	line:523
 showonly_invout	../app\_ref_\_py\_dispR.py	/^def showonly_invout():$/;"	kind:function	line:523
+similar_attrs	../_ref\_py\_dispM.py	/^    def similar_attrs(self):$/;"	kind:member	line:188
 similar_attrs	../app\_ref_\_py\_dispM.py	/^    def similar_attrs(self):$/;"	kind:member	line:188
+sqr_home	../_ref\_py\_dispR.py	/^def sqr_home():$/;"	kind:function	line:999
 sqr_home	../app\_ref_\_py\_dispR.py	/^def sqr_home():$/;"	kind:function	line:999
+square_byid	../_ref\_py\_dispR.py	/^def square_byid(square_id):$/;"	kind:function	line:603
 square_byid	../app\_ref_\_py\_dispR.py	/^def square_byid(square_id):$/;"	kind:function	line:603
+square_byid_lite	../_ref\_py\_dispR.py	/^def square_byid_lite(square_id):$/;"	kind:function	line:646
 square_byid_lite	../app\_ref_\_py\_dispR.py	/^def square_byid_lite(square_id):$/;"	kind:function	line:646
+square_id	../_ref\_py\_dispM.py	/^    square_id = db.Column(db.Integer)$/;"	kind:variable	line:281
 square_id	../app\_ref_\_py\_dispM.py	/^    square_id = db.Column(db.Integer)$/;"	kind:variable	line:281
 statusFinder	../app\items\routes.py	/^    def statusFinder(item_ship_status):$/;"	kind:function	line:186
 submit	../app\posts\forms.py	/^    submit = SubmitField('Post')$/;"	kind:variable	line:10
@@ -470,44 +779,74 @@ submit	../app\users\forms.py	/^    submit = SubmitField('Login')$/;"	kind:variab
 submit	../app\users\forms.py	/^    submit = SubmitField('Request Password Reset')$/;"	kind:variable	line:69
 submit	../app\users\forms.py	/^    submit = SubmitField('Reset Password')$/;"	kind:variable	line:81
 submit	../app\users\forms.py	/^    submit = SubmitField('Update')$/;"	kind:variable	line:51
+task	../_ref\_py\_ndoRt.py	/^def task(task_id):$/;"	kind:function	line:53
 task	../app\_ref_\_py\_ndoRt.py	/^def task(task_id):$/;"	kind:function	line:53
+task_demo_home	../_ref\_py\_ndoRt.py	/^def task_demo_home():$/;"	kind:function	line:220
 task_demo_home	../app\_ref_\_py\_ndoRt.py	/^def task_demo_home():$/;"	kind:function	line:220
+taskcreator	../_ref\_py\_ndoRt.py	/^def taskcreator():$/;"	kind:function	line:91
 taskcreator	../app\_ref_\_py\_ndoRt.py	/^def taskcreator():$/;"	kind:function	line:91
+taskdemodone	../_ref\_py\_ndoRt.py	/^def taskdemodone(task_id):$/;"	kind:function	line:245
 taskdemodone	../app\_ref_\_py\_ndoRt.py	/^def taskdemodone(task_id):$/;"	kind:function	line:245
+tasks	../_ref\_py\_ndoRt.py	/^tasks = Blueprint('tasks', __name__)$/;"	kind:variable	line:9
 tasks	../app\_ref_\_py\_ndoRt.py	/^tasks = Blueprint('tasks', __name__)$/;"	kind:variable	line:9
+tasks_list	../_ref\_py\_ndoRt.py	/^def tasks_list():$/;"	kind:function	line:80
 tasks_list	../app\_ref_\_py\_ndoRt.py	/^def tasks_list():$/;"	kind:function	line:80
+test	../_ref\_py\_dispR.py	/^def test():$/;"	kind:function	line:798
 test	../app\_ref_\_py\_dispR.py	/^def test():$/;"	kind:function	line:798
+test_info_board	../_ref\_py\_dispR.py	/^def test_info_board():$/;"	kind:function	line:1177
 test_info_board	../app\_ref_\_py\_dispR.py	/^def test_info_board():$/;"	kind:function	line:1177
+third_act_done	../_ref\_py\_ndoRp.py	/^def third_act_done(proday_id):$/;"	kind:function	line:195
 third_act_done	../app\_ref_\_py\_ndoRp.py	/^def third_act_done(proday_id):$/;"	kind:function	line:195
+timesheet	../_ref\_py\routes - Copy.py	/^timesheet = Blueprint('timesheet', __name__)$/;"	kind:variable	line:4
+title	../_ref\_py\_berM.py	/^    title = db.Column(db.String(100), nullable=False)$/;"	kind:variable	line:43
+title	../_ref\_py\_dispM.py	/^    title = db.Column(db.String(100), nullable=False)$/;"	kind:variable	line:27
 title	../app\_ref_\_py\_berM.py	/^    title = db.Column(db.String(100), nullable=False)$/;"	kind:variable	line:43
 title	../app\_ref_\_py\_dispM.py	/^    title = db.Column(db.String(100), nullable=False)$/;"	kind:variable	line:27
 title	../app\models.py	/^    title = db.Column(db.String(100), nullable=False)$/;"	kind:variable	line:43
 title	../app\posts\forms.py	/^    title = StringField('Title', validators=[DataRequired()])$/;"	kind:variable	line:8
 typeFinder	../app\items\routes.py	/^    def typeFinder(item_bodyType_id):$/;"	kind:function	line:169
+unique_tag	../_ref\_py\_dispM.py	/^    unique_tag = db.Column(db.String(32),unique=True)$/;"	kind:variable	line:283
 unique_tag	../app\_ref_\_py\_dispM.py	/^    unique_tag = db.Column(db.String(32),unique=True)$/;"	kind:variable	line:283
+unit_mainitem_low	../_ref\_py\_dispR.py	/^def unit_mainitem_low(unique_tag, item_id):$/;"	kind:function	line:715
 unit_mainitem_low	../app\_ref_\_py\_dispR.py	/^def unit_mainitem_low(unique_tag, item_id):$/;"	kind:function	line:715
+unit_mainitem_out	../_ref\_py\_dispR.py	/^def unit_mainitem_out(unique_tag, item_id):$/;"	kind:function	line:746
 unit_mainitem_out	../app\_ref_\_py\_dispR.py	/^def unit_mainitem_out(unique_tag, item_id):$/;"	kind:function	line:746
+unit_nextitem	../_ref\_py\_dispR.py	/^def unit_nextitem(unique_tag, item_id):$/;"	kind:function	line:563
 unit_nextitem	../app\_ref_\_py\_dispR.py	/^def unit_nextitem(unique_tag, item_id):$/;"	kind:function	line:563
+unit_show_mainitem	../_ref\_py\_dispR.py	/^def unit_show_mainitem(unique_tag):$/;"	kind:function	line:592
 unit_show_mainitem	../app\_ref_\_py\_dispR.py	/^def unit_show_mainitem(unique_tag):$/;"	kind:function	line:592
+unit_update_maininvout	../_ref\_py\_dispR.py	/^def unit_update_maininvout(unique_tag):$/;"	kind:function	line:582
 unit_update_maininvout	../app\_ref_\_py\_dispR.py	/^def unit_update_maininvout(unique_tag):$/;"	kind:function	line:582
+update_invstatus	../_ref\_py\_dispR.py	/^def update_invstatus(square_id):$/;"	kind:function	line:1157
 update_invstatus	../app\_ref_\_py\_dispR.py	/^def update_invstatus(square_id):$/;"	kind:function	line:1157
+update_post	../_ref\_py\_dispR.py	/^def update_post(post_id):$/;"	kind:function	line:309
 update_post	../app\_ref_\_py\_dispR.py	/^def update_post(post_id):$/;"	kind:function	line:309
 update_post	../app\posts\routes.py	/^def update_post(post_id):$/;"	kind:function	line:32
+update_proday	../_ref\_py\_ndoRp.py	/^def update_proday(proday_id):$/;"	kind:function	line:78
 update_proday	../app\_ref_\_py\_ndoRp.py	/^def update_proday(proday_id):$/;"	kind:function	line:78
+update_task	../_ref\_py\_ndoRt.py	/^def update_task(task_id):$/;"	kind:function	line:60
 update_task	../app\_ref_\_py\_ndoRt.py	/^def update_task(task_id):$/;"	kind:function	line:60
+update_via_wtforms	../_ref\_py\_dispM.py	/^    def update_via_wtforms(self, form):$/;"	kind:member	line:167
 update_via_wtforms	../app\_ref_\_py\_dispM.py	/^    def update_via_wtforms(self, form):$/;"	kind:member	line:167
 upload_demo	../app\items\DemoUploadRoute.py	/^def upload_demo():$/;"	kind:function	line:4
 upload_demo	../app\items\routes.py	/^def upload_demo():$/;"	kind:function	line:218
+url_for	../_ref\_py\_dispM.py	/^from flask import url_for$/;"	kind:namespace	line:4
+url_for	../_ref\_py\_ndoRp.py	/^from flask import (render_template, url_for, flash,$/;"	kind:namespace	line:1
+url_for	../_ref\_py\routes - Copy.py	/^from flask import render_template, url_for, flash, request, Blueprint$/;"	kind:namespace	line:1
 url_for	../app\_ref_\_py\_dispM.py	/^from flask import url_for$/;"	kind:namespace	line:4
 url_for	../app\_ref_\_py\_ndoRp.py	/^from flask import (render_template, url_for, flash,$/;"	kind:namespace	line:1
 url_for	../app\posts\routes.py	/^from flask import (render_template, url_for, flash,$/;"	kind:namespace	line:1
 url_for	../app\users\routes.py	/^from flask import render_template, url_for, flash, redirect, request, Blueprint$/;"	kind:namespace	line:1
 url_for	../app\users\utils.py	/^from flask import url_for, current_app$/;"	kind:namespace	line:4
+user_id	../_ref\_py\_berM.py	/^    user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)$/;"	kind:variable	line:46
+user_id	../_ref\_py\_dispM.py	/^    user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)$/;"	kind:variable	line:31
 user_id	../app\_ref_\_py\_berM.py	/^    user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)$/;"	kind:variable	line:46
 user_id	../app\_ref_\_py\_dispM.py	/^    user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)$/;"	kind:variable	line:31
 user_id	../app\models.py	/^    user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)$/;"	kind:variable	line:46
 user_id	../app\posts\forms.py	/^    user_id = '00'$/;"	kind:variable	line:17
 user_posts	../app\users\routes.py	/^def user_posts(username):$/;"	kind:function	line:97
+username	../_ref\_py\_berM.py	/^    username = db.Column(db.String(20), unique=True, nullable=False)$/;"	kind:variable	line:32
+username	../_ref\_py\_dispM.py	/^    username = db.Column(db.String(20), unique=True, nullable=False)$/;"	kind:variable	line:14
 username	../app\_ref_\_py\_berM.py	/^    username = db.Column(db.String(20), unique=True, nullable=False)$/;"	kind:variable	line:32
 username	../app\_ref_\_py\_dispM.py	/^    username = db.Column(db.String(20), unique=True, nullable=False)$/;"	kind:variable	line:14
 username	../app\models.py	/^    username = db.Column(db.String(20), unique=True, nullable=False)$/;"	kind:variable	line:32
@@ -515,6 +854,7 @@ username	../app\users\forms.py	/^    username = StringField('Username',$/;"	kind
 username	../app\users\forms.py	/^    username = StringField('Username',$/;"	kind:variable	line:46
 users	../app\__init__.py	/^    from app.users.routes import users$/;"	kind:namespace	line:23
 users	../app\users\routes.py	/^users = Blueprint('users', __name__)$/;"	kind:variable	line:10
+utility_processor	../_ref\_py\_ndoRt.py	/^def utility_processor():$/;"	kind:function	line:164
 utility_processor	../app\_ref_\_py\_ndoRt.py	/^def utility_processor():$/;"	kind:function	line:164
 utils.py	../app\users\utils.py	1;"	kind:file	line:1
 validate_email	../app\users\forms.py	/^    def validate_email(self, email):$/;"	kind:member	line:31
@@ -530,6 +870,9 @@ validators	../app\users\forms.py	/^                        validators=[DataRequi
 validators	../app\users\forms.py	/^                        validators=[DataRequired(), Email()])$/;"	kind:variable	line:39
 validators	../app\users\forms.py	/^                        validators=[DataRequired(), Email()])$/;"	kind:variable	line:49
 validators	../app\users\forms.py	/^                        validators=[DataRequired(), Email()])$/;"	kind:variable	line:68
+x	../_ref\12_JS\02_Evr_PythonToJavaScript\Py_ConditionalCheck.py	/^x = 1$/;"	kind:variable	line:1
+y	../_ref\12_JS\02_Evr_PythonToJavaScript\Py_ConditionalCheck.py	/^y = 10$/;"	kind:variable	line:2
+year	../_ref\_py\_berM.py	/^    year = db.Column(db.String(16), nullable=False,default='2007')$/;"	kind:variable	line:13
 year	../app\_ref_\_py\_berM.py	/^    year = db.Column(db.String(16), nullable=False,default='2007')$/;"	kind:variable	line:13
 year	../app\items\DemoCarsLists.py	/^year = [$/;"	kind:variable	line:752
 year	../app\items\forms.py	/^    year = StringField('year')$/;"	kind:variable	line:56
