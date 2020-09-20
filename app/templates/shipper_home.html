@@ -1,0 +1,159 @@
+{% extends "layout.html" %}{% block content %}
+
+<div class="row">
+  <div class="col-md-4">
+
+    <img 
+    
+    src="https://raw.githubusercontent.com/attila5287/berenice_img/master/ship_container_wake.png" 
+    class="img-fluid p-2"
+    alt="left sidebar top img transparent bg shipper lister"
+    style="width: 100%;"
+    >
+    <form method="POST" action="">
+      <div class="row">
+          {% for field in form %}
+          <div class="col-md-6 text-center">
+              <i class="fas fa-search-plus fa-rotate-90"></i>
+              <label 
+              class="mb-1 mt-3 text-monospace"
+              for="" > {{ field.label}} 
+              </label>
+
+              {{field(class="form-control form-control-lg border-success mx-auto px-1 box-shadow text-center", style="border-radius: 1rem;border-width:medium;text-size:5px;width:95%",placeholder='Add Filter?') }}
+          </div>
+          {% endfor %}
+
+          <button
+          class="btn btn-block btn-sucess text-success btn-rounded border-success box-shadow p-1 mx-auto mt-3"
+          style="border-radius: 9px;border-width: medium;"
+          type="submit" 
+          >
+            <i class="fas fa-search fa-2x px-4 py-2">
+              lookup item
+            </i>
+
+          </button>
+      </div>
+    </form>
+    <div class="d-flex justify-content-end">
+    <img 
+    class="img-fluid mx-auto d-block mt-5 p-2"
+    src="https://raw.githubusercontent.com/attila5287/berenice_img/master/container_truck.png" 
+    alt="left sidebar bottom img" width="50%"
+    >
+    <img 
+    class="img-fluid mx-auto d-block mt-5 p-2"
+    src="https://raw.githubusercontent.com/attila5287/berenice_img/master/ship_container.png" 
+    alt="left sidebar bottom img" width="50%"
+    >    
+    </div>
+        <div class="d-flex justify-content-end">
+    <img 
+    class="img-fluid mx-auto d-block mt-5 p-2"
+    src="https://raw.githubusercontent.com/attila5287/berenice_img/master/container_forklift.png" 
+    alt="left sidebar bottom img" width="50%"
+    >
+    <img 
+    class="img-fluid mx-auto d-block mt-5 p-2"
+    src="https://raw.githubusercontent.com/attila5287/berenice_img/master/container_roro_car.png" 
+    alt="left sidebar bottom img" width="50%"
+    >    
+    </div>
+  </div>
+
+  <div class="col-md-8">
+    <div class="row">
+
+  {% for item in inventory %}
+  <div class="col-md-10 offset-md-1">
+      
+    <div 
+    class="card border-{{destStyler(item.dest_id)}} text-{{destStyler(item.dest_id)}} text-break text-italic text-right mx-4 my-2"
+    >
+      <div class="card-header bg-transparent text-center border-{{destStyler(item.dest_id)}} text-{{destStyler(item.dest_id)}} py-0 my-1">
+        <i class="fas fa-ship"></i>
+        {{ statusFinder(item.ship_status) }}
+      </div>
+      <div class="row">
+
+        <div class="col-sm-4">
+            <img
+            class="mx-auto d-block p-2"
+             src="
+          https://raw.githubusercontent.com/attila5287/berenice_img/master/itemB0dyTyp3/{{imageFinder(item.body_type)}}
+          " alt="" style="max-height: 6rem;"
+          >
+        
+        </div>
+
+        <div class="col-sm-4">
+            <ul class="fa-ul py-1 text-light text-center">
+              <p>
+                <i class="fa fa-caret-right" aria-hidden="true"></i>
+              </span>
+              {{item.make}}
+              </p>
+              <p>
+                <i class="fa fa-caret-right" aria-hidden="true"></i>
+              </span>
+              {{item.model}}
+              </p>
+              <p>
+                <i class="fa fa-caret-right" aria-hidden="true"></i>
+              </span>
+              {{item.year}}
+              </p>
+              <p>
+                <i class="fa fa-caret-right" aria-hidden="true"></i>
+              </span>
+              {{ typeFinder(item.body_type) }}
+              </p>                        
+          
+          </ul>
+        </div>
+
+        <div class="col-sm-4">
+          <ul class="fa-ul text-center py-1">
+            <p>
+              <i class="fas fa-anchor"></i>
+            </span>
+            {{item.dest_id }}|{{cityFinder(item.dest_id) }} 
+            </p>
+            <p>
+              <i class="fa fa-caret-right" aria-hidden="true"></i>
+            </span>
+            Item Info
+            </p>
+            <p>
+              <i class="fa fa-caret-right" aria-hidden="true"></i>
+            </span>
+            Item Info
+            </p>
+            <p>
+              <i class="fa fa-caret-right" aria-hidden="true"></i>
+            </span>
+            Item Info
+            </p>                
+          </ul>
+        </div>
+        
+      </div>
+
+      <div class="card-footer bg-transparent text-center border-{{destStyler(item.dest_id)}} text-{{destStyler(item.dest_id)}} py-0 text-small my-0">
+        <i class="fa fa-caret-right text-center" aria-hidden="true"></i>
+        DE15R06PKZM52WA89E
+      </div>
+    </div>
+      
+  </div>  
+  {% endfor %}      
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+{% endblock content %}

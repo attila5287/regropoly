@@ -1,3 +1,7 @@
+DROP TABLE public.user CASCADE;
+DROP TABLE public.post CASCADE;
+
+
 -- psql
 CREATE TABLE post (
 	id BIGSERIAL NOT NULL PRIMARY KEY, 
@@ -22,3 +26,5 @@ CREATE TABLE "user" (
   "avatar_img"	TEXT,
   "avatar_mode"	TEXT
 );
+
+

@@ -2,11 +2,10 @@ from flask import (render_template, url_for, flash,
                    redirect, request, abort, Blueprint)
 from flask_login import current_user, login_required
 from app import db
-from app.models import Post
-from app.posts.forms import PostForm
+from app.models import User, Post
+from app.posts.forms import PostForm, PostDemo
 
 posts = Blueprint('posts', __name__)
-
 
 @posts.route("/post/new", methods=['GET', 'POST'])
 @login_required
@@ -52,6 +51,7 @@ def update_post(post_id):
 @login_required
 def delete_post(post_id):
     post = Post.query.get_or_404(post_id)
+    
     if post.author != current_user:
         abort(403)
     db.session.delete(post)
@@ -67,3 +67,28 @@ def delete_dummy_posts_from(user_1d):
     db.session.commit()
     flash('Dummy posts have been deleted!', 'success')
     return redirect(url_for('main.home'))
+
+
+
+@posts.context_processor
+def inject_PostDemoList():
+    pass
+    PostDemoList = [
+        PostDemo(title=title, content=content)
+        for (title, content) in zip(
+            [
+                '01> welcome to python flask app!',
+                '02> these are demo posts',
+                '03> they only appear',
+                '04> when there are no posts to show',
+            ],
+            [
+                'A: post is a CRUD module',
+                'B: create posts or delete yours',
+                'C: read those created by others',
+                'D: update your posts or preferences',
+            ]
+        )
+    ]
+
+    return dict(PostDemoList=PostDemoList)

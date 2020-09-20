@@ -1,5 +1,6 @@
 from flask import render_template, request, Blueprint
-from app.models import Post, PostDemo
+from app.models import Post
+from app.posts.forms import PostDemo
 
 main = Blueprint('main', __name__)
 
@@ -27,7 +28,6 @@ def inject_PostDemoList():
     return dict(PostDemoList=PostDemoList)
 
 
-@main.route("/")
 @main.route("/home")
 def home():
     page = request.args.get('page', 1, type=int)
@@ -42,7 +42,7 @@ def home():
 
     return render_template('home.html', posts=posts)
 
-
+@main.route("/")
 @main.route("/about")
 def about():
     return render_template('about.html', title='About')
@@ -50,3 +50,4 @@ def about():
 @main.route("/about/developer")
 def aboutdev():
     return render_template('aboutdev.html', title='About')
+

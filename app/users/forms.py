@@ -1,6 +1,6 @@
 from flask_wtf import FlaskForm
 from flask_wtf.file import FileField, FileAllowed
-from wtforms import StringField, PasswordField, SubmitField, BooleanField
+from wtforms import StringField, PasswordField, SubmitField, BooleanField, SelectField
 from wtforms.validators import DataRequired, Length, Email, EqualTo, ValidationError
 from flask_login import current_user
 from app.models import User
@@ -14,7 +14,14 @@ class RegistrationForm(FlaskForm):
     password = PasswordField('Password', validators=[DataRequired()])
     confirm_password = PasswordField('Confirm Password',
                                      validators=[DataRequired(), EqualTo('password')])
-    submit = SubmitField('Sign Up')
+
+    is_shipper = SelectField(choices=[('0', 'n'), ('1', 'y')], default='0')
+
+    location_id = SelectField(
+        choices=[('99', 'Shipper'), ('0', 'Alabama'), ('1', 'Baltimore'),
+                 ('2', 'California'), ('3', 'Delaware'), ('4', 'Exeter')], default='Alabama'
+    )
+
 
     def validate_username(self, username):
         user = User.query.filter_by(username=username.data).first()
