@@ -42,7 +42,6 @@ def home():
 
     return render_template('home.html', posts=posts)
 
-@main.route("/")
 @main.route("/about")
 def about():
     return render_template('about.html', title='About')
@@ -51,3 +50,7 @@ def about():
 def aboutdev():
     return render_template('aboutdev.html', title='About')
 
+@main.route("/")
+@main.route("/test")
+def test():
+    return render_template('test.html')

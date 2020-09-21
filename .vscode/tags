@@ -4,6 +4,12 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
+Agent	../_ref\_regV1\classProperty.py	/^class Agent:$/;"	kind:class	line:166
+Agent	../_ref\_regV1\objectHouseMarket.py	/^class Agent:$/;"	kind:class	line:2
+Apartment	../_ref\_regV1\classProperty.py	/^class Apartment(Property):$/;"	kind:class	line:32
+Apartment	../_ref\_regV1\classTextBookScratch.py	/^class Apartment(Property):$/;"	kind:class	line:28
+ApartmentPurchase	../_ref\_regV1\classProperty.py	/^class ApartmentPurchase(Purchase, Apartment):$/;"	kind:class	line:152
+ApartmentRental	../_ref\_regV1\classProperty.py	/^class ApartmentRental(Rental, Apartment):$/;"	kind:class	line:145
 Bcrypt	../app\__init__.py	/^from flask_bcrypt import Bcrypt$/;"	kind:namespace	line:3
 Blueprint	../_ref\_py\routes - Copy.py	/^from flask import render_template, url_for, flash, request, Blueprint$/;"	kind:namespace	line:1
 Blueprint	../app\errors\handlers.py	/^from flask import Blueprint, render_template$/;"	kind:namespace	line:1
@@ -25,6 +31,7 @@ EqualTo	../app\users\forms.py	/^from wtforms.validators import DataRequired, Len
 FLASK_ENV	../app\config.py	/^    FLASK_ENV=os.environ.get('FLASK_ENV')$/;"	kind:variable	line:6
 FileAllowed	../app\users\forms.py	/^from flask_wtf.file import FileField, FileAllowed$/;"	kind:namespace	line:2
 FileField	../app\users\forms.py	/^from flask_wtf.file import FileField, FileAllowed$/;"	kind:namespace	line:2
+Flask	../_ref\_regV1\app.py	/^from flask import Flask, render_template$/;"	kind:namespace	line:6
 Flask	../_ref\int-hw\hw01\Data-Journalism-and-D3-master\app.py	/^from flask import Flask, render_template, jsonify$/;"	kind:namespace	line:1
 Flask	../_ref\int-hw\hw02\Data-Journalism-and-D3-master\app.py	/^from flask import Flask,render_template,jsonify$/;"	kind:namespace	line:1
 Flask	../app\__init__.py	/^from flask import Flask$/;"	kind:namespace	line:1
@@ -34,18 +41,25 @@ FlaskForm	../app\users\forms.py	/^from flask_wtf import FlaskForm$/;"	kind:names
 ForeignKey	../_ref\_py\_berM.py	/^from sqlalchemy import Table, Column, Integer, String, MetaData, ForeignKey$/;"	kind:namespace	line:1
 ForeignKey	../app\_ref_\_py\_berM.py	/^from sqlalchemy import Table, Column, Integer, String, MetaData, ForeignKey$/;"	kind:namespace	line:1
 ForeignKey	../app\models.py	/^from sqlalchemy import Table, Column, Integer, String, MetaData, ForeignKey$/;"	kind:namespace	line:1
+House	../_ref\_regV1\classProperty.py	/^class House(Property):$/;"	kind:class	line:63
+House	../_ref\_regV1\classTextBookScratch.py	/^class House(Property):$/;"	kind:class	line:60
+HousePurchase	../_ref\_regV1\classProperty.py	/^class HousePurchase(Purchase, House):$/;"	kind:class	line:159
+HouseRental	../_ref\_regV1\classProperty.py	/^class HouseRental(Rental, House):$/;"	kind:class	line:138
 Image	../app\users\utils.py	/^from PIL import Image$/;"	kind:namespace	line:3
 Integer	../_ref\_py\_berM.py	/^from sqlalchemy import Table, Column, Integer, String, MetaData, ForeignKey$/;"	kind:namespace	line:1
 Integer	../app\_ref_\_py\_berM.py	/^from sqlalchemy import Table, Column, Integer, String, MetaData, ForeignKey$/;"	kind:namespace	line:1
 Integer	../app\models.py	/^from sqlalchemy import Table, Column, Integer, String, MetaData, ForeignKey$/;"	kind:namespace	line:1
+InteractiveShell	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^from IPython.core.interactiveshell import InteractiveShell$/;"	kind:namespace	line:4
 Item	../_ref\_py\_berM.py	/^class Item(db.Model):$/;"	kind:class	line:8
 Item	../_ref\_py\_dispM.py	/^class Item(db.Model):$/;"	kind:class	line:37
+Item	../_ref\_regV1\classItem.py	/^class Item:$/;"	kind:class	line:18
 Item	../app\_ref_\_py\_berM.py	/^class Item(db.Model):$/;"	kind:class	line:8
 Item	../app\_ref_\_py\_dispM.py	/^class Item(db.Model):$/;"	kind:class	line:37
 Item	../app\models.py	/^class Item(db.Model):$/;"	kind:class	line:8
 ItemDemo	../app\items\forms.py	/^class ItemDemo():$/;"	kind:class	line:32
 ItemForm	../app\items\forms.py	/^class ItemForm(FlaskForm):$/;"	kind:class	line:6
 Length	../app\users\forms.py	/^from wtforms.validators import DataRequired, Length, Email, EqualTo, ValidationError$/;"	kind:namespace	line:4
+LinearRegression	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^from sklearn.linear_model import LinearRegression$/;"	kind:namespace	line:382
 LoginForm	../app\users\forms.py	/^class LoginForm(FlaskForm):$/;"	kind:class	line:37
 LoginManager	../app\__init__.py	/^from flask_login import LoginManager$/;"	kind:namespace	line:4
 LowInStckStyler	../_ref\_py\_dispR.py	/^    def LowInStckStyler(yes_or_no):$/;"	kind:function	line:361
@@ -64,6 +78,7 @@ OutOfStckStyler	../app\_ref_\_py\_dispR.py	/^    def OutOfStckStyler(yes_or_no):
 OutOfStckStylerGrid	../_ref\_py\_dispR.py	/^    def OutOfStckStylerGrid(yes_or_no):$/;"	kind:function	line:421
 OutOfStckStylerGrid	../app\_ref_\_py\_dispR.py	/^    def OutOfStckStylerGrid(yes_or_no):$/;"	kind:function	line:421
 PasswordField	../app\users\forms.py	/^from wtforms import StringField, PasswordField, SubmitField, BooleanField, SelectField$/;"	kind:namespace	line:3
+PlotFieldList	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^def PlotFieldList(pivoted_Tdf,field_list):$/;"	kind:function	line:190
 Post	../_ref\_py\_berM.py	/^class Post(db.Model):$/;"	kind:class	line:40
 Post	../_ref\_py\_dispM.py	/^class Post(db.Model):$/;"	kind:class	line:25
 Post	../app\_ref_\_py\_berM.py	/^class Post(db.Model):$/;"	kind:class	line:40
@@ -81,9 +96,15 @@ ProDayForm	../_ref\_py\_ndoRp.py	/^from nodaysoff.prodays.forms import ProDayFor
 ProDayForm	../app\_ref_\_py\_ndoRp.py	/^from nodaysoff.prodays.forms import ProDayForm $/;"	kind:namespace	line:6
 Proday	../_ref\_py\_ndoRp.py	/^from nodaysoff.models import Proday, User$/;"	kind:namespace	line:5
 Proday	../app\_ref_\_py\_ndoRp.py	/^from nodaysoff.models import Proday, User$/;"	kind:namespace	line:5
+Property	../_ref\_regV1\classProperty.py	/^class Property:$/;"	kind:class	line:3
+Property	../_ref\_regV1\classTextBookScratch.py	/^class Property:$/;"	kind:class	line:5
+Purchase	../_ref\_regV1\classProperty.py	/^class Purchase:$/;"	kind:class	line:97
+PyMongo	../_ref\_regV1\app.py	/^from flask_pymongo import PyMongo$/;"	kind:namespace	line:7
 Py_ConditionalCheck.py	../_ref\12_JS\02_Evr_PythonToJavaScript\Py_ConditionalCheck.py	1;"	kind:file	line:1
 Py_HelloVariableWorld.py	../_ref\12_JS\02_Evr_PythonToJavaScript\Py_HelloVariableWorld.py	1;"	kind:file	line:1
 RegistrationForm	../app\users\forms.py	/^class RegistrationForm(FlaskForm):$/;"	kind:class	line:9
+RegroPoly_jupyter_import2py.py	../_ref\_regV1\RegroPoly_jupyter_import2py.py	1;"	kind:file	line:1
+Rental	../_ref\_regV1\classProperty.py	/^class Rental:$/;"	kind:class	line:115
 RequestResetForm	../app\users\forms.py	/^class RequestResetForm(FlaskForm):$/;"	kind:class	line:66
 ResetPasswordForm	../app\users\forms.py	/^class ResetPasswordForm(FlaskForm):$/;"	kind:class	line:77
 SECRET_KEY	../app\config.py	/^    SECRET_KEY = os.environ.get('SECRET_KEY')$/;"	kind:variable	line:5
@@ -123,6 +144,7 @@ TextAreaField	../app\items\forms.py	/^from wtforms import StringField, SubmitFie
 TextAreaField	../app\posts\forms.py	/^from wtforms import StringField, SubmitField, TextAreaField, SelectField$/;"	kind:namespace	line:3
 TimesheetForm	../_ref\_py\forms - Copy.py	/^class TimesheetForm(FlaskForm):$/;"	kind:class	line:8
 TimesheetForm	../_ref\_py\routes - Copy.py	/^from jam.timesheet.forms import TimesheetForm$/;"	kind:namespace	line:2
+USavg_list	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^USavg_list = allHomesMetro_df['United States'].tolist()$/;"	kind:variable	line:232
 Unit	../_ref\_py\_dispM.py	/^class Unit(db.Model):$/;"	kind:class	line:274
 Unit	../app\_ref_\_py\_dispM.py	/^class Unit(db.Model):$/;"	kind:class	line:274
 UnitInvOutIconizer	../_ref\_py\_dispR.py	/^    def UnitInvOutIconizer(yes_or_no):$/;"	kind:function	line:391
@@ -150,6 +172,17 @@ UserMixin	../app\models.py	/^from flask_login import UserMixin$/;"	kind:namespac
 ValidationError	../app\users\forms.py	/^from wtforms.validators import DataRequired, Length, Email, EqualTo, ValidationError$/;"	kind:namespace	line:4
 YesNoIconizer	../_ref\_py\_dispR.py	/^    def YesNoIconizer(yes_or_no):$/;"	kind:function	line:451
 YesNoIconizer	../app\_ref_\_py\_dispR.py	/^    def YesNoIconizer(yes_or_no):$/;"	kind:function	line:451
+__init__	../_ref\_regV1\classItem.py	/^    def __init__(self,$/;"	kind:member	line:22
+__init__	../_ref\_regV1\classProperty.py	/^    def __init__(self):$/;"	kind:member	line:173
+__init__	../_ref\_regV1\classProperty.py	/^    def __init__(self, balcony='', laundry='', **kwargs):$/;"	kind:member	line:36
+__init__	../_ref\_regV1\classProperty.py	/^    def __init__(self, furnished='', utilities='',$/;"	kind:member	line:116
+__init__	../_ref\_regV1\classProperty.py	/^    def __init__(self, num_stories='',$/;"	kind:member	line:67
+__init__	../_ref\_regV1\classProperty.py	/^    def __init__(self, price='', taxes='', **kwargs):$/;"	kind:member	line:98
+__init__	../_ref\_regV1\classProperty.py	/^    def __init__(self, square_feet='', beds='',$/;"	kind:member	line:4
+__init__	../_ref\_regV1\classTextBookScratch.py	/^    def __init__(self, balcony='', laundry='', **kwargs):$/;"	kind:member	line:32
+__init__	../_ref\_regV1\classTextBookScratch.py	/^    def __init__(self, num_stories='',$/;"	kind:member	line:64
+__init__	../_ref\_regV1\classTextBookScratch.py	/^    def __init__(self, square_feet='', beds='',$/;"	kind:member	line:6
+__init__	../_ref\_regV1\objectHouseMarket.py	/^    def __init__(self):$/;"	kind:member	line:8
 __init__	../app\items\forms.py	/^    def __init__(self, make='', model='', year='', body_type='', dest_id='', ship_status=''):$/;"	kind:member	line:36
 __init__	../app\posts\forms.py	/^    def __init__(self, title='demo title', content='demo content'):$/;"	kind:member	line:20
 __init__.py	../app\__init__.py	1;"	kind:file	line:1
@@ -197,14 +230,20 @@ _ndoRt.py	../_ref\_py\_ndoRt.py	1;"	kind:file	line:1
 _ndoRt.py	../app\_ref_\_py\_ndoRt.py	1;"	kind:file	line:1
 about	../_ref\_py\_dispR.py	/^def about():$/;"	kind:function	line:185
 about	../app\_ref_\_py\_dispR.py	/^def about():$/;"	kind:function	line:185
-about	../app\main\routes.py	/^def about():$/;"	kind:function	line:47
-aboutdev	../app\main\routes.py	/^def aboutdev():$/;"	kind:function	line:51
+about	../app\main\routes.py	/^def about():$/;"	kind:function	line:46
+aboutdev	../app\main\routes.py	/^def aboutdev():$/;"	kind:function	line:50
 account	../_ref\_py\_dispR.py	/^def account():$/;"	kind:function	line:266
 account	../app\_ref_\_py\_dispR.py	/^def account():$/;"	kind:function	line:266
 account	../app\users\routes.py	/^def account():$/;"	kind:function	line:77
+add_property	../_ref\_regV1\classProperty.py	/^    def add_property(self):$/;"	kind:member	line:180
+add_property	../_ref\_regV1\objectHouseMarket.py	/^    def add_property(self):$/;"	kind:member	line:15
 add_task	../_ref\_py\_ndoRt.py	/^def add_task():$/;"	kind:function	line:99
 add_task	../app\_ref_\_py\_ndoRt.py	/^def add_task():$/;"	kind:function	line:99
 age	../_ref\12_JS\02_Evr_PythonToJavaScript\Py_HelloVariableWorld.py	/^age = 25$/;"	kind:variable	line:9
+allHomesGamePeriod	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^allHomesGamePeriod  = roundYearEndTdf(file_stateAllHomes,2003,2019)$/;"	kind:variable	line:207
+allHomesMetro_df	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^allHomesMetro_df = metroDateTdf(file_metroAllHomes)$/;"	kind:variable	line:231
+allHomesYrAvg_df	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^allHomesYrAvg_df = stateYrAvgTdf(file_stateAllHomes)$/;"	kind:variable	line:87
+allHomes_df	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^allHomes_df = stateDateTdf(file_stateAllHomes)$/;"	kind:variable	line:68
 ap_beg_01	../_ref\_py\forms - Copy.py	/^    ap_beg_01 = SelectField(choices=[('0', 'a'), ('12', 'p')])$/;"	kind:variable	line:12
 ap_beg_02	../_ref\_py\forms - Copy.py	/^    ap_beg_02 = SelectField(choices=[('0', 'a'), ('12', 'p')])$/;"	kind:variable	line:19
 ap_beg_03	../_ref\_py\forms - Copy.py	/^    ap_beg_03 = SelectField(choices=[('0', 'a'), ('12', 'p')])$/;"	kind:variable	line:26
@@ -221,11 +260,14 @@ ap_fin_04	../_ref\_py\forms - Copy.py	/^    ap_fin_04 = SelectField(choices=[('0
 ap_fin_05	../_ref\_py\forms - Copy.py	/^    ap_fin_05 = SelectField(choices=[('0', 'a'), ('12', 'p')])$/;"	kind:variable	line:50
 ap_fin_06	../_ref\_py\forms - Copy.py	/^    ap_fin_06 = SelectField(choices=[('0', 'a'), ('12', 'p')])$/;"	kind:variable	line:57
 ap_fin_07	../_ref\_py\forms - Copy.py	/^    ap_fin_07 = SelectField(choices=[('0', 'a'), ('12', 'p')])$/;"	kind:variable	line:64
+app	../_ref\_regV1\app.py	/^app = Flask(__name__)$/;"	kind:variable	line:31
 app	../_ref\int-hw\hw01\Data-Journalism-and-D3-master\app.py	/^app = Flask(__name__)$/;"	kind:variable	line:4
 app	../_ref\int-hw\hw02\Data-Journalism-and-D3-master\app.py	/^app = Flask(__name__)$/;"	kind:variable	line:4
 app	../run.py	/^app = create_app()$/;"	kind:variable	line:3
+app.py	../_ref\_regV1\app.py	1;"	kind:file	line:1
 app.py	../_ref\int-hw\hw01\Data-Journalism-and-D3-master\app.py	1;"	kind:file	line:1
 app.py	../_ref\int-hw\hw02\Data-Journalism-and-D3-master\app.py	1;"	kind:file	line:1
+assets	../_ref\_regV1\app.py	/^def assets():$/;"	kind:function	line:94
 author	../app\posts\forms.py	/^    author = 'attila'$/;"	kind:variable	line:18
 bcrypt	../app\__init__.py	/^bcrypt = Bcrypt()$/;"	kind:variable	line:9
 bcrypt	../app\users\routes.py	/^from app import db, bcrypt$/;"	kind:namespace	line:3
@@ -235,6 +277,9 @@ body_type	../app\items\DemoCarsLists.py	/^body_type = [$/;"	kind:variable	line:1
 body_type	../app\items\forms.py	/^    body_type = SelectField($/;"	kind:variable	line:11
 body_type	../app\items\forms.py	/^    body_type = SelectField($/;"	kind:variable	line:57
 body_type	../app\models.py	/^    body_type = db.Column(db.String(16), nullable=False, default='3')$/;"	kind:variable	line:14
+buildHousesForSale.py	../_ref\_regV1\buildHousesForSale.py	1;"	kind:file	line:1
+buildTenHouses	../_ref\_regV1\buildHousesForSale.py	/^def buildTenHouses():$/;"	kind:function	line:7
+buyItem	../_ref\_regV1\app.py	/^def buyItem():$/;"	kind:function	line:165
 calc_daily_total	../_ref\_py\forms - Copy.py	/^    def calc_daily_total(self):$/;"	kind:member	line:140
 calc_daily_totals	../_ref\_py\forms - Copy.py	/^    def calc_daily_totals(self):$/;"	kind:member	line:70
 catalog_fullname	../_ref\_py\_dispM.py	/^    catalog_fullname = db.Column(db.String(256))$/;"	kind:variable	line:42
@@ -249,16 +294,21 @@ choices	../app\items\forms.py	/^        choices=[('0', 'Alabama'), ('1', 'Baltim
 choices	../app\items\forms.py	/^        choices=[('0', 'Alabama'),('1', 'Baltimore'),$/;"	kind:variable	line:19
 choices	../app\users\forms.py	/^        choices=[('99', 'Shipper'), ('0', 'Alabama'), ('1', 'Baltimore'),$/;"	kind:variable	line:21
 cityFinder	../app\items\routes.py	/^    def cityFinder(item_dest_id):$/;"	kind:function	line:203
+classItem.py	../_ref\_regV1\classItem.py	1;"	kind:file	line:1
+classProperty.py	../_ref\_regV1\classProperty.py	1;"	kind:file	line:1
+classTextBookScratch.py	../_ref\_regV1\classTextBookScratch.py	1;"	kind:file	line:1
 codecs	../_ref\_py\_dispR.py	/^import codecs$/;"	kind:namespace	line:8
 codecs	../app\_ref_\_py\_dispR.py	/^import codecs$/;"	kind:namespace	line:8
 col_count	../_ref\_py\_dispM.py	/^    col_count = db.Column(db.Integer)$/;"	kind:variable	line:267
 col_count	../app\_ref_\_py\_dispM.py	/^    col_count = db.Column(db.Integer)$/;"	kind:variable	line:267
+colorList	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^colorList=['coral',$/;"	kind:variable	line:24
 color_finder	../_ref\_py\_dispR.py	/^def color_finder():$/;"	kind:function	line:689
 color_finder	../app\_ref_\_py\_dispR.py	/^def color_finder():$/;"	kind:function	line:689
 color_primary	../_ref\_py\_dispM.py	/^    color_primary = db.Column(db.String(32))$/;"	kind:variable	line:43
 color_primary	../app\_ref_\_py\_dispM.py	/^    color_primary = db.Column(db.String(32))$/;"	kind:variable	line:43
 color_secondary	../_ref\_py\_dispM.py	/^    color_secondary = db.Column(db.String(32))$/;"	kind:variable	line:44
 color_secondary	../app\_ref_\_py\_dispM.py	/^    color_secondary = db.Column(db.String(32))$/;"	kind:variable	line:44
+condo_df	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^condo_df = stateDateTdf(file_stateCondo)$/;"	kind:variable	line:261
 config.py	../app\config.py	1;"	kind:file	line:1
 confirm_password	../app\users\forms.py	/^    confirm_password = PasswordField('Confirm Password',$/;"	kind:variable	line:15
 confirm_password	../app\users\forms.py	/^    confirm_password = PasswordField('Confirm Password',$/;"	kind:variable	line:79
@@ -293,6 +343,7 @@ current_user	../app\_ref_\_py\_ndoRt.py	/^from flask_login import current_user, 
 current_user	../app\posts\routes.py	/^from flask_login import current_user, login_required$/;"	kind:namespace	line:3
 current_user	../app\users\forms.py	/^from flask_login import current_user$/;"	kind:namespace	line:5
 current_user	../app\users\routes.py	/^from flask_login import login_user, current_user, logout_user, login_required$/;"	kind:namespace	line:2
+cut_st4r	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^def cut_st4r(n):$/;"	kind:function	line:41
 daily_wage	../_ref\12_JS\02_Evr_PythonToJavaScript\Py_HelloVariableWorld.py	/^daily_wage = hourly_wage * 8$/;"	kind:variable	line:15
 dash_app	../app\__init__.py	/^    from app.dash_app.routes import dash_app$/;"	kind:namespace	line:27
 dash_app	../app\dash_app\routes.py	/^dash_app = Blueprint('dash_app', __name__)$/;"	kind:variable	line:16
@@ -350,6 +401,7 @@ delete_proday	../app\_ref_\_py\_ndoRp.py	/^def delete_proday(proday_id):$/;"	kin
 delete_task	../_ref\_py\_ndoRt.py	/^def delete_task(task_id):$/;"	kind:function	line:154
 delete_task	../app\_ref_\_py\_ndoRt.py	/^def delete_task(task_id):$/;"	kind:function	line:154
 delete_user_by_ID	../app\users\routes.py	/^def delete_user_by_ID(user_1d):$/;"	kind:function	line:106
+descGenForClassItem.py	../_ref\_regV1\descGenForClassItem.py	1;"	kind:file	line:1
 describe_attrs	../_ref\_py\_dispM.py	/^    def describe_attrs(self):$/;"	kind:member	line:219
 describe_attrs	../app\_ref_\_py\_dispM.py	/^    def describe_attrs(self):$/;"	kind:member	line:219
 destStyler	../app\items\routes.py	/^    def destStyler(item_dest_index):$/;"	kind:function	line:131
@@ -361,13 +413,25 @@ dest_id	../app\models.py	/^    dest_id = db.Column(db.String(16), nullable=False
 destination	../app\items\forms.py	/^    destination = SelectField($/;"	kind:variable	line:64
 dispitem_id	../_ref\_py\_dispM.py	/^    dispitem_id = db.Column(db.Integer, db.ForeignKey('item.id'))$/;"	kind:variable	line:286
 dispitem_id	../app\_ref_\_py\_dispM.py	/^    dispitem_id = db.Column(db.Integer, db.ForeignKey('item.id'))$/;"	kind:variable	line:286
+display	../_ref\_regV1\classItem.py	/^    def display(self):$/;"	kind:member	line:42
+display	../_ref\_regV1\classProperty.py	/^    def display():$/;"	kind:member	line:11
+display	../_ref\_regV1\classProperty.py	/^    def display(self):$/;"	kind:member	line:103
+display	../_ref\_regV1\classProperty.py	/^    def display(self):$/;"	kind:member	line:123
+display	../_ref\_regV1\classProperty.py	/^    def display(self):$/;"	kind:member	line:41
+display	../_ref\_regV1\classProperty.py	/^    def display(self):$/;"	kind:member	line:74
+display	../_ref\_regV1\classTextBookScratch.py	/^    def display(self):$/;"	kind:member	line:13
+display	../_ref\_regV1\classTextBookScratch.py	/^    def display(self):$/;"	kind:member	line:37
+display	../_ref\_regV1\classTextBookScratch.py	/^    def display(self):$/;"	kind:member	line:71
 displayMyCarsOnly	../app\items\routes.py	/^def displayMyCarsOnly(my_location_id):$/;"	kind:function	line:53
 display_mainitem	../_ref\_py\_dispR.py	/^def display_mainitem(square_id):$/;"	kind:function	line:1140
 display_mainitem	../app\_ref_\_py\_dispR.py	/^def display_mainitem(square_id):$/;"	kind:function	line:1140
 display_properties	../_ref\_py\_dispM.py	/^    def display_properties(self):$/;"	kind:member	line:61
+display_properties	../_ref\_regV1\classProperty.py	/^    def display_properties(self):$/;"	kind:member	line:176
+display_properties	../_ref\_regV1\objectHouseMarket.py	/^    def display_properties(self):$/;"	kind:member	line:11
 display_properties	../app\_ref_\_py\_dispM.py	/^    def display_properties(self):$/;"	kind:member	line:61
 display_tablerow	../_ref\_py\_dispM.py	/^    def display_tablerow(self):$/;"	kind:member	line:88
 display_tablerow	../app\_ref_\_py\_dispM.py	/^    def display_tablerow(self):$/;"	kind:member	line:88
+dt	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^import datetime as dt$/;"	kind:namespace	line:11
 edit_item	../_ref\_py\_dispR.py	/^def edit_item(item_id):$/;"	kind:function	line:44
 edit_item	../app\_ref_\_py\_dispR.py	/^def edit_item(item_id):$/;"	kind:function	line:44
 email	../_ref\_py\_berM.py	/^    email = db.Column(db.String(120), unique=True, nullable=False)$/;"	kind:variable	line:33
@@ -384,6 +448,9 @@ error_404	../app\errors\handlers.py	/^def error_404(error):$/;"	kind:function	li
 error_500	../app\errors\handlers.py	/^def error_500(error):$/;"	kind:function	line:17
 errors	../app\__init__.py	/^    from app.errors.handlers import errors$/;"	kind:namespace	line:28
 errors	../app\errors\handlers.py	/^errors = Blueprint('errors', __name__)$/;"	kind:variable	line:3
+fedDataframeFromCSV	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^def fedDataframeFromCSV(file_list):$/;"	kind:function	line:301
+fedFileList	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^fedFileList = ['CPIAUCSL',$/;"	kind:variable	line:291
+fedSeriesFromCSV	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^def fedSeriesFromCSV(file):$/;"	kind:function	line:281
 fetch_d3_grid	../_ref\_py\_dispR.py	/^def fetch_d3_grid(square_id):$/;"	kind:function	line:1387
 fetch_d3_grid	../app\_ref_\_py\_dispR.py	/^def fetch_d3_grid(square_id):$/;"	kind:function	line:1387
 fetch_ddslick	../_ref\_py\_dispR.py	/^def fetch_ddslick(manufacturer):$/;"	kind:function	line:1291
@@ -410,6 +477,12 @@ fetch_square_info	../_ref\_py\_dispR.py	/^def fetch_square_info(square_id):$/;"	
 fetch_square_info	../app\_ref_\_py\_dispR.py	/^def fetch_square_info(square_id):$/;"	kind:function	line:980
 fetchitems_by	../_ref\_py\_dispR.py	/^def fetchitems_by(manufacturer):$/;"	kind:function	line:781
 fetchitems_by	../app\_ref_\_py\_dispR.py	/^def fetchitems_by(manufacturer):$/;"	kind:function	line:781
+file_metroAllHomes	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^file_metroAllHomes = 'zillow\/metro\/Metro_Zhvi_AllHomes.csv'$/;"	kind:variable	line:230
+file_stateAllHomes	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^file_stateAllHomes = 'zillow\/state\/State_Zhvi_AllHomes.csv'$/;"	kind:variable	line:52
+file_stateCondo	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^file_stateCondo = 'zillow\/state\/State_Zhvi_Condominum.csv'$/;"	kind:variable	line:260
+file_stateOneBed	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^file_stateOneBed = 'zillow\/state\/State_Zhvi_1bedroom.csv'$/;"	kind:variable	line:239
+file_stateThreeBed	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^file_stateThreeBed = 'zillow\/state\/State_Zhvi_3bedroom.csv'$/;"	kind:variable	line:253
+file_stateTwoBed	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^file_stateTwoBed = 'zillow\/state\/State_Zhvi_2bedroom.csv'$/;"	kind:variable	line:246
 filterby_manuf	../_ref\_py\_dispR.py	/^def filterby_manuf(item_manufacturer):$/;"	kind:function	line:493
 filterby_manuf	../app\_ref_\_py\_dispR.py	/^def filterby_manuf(item_manufacturer):$/;"	kind:function	line:493
 findnext_byid	../_ref\_py\_dispR.py	/^def findnext_byid(item_id=10):$/;"	kind:function	line:537
@@ -421,6 +494,7 @@ flash	../_ref\_py\routes - Copy.py	/^from flask import render_template, url_for,
 flash	../app\_ref_\_py\_ndoRp.py	/^from flask import (render_template, url_for, flash,$/;"	kind:namespace	line:1
 flash	../app\posts\routes.py	/^from flask import (render_template, url_for, flash,$/;"	kind:namespace	line:1
 flash	../app\users\routes.py	/^from flask import render_template, url_for, flash, redirect, request, Blueprint$/;"	kind:namespace	line:1
+flask_debug	../_ref\_regV1\app.py	/^flask_debug = False$/;"	kind:variable	line:34
 forms - Copy.py	../_ref\_py\forms - Copy.py	1;"	kind:file	line:1
 forms.py	../app\items\forms.py	1;"	kind:file	line:1
 forms.py	../app\posts\forms.py	1;"	kind:file	line:1
@@ -429,6 +503,8 @@ fourth_act_done	../_ref\_py\_ndoRp.py	/^def fourth_act_done(proday_id):$/;"	kind
 fourth_act_done	../app\_ref_\_py\_ndoRp.py	/^def fourth_act_done(proday_id):$/;"	kind:function	line:226
 gen_attr_dict	../_ref\_py\_dispM.py	/^    def gen_attr_dict(self):$/;"	kind:member	line:121
 gen_attr_dict	../app\_ref_\_py\_dispM.py	/^    def gen_attr_dict(self):$/;"	kind:member	line:121
+get_valid_input	../_ref\_regV1\classProperty.py	/^def get_valid_input(input_string, valid_options):$/;"	kind:function	line:25
+get_valid_input	../_ref\_regV1\classTextBookScratch.py	/^def get_valid_input(input_string, valid_options):$/;"	kind:function	line:96
 h0me	../_ref\_py\_ndoRt.py	/^def h0me():$/;"	kind:function	line:13
 h0me	../app\_ref_\_py\_ndoRt.py	/^def h0me():$/;"	kind:function	line:13
 h0me	../app\items\routes.py	/^def h0me():$/;"	kind:function	line:65
@@ -463,6 +539,7 @@ home	../_ref\_py\_dispR.py	/^def home():$/;"	kind:function	line:179
 home	../app\_ref_\_py\_dispR.py	/^def home():$/;"	kind:function	line:179
 home	../app\main\routes.py	/^def home():$/;"	kind:function	line:32
 hourly_wage	../_ref\12_JS\02_Evr_PythonToJavaScript\Py_HelloVariableWorld.py	/^hourly_wage = 15$/;"	kind:variable	line:12
+houseForSale	../_ref\_regV1\app.py	/^def houseForSale():$/;"	kind:function	line:104
 id	../_ref\_py\_berM.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:10
 id	../_ref\_py\_berM.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:29
 id	../_ref\_py\_berM.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:42
@@ -492,6 +569,8 @@ imagegrid_url	../_ref\_py\_dispM.py	/^    imagegrid_url = db.Column(db.String(25
 imagegrid_url	../app\_ref_\_py\_dispM.py	/^    imagegrid_url = db.Column(db.String(256))$/;"	kind:variable	line:56
 imagelist_url	../_ref\_py\_dispM.py	/^    imagelist_url = db.Column(db.String(256))$/;"	kind:variable	line:57
 imagelist_url	../app\_ref_\_py\_dispM.py	/^    imagelist_url = db.Column(db.String(256))$/;"	kind:variable	line:57
+index	../_ref\_regV1\app.py	/^def index():$/;"	kind:function	line:45
+initFunctionsForClassItem	../_ref\_regV1\classItem.py	/^import initFunctionsForClassItem $/;"	kind:namespace	line:2
 inject_ItemDemoList	../app\items\routes.py	/^def inject_ItemDemoList():$/;"	kind:function	line:99
 inject_LowInvBts4Grid	../_ref\_py\_dispR.py	/^def inject_LowInvBts4Grid():$/;"	kind:function	line:433
 inject_LowInvBts4Grid	../app\_ref_\_py\_dispR.py	/^def inject_LowInvBts4Grid():$/;"	kind:function	line:433
@@ -552,12 +631,15 @@ is_youth	../_ref\_py\_dispM.py	/^    is_youth = db.Column(db.String(32))$/;"	kin
 is_youth	../app\_ref_\_py\_dispM.py	/^    is_youth = db.Column(db.String(32))$/;"	kind:variable	line:51
 items	../app\__init__.py	/^    from app.items.routes import items$/;"	kind:namespace	line:26
 items	../app\items\routes.py	/^items = Blueprint('items', __name__)$/;"	kind:variable	line:15
+jinja2	../_ref\_regV1\app.py	/^import jinja2$/;"	kind:namespace	line:9
 json	../_ref\_py\_dispR.py	/^import json$/;"	kind:namespace	line:9
+json	../_ref\_regV1\app.py	/^import json$/;"	kind:namespace	line:8
 json	../app\_ref_\_py\_dispR.py	/^import json$/;"	kind:namespace	line:9
 jsonify	../_ref\int-hw\hw01\Data-Journalism-and-D3-master\app.py	/^from flask import Flask, render_template, jsonify$/;"	kind:namespace	line:1
 jsonify	../_ref\int-hw\hw02\Data-Journalism-and-D3-master\app.py	/^from flask import Flask,render_template,jsonify$/;"	kind:namespace	line:1
 just_ran_out	../_ref\_py\_dispM.py	/^    def just_ran_out(self):$/;"	kind:member	line:112
 just_ran_out	../app\_ref_\_py\_dispM.py	/^    def just_ran_out(self):$/;"	kind:member	line:112
+listRoundLabels	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^def listRoundLabels(yearStart,yearEnd):$/;"	kind:function	line:92
 load_user	../_ref\_py\_berM.py	/^def load_user(user_id):$/;"	kind:function	line:24
 load_user	../_ref\_py\_dispM.py	/^def load_user(user_id):$/;"	kind:function	line:8
 load_user	../app\_ref_\_py\_berM.py	/^def load_user(user_id):$/;"	kind:function	line:24
@@ -609,6 +691,11 @@ mark_as_lowinv	../_ref\_py\_dispR.py	/^def mark_as_lowinv(item_id):$/;"	kind:fun
 mark_as_lowinv	../app\_ref_\_py\_dispR.py	/^def mark_as_lowinv(item_id):$/;"	kind:function	line:113
 mark_as_outofstock	../_ref\_py\_dispR.py	/^def mark_as_outofstock(item_id):$/;"	kind:function	line:85
 mark_as_outofstock	../app\_ref_\_py\_dispR.py	/^def mark_as_outofstock(item_id):$/;"	kind:function	line:85
+masterFED_df	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^masterFED_df = fedDataframeFromCSV(fedFileList)$/;"	kind:variable	line:312
+matplotlib	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^import matplotlib.path as mpath$/;"	kind:namespace	line:38
+matplotlib	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^import matplotlib.pyplot as plt$/;"	kind:namespace	line:16
+matplotlib	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^import matplotlib.style as style$/;"	kind:namespace	line:17
+metroDateTdf	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^def metroDateTdf(file):$/;"	kind:function	line:215
 mm_beg_01	../_ref\_py\forms - Copy.py	/^    mm_beg_01 = IntegerField(default='00')$/;"	kind:variable	line:11
 mm_beg_02	../_ref\_py\forms - Copy.py	/^    mm_beg_02 = IntegerField(default='00')$/;"	kind:variable	line:18
 mm_beg_03	../_ref\_py\forms - Copy.py	/^    mm_beg_03 = IntegerField(default='00')$/;"	kind:variable	line:25
@@ -632,6 +719,9 @@ model	../app\items\forms.py	/^    model = StringField('model')$/;"	kind:variable
 model	../app\items\forms.py	/^    model = StringField('model', validators=[DataRequired()], default='Mustang')$/;"	kind:variable	line:9
 model	../app\models.py	/^    model = db.Column(db.String(16), nullable=False, default='Mustang')$/;"	kind:variable	line:12
 models.py	../app\models.py	1;"	kind:file	line:1
+mongo	../_ref\_regV1\app.py	/^mongo = PyMongo(app,uri=mongo_uri)$/;"	kind:variable	line:40
+mongo_uri	../_ref\_regV1\app.py	/^mongo_uri = 'mongodb:\/\/heroku_x58zdhbn:fb7o0k7stbsk0ivbirarr2i2d3@ds139775.mlab.com:39775\/heroku_x58zdhbn'$/;"	kind:variable	line:38
+mpath	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^import matplotlib.path as mpath$/;"	kind:namespace	line:38
 name	../_ref\12_JS\02_Evr_PythonToJavaScript\Py_HelloVariableWorld.py	/^name = "Jacob Deming"$/;"	kind:variable	line:3
 name	../_ref\_py\_dispM.py	/^    name = db.Column(db.String(32))$/;"	kind:variable	line:265
 name	../app\_ref_\_py\_dispM.py	/^    name = db.Column(db.String(32))$/;"	kind:variable	line:265
@@ -647,6 +737,12 @@ now_restock3d	../_ref\_py\_dispM.py	/^    def now_restock3d(self):$/;"	kind:memb
 now_restock3d	../app\_ref_\_py\_dispM.py	/^    def now_restock3d(self):$/;"	kind:member	line:117
 now_restocked	../_ref\_py\_dispM.py	/^    def now_restocked(self):$/;"	kind:member	line:108
 now_restocked	../app\_ref_\_py\_dispM.py	/^    def now_restocked(self):$/;"	kind:member	line:108
+np	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^import numpy as np$/;"	kind:namespace	line:10
+np	../_ref\_regV1\buildHousesForSale.py	/^import numpy as np$/;"	kind:namespace	line:1
+np	../_ref\_regV1\classItem.py	/^ import numpy as np$/;"	kind:namespace	line:1
+np	../_ref\_regV1\descGenForClassItem.py	/^import numpy as np$/;"	kind:namespace	line:1
+objectHouseMarket.py	../_ref\_regV1\objectHouseMarket.py	1;"	kind:file	line:1
+oneBed_df	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^oneBed_df = stateDateTdf(file_stateOneBed)$/;"	kind:variable	line:240
 os	../_ref\_py\_dispR.py	/^import os$/;"	kind:namespace	line:5
 os	../_ref\_py\_ndoRt.py	/^import os $/;"	kind:namespace	line:8
 os	../app\_ref_\_py\_dispR.py	/^import os$/;"	kind:namespace	line:5
@@ -661,11 +757,17 @@ password	../app\models.py	/^    password = db.Column(db.String(60), nullable=Fal
 password	../app\users\forms.py	/^    password = PasswordField('Password', validators=[DataRequired()])$/;"	kind:variable	line:14
 password	../app\users\forms.py	/^    password = PasswordField('Password', validators=[DataRequired()])$/;"	kind:variable	line:40
 password	../app\users\forms.py	/^    password = PasswordField('Password', validators=[DataRequired()])$/;"	kind:variable	line:78
+pd	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^import pandas as pd$/;"	kind:namespace	line:9
+pd	../_ref\_regV1\app.py	/^import pandas as pd$/;"	kind:namespace	line:5
 pd	../_ref\int-hw\hw01\Data-Journalism-and-D3-master\app.py	/^import pandas as pd$/;"	kind:namespace	line:2
 pd	../_ref\int-hw\hw02\Data-Journalism-and-D3-master\app.py	/^import pandas as pd$/;"	kind:namespace	line:2
 percEmUp	../_ref\_py\_dispR.py	/^from squares.utils import percEmUp$/;"	kind:namespace	line:2
 percEmUp	../app\_ref_\_py\_dispR.py	/^from squares.utils import percEmUp$/;"	kind:namespace	line:2
 picture	../app\users\forms.py	/^    picture = FileField('Update Profile Picture', validators=[FileAllowed(['jpg', 'png'])])$/;"	kind:variable	line:50
+plt	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^import matplotlib.pyplot as plt$/;"	kind:namespace	line:16
+pltPlotEZ	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^def pltPlotEZ(df,label):$/;"	kind:function	line:137
+pltPlotEZSeries	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^def pltPlotEZSeries(ser1es,labelUser):$/;"	kind:function	line:108
+pltPlotEZstar	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^def pltPlotEZstar(df,label):$/;"	kind:function	line:164
 post	../_ref\_py\_dispR.py	/^def post(post_id):$/;"	kind:function	line:302
 post	../app\_ref_\_py\_dispR.py	/^def post(post_id):$/;"	kind:function	line:302
 post	../app\posts\routes.py	/^def post(post_id):$/;"	kind:function	line:25
@@ -676,6 +778,8 @@ posts	../app\_ref_\_py\_berM.py	/^    posts = db.relationship('Post', backref='a
 posts	../app\_ref_\_py\_dispM.py	/^    posts = db.relationship('Post', backref='author', lazy=True)$/;"	kind:variable	line:19
 posts	../app\models.py	/^    posts = db.relationship('Post', backref='author', lazy=True)$/;"	kind:variable	line:36
 posts	../app\posts\routes.py	/^posts = Blueprint('posts', __name__)$/;"	kind:variable	line:8
+predictActualErrorDF	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^def predictActualErrorDF(X,y):$/;"	kind:function	line:397
+predictionNumpyArray	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^def predictionNumpyArray(X,y):$/;"	kind:function	line:386
 proday	../_ref\_py\_ndoRp.py	/^def proday(proday_id):$/;"	kind:function	line:71
 proday	../app\_ref_\_py\_ndoRp.py	/^def proday(proday_id):$/;"	kind:function	line:71
 proday_demo	../_ref\_py\_ndoRp.py	/^def proday_demo():$/;"	kind:function	line:10
@@ -684,8 +788,35 @@ prodays	../_ref\_py\_ndoRp.py	/^prodays = Blueprint('prodays', __name__)$/;"	kin
 prodays	../app\_ref_\_py\_ndoRp.py	/^prodays = Blueprint('prodays', __name__)$/;"	kind:variable	line:7
 product_url	../_ref\_py\_dispM.py	/^    product_url = db.Column(db.String(256))$/;"	kind:variable	line:58
 product_url	../app\_ref_\_py\_dispM.py	/^    product_url = db.Column(db.String(256))$/;"	kind:variable	line:58
+prompt_init	../_ref\_regV1\classProperty.py	/^    def prompt_init():$/;"	kind:member	line:109
+prompt_init	../_ref\_regV1\classProperty.py	/^    def prompt_init():$/;"	kind:member	line:130
+prompt_init	../_ref\_regV1\classProperty.py	/^    def prompt_init():$/;"	kind:member	line:139
+prompt_init	../_ref\_regV1\classProperty.py	/^    def prompt_init():$/;"	kind:member	line:146
+prompt_init	../_ref\_regV1\classProperty.py	/^    def prompt_init():$/;"	kind:member	line:153
+prompt_init	../_ref\_regV1\classProperty.py	/^    def prompt_init():$/;"	kind:member	line:160
+prompt_init	../_ref\_regV1\classProperty.py	/^    def prompt_init():$/;"	kind:member	line:19
+prompt_init	../_ref\_regV1\classProperty.py	/^    def prompt_init():$/;"	kind:member	line:47
+prompt_init	../_ref\_regV1\classProperty.py	/^    def prompt_init():$/;"	kind:member	line:81
+prompt_init	../_ref\_regV1\classProperty.py	/^    prompt_init = staticmethod(prompt_init)$/;"	kind:variable	line:113
+prompt_init	../_ref\_regV1\classProperty.py	/^    prompt_init = staticmethod(prompt_init)$/;"	kind:variable	line:136
+prompt_init	../_ref\_regV1\classProperty.py	/^    prompt_init = staticmethod(prompt_init)$/;"	kind:variable	line:143
+prompt_init	../_ref\_regV1\classProperty.py	/^    prompt_init = staticmethod(prompt_init)$/;"	kind:variable	line:150
+prompt_init	../_ref\_regV1\classProperty.py	/^    prompt_init = staticmethod(prompt_init)$/;"	kind:variable	line:157
+prompt_init	../_ref\_regV1\classProperty.py	/^    prompt_init = staticmethod(prompt_init)$/;"	kind:variable	line:164
+prompt_init	../_ref\_regV1\classProperty.py	/^    prompt_init = staticmethod(prompt_init)$/;"	kind:variable	line:23
+prompt_init	../_ref\_regV1\classProperty.py	/^    prompt_init = staticmethod(prompt_init)$/;"	kind:variable	line:61
+prompt_init	../_ref\_regV1\classProperty.py	/^    prompt_init = staticmethod(prompt_init)$/;"	kind:variable	line:95
+prompt_init	../_ref\_regV1\classTextBookScratch.py	/^    def prompt_init():$/;"	kind:member	line:21
+prompt_init	../_ref\_regV1\classTextBookScratch.py	/^    def prompt_init():$/;"	kind:member	line:43
+prompt_init	../_ref\_regV1\classTextBookScratch.py	/^    def prompt_init():$/;"	kind:member	line:78
+prompt_init	../_ref\_regV1\classTextBookScratch.py	/^    prompt_init = staticmethod(prompt_init)$/;"	kind:variable	line:25
+prompt_init	../_ref\_regV1\classTextBookScratch.py	/^    prompt_init = staticmethod(prompt_init)$/;"	kind:variable	line:57
+prompt_init	../_ref\_regV1\classTextBookScratch.py	/^    prompt_init = staticmethod(prompt_init)$/;"	kind:variable	line:92
 pstn_rowcol	../_ref\_py\_dispM.py	/^    pstn_rowcol = db.Column(db.String(32))$/;"	kind:variable	line:282
 pstn_rowcol	../app\_ref_\_py\_dispM.py	/^    pstn_rowcol = db.Column(db.String(32))$/;"	kind:variable	line:282
+randGen_itemDesc	../_ref\_regV1\classItem.py	/^from descGenForClassItem import randGen_itemDesc$/;"	kind:namespace	line:15
+randGen_itemDesc	../_ref\_regV1\descGenForClassItem.py	/^def randGen_itemDesc():$/;"	kind:function	line:6
+randGen_itemState	../_ref\_regV1\classItem.py	/^from initFunctionsForClassItem import (randGen_itemState,$/;"	kind:namespace	line:3
 random	../_ref\_py\_dispR.py	/^import random$/;"	kind:namespace	line:4
 random	../app\_ref_\_py\_dispR.py	/^import random$/;"	kind:namespace	line:4
 random_populate	../_ref\_py\_dispR.py	/^def random_populate(square_id):$/;"	kind:function	line:1049
@@ -716,6 +847,7 @@ register	../app\users\routes.py	/^def register():$/;"	kind:function	line:36
 remember	../app\users\forms.py	/^    remember = BooleanField('Remember Me')$/;"	kind:variable	line:41
 render_template	../_ref\_py\_ndoRp.py	/^from flask import (render_template, url_for, flash,$/;"	kind:namespace	line:1
 render_template	../_ref\_py\routes - Copy.py	/^from flask import render_template, url_for, flash, request, Blueprint$/;"	kind:namespace	line:1
+render_template	../_ref\_regV1\app.py	/^from flask import Flask, render_template$/;"	kind:namespace	line:6
 render_template	../_ref\int-hw\hw01\Data-Journalism-and-D3-master\app.py	/^from flask import Flask, render_template, jsonify$/;"	kind:namespace	line:1
 render_template	../_ref\int-hw\hw02\Data-Journalism-and-D3-master\app.py	/^from flask import Flask,render_template,jsonify$/;"	kind:namespace	line:1
 render_template	../app\_ref_\_py\_ndoRp.py	/^from flask import (render_template, url_for, flash,$/;"	kind:namespace	line:1
@@ -728,6 +860,7 @@ request	../app\main\routes.py	/^from flask import render_template, request, Blue
 request	../app\users\routes.py	/^from flask import render_template, url_for, flash, redirect, request, Blueprint$/;"	kind:namespace	line:1
 resolve_task	../_ref\_py\_ndoRt.py	/^def resolve_task(task_id):$/;"	kind:function	line:123
 resolve_task	../app\_ref_\_py\_ndoRt.py	/^def resolve_task(task_id):$/;"	kind:function	line:123
+roundYearEndTdf	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^def roundYearEndTdf(file,yearStart,yearEnd):$/;"	kind:function	line:102
 routes - Copy.py	../_ref\_py\routes - Copy.py	1;"	kind:file	line:1
 routes.py	../app\dash_app\routes.py	1;"	kind:file	line:1
 routes.py	../app\items\routes.py	1;"	kind:file	line:1
@@ -765,6 +898,10 @@ showonly_invout	../_ref\_py\_dispR.py	/^def showonly_invout():$/;"	kind:function
 showonly_invout	../app\_ref_\_py\_dispR.py	/^def showonly_invout():$/;"	kind:function	line:523
 similar_attrs	../_ref\_py\_dispM.py	/^    def similar_attrs(self):$/;"	kind:member	line:188
 similar_attrs	../app\_ref_\_py\_dispM.py	/^    def similar_attrs(self):$/;"	kind:member	line:188
+simulator	../_ref\_regV1\app.py	/^def simulator():$/;"	kind:function	line:79
+sns	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^import seaborn as sns$/;"	kind:namespace	line:320
+snsRegPlotEZ	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^def snsRegPlotEZ(df,ytarget):$/;"	kind:function	line:351
+snsRegressionPlot	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^def snsRegressionPlot(df,yTarget):$/;"	kind:function	line:324
 sqr_home	../_ref\_py\_dispR.py	/^def sqr_home():$/;"	kind:function	line:999
 sqr_home	../app\_ref_\_py\_dispR.py	/^def sqr_home():$/;"	kind:function	line:999
 square_byid	../_ref\_py\_dispR.py	/^def square_byid(square_id):$/;"	kind:function	line:603
@@ -773,7 +910,10 @@ square_byid_lite	../_ref\_py\_dispR.py	/^def square_byid_lite(square_id):$/;"	ki
 square_byid_lite	../app\_ref_\_py\_dispR.py	/^def square_byid_lite(square_id):$/;"	kind:function	line:646
 square_id	../_ref\_py\_dispM.py	/^    square_id = db.Column(db.Integer)$/;"	kind:variable	line:281
 square_id	../app\_ref_\_py\_dispM.py	/^    square_id = db.Column(db.Integer)$/;"	kind:variable	line:281
+stateDateTdf	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^def stateDateTdf(file):$/;"	kind:function	line:56
+stateYrAvgTdf	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^def stateYrAvgTdf(file):$/;"	kind:function	line:73
 statusFinder	../app\items\routes.py	/^    def statusFinder(item_ship_status):$/;"	kind:function	line:186
+style	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^import matplotlib.style as style$/;"	kind:namespace	line:17
 submit	../app\posts\forms.py	/^    submit = SubmitField('Post')$/;"	kind:variable	line:10
 submit	../app\users\forms.py	/^    submit = SubmitField('Login')$/;"	kind:variable	line:42
 submit	../app\users\forms.py	/^    submit = SubmitField('Request Password Reset')$/;"	kind:variable	line:69
@@ -793,10 +933,14 @@ tasks_list	../_ref\_py\_ndoRt.py	/^def tasks_list():$/;"	kind:function	line:80
 tasks_list	../app\_ref_\_py\_ndoRt.py	/^def tasks_list():$/;"	kind:function	line:80
 test	../_ref\_py\_dispR.py	/^def test():$/;"	kind:function	line:798
 test	../app\_ref_\_py\_dispR.py	/^def test():$/;"	kind:function	line:798
+test	../app\main\routes.py	/^def test():$/;"	kind:function	line:55
+testSession	../_ref\_regV1\app.py	/^def testSession():$/;"	kind:function	line:128
+testTen	../_ref\_regV1\app.py	/^def testTen():$/;"	kind:function	line:115
 test_info_board	../_ref\_py\_dispR.py	/^def test_info_board():$/;"	kind:function	line:1177
 test_info_board	../app\_ref_\_py\_dispR.py	/^def test_info_board():$/;"	kind:function	line:1177
 third_act_done	../_ref\_py\_ndoRp.py	/^def third_act_done(proday_id):$/;"	kind:function	line:195
 third_act_done	../app\_ref_\_py\_ndoRp.py	/^def third_act_done(proday_id):$/;"	kind:function	line:195
+threeBed_df	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^threeBed_df = stateDateTdf(file_stateThreeBed)$/;"	kind:variable	line:254
 timesheet	../_ref\_py\routes - Copy.py	/^timesheet = Blueprint('timesheet', __name__)$/;"	kind:variable	line:4
 title	../_ref\_py\_berM.py	/^    title = db.Column(db.String(100), nullable=False)$/;"	kind:variable	line:43
 title	../_ref\_py\_dispM.py	/^    title = db.Column(db.String(100), nullable=False)$/;"	kind:variable	line:27
@@ -804,7 +948,9 @@ title	../app\_ref_\_py\_berM.py	/^    title = db.Column(db.String(100), nullable
 title	../app\_ref_\_py\_dispM.py	/^    title = db.Column(db.String(100), nullable=False)$/;"	kind:variable	line:27
 title	../app\models.py	/^    title = db.Column(db.String(100), nullable=False)$/;"	kind:variable	line:43
 title	../app\posts\forms.py	/^    title = StringField('Title', validators=[DataRequired()])$/;"	kind:variable	line:8
+twoBed_df	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^twoBed_df = stateDateTdf(file_stateTwoBed)$/;"	kind:variable	line:247
 typeFinder	../app\items\routes.py	/^    def typeFinder(item_bodyType_id):$/;"	kind:function	line:169
+type_map	../_ref\_regV1\classProperty.py	/^    type_map = {$/;"	kind:variable	line:167
 unique_tag	../_ref\_py\_dispM.py	/^    unique_tag = db.Column(db.String(32),unique=True)$/;"	kind:variable	line:283
 unique_tag	../app\_ref_\_py\_dispM.py	/^    unique_tag = db.Column(db.String(32),unique=True)$/;"	kind:variable	line:283
 unit_mainitem_low	../_ref\_py\_dispR.py	/^def unit_mainitem_low(unique_tag, item_id):$/;"	kind:function	line:715
@@ -857,6 +1003,14 @@ users	../app\users\routes.py	/^users = Blueprint('users', __name__)$/;"	kind:var
 utility_processor	../_ref\_py\_ndoRt.py	/^def utility_processor():$/;"	kind:function	line:164
 utility_processor	../app\_ref_\_py\_ndoRt.py	/^def utility_processor():$/;"	kind:function	line:164
 utils.py	../app\users\utils.py	1;"	kind:file	line:1
+valid_balconies	../_ref\_regV1\classProperty.py	/^    valid_balconies = ("yes", "no", "solarium")$/;"	kind:variable	line:34
+valid_balconies	../_ref\_regV1\classTextBookScratch.py	/^    valid_balconies = ("yes", "no", "solarium")$/;"	kind:variable	line:30
+valid_fenced	../_ref\_regV1\classProperty.py	/^    valid_fenced = ("yes", "no")$/;"	kind:variable	line:65
+valid_fenced	../_ref\_regV1\classTextBookScratch.py	/^    valid_fenced = ("yes", "no")$/;"	kind:variable	line:62
+valid_garage	../_ref\_regV1\classProperty.py	/^    valid_garage = ("attached", "detached", "none")$/;"	kind:variable	line:64
+valid_garage	../_ref\_regV1\classTextBookScratch.py	/^    valid_garage = ("attached", "detached", "none")$/;"	kind:variable	line:61
+valid_laundries	../_ref\_regV1\classProperty.py	/^    valid_laundries = ("coin", "ensuite", "none")$/;"	kind:variable	line:33
+valid_laundries	../_ref\_regV1\classTextBookScratch.py	/^    valid_laundries = ("coin", "ensuite", "none")$/;"	kind:variable	line:29
 validate_email	../app\users\forms.py	/^    def validate_email(self, email):$/;"	kind:member	line:31
 validate_email	../app\users\forms.py	/^    def validate_email(self, email):$/;"	kind:member	line:59
 validate_email	../app\users\forms.py	/^    def validate_email(self, email):$/;"	kind:member	line:71
