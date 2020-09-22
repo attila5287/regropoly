@@ -952,15 +952,16 @@ border-radius:2rem;
   /* background-blend-mode: normal; */
   /* background-blend-mode: multiply; */
   /* background-blend-mode: difference; */
-  background-blend-mode: hard-light;
+  /* background-blend-mode: hard-light; */
   margin-top: 40px;
   background-position: top;
   background-repeat: repeat;
   background-size: auto;
+  background-size: cover;
   position: relative;
   vertical-align: top;
   background-image: linear-gradient(#998d99, #c4c4c4 60%, #5d476b);
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/United_States_Capitol_Building_at_night.jpg/1200px-United_States_Capitol_Building_at_night.jpg");
+  background-image: url("https://wallpapercave.com/wp/wp4203781.jpg");
   background-color: #002B36;
 }
 /* set map, body, and html to 100% of the screen size */
@@ -1012,7 +1013,7 @@ tbody td:last-child {
 }
 
 .bg-themsie {
-  background-color: rgb(41, 37, 65);
+  background-image: linear-gradient(#c3710d85, #612d02c7 60%, #1a058fc9);
 }
 .shd-themy {
   border: 0px solid turquoise;
@@ -1030,16 +1031,17 @@ tbody td:last-child {
 .bg-themy {
   border: 0px solid turquoise;
   box-shadow: 0px 0px 4px #5d73ee  ,  inset 0px 0px 3px #47a8e0ad;
-  border-radius: 0.75rem;
-  background-image: linear-gradient(#ff00ea67, #001aff11 60%, #0400ff5d);
+  border-radius: 0.25rem;
+  background-image: linear-gradient(#f08640b4, #ff6600bc 60%, #210c80ca);
 }
 .bg-theme {
   background-image: linear-gradient(#ff00ea38, #0c3da89d 60%, #0806a3b4);
+  background-image: linear-gradient(#ff9064b6, #f36608b6 60%, #ff4b1494);
   background-repeat: repeat;
   -webkit-filter: none;
   filter: none;
   border: 0px solid turquoise;
-  box-shadow: 0px 0px 4px #5d73ee  ,  inset 0px 0px 3px #47a8e0ad;
+  box-shadow: 0px 0px 4px #944403  ,  inset 0px 0px 3px #a54607ad;
 }
 
 .st-btn {
