@@ -2,7 +2,7 @@ import requests
 import csv
 from flask import render_template, request, Blueprint, jsonify
 from app import db, bcrypt
-from app.models import Post, BasePrice
+from app.models import Post, Baseprice
 from app.posts.forms import PostDemo
 
 main = Blueprint('main', __name__)

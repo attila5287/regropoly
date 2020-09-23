@@ -60,7 +60,7 @@ class Post(db.Model):
 # {{item.year}}
 # {{ bodyTypeTextFinder(item.body_type) }}
 
-class BasePrice(db.Model):
+class Baseprice(db.Model):
     pass
     id = db.Column(db.Integer, primary_key=True)
     BasePriceLabel = db.Column(db.String(256), nullable=False)
