@@ -37,6 +37,7 @@ class User(db.Model, UserMixin):
     def __repr__(self):
         return f"User('{self.username}', '{self.email}', '{self.image_file}')"
 
+        
 class Post(db.Model):
     pass
     id = db.Column(db.Integer, primary_key=True)
@@ -324,3 +325,10 @@ class Baseprice(db.Model):
 
     def __repr__(self):
         return f"base prices created"
+
+
+# class Property(db.Model):
+#     pass
+#     id = db.Column(db.Integer, primary_key=True)
+#     img_url = db.Column(db.String(256), nullable=False)
+#     bp_index = db.Column(db.Integer, nullable=False)

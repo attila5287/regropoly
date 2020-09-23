@@ -59,19 +59,41 @@ def test():
     pass
     return render_template('test.html')
 
+
+
 @main.route("/db/init/base")
 def base_prices():
-    pass
-    csv_url = 'https://gist.githubusercontent.com/attila5287/4dd95bed39c46a09fd76cbda1670ceb4/raw/aa07a33ad59875856505cd36be900d5c57812c5d/zhvi-dem0.csv'
-    with requests.get(csv_url, stream=True) as r:
+    pass # UPLOAD ZILLOW HOUSE VALUE INDEX CSV'S MERGED
+    existing_data = Baseprice.query.filter_by(RegionName='Denver').first()
+    if existing_data:
         pass
-        lines = (line.decode('utf-8') for line in r.iter_lines())
-        csv_dict = [row for row in csv.DictReader(lines)]
-        inventory = [
-            Baseprice(**row) for row in csv_dict
-        ]
-        # print(inventory)
-        db.session.add_all(inventory)
-        db.session.commit()
+        print('table data exists')
+        return jsonify({
+            'status':'no upload necessary',
+            })
+    else:
+        pass
+        csv_url = 'https://gist.githubusercontent.com/attila5287/4dd95bed39c46a09fd76cbda1670ceb4/raw/aa07a33ad59875856505cd36be900d5c57812c5d/zhvi-dem0.csv'
+        with requests.get(csv_url, stream=True) as r:
+            pass
+            lines = (line.decode('utf-8') for line in r.iter_lines())
+            csv_dict = [row for row in csv.DictReader(lines)]
+            base_prices = [
+                Baseprice(**row) for row in csv_dict
+            ]
+            # print(inventory)
+            db.session.add_all(base_prices)
+            db.session.commit()
+            
+        return jsonify(csv_dict)
+
+@main.route('/market/round/<int:round_no>')
+def market(round_no):
+   pass
+   print(round_no)
+   testPrice = Baseprice.query.first()
+   return jsonify({
+       'Round {}'.format(round_no): testPrice.RegionID
+   })
+
         
-    return jsonify(csv_dict)

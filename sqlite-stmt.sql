@@ -1,15 +1,26 @@
-DROP TABLE public.baseprice CASCADE;
--- table for baseprice
+CREATE TABLE "item" (
+	"id"	INTEGER NOT NULL,
+	"make"	VARCHAR(16),
+	"model"	VARCHAR(16),
+	"year"	VARCHAR(16),
+	"body_type"	VARCHAR(16),
+	"dest_id"	VARCHAR(16),
+	"ship_status"	VARCHAR(16),
+	"date_posted"	DATETIME,
+	PRIMARY KEY("id")
+)
+
+
 CREATE TABLE "baseprice" (
-		"id"	BIGSERIAL NOT NULL PRIMARY KEY,
+    	"id"	INTEGER NOT NULL,
     "RegionName" VARCHAR(255),
     "StateName" VARCHAR(64),
     "State" VARCHAR(2),
     "Metro" VARCHAR(255),
     "CountyName" VARCHAR(255),
     "BasePriceLabel" VARCHAR(255),
-    "BedrmCt" SMALLINT,
-    "SizeRank" SMALLINT,
+    "BedrmCt" INTEGER,
+    "SizeRank" INTEGER,
     "RegionID" INTEGER,
     "Round1" INTEGER,
     "Round2" INTEGER,
@@ -259,5 +270,5 @@ CREATE TABLE "baseprice" (
     "Round246" INTEGER,
     "Round247" INTEGER,
     "Round248" INTEGER
-
+    PRIMARY KEY("id")
 	);

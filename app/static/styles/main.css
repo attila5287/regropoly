@@ -1032,7 +1032,7 @@ tbody td:last-child {
   border: 0px solid turquoise;
   box-shadow: 0px 0px 4px #5d73ee  ,  inset 0px 0px 3px #47a8e0ad;
   border-radius: 0.25rem;
-  background-image: linear-gradient(#f08640b4, #ff6600bc 60%, #210c80ca);
+  background-image: linear-gradient(#f08640b4, #ff660082 60%, #210c80ca);
 }
 .bg-theme {
   background-image: linear-gradient(#ff00ea38, #0c3da89d 60%, #0806a3b4);
