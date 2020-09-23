@@ -469,7 +469,7 @@ __repr__	../app\_ref_\_py\_dispM.py	/^    def __repr__(self):$/;"	kind:member	li
 __repr__	../app\_ref_\_py\_dispM.py	/^    def __repr__(self):$/;"	kind:member	line:33
 __repr__	../app\items\forms.py	/^    def __repr__(self):$/;"	kind:member	line:47
 __repr__	../app\models.py	/^    def __repr__(self):$/;"	kind:member	line:20
-__repr__	../app\models.py	/^    def __repr__(self):$/;"	kind:member	line:326
+__repr__	../app\models.py	/^    def __repr__(self):$/;"	kind:member	line:330
 __repr__	../app\models.py	/^    def __repr__(self):$/;"	kind:member	line:37
 __repr__	../app\models.py	/^    def __repr__(self):$/;"	kind:member	line:49
 __repr__	../app\posts\forms.py	/^    def __repr__(self):$/;"	kind:member	line:25
@@ -696,6 +696,7 @@ display_properties	../app\_ref_\_py\_dispM.py	/^    def display_properties(self)
 display_tablerow	../_ref\_py\_dispM.py	/^    def display_tablerow(self):$/;"	kind:member	line:88
 display_tablerow	../app\_ref_\_py\_dispM.py	/^    def display_tablerow(self):$/;"	kind:member	line:88
 dt	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^import datetime as dt$/;"	kind:namespace	line:11
+dynamic_price	../app\models.py	/^    def dynamic_price(self, roundNo):$/;"	kind:member	line:325
 edit_item	../_ref\_py\_dispR.py	/^def edit_item(item_id):$/;"	kind:function	line:44
 edit_item	../app\_ref_\_py\_dispR.py	/^def edit_item(item_id):$/;"	kind:function	line:44
 email	../_ref\_py\_berM.py	/^    email = db.Column(db.String(120), unique=True, nullable=False)$/;"	kind:variable	line:33

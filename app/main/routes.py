@@ -87,13 +87,20 @@ def base_prices():
             
         return jsonify(csv_dict)
 
-@main.route('/market/round/<int:round_no>')
+@main.route('/market/<int:round_no>')
 def market(round_no):
    pass
    print(round_no)
    testPrice = Baseprice.query.first()
+   columnName = 'Round'+str(round_no)
+   print(columnName)
+   
    return jsonify({
-       'Round {}'.format(round_no): testPrice.RegionID
+       'Round {}'.format(round_no): getattr(testPrice, columnName)
    })
 
+#    q = session.query(myClass)
+#    for attr, value in web_dict.items():
+#        pass
+#        q = q.filter(getattr(myClass, attr).like("%%%s%%" % value))
         

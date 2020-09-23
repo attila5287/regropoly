@@ -322,6 +322,10 @@ class Baseprice(db.Model):
     Round247	 = db.Column(db.Integer, nullable=False)
     Round248	 = db.Column(db.Integer, nullable=False)
 
+    def dynamic_price(self, roundNo):
+        pass
+        roundN0 = 'Round{}'.format(str(roundNo))
+        return self.Round2
 
     def __repr__(self):
         return f"base prices created"
