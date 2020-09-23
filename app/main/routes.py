@@ -68,8 +68,9 @@ def base_prices():
         lines = (line.decode('utf-8') for line in r.iter_lines())
         csv_dict = [row for row in csv.DictReader(lines)]
         inventory = [
-            BasePrice(**row) for row in csv.DictReader(lines)
+            BasePrice(**row) for row in csv_dict
         ]
+        # print(inventory)
         db.session.add_all(inventory)
         db.session.commit()
         
