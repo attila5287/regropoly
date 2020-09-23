@@ -10,10 +10,13 @@ Apartment	../_ref\_regV1\classProperty.py	/^class Apartment(Property):$/;"	kind:
 Apartment	../_ref\_regV1\classTextBookScratch.py	/^class Apartment(Property):$/;"	kind:class	line:28
 ApartmentPurchase	../_ref\_regV1\classProperty.py	/^class ApartmentPurchase(Purchase, Apartment):$/;"	kind:class	line:152
 ApartmentRental	../_ref\_regV1\classProperty.py	/^class ApartmentRental(Rental, Apartment):$/;"	kind:class	line:145
+BasePrice	../app\main\routes.py	/^from app.models import Post, BasePrice$/;"	kind:namespace	line:5
+BasePrice	../app\models.py	/^class BasePrice(db.Model):$/;"	kind:class	line:63
+BasePriceLabel	../app\models.py	/^    BasePriceLabel = db.Column(db.String(256), nullable=False)$/;"	kind:variable	line:66
 Bcrypt	../app\__init__.py	/^from flask_bcrypt import Bcrypt$/;"	kind:namespace	line:3
 Blueprint	../_ref\_py\routes - Copy.py	/^from flask import render_template, url_for, flash, request, Blueprint$/;"	kind:namespace	line:1
 Blueprint	../app\errors\handlers.py	/^from flask import Blueprint, render_template$/;"	kind:namespace	line:1
-Blueprint	../app\main\routes.py	/^from flask import render_template, request, Blueprint$/;"	kind:namespace	line:1
+Blueprint	../app\main\routes.py	/^from flask import render_template, request, Blueprint, jsonify$/;"	kind:namespace	line:3
 Blueprint	../app\users\routes.py	/^from flask import render_template, url_for, flash, redirect, request, Blueprint$/;"	kind:namespace	line:1
 BooleanField	../app\users\forms.py	/^from wtforms import StringField, PasswordField, SubmitField, BooleanField, SelectField$/;"	kind:namespace	line:3
 Column	../_ref\_py\_berM.py	/^from sqlalchemy import Table, Column, Integer, String, MetaData, ForeignKey$/;"	kind:namespace	line:1
@@ -21,6 +24,7 @@ Column	../app\_ref_\_py\_berM.py	/^from sqlalchemy import Table, Column, Integer
 Column	../app\models.py	/^from sqlalchemy import Table, Column, Integer, String, MetaData, ForeignKey$/;"	kind:namespace	line:1
 Config	../app\__init__.py	/^from app.config import Config$/;"	kind:namespace	line:5
 Config	../app\config.py	/^class Config:$/;"	kind:class	line:4
+CountyName	../app\models.py	/^    CountyName = db.Column(db.String(256), nullable=False)$/;"	kind:variable	line:71
 DataRequired	../app\items\forms.py	/^from wtforms.validators import DataRequired$/;"	kind:namespace	line:4
 DataRequired	../app\posts\forms.py	/^from wtforms.validators import DataRequired$/;"	kind:namespace	line:4
 DataRequired	../app\users\forms.py	/^from wtforms.validators import DataRequired, Length, Email, EqualTo, ValidationError$/;"	kind:namespace	line:4
@@ -71,6 +75,7 @@ LowInvIconizer	../app\_ref_\_py\_dispR.py	/^    def LowInvIconizer(yes_or_no):$/
 MetaData	../_ref\_py\_berM.py	/^from sqlalchemy import Table, Column, Integer, String, MetaData, ForeignKey$/;"	kind:namespace	line:1
 MetaData	../app\_ref_\_py\_berM.py	/^from sqlalchemy import Table, Column, Integer, String, MetaData, ForeignKey$/;"	kind:namespace	line:1
 MetaData	../app\models.py	/^from sqlalchemy import Table, Column, Integer, String, MetaData, ForeignKey$/;"	kind:namespace	line:1
+Metro	../app\models.py	/^    Metro = db.Column(db.String(256), nullable=False)$/;"	kind:variable	line:70
 OutInvIconizer	../_ref\_py\_dispR.py	/^    def OutInvIconizer(yes_or_no):$/;"	kind:function	line:481
 OutInvIconizer	../app\_ref_\_py\_dispR.py	/^    def OutInvIconizer(yes_or_no):$/;"	kind:function	line:481
 OutOfStckStyler	../_ref\_py\_dispR.py	/^    def OutOfStckStyler(yes_or_no):$/;"	kind:function	line:406
@@ -83,11 +88,11 @@ Post	../_ref\_py\_berM.py	/^class Post(db.Model):$/;"	kind:class	line:40
 Post	../_ref\_py\_dispM.py	/^class Post(db.Model):$/;"	kind:class	line:25
 Post	../app\_ref_\_py\_berM.py	/^class Post(db.Model):$/;"	kind:class	line:40
 Post	../app\_ref_\_py\_dispM.py	/^class Post(db.Model):$/;"	kind:class	line:25
-Post	../app\main\routes.py	/^from app.models import Post$/;"	kind:namespace	line:2
+Post	../app\main\routes.py	/^from app.models import Post, BasePrice$/;"	kind:namespace	line:5
 Post	../app\models.py	/^class Post(db.Model):$/;"	kind:class	line:40
 Post	../app\posts\routes.py	/^from app.models import User, Post$/;"	kind:namespace	line:5
 Post	../app\users\routes.py	/^from app.models import User, Post$/;"	kind:namespace	line:4
-PostDemo	../app\main\routes.py	/^from app.posts.forms import PostDemo$/;"	kind:namespace	line:3
+PostDemo	../app\main\routes.py	/^from app.posts.forms import PostDemo$/;"	kind:namespace	line:6
 PostDemo	../app\posts\forms.py	/^class PostDemo():$/;"	kind:class	line:14
 PostDemo	../app\posts\routes.py	/^from app.posts.forms import PostForm, PostDemo$/;"	kind:namespace	line:6
 PostForm	../app\posts\forms.py	/^class PostForm(FlaskForm):$/;"	kind:class	line:7
@@ -102,11 +107,260 @@ Purchase	../_ref\_regV1\classProperty.py	/^class Purchase:$/;"	kind:class	line:9
 PyMongo	../_ref\_regV1\app.py	/^from flask_pymongo import PyMongo$/;"	kind:namespace	line:7
 Py_ConditionalCheck.py	../_ref\12_JS\02_Evr_PythonToJavaScript\Py_ConditionalCheck.py	1;"	kind:file	line:1
 Py_HelloVariableWorld.py	../_ref\12_JS\02_Evr_PythonToJavaScript\Py_HelloVariableWorld.py	1;"	kind:file	line:1
+RegionName	../app\models.py	/^    RegionName = db.Column(db.String(64), nullable=False)$/;"	kind:variable	line:67
 RegistrationForm	../app\users\forms.py	/^class RegistrationForm(FlaskForm):$/;"	kind:class	line:9
 RegroPoly_jupyter_import2py.py	../_ref\_regV1\RegroPoly_jupyter_import2py.py	1;"	kind:file	line:1
 Rental	../_ref\_regV1\classProperty.py	/^class Rental:$/;"	kind:class	line:115
 RequestResetForm	../app\users\forms.py	/^class RequestResetForm(FlaskForm):$/;"	kind:class	line:66
 ResetPasswordForm	../app\users\forms.py	/^class ResetPasswordForm(FlaskForm):$/;"	kind:class	line:77
+Round1	../app\models.py	/^    Round1	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:72
+Round10	../app\models.py	/^    Round10	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:81
+Round100	../app\models.py	/^    Round100	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:171
+Round101	../app\models.py	/^    Round101	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:172
+Round102	../app\models.py	/^    Round102	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:173
+Round103	../app\models.py	/^    Round103	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:174
+Round104	../app\models.py	/^    Round104	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:175
+Round105	../app\models.py	/^    Round105	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:176
+Round106	../app\models.py	/^    Round106	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:177
+Round107	../app\models.py	/^    Round107	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:178
+Round108	../app\models.py	/^    Round108	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:179
+Round109	../app\models.py	/^    Round109	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:180
+Round11	../app\models.py	/^    Round11	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:82
+Round110	../app\models.py	/^    Round110	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:181
+Round111	../app\models.py	/^    Round111	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:182
+Round112	../app\models.py	/^    Round112	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:183
+Round113	../app\models.py	/^    Round113	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:184
+Round114	../app\models.py	/^    Round114	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:185
+Round115	../app\models.py	/^    Round115	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:186
+Round116	../app\models.py	/^    Round116	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:187
+Round117	../app\models.py	/^    Round117	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:188
+Round118	../app\models.py	/^    Round118	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:189
+Round119	../app\models.py	/^    Round119	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:190
+Round12	../app\models.py	/^    Round12	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:83
+Round120	../app\models.py	/^    Round120	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:191
+Round121	../app\models.py	/^    Round121	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:192
+Round122	../app\models.py	/^    Round122	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:193
+Round123	../app\models.py	/^    Round123	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:194
+Round124	../app\models.py	/^    Round124	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:195
+Round125	../app\models.py	/^    Round125	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:196
+Round126	../app\models.py	/^    Round126	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:197
+Round127	../app\models.py	/^    Round127	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:198
+Round128	../app\models.py	/^    Round128	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:199
+Round129	../app\models.py	/^    Round129	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:200
+Round13	../app\models.py	/^    Round13	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:84
+Round130	../app\models.py	/^    Round130	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:201
+Round131	../app\models.py	/^    Round131	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:202
+Round132	../app\models.py	/^    Round132	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:203
+Round133	../app\models.py	/^    Round133	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:204
+Round134	../app\models.py	/^    Round134	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:205
+Round135	../app\models.py	/^    Round135	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:206
+Round136	../app\models.py	/^    Round136	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:207
+Round137	../app\models.py	/^    Round137	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:208
+Round138	../app\models.py	/^    Round138	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:209
+Round139	../app\models.py	/^    Round139	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:210
+Round14	../app\models.py	/^    Round14	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:85
+Round140	../app\models.py	/^    Round140	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:211
+Round141	../app\models.py	/^    Round141	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:212
+Round142	../app\models.py	/^    Round142	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:213
+Round143	../app\models.py	/^    Round143	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:214
+Round144	../app\models.py	/^    Round144	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:215
+Round145	../app\models.py	/^    Round145	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:216
+Round146	../app\models.py	/^    Round146	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:217
+Round147	../app\models.py	/^    Round147	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:218
+Round148	../app\models.py	/^    Round148	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:219
+Round149	../app\models.py	/^    Round149	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:220
+Round15	../app\models.py	/^    Round15	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:86
+Round150	../app\models.py	/^    Round150	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:221
+Round151	../app\models.py	/^    Round151	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:222
+Round152	../app\models.py	/^    Round152	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:223
+Round153	../app\models.py	/^    Round153	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:224
+Round154	../app\models.py	/^    Round154	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:225
+Round155	../app\models.py	/^    Round155	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:226
+Round156	../app\models.py	/^    Round156	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:227
+Round157	../app\models.py	/^    Round157	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:228
+Round158	../app\models.py	/^    Round158	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:229
+Round159	../app\models.py	/^    Round159	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:230
+Round16	../app\models.py	/^    Round16	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:87
+Round160	../app\models.py	/^    Round160	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:231
+Round161	../app\models.py	/^    Round161	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:232
+Round162	../app\models.py	/^    Round162	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:233
+Round163	../app\models.py	/^    Round163	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:234
+Round164	../app\models.py	/^    Round164	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:235
+Round165	../app\models.py	/^    Round165	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:236
+Round166	../app\models.py	/^    Round166	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:237
+Round167	../app\models.py	/^    Round167	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:238
+Round168	../app\models.py	/^    Round168	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:239
+Round169	../app\models.py	/^    Round169	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:240
+Round17	../app\models.py	/^    Round17	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:88
+Round170	../app\models.py	/^    Round170	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:241
+Round171	../app\models.py	/^    Round171	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:242
+Round172	../app\models.py	/^    Round172	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:243
+Round173	../app\models.py	/^    Round173	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:244
+Round174	../app\models.py	/^    Round174	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:245
+Round175	../app\models.py	/^    Round175	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:246
+Round176	../app\models.py	/^    Round176	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:247
+Round177	../app\models.py	/^    Round177	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:248
+Round178	../app\models.py	/^    Round178	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:249
+Round179	../app\models.py	/^    Round179	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:250
+Round18	../app\models.py	/^    Round18	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:89
+Round180	../app\models.py	/^    Round180	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:251
+Round181	../app\models.py	/^    Round181	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:252
+Round182	../app\models.py	/^    Round182	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:253
+Round183	../app\models.py	/^    Round183	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:254
+Round184	../app\models.py	/^    Round184	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:255
+Round185	../app\models.py	/^    Round185	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:256
+Round186	../app\models.py	/^    Round186	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:257
+Round187	../app\models.py	/^    Round187	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:258
+Round188	../app\models.py	/^    Round188	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:259
+Round189	../app\models.py	/^    Round189	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:260
+Round19	../app\models.py	/^    Round19	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:90
+Round190	../app\models.py	/^    Round190	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:261
+Round191	../app\models.py	/^    Round191	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:262
+Round192	../app\models.py	/^    Round192	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:263
+Round193	../app\models.py	/^    Round193	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:264
+Round194	../app\models.py	/^    Round194	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:265
+Round195	../app\models.py	/^    Round195	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:266
+Round196	../app\models.py	/^    Round196	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:267
+Round197	../app\models.py	/^    Round197	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:268
+Round198	../app\models.py	/^    Round198	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:269
+Round199	../app\models.py	/^    Round199	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:270
+Round2	../app\models.py	/^    Round2	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:73
+Round20	../app\models.py	/^    Round20	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:91
+Round200	../app\models.py	/^    Round200	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:271
+Round201	../app\models.py	/^    Round201	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:272
+Round202	../app\models.py	/^    Round202	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:273
+Round203	../app\models.py	/^    Round203	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:274
+Round204	../app\models.py	/^    Round204	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:275
+Round205	../app\models.py	/^    Round205	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:276
+Round206	../app\models.py	/^    Round206	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:277
+Round207	../app\models.py	/^    Round207	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:278
+Round208	../app\models.py	/^    Round208	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:279
+Round209	../app\models.py	/^    Round209	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:280
+Round21	../app\models.py	/^    Round21	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:92
+Round210	../app\models.py	/^    Round210	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:281
+Round211	../app\models.py	/^    Round211	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:282
+Round212	../app\models.py	/^    Round212	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:283
+Round213	../app\models.py	/^    Round213	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:284
+Round214	../app\models.py	/^    Round214	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:285
+Round215	../app\models.py	/^    Round215	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:286
+Round216	../app\models.py	/^    Round216	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:287
+Round217	../app\models.py	/^    Round217	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:288
+Round218	../app\models.py	/^    Round218	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:289
+Round219	../app\models.py	/^    Round219	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:290
+Round22	../app\models.py	/^    Round22	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:93
+Round220	../app\models.py	/^    Round220	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:291
+Round221	../app\models.py	/^    Round221	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:292
+Round222	../app\models.py	/^    Round222	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:293
+Round223	../app\models.py	/^    Round223	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:294
+Round224	../app\models.py	/^    Round224	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:295
+Round225	../app\models.py	/^    Round225	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:296
+Round226	../app\models.py	/^    Round226	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:297
+Round227	../app\models.py	/^    Round227	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:298
+Round228	../app\models.py	/^    Round228	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:299
+Round229	../app\models.py	/^    Round229	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:300
+Round23	../app\models.py	/^    Round23	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:94
+Round230	../app\models.py	/^    Round230	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:301
+Round231	../app\models.py	/^    Round231	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:302
+Round232	../app\models.py	/^    Round232	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:303
+Round233	../app\models.py	/^    Round233	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:304
+Round234	../app\models.py	/^    Round234	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:305
+Round235	../app\models.py	/^    Round235	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:306
+Round236	../app\models.py	/^    Round236	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:307
+Round237	../app\models.py	/^    Round237	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:308
+Round238	../app\models.py	/^    Round238	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:309
+Round239	../app\models.py	/^    Round239	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:310
+Round24	../app\models.py	/^    Round24	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:95
+Round240	../app\models.py	/^    Round240	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:311
+Round241	../app\models.py	/^    Round241	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:312
+Round242	../app\models.py	/^    Round242	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:313
+Round243	../app\models.py	/^    Round243	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:314
+Round244	../app\models.py	/^    Round244	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:315
+Round245	../app\models.py	/^    Round245	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:316
+Round246	../app\models.py	/^    Round246	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:317
+Round247	../app\models.py	/^    Round247	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:318
+Round248	../app\models.py	/^    Round248	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:319
+Round25	../app\models.py	/^    Round25	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:96
+Round26	../app\models.py	/^    Round26	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:97
+Round27	../app\models.py	/^    Round27	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:98
+Round28	../app\models.py	/^    Round28	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:99
+Round29	../app\models.py	/^    Round29	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:100
+Round3	../app\models.py	/^    Round3	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:74
+Round30	../app\models.py	/^    Round30	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:101
+Round31	../app\models.py	/^    Round31	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:102
+Round32	../app\models.py	/^    Round32	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:103
+Round33	../app\models.py	/^    Round33	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:104
+Round34	../app\models.py	/^    Round34	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:105
+Round35	../app\models.py	/^    Round35	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:106
+Round36	../app\models.py	/^    Round36	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:107
+Round37	../app\models.py	/^    Round37	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:108
+Round38	../app\models.py	/^    Round38	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:109
+Round39	../app\models.py	/^    Round39	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:110
+Round4	../app\models.py	/^    Round4	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:75
+Round40	../app\models.py	/^    Round40	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:111
+Round41	../app\models.py	/^    Round41	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:112
+Round42	../app\models.py	/^    Round42	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:113
+Round43	../app\models.py	/^    Round43	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:114
+Round44	../app\models.py	/^    Round44	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:115
+Round45	../app\models.py	/^    Round45	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:116
+Round46	../app\models.py	/^    Round46	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:117
+Round47	../app\models.py	/^    Round47	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:118
+Round48	../app\models.py	/^    Round48	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:119
+Round49	../app\models.py	/^    Round49	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:120
+Round5	../app\models.py	/^    Round5	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:76
+Round50	../app\models.py	/^    Round50	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:121
+Round51	../app\models.py	/^    Round51	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:122
+Round52	../app\models.py	/^    Round52	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:123
+Round53	../app\models.py	/^    Round53	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:124
+Round54	../app\models.py	/^    Round54	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:125
+Round55	../app\models.py	/^    Round55	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:126
+Round56	../app\models.py	/^    Round56	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:127
+Round57	../app\models.py	/^    Round57	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:128
+Round58	../app\models.py	/^    Round58	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:129
+Round59	../app\models.py	/^    Round59	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:130
+Round6	../app\models.py	/^    Round6	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:77
+Round60	../app\models.py	/^    Round60	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:131
+Round61	../app\models.py	/^    Round61	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:132
+Round62	../app\models.py	/^    Round62	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:133
+Round63	../app\models.py	/^    Round63	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:134
+Round64	../app\models.py	/^    Round64	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:135
+Round65	../app\models.py	/^    Round65	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:136
+Round66	../app\models.py	/^    Round66	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:137
+Round67	../app\models.py	/^    Round67	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:138
+Round68	../app\models.py	/^    Round68	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:139
+Round69	../app\models.py	/^    Round69	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:140
+Round7	../app\models.py	/^    Round7	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:78
+Round70	../app\models.py	/^    Round70	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:141
+Round71	../app\models.py	/^    Round71	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:142
+Round72	../app\models.py	/^    Round72	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:143
+Round73	../app\models.py	/^    Round73	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:144
+Round74	../app\models.py	/^    Round74	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:145
+Round75	../app\models.py	/^    Round75	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:146
+Round76	../app\models.py	/^    Round76	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:147
+Round77	../app\models.py	/^    Round77	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:148
+Round78	../app\models.py	/^    Round78	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:149
+Round79	../app\models.py	/^    Round79	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:150
+Round8	../app\models.py	/^    Round8	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:79
+Round80	../app\models.py	/^    Round80	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:151
+Round81	../app\models.py	/^    Round81	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:152
+Round82	../app\models.py	/^    Round82	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:153
+Round83	../app\models.py	/^    Round83	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:154
+Round84	../app\models.py	/^    Round84	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:155
+Round85	../app\models.py	/^    Round85	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:156
+Round86	../app\models.py	/^    Round86	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:157
+Round87	../app\models.py	/^    Round87	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:158
+Round88	../app\models.py	/^    Round88	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:159
+Round89	../app\models.py	/^    Round89	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:160
+Round9	../app\models.py	/^    Round9	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:80
+Round90	../app\models.py	/^    Round90	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:161
+Round91	../app\models.py	/^    Round91	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:162
+Round92	../app\models.py	/^    Round92	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:163
+Round93	../app\models.py	/^    Round93	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:164
+Round94	../app\models.py	/^    Round94	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:165
+Round95	../app\models.py	/^    Round95	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:166
+Round96	../app\models.py	/^    Round96	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:167
+Round97	../app\models.py	/^    Round97	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:168
+Round98	../app\models.py	/^    Round98	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:169
+Round99	../app\models.py	/^    Round99	 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:170
 SECRET_KEY	../app\config.py	/^    SECRET_KEY = os.environ.get('SECRET_KEY')$/;"	kind:variable	line:5
 SQLALCHEMY_DATABASE_URI	../app\config.py	/^    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL', '')$/;"	kind:variable	line:7
 SQLALCHEMY_TRACK_MODIFICATIONS	../app\config.py	/^    SQLALCHEMY_TRACK_MODIFICATIONS = False$/;"	kind:variable	line:8
@@ -120,6 +374,8 @@ Serializer	../app\models.py	/^from itsdangerous import TimedJSONWebSignatureSeri
 ShipperDisplayForm	../app\items\forms.py	/^class ShipperDisplayForm(FlaskForm):$/;"	kind:class	line:51
 Square	../_ref\_py\_dispM.py	/^class Square(db.Model):$/;"	kind:class	line:260
 Square	../app\_ref_\_py\_dispM.py	/^class Square(db.Model):$/;"	kind:class	line:260
+State	../app\models.py	/^    State = db.Column(db.String(2), nullable=False)$/;"	kind:variable	line:69
+StateName	../app\models.py	/^    StateName = db.Column(db.String(256), nullable=False)$/;"	kind:variable	line:68
 String	../_ref\_py\_berM.py	/^from sqlalchemy import Table, Column, Integer, String, MetaData, ForeignKey$/;"	kind:namespace	line:1
 String	../app\_ref_\_py\_berM.py	/^from sqlalchemy import Table, Column, Integer, String, MetaData, ForeignKey$/;"	kind:namespace	line:1
 String	../app\models.py	/^from sqlalchemy import Table, Column, Integer, String, MetaData, ForeignKey$/;"	kind:namespace	line:1
@@ -210,6 +466,7 @@ __repr__	../app\_ref_\_py\_dispM.py	/^    def __repr__(self):$/;"	kind:member	li
 __repr__	../app\_ref_\_py\_dispM.py	/^    def __repr__(self):$/;"	kind:member	line:33
 __repr__	../app\items\forms.py	/^    def __repr__(self):$/;"	kind:member	line:47
 __repr__	../app\models.py	/^    def __repr__(self):$/;"	kind:member	line:20
+__repr__	../app\models.py	/^    def __repr__(self):$/;"	kind:member	line:322
 __repr__	../app\models.py	/^    def __repr__(self):$/;"	kind:member	line:37
 __repr__	../app\models.py	/^    def __repr__(self):$/;"	kind:member	line:48
 __repr__	../app\posts\forms.py	/^    def __repr__(self):$/;"	kind:member	line:25
@@ -230,8 +487,8 @@ _ndoRt.py	../_ref\_py\_ndoRt.py	1;"	kind:file	line:1
 _ndoRt.py	../app\_ref_\_py\_ndoRt.py	1;"	kind:file	line:1
 about	../_ref\_py\_dispR.py	/^def about():$/;"	kind:function	line:185
 about	../app\_ref_\_py\_dispR.py	/^def about():$/;"	kind:function	line:185
-about	../app\main\routes.py	/^def about():$/;"	kind:function	line:46
-aboutdev	../app\main\routes.py	/^def aboutdev():$/;"	kind:function	line:50
+about	../app\main\routes.py	/^def about():$/;"	kind:function	line:49
+aboutdev	../app\main\routes.py	/^def aboutdev():$/;"	kind:function	line:53
 account	../_ref\_py\_dispR.py	/^def account():$/;"	kind:function	line:266
 account	../app\_ref_\_py\_dispR.py	/^def account():$/;"	kind:function	line:266
 account	../app\users\routes.py	/^def account():$/;"	kind:function	line:77
@@ -269,7 +526,9 @@ app.py	../_ref\int-hw\hw01\Data-Journalism-and-D3-master\app.py	1;"	kind:file	li
 app.py	../_ref\int-hw\hw02\Data-Journalism-and-D3-master\app.py	1;"	kind:file	line:1
 assets	../_ref\_regV1\app.py	/^def assets():$/;"	kind:function	line:94
 author	../app\posts\forms.py	/^    author = 'attila'$/;"	kind:variable	line:18
+base_prices	../app\main\routes.py	/^def base_prices():$/;"	kind:function	line:63
 bcrypt	../app\__init__.py	/^bcrypt = Bcrypt()$/;"	kind:variable	line:9
+bcrypt	../app\main\routes.py	/^from app import db, bcrypt$/;"	kind:namespace	line:4
 bcrypt	../app\users\routes.py	/^from app import db, bcrypt$/;"	kind:namespace	line:3
 body_type	../_ref\_py\_berM.py	/^    body_type = db.Column(db.String(16), nullable=False, default='3')$/;"	kind:variable	line:14
 body_type	../app\_ref_\_py\_berM.py	/^    body_type = db.Column(db.String(16), nullable=False, default='3')$/;"	kind:variable	line:14
@@ -330,6 +589,7 @@ createall_squares	../_ref\_py\_dispR.py	/^def createall_squares():$/;"	kind:func
 createall_squares	../app\_ref_\_py\_dispR.py	/^def createall_squares():$/;"	kind:function	line:1024
 csv	../_ref\_py\_dispR.py	/^import csv$/;"	kind:namespace	line:7
 csv	../app\_ref_\_py\_dispR.py	/^import csv$/;"	kind:namespace	line:7
+csv	../app\main\routes.py	/^import csv$/;"	kind:namespace	line:2
 csv_feed	../_ref\_py\_dispR.py	/^def csv_feed():$/;"	kind:function	line:142
 csv_feed	../app\_ref_\_py\_dispR.py	/^def csv_feed():$/;"	kind:function	line:142
 current_app	../_ref\_py\_berM.py	/^from flask import current_app$/;"	kind:namespace	line:4
@@ -379,6 +639,7 @@ db	../app\_ref_\_py\_ndoRp.py	/^from nodaysoff import db$/;"	kind:namespace	line
 db	../app\_ref_\_py\_ndoRt.py	/^from nodaysoff import db$/;"	kind:namespace	line:5
 db	../app\dash_app\routes.py	/^from app import db$/;"	kind:namespace	line:8
 db	../app\items\routes.py	/^from app import db$/;"	kind:namespace	line:8
+db	../app\main\routes.py	/^from app import db, bcrypt$/;"	kind:namespace	line:4
 db	../app\models.py	/^from app import db, login_manager$/;"	kind:namespace	line:5
 db	../app\posts\routes.py	/^from app import db$/;"	kind:namespace	line:4
 db	../app\users\routes.py	/^from app import db, bcrypt$/;"	kind:namespace	line:3
@@ -537,7 +798,7 @@ hom3	../_ref\_py\_ndoRp.py	/^def hom3():$/;"	kind:function	line:32
 hom3	../app\_ref_\_py\_ndoRp.py	/^def hom3():$/;"	kind:function	line:32
 home	../_ref\_py\_dispR.py	/^def home():$/;"	kind:function	line:179
 home	../app\_ref_\_py\_dispR.py	/^def home():$/;"	kind:function	line:179
-home	../app\main\routes.py	/^def home():$/;"	kind:function	line:32
+home	../app\main\routes.py	/^def home():$/;"	kind:function	line:35
 hourly_wage	../_ref\12_JS\02_Evr_PythonToJavaScript\Py_HelloVariableWorld.py	/^hourly_wage = 15$/;"	kind:variable	line:12
 houseForSale	../_ref\_regV1\app.py	/^def houseForSale():$/;"	kind:function	line:104
 id	../_ref\_py\_berM.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:10
@@ -559,6 +820,7 @@ id	../app\_ref_\_py\_dispM.py	/^    id = db.Column(db.Integer, unique=True, prim
 id	../app\models.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:10
 id	../app\models.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:29
 id	../app\models.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:42
+id	../app\models.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:65
 imageFinder	../app\items\routes.py	/^    def imageFinder(item_bodyType_index):$/;"	kind:function	line:152
 image_file	../_ref\_py\_berM.py	/^    image_file = db.Column(db.String(20), nullable=False, default='default.png')$/;"	kind:variable	line:34
 image_file	../_ref\_py\_dispM.py	/^    image_file = db.Column(db.String(20), nullable=False,$/;"	kind:variable	line:16
@@ -584,7 +846,7 @@ inject_OutInvButtons	../_ref\_py\_dispR.py	/^def inject_OutInvButtons():$/;"	kin
 inject_OutInvButtons	../app\_ref_\_py\_dispR.py	/^def inject_OutInvButtons():$/;"	kind:function	line:403
 inject_OutInvIcons	../_ref\_py\_dispR.py	/^def inject_OutInvIcons():$/;"	kind:function	line:478
 inject_OutInvIcons	../app\_ref_\_py\_dispR.py	/^def inject_OutInvIcons():$/;"	kind:function	line:478
-inject_PostDemoList	../app\main\routes.py	/^def inject_PostDemoList():$/;"	kind:function	line:8
+inject_PostDemoList	../app\main\routes.py	/^def inject_PostDemoList():$/;"	kind:function	line:11
 inject_PostDemoList	../app\posts\routes.py	/^def inject_PostDemoList():$/;"	kind:function	line:74
 inject_TableHeaders	../_ref\_py\_dispR.py	/^def inject_TableHeaders():$/;"	kind:function	line:340
 inject_TableHeaders	../app\_ref_\_py\_dispR.py	/^def inject_TableHeaders():$/;"	kind:function	line:340
@@ -637,6 +899,7 @@ json	../_ref\_regV1\app.py	/^import json$/;"	kind:namespace	line:8
 json	../app\_ref_\_py\_dispR.py	/^import json$/;"	kind:namespace	line:9
 jsonify	../_ref\int-hw\hw01\Data-Journalism-and-D3-master\app.py	/^from flask import Flask, render_template, jsonify$/;"	kind:namespace	line:1
 jsonify	../_ref\int-hw\hw02\Data-Journalism-and-D3-master\app.py	/^from flask import Flask,render_template,jsonify$/;"	kind:namespace	line:1
+jsonify	../app\main\routes.py	/^from flask import render_template, request, Blueprint, jsonify$/;"	kind:namespace	line:3
 just_ran_out	../_ref\_py\_dispM.py	/^    def just_ran_out(self):$/;"	kind:member	line:112
 just_ran_out	../app\_ref_\_py\_dispM.py	/^    def just_ran_out(self):$/;"	kind:member	line:112
 listRoundLabels	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^def listRoundLabels(yearStart,yearEnd):$/;"	kind:function	line:92
@@ -670,7 +933,7 @@ logout	../app\_ref_\_py\_dispR.py	/^def logout():$/;"	kind:function	line:244
 logout	../app\users\routes.py	/^def logout():$/;"	kind:function	line:70
 logout_user	../app\users\routes.py	/^from flask_login import login_user, current_user, logout_user, login_required$/;"	kind:namespace	line:2
 main	../app\__init__.py	/^    from app.main.routes import main$/;"	kind:namespace	line:25
-main	../app\main\routes.py	/^main = Blueprint('main', __name__)$/;"	kind:variable	line:5
+main	../app\main\routes.py	/^main = Blueprint('main', __name__)$/;"	kind:variable	line:8
 maininv_out	../_ref\_py\_dispM.py	/^    maininv_out = db.Column(db.String(32))$/;"	kind:variable	line:285
 maininv_out	../app\_ref_\_py\_dispM.py	/^    maininv_out = db.Column(db.String(32))$/;"	kind:variable	line:285
 mainitem_id	../_ref\_py\_dispM.py	/^    mainitem_id = db.Column(db.Integer)$/;"	kind:variable	line:284
@@ -852,12 +1115,13 @@ render_template	../_ref\int-hw\hw01\Data-Journalism-and-D3-master\app.py	/^from 
 render_template	../_ref\int-hw\hw02\Data-Journalism-and-D3-master\app.py	/^from flask import Flask,render_template,jsonify$/;"	kind:namespace	line:1
 render_template	../app\_ref_\_py\_ndoRp.py	/^from flask import (render_template, url_for, flash,$/;"	kind:namespace	line:1
 render_template	../app\errors\handlers.py	/^from flask import Blueprint, render_template$/;"	kind:namespace	line:1
-render_template	../app\main\routes.py	/^from flask import render_template, request, Blueprint$/;"	kind:namespace	line:1
+render_template	../app\main\routes.py	/^from flask import render_template, request, Blueprint, jsonify$/;"	kind:namespace	line:3
 render_template	../app\posts\routes.py	/^from flask import (render_template, url_for, flash,$/;"	kind:namespace	line:1
 render_template	../app\users\routes.py	/^from flask import render_template, url_for, flash, redirect, request, Blueprint$/;"	kind:namespace	line:1
 request	../_ref\_py\routes - Copy.py	/^from flask import render_template, url_for, flash, request, Blueprint$/;"	kind:namespace	line:1
-request	../app\main\routes.py	/^from flask import render_template, request, Blueprint$/;"	kind:namespace	line:1
+request	../app\main\routes.py	/^from flask import render_template, request, Blueprint, jsonify$/;"	kind:namespace	line:3
 request	../app\users\routes.py	/^from flask import render_template, url_for, flash, redirect, request, Blueprint$/;"	kind:namespace	line:1
+requests	../app\main\routes.py	/^import requests$/;"	kind:namespace	line:1
 resolve_task	../_ref\_py\_ndoRt.py	/^def resolve_task(task_id):$/;"	kind:function	line:123
 resolve_task	../app\_ref_\_py\_ndoRt.py	/^def resolve_task(task_id):$/;"	kind:function	line:123
 roundYearEndTdf	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^def roundYearEndTdf(file,yearStart,yearEnd):$/;"	kind:function	line:102
@@ -933,7 +1197,7 @@ tasks_list	../_ref\_py\_ndoRt.py	/^def tasks_list():$/;"	kind:function	line:80
 tasks_list	../app\_ref_\_py\_ndoRt.py	/^def tasks_list():$/;"	kind:function	line:80
 test	../_ref\_py\_dispR.py	/^def test():$/;"	kind:function	line:798
 test	../app\_ref_\_py\_dispR.py	/^def test():$/;"	kind:function	line:798
-test	../app\main\routes.py	/^def test():$/;"	kind:function	line:55
+test	../app\main\routes.py	/^def test():$/;"	kind:function	line:58
 testSession	../_ref\_regV1\app.py	/^def testSession():$/;"	kind:function	line:128
 testTen	../_ref\_regV1\app.py	/^def testTen():$/;"	kind:function	line:115
 test_info_board	../_ref\_py\_dispR.py	/^def test_info_board():$/;"	kind:function	line:1177

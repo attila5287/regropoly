@@ -1,5 +1,8 @@
-from flask import render_template, request, Blueprint
-from app.models import Post
+import requests
+import csv
+from flask import render_template, request, Blueprint, jsonify
+from app import db, bcrypt
+from app.models import Post, BasePrice
 from app.posts.forms import PostDemo
 
 main = Blueprint('main', __name__)
@@ -53,4 +56,21 @@ def aboutdev():
 @main.route("/")
 @main.route("/test")
 def test():
+    pass
     return render_template('test.html')
+
+@main.route("/db/init/base")
+def base_prices():
+    pass
+    csv_url = 'https://gist.githubusercontent.com/attila5287/4dd95bed39c46a09fd76cbda1670ceb4/raw/aa07a33ad59875856505cd36be900d5c57812c5d/zhvi-dem0.csv'
+    with requests.get(csv_url, stream=True) as r:
+        pass
+        lines = (line.decode('utf-8') for line in r.iter_lines())
+        csv_dict = [row for row in csv.DictReader(lines)]
+        inventory = [
+            BasePrice(**row) for row in csv.DictReader(lines)
+        ]
+        db.session.add_all(inventory)
+        db.session.commit()
+        
+    return jsonify(csv_dict)
