@@ -529,6 +529,7 @@ app.py	../_ref\int-hw\hw01\Data-Journalism-and-D3-master\app.py	1;"	kind:file	li
 app.py	../_ref\int-hw\hw02\Data-Journalism-and-D3-master\app.py	1;"	kind:file	line:1
 assets	../_ref\_regV1\app.py	/^def assets():$/;"	kind:function	line:94
 author	../app\posts\forms.py	/^    author = 'attila'$/;"	kind:variable	line:18
+base_price	../app\main\routes.py	/^def base_price(round_no):$/;"	kind:function	line:91
 base_prices	../app\main\routes.py	/^def base_prices():$/;"	kind:function	line:65
 bcrypt	../app\__init__.py	/^bcrypt = Bcrypt()$/;"	kind:variable	line:9
 bcrypt	../app\main\routes.py	/^from app import db, bcrypt$/;"	kind:namespace	line:4
@@ -958,7 +959,6 @@ mark_as_lowinv	../_ref\_py\_dispR.py	/^def mark_as_lowinv(item_id):$/;"	kind:fun
 mark_as_lowinv	../app\_ref_\_py\_dispR.py	/^def mark_as_lowinv(item_id):$/;"	kind:function	line:113
 mark_as_outofstock	../_ref\_py\_dispR.py	/^def mark_as_outofstock(item_id):$/;"	kind:function	line:85
 mark_as_outofstock	../app\_ref_\_py\_dispR.py	/^def mark_as_outofstock(item_id):$/;"	kind:function	line:85
-market	../app\main\routes.py	/^def market(round_no):$/;"	kind:function	line:91
 masterFED_df	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^masterFED_df = fedDataframeFromCSV(fedFileList)$/;"	kind:variable	line:312
 matplotlib	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^import matplotlib.path as mpath$/;"	kind:namespace	line:38
 matplotlib	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^import matplotlib.pyplot as plt$/;"	kind:namespace	line:16
@@ -1301,3 +1301,4 @@ year	../app\items\DemoCarsLists.py	/^year = [$/;"	kind:variable	line:752
 year	../app\items\forms.py	/^    year = StringField('year')$/;"	kind:variable	line:56
 year	../app\items\forms.py	/^    year = StringField('year', validators=[DataRequired()], default='2007')$/;"	kind:variable	line:10
 year	../app\models.py	/^    year = db.Column(db.String(16), nullable=False,default='2007')$/;"	kind:variable	line:13
+zillow_desc	../app\main\routes.py	/^def zillow_desc():$/;"	kind:function	line:112

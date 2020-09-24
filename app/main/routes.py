@@ -87,20 +87,47 @@ def base_prices():
             
         return jsonify(csv_dict)
 
-@main.route('/market/<int:round_no>')
-def market(round_no):
-   pass
-   print(round_no)
-   testPrice = Baseprice.query.first()
-   columnName = 'Round'+str(round_no)
-   print(columnName)
-   
-   return jsonify({
-       'Round {}'.format(round_no): getattr(testPrice, columnName)
-   })
+@main.route('/base/<int:round_no>')
+def base_price(round_no):
+   pass # generates properties for sale
+   price_column = 'Round'+str(round_no)  #Round1,Round2 
+
+   base_prices = Baseprice.query.all()
+   res = [
+       {getattr(bp, 'BasePriceLabel') : {
+           'Round{}'.format(round_no) :
+       getattr(bp, price_column),
+       }
+       for bp in  base_prices}
+       
+    ]
+   return jsonify(res[0])
 
 #    q = session.query(myClass)
 #    for attr, value in web_dict.items():
 #        pass
 #        q = q.filter(getattr(myClass, attr).like("%%%s%%" % value))
-        
+
+@main.route('/desc')
+def zillow_desc():
+   pass # API route for item desc
+   # full name of the column
+   base_prices = Baseprice.query.all()
+   res = {
+       bpL.BasePriceLabel : 
+       {
+        'BasePriceLabel': bp.BasePriceLabel,
+        'RegionName': bp.RegionName,
+        'StateName' : bp.StateName,
+        'State' : bp.State,
+        'Metro' : bp.Metro,
+        'CountyName' : bp.CountyName,
+        'BedrmCt' : bp.BedrmCt,
+        'RegionID' : bp.RegionID,
+        'SizeRank': bp.SizeRank,
+       } for (bpL, bp) in zip(base_prices, base_prices)
+   }
+   
+#    print(res[0]['BR001RG0010181'])
+   return jsonify(res)
+
