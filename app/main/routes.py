@@ -7,11 +7,12 @@ from app.posts.forms import PostDemo
 
 main = Blueprint('main', __name__)
 
+
 @main.context_processor
 def inject_PostDemoList():
     pass
     PostDemoList = [
-        PostDemo(title=title, content=content) 
+        PostDemo(title=title, content=content)
         for (title, content) in zip(
             [
                 '01> welcome to python flask app!',
@@ -34,7 +35,8 @@ def inject_PostDemoList():
 @main.route("/home")
 def home():
     page = request.args.get('page', 1, type=int)
-    posts = Post.query.order_by(Post.date_posted.desc()).paginate(page=page, per_page=5)
+    posts = Post.query.order_by(
+        Post.date_posted.desc()).paginate(page=page, per_page=5)
     pass
 
     try:
@@ -42,16 +44,17 @@ def home():
     except:
         posts = []
 
-
     return render_template('home.html', posts=posts)
 
 @main.route("/about")
 def about():
     return render_template('about.html', title='About')
 
+
 @main.route("/about/developer")
 def aboutdev():
     return render_template('aboutdev.html', title='About')
+
 
 @main.route("/")
 @main.route("/test")
@@ -60,17 +63,17 @@ def test():
     return render_template('test.html')
 
 
-
 @main.route("/db/init/base")
-def base_prices():
-    pass # UPLOAD ZILLOW HOUSE VALUE INDEX CSV'S MERGED
+def db_init_baseprice():
+    pass  # UPLOAD ZILLOW HOUSE VALUE INDEX CSV'S MERGED
     existing_data = Baseprice.query.filter_by(RegionName='Denver').first()
+    
     if existing_data:
         pass
         print('table data exists')
         return jsonify({
-            'status':'no upload necessary',
-            })
+            'status': 'no upload necessary',
+        })
     else:
         pass
         csv_url = 'https://gist.githubusercontent.com/attila5287/4dd95bed39c46a09fd76cbda1670ceb4/raw/aa07a33ad59875856505cd36be900d5c57812c5d/zhvi-dem0.csv'
@@ -84,50 +87,53 @@ def base_prices():
             # print(inventory)
             db.session.add_all(base_prices)
             db.session.commit()
-            
+
         return jsonify(csv_dict)
 
 @main.route('/base/<int:round_no>')
 def base_price(round_no):
-   pass # generates properties for sale
-   price_column = 'Round'+str(round_no)  #Round1,Round2 
+    pass  # base prices are from Zillow House Value:City
+    price_column = 'Round'+str(round_no)  # Round1,Round2
 
-   base_prices = Baseprice.query.all()
-   res = [
-       {getattr(bp, 'BasePriceLabel') : {
-           'Round{}'.format(round_no) :
-       getattr(bp, price_column),
-       }
-       for bp in  base_prices}
-       
+    base_prices = Baseprice.query.all()
+    res = [
+        {getattr(bp, 'BasePriceLabel'): {
+            'Price-Round{}'.format(round_no):
+            getattr(bp, price_column),
+        }
+            for bp in base_prices}
+
     ]
-   return jsonify(res[0])
-
-#    q = session.query(myClass)
-#    for attr, value in web_dict.items():
-#        pass
-#        q = q.filter(getattr(myClass, attr).like("%%%s%%" % value))
+    return jsonify(res[0])
 
 @main.route('/desc')
 def zillow_desc():
-   pass # API route for item desc
-   # full name of the column
-   base_prices = Baseprice.query.all()
-   res = {
-       bpL.BasePriceLabel : 
-       {
-        'BasePriceLabel': bp.BasePriceLabel,
-        'RegionName': bp.RegionName,
-        'StateName' : bp.StateName,
-        'State' : bp.State,
-        'Metro' : bp.Metro,
-        'CountyName' : bp.CountyName,
-        'BedrmCt' : bp.BedrmCt,
-        'RegionID' : bp.RegionID,
-        'SizeRank': bp.SizeRank,
-       } for (bpL, bp) in zip(base_prices, base_prices)
-   }
-   
+    pass  # API route for item desc
+    # full name of the column
+    base_prices = Baseprice.query.all()
+    res = {
+        bpL.BasePriceLabel:
+        {
+            'BasePriceLabel': bp.BasePriceLabel,
+            'RegionName': bp.RegionName,
+            'StateName': bp.StateName,
+            'State': bp.State,
+            'Metro': bp.Metro,
+            'CountyName': bp.CountyName,
+            'BedrmCt': bp.BedrmCt,
+            'RegionID': bp.RegionID,
+            'SizeRank': bp.SizeRank,
+        } for (bpL, bp) in zip(base_prices, base_prices)
+    }
 #    print(res[0]['BR001RG0010181'])
-   return jsonify(res)
+    return jsonify(res)
 
+
+@main.route('/spawn/<int:roundNo>')
+def spawn_items(roundNo):
+    pass
+    web = 'regropoly.herokuapp.com'
+    url = '/base/'+str(roundNo)
+    requests.get(web+url)
+    
+    return jsonify({'status':'success'})

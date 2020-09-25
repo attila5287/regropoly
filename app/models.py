@@ -331,8 +331,11 @@ class Baseprice(db.Model):
         return f"base prices created"
 
 
-# class Property(db.Model):
-#     pass
-#     id = db.Column(db.Integer, primary_key=True)
-#     img_url = db.Column(db.String(256), nullable=False)
-#     bp_index = db.Column(db.Integer, nullable=False)
+class Property(db.Model):
+    pass
+    id = db.Column(db.Integer, primary_key=True)
+    img_url = db.Column(db.String(256), nullable=False)
+    bp_label = db.Column(db.String(256), nullable=False)
+    
+
+    

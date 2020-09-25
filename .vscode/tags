@@ -104,6 +104,7 @@ Proday	../_ref\_py\_ndoRp.py	/^from nodaysoff.models import Proday, User$/;"	kin
 Proday	../app\_ref_\_py\_ndoRp.py	/^from nodaysoff.models import Proday, User$/;"	kind:namespace	line:5
 Property	../_ref\_regV1\classProperty.py	/^class Property:$/;"	kind:class	line:3
 Property	../_ref\_regV1\classTextBookScratch.py	/^class Property:$/;"	kind:class	line:5
+Property	../app\models.py	/^class Property(db.Model):$/;"	kind:class	line:334
 Purchase	../_ref\_regV1\classProperty.py	/^class Purchase:$/;"	kind:class	line:97
 PyMongo	../_ref\_regV1\app.py	/^from flask_pymongo import PyMongo$/;"	kind:namespace	line:7
 Py_ConditionalCheck.py	../_ref\12_JS\02_Evr_PythonToJavaScript\Py_ConditionalCheck.py	1;"	kind:file	line:1
@@ -490,8 +491,8 @@ _ndoRt.py	../_ref\_py\_ndoRt.py	1;"	kind:file	line:1
 _ndoRt.py	../app\_ref_\_py\_ndoRt.py	1;"	kind:file	line:1
 about	../_ref\_py\_dispR.py	/^def about():$/;"	kind:function	line:185
 about	../app\_ref_\_py\_dispR.py	/^def about():$/;"	kind:function	line:185
-about	../app\main\routes.py	/^def about():$/;"	kind:function	line:49
-aboutdev	../app\main\routes.py	/^def aboutdev():$/;"	kind:function	line:53
+about	../app\main\routes.py	/^def about():$/;"	kind:function	line:50
+aboutdev	../app\main\routes.py	/^def aboutdev():$/;"	kind:function	line:55
 account	../_ref\_py\_dispR.py	/^def account():$/;"	kind:function	line:266
 account	../app\_ref_\_py\_dispR.py	/^def account():$/;"	kind:function	line:266
 account	../app\users\routes.py	/^def account():$/;"	kind:function	line:77
@@ -529,8 +530,7 @@ app.py	../_ref\int-hw\hw01\Data-Journalism-and-D3-master\app.py	1;"	kind:file	li
 app.py	../_ref\int-hw\hw02\Data-Journalism-and-D3-master\app.py	1;"	kind:file	line:1
 assets	../_ref\_regV1\app.py	/^def assets():$/;"	kind:function	line:94
 author	../app\posts\forms.py	/^    author = 'attila'$/;"	kind:variable	line:18
-base_price	../app\main\routes.py	/^def base_price(round_no):$/;"	kind:function	line:91
-base_prices	../app\main\routes.py	/^def base_prices():$/;"	kind:function	line:65
+base_price	../app\main\routes.py	/^def base_price(round_no):$/;"	kind:function	line:94
 bcrypt	../app\__init__.py	/^bcrypt = Bcrypt()$/;"	kind:variable	line:9
 bcrypt	../app\main\routes.py	/^from app import db, bcrypt$/;"	kind:namespace	line:4
 bcrypt	../app\users\routes.py	/^from app import db, bcrypt$/;"	kind:namespace	line:3
@@ -540,6 +540,7 @@ body_type	../app\items\DemoCarsLists.py	/^body_type = [$/;"	kind:variable	line:1
 body_type	../app\items\forms.py	/^    body_type = SelectField($/;"	kind:variable	line:11
 body_type	../app\items\forms.py	/^    body_type = SelectField($/;"	kind:variable	line:57
 body_type	../app\models.py	/^    body_type = db.Column(db.String(16), nullable=False, default='3')$/;"	kind:variable	line:14
+bp_label	../app\models.py	/^    bp_label = db.Column(db.String(256), nullable=False)$/;"	kind:variable	line:338
 buildHousesForSale.py	../_ref\_regV1\buildHousesForSale.py	1;"	kind:file	line:1
 buildTenHouses	../_ref\_regV1\buildHousesForSale.py	/^def buildTenHouses():$/;"	kind:function	line:7
 buyItem	../_ref\_regV1\app.py	/^def buyItem():$/;"	kind:function	line:165
@@ -647,6 +648,7 @@ db	../app\main\routes.py	/^from app import db, bcrypt$/;"	kind:namespace	line:4
 db	../app\models.py	/^from app import db, login_manager$/;"	kind:namespace	line:5
 db	../app\posts\routes.py	/^from app import db$/;"	kind:namespace	line:4
 db	../app\users\routes.py	/^from app import db, bcrypt$/;"	kind:namespace	line:3
+db_init_baseprice	../app\main\routes.py	/^def db_init_baseprice():$/;"	kind:function	line:67
 ddslick_master	../_ref\_py\_dispR.py	/^def ddslick_master():$/;"	kind:function	line:775
 ddslick_master	../app\_ref_\_py\_dispR.py	/^def ddslick_master():$/;"	kind:function	line:775
 default	../_ref\_py\_dispM.py	/^                            default=datetime.utcnow)$/;"	kind:variable	line:29
@@ -803,7 +805,7 @@ hom3	../_ref\_py\_ndoRp.py	/^def hom3():$/;"	kind:function	line:32
 hom3	../app\_ref_\_py\_ndoRp.py	/^def hom3():$/;"	kind:function	line:32
 home	../_ref\_py\_dispR.py	/^def home():$/;"	kind:function	line:179
 home	../app\_ref_\_py\_dispR.py	/^def home():$/;"	kind:function	line:179
-home	../app\main\routes.py	/^def home():$/;"	kind:function	line:35
+home	../app\main\routes.py	/^def home():$/;"	kind:function	line:36
 hourly_wage	../_ref\12_JS\02_Evr_PythonToJavaScript\Py_HelloVariableWorld.py	/^hourly_wage = 15$/;"	kind:variable	line:12
 houseForSale	../_ref\_regV1\app.py	/^def houseForSale():$/;"	kind:function	line:104
 id	../_ref\_py\_berM.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:10
@@ -824,6 +826,7 @@ id	../app\_ref_\_py\_dispM.py	/^    id = db.Column(db.Integer, primary_key=True)
 id	../app\_ref_\_py\_dispM.py	/^    id = db.Column(db.Integer, unique=True, primary_key=True)$/;"	kind:variable	line:280
 id	../app\models.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:10
 id	../app\models.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:29
+id	../app\models.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:336
 id	../app\models.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:43
 id	../app\models.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:66
 imageFinder	../app\items\routes.py	/^    def imageFinder(item_bodyType_index):$/;"	kind:function	line:152
@@ -836,6 +839,7 @@ imagegrid_url	../_ref\_py\_dispM.py	/^    imagegrid_url = db.Column(db.String(25
 imagegrid_url	../app\_ref_\_py\_dispM.py	/^    imagegrid_url = db.Column(db.String(256))$/;"	kind:variable	line:56
 imagelist_url	../_ref\_py\_dispM.py	/^    imagelist_url = db.Column(db.String(256))$/;"	kind:variable	line:57
 imagelist_url	../app\_ref_\_py\_dispM.py	/^    imagelist_url = db.Column(db.String(256))$/;"	kind:variable	line:57
+img_url	../app\models.py	/^    img_url = db.Column(db.String(256), nullable=False)$/;"	kind:variable	line:337
 index	../_ref\_regV1\app.py	/^def index():$/;"	kind:function	line:45
 initFunctionsForClassItem	../_ref\_regV1\classItem.py	/^import initFunctionsForClassItem $/;"	kind:namespace	line:2
 inject_ItemDemoList	../app\items\routes.py	/^def inject_ItemDemoList():$/;"	kind:function	line:99
@@ -851,7 +855,7 @@ inject_OutInvButtons	../_ref\_py\_dispR.py	/^def inject_OutInvButtons():$/;"	kin
 inject_OutInvButtons	../app\_ref_\_py\_dispR.py	/^def inject_OutInvButtons():$/;"	kind:function	line:403
 inject_OutInvIcons	../_ref\_py\_dispR.py	/^def inject_OutInvIcons():$/;"	kind:function	line:478
 inject_OutInvIcons	../app\_ref_\_py\_dispR.py	/^def inject_OutInvIcons():$/;"	kind:function	line:478
-inject_PostDemoList	../app\main\routes.py	/^def inject_PostDemoList():$/;"	kind:function	line:11
+inject_PostDemoList	../app\main\routes.py	/^def inject_PostDemoList():$/;"	kind:function	line:12
 inject_PostDemoList	../app\posts\routes.py	/^def inject_PostDemoList():$/;"	kind:function	line:74
 inject_TableHeaders	../_ref\_py\_dispR.py	/^def inject_TableHeaders():$/;"	kind:function	line:340
 inject_TableHeaders	../app\_ref_\_py\_dispR.py	/^def inject_TableHeaders():$/;"	kind:function	line:340
@@ -1171,6 +1175,7 @@ simulator	../_ref\_regV1\app.py	/^def simulator():$/;"	kind:function	line:79
 sns	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^import seaborn as sns$/;"	kind:namespace	line:320
 snsRegPlotEZ	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^def snsRegPlotEZ(df,ytarget):$/;"	kind:function	line:351
 snsRegressionPlot	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^def snsRegressionPlot(df,yTarget):$/;"	kind:function	line:324
+spawn_items	../app\main\routes.py	/^def spawn_items(roundNo):$/;"	kind:function	line:133
 sqr_home	../_ref\_py\_dispR.py	/^def sqr_home():$/;"	kind:function	line:999
 sqr_home	../app\_ref_\_py\_dispR.py	/^def sqr_home():$/;"	kind:function	line:999
 square_byid	../_ref\_py\_dispR.py	/^def square_byid(square_id):$/;"	kind:function	line:603
@@ -1202,7 +1207,7 @@ tasks_list	../_ref\_py\_ndoRt.py	/^def tasks_list():$/;"	kind:function	line:80
 tasks_list	../app\_ref_\_py\_ndoRt.py	/^def tasks_list():$/;"	kind:function	line:80
 test	../_ref\_py\_dispR.py	/^def test():$/;"	kind:function	line:798
 test	../app\_ref_\_py\_dispR.py	/^def test():$/;"	kind:function	line:798
-test	../app\main\routes.py	/^def test():$/;"	kind:function	line:58
+test	../app\main\routes.py	/^def test():$/;"	kind:function	line:61
 testSession	../_ref\_regV1\app.py	/^def testSession():$/;"	kind:function	line:128
 testTen	../_ref\_regV1\app.py	/^def testTen():$/;"	kind:function	line:115
 test_info_board	../_ref\_py\_dispR.py	/^def test_info_board():$/;"	kind:function	line:1177
@@ -1301,4 +1306,4 @@ year	../app\items\DemoCarsLists.py	/^year = [$/;"	kind:variable	line:752
 year	../app\items\forms.py	/^    year = StringField('year')$/;"	kind:variable	line:56
 year	../app\items\forms.py	/^    year = StringField('year', validators=[DataRequired()], default='2007')$/;"	kind:variable	line:10
 year	../app\models.py	/^    year = db.Column(db.String(16), nullable=False,default='2007')$/;"	kind:variable	line:13
-zillow_desc	../app\main\routes.py	/^def zillow_desc():$/;"	kind:function	line:112
+zillow_desc	../app\main\routes.py	/^def zillow_desc():$/;"	kind:function	line:110
