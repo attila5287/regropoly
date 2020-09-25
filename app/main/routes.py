@@ -132,8 +132,9 @@ def zillow_desc():
 @main.route('/spawn/<int:roundNo>')
 def spawn_items(roundNo):
     pass
-    web = 'regropoly.herokuapp.com'
+    
+    web = 'http://regropoly.herokuapp.com'
     url = '/base/'+str(roundNo)
-    requests.get(web+url)
+    requests.get(str(web+url))
     
     return jsonify({'status':'success'})
