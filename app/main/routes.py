@@ -1,3 +1,4 @@
+import random
 import requests
 import csv
 from flask import render_template, request, Blueprint, jsonify
@@ -128,13 +129,41 @@ def zillow_desc():
 #    print(res[0]['BR001RG0010181'])
     return jsonify(res)
 
-
 @main.route('/spawn/<int:roundNo>')
 def spawn_items(roundNo):
     pass
-    
     web = 'http://regropoly.herokuapp.com'
-    url = '/base/'+str(roundNo)
-    requests.get(str(web+url))
+    url_bp = '/base/'+str(roundNo)
+    base_prices = requests.get( web + url_bp ).json()
     
-    return jsonify({'status':'success'})
+    url_desc = web+'/desc'  # api route for desc
+    api_descriptions = requests.get(url_desc).json()
+    api_labels = [k[0] for k in api_descriptions.items()]
+    
+    
+    blanks = ['']*5
+    labels = [slot + random.choice(api_labels) for slot in blanks]
+    descs = [api_descriptions[bp_label] for bp_label in labels]
+    
+    bedroom_counts = [ # required to generate random img url
+        dsc.get('BedrmCt',3)
+        for dsc in descs
+    ]
+    img_ct = { # jpeg files per bedroom count
+       '1' : 10, '2' : 10, '3' : 10, '4' : 10, '5': 10,
+    }
+    img_urls = [ #random by br-count
+        web
+        +'/static/img/photos/'
+        + str(br)
+        +'-'
+        +str(random.randint(0,img_ct[str(br)]-1))
+        +'.jpeg'
+        for br in bedroom_counts
+     ]
+    
+    # return jsonify({'random': bedroom_counts})
+    return jsonify({'random': descs})
+    # return jsonify({'random': img_urls})
+    # return jsonify({'status':'success'})
+

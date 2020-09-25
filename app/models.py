@@ -334,8 +334,15 @@ class Baseprice(db.Model):
 class Property(db.Model):
     pass
     id = db.Column(db.Integer, primary_key=True)
+    BasePriceLabel = db.Column(db.String(256), nullable=False)
+    BedrmCt = db.Column(db.Integer, nullable=False)
+    CountyName = db.Column(db.String(256), nullable=False)
+    Metro = db.Column(db.String(256), nullable=False)
+    RegionID = db.Column(db.Integer, nullable=False)
+    RegionName = db.Column(db.String(256), nullable=False)
+    SizeRank = db.Column(db.Integer, nullable=False)
+    State = db.Column(db.String(256), nullable=False)
+    StateName = db.Column(db.String(256), nullable=False)
+    
     img_url = db.Column(db.String(256), nullable=False)
-    bp_label = db.Column(db.String(256), nullable=False)
-    
-
-    
+    purchase_price = db.Column(db.Integer, nullable=False)
