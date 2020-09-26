@@ -98,14 +98,23 @@ def base_price(round_no):
 
     base_prices = Baseprice.query.all()
     res = [
-        {getattr(bp, 'BasePriceLabel'): {
-            'Price-Round{}'.format(round_no):
+        {getattr(bp, 'BasePriceLabel'): 
             getattr(bp, price_column),
         }
-            for bp in base_prices}
+            for bp in base_prices
 
     ]
-    return jsonify(res[0])
+    flat = {}
+    
+    for d in res:
+        pass
+        for k,v in d.items():
+            pass
+            flat[k] = v
+    
+    
+    return jsonify(flat)
+    # return jsonify(res)
 
 @main.route('/desc')
 def zillow_desc():
@@ -133,17 +142,19 @@ def zillow_desc():
 def spawn_items(roundNo):
     pass
     web = 'http://regropoly.herokuapp.com'
-    url_bp = '/base/'+str(roundNo)
-    base_prices = requests.get( web + url_bp ).json()
-    
     url_desc = web+'/desc'  # api route for desc
+    # fetch all descriptions
     api_descriptions = requests.get(url_desc).json()
+    # fetch all labels
     api_labels = [k[0] for k in api_descriptions.items()]
+    # fetch base prices for the round
+    api_baseprices = requests.get(web + '/base/'+str(roundNo)).json() 
     
+    labels = [slot + random.choice(api_labels) for slot in ['']*5]
     
-    blanks = ['']*5
-    labels = [slot + random.choice(api_labels) for slot in blanks]
     descs = [api_descriptions[bp_label] for bp_label in labels]
+    
+    round_bps = [api_baseprices[bp_label] for bp_label in labels]
     
     bedroom_counts = [ # required to generate random img url
         dsc.get('BedrmCt',3)
@@ -153,17 +164,20 @@ def spawn_items(roundNo):
        '1' : 10, '2' : 10, '3' : 10, '4' : 10, '5': 10,
     }
     img_urls = [ #random by br-count
-        web
+        {'img_url' : web
         +'/static/img/photos/'
         + str(br)
         +'-'
         +str(random.randint(0,img_ct[str(br)]-1))
-        +'.jpeg'
+        +'.jpeg'}
         for br in bedroom_counts
      ]
     
-    # return jsonify({'random': bedroom_counts})
-    return jsonify({'random': descs})
-    # return jsonify({'random': img_urls})
-    # return jsonify({'status':'success'})
+    objects = [
+        {**desc, **imgURL, 'purchase_price':bp} for (desc, imgURL,bp) in zip(descs, img_urls, round_bps)
+    ]
 
+    # Normal distribution. mu is the mean,
+    # return jsonify({'random': api_baseprices})
+    # return jsonify({'random': round_bps })
+    # return jsonify({'random': objects })

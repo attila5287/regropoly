@@ -345,4 +345,5 @@ class Property(db.Model):
     StateName = db.Column(db.String(256), nullable=False)
     
     img_url = db.Column(db.String(256), nullable=False)
+    base_price = db.Column(db.Integer, nullable=False)
     purchase_price = db.Column(db.Integer, nullable=False)

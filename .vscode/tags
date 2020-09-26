@@ -540,6 +540,7 @@ app.py	../_ref\int-hw\hw02\Data-Journalism-and-D3-master\app.py	1;"	kind:file	li
 assets	../_ref\_regV1\app.py	/^def assets():$/;"	kind:function	line:94
 author	../app\posts\forms.py	/^    author = 'attila'$/;"	kind:variable	line:18
 base_price	../app\main\routes.py	/^def base_price(round_no):$/;"	kind:function	line:95
+base_price	../app\models.py	/^    base_price = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:348
 bcrypt	../app\__init__.py	/^bcrypt = Bcrypt()$/;"	kind:variable	line:9
 bcrypt	../app\main\routes.py	/^from app import db, bcrypt$/;"	kind:namespace	line:5
 bcrypt	../app\users\routes.py	/^from app import db, bcrypt$/;"	kind:namespace	line:3
@@ -1094,7 +1095,7 @@ prompt_init	../_ref\_regV1\classTextBookScratch.py	/^    prompt_init = staticmet
 prompt_init	../_ref\_regV1\classTextBookScratch.py	/^    prompt_init = staticmethod(prompt_init)$/;"	kind:variable	line:92
 pstn_rowcol	../_ref\_py\_dispM.py	/^    pstn_rowcol = db.Column(db.String(32))$/;"	kind:variable	line:282
 pstn_rowcol	../app\_ref_\_py\_dispM.py	/^    pstn_rowcol = db.Column(db.String(32))$/;"	kind:variable	line:282
-purchase_price	../app\models.py	/^    purchase_price = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:348
+purchase_price	../app\models.py	/^    purchase_price = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:349
 randGen_itemDesc	../_ref\_regV1\classItem.py	/^from descGenForClassItem import randGen_itemDesc$/;"	kind:namespace	line:15
 randGen_itemDesc	../_ref\_regV1\descGenForClassItem.py	/^def randGen_itemDesc():$/;"	kind:function	line:6
 randGen_itemState	../_ref\_regV1\classItem.py	/^from initFunctionsForClassItem import (randGen_itemState,$/;"	kind:namespace	line:3
@@ -1185,7 +1186,7 @@ simulator	../_ref\_regV1\app.py	/^def simulator():$/;"	kind:function	line:79
 sns	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^import seaborn as sns$/;"	kind:namespace	line:320
 snsRegPlotEZ	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^def snsRegPlotEZ(df,ytarget):$/;"	kind:function	line:351
 snsRegressionPlot	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^def snsRegressionPlot(df,yTarget):$/;"	kind:function	line:324
-spawn_items	../app\main\routes.py	/^def spawn_items(roundNo):$/;"	kind:function	line:133
+spawn_items	../app\main\routes.py	/^def spawn_items(roundNo):$/;"	kind:function	line:142
 sqr_home	../_ref\_py\_dispR.py	/^def sqr_home():$/;"	kind:function	line:999
 sqr_home	../app\_ref_\_py\_dispR.py	/^def sqr_home():$/;"	kind:function	line:999
 square_byid	../_ref\_py\_dispR.py	/^def square_byid(square_id):$/;"	kind:function	line:603
@@ -1316,4 +1317,4 @@ year	../app\items\DemoCarsLists.py	/^year = [$/;"	kind:variable	line:752
 year	../app\items\forms.py	/^    year = StringField('year')$/;"	kind:variable	line:56
 year	../app\items\forms.py	/^    year = StringField('year', validators=[DataRequired()], default='2007')$/;"	kind:variable	line:10
 year	../app\models.py	/^    year = db.Column(db.String(16), nullable=False,default='2007')$/;"	kind:variable	line:13
-zillow_desc	../app\main\routes.py	/^def zillow_desc():$/;"	kind:function	line:111
+zillow_desc	../app\main\routes.py	/^def zillow_desc():$/;"	kind:function	line:120
