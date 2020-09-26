@@ -3,7 +3,7 @@ import requests
 import csv
 from flask import render_template, request, Blueprint, jsonify
 from app import db, bcrypt
-from app.models import Post, Baseprice
+from app.models import Post, Baseprice, Spawn, Purchased
 from app.posts.forms import PostDemo
 
 main = Blueprint('main', __name__)
@@ -138,8 +138,9 @@ def zillow_desc():
 #    print(res[0]['BR001RG0010181'])
     return jsonify(res)
 
-@main.route('/spawn/<int:roundNo>')
-def spawn_items(roundNo):
+
+@main.route('/spawn/<int:spawnCount>/<int:roundNo>')
+def spawn_items( spawnCount, roundNo ):
     pass
     web = 'http://regropoly.herokuapp.com'
     url_desc = web+'/desc'  # api route for desc
@@ -150,7 +151,7 @@ def spawn_items(roundNo):
     # fetch base prices for the round
     api_baseprices = requests.get(web + '/base/'+str(roundNo)).json() 
     
-    labels = [slot + random.choice(api_labels) for slot in ['']*5]
+    labels = [slot + random.choice(api_labels) for slot in ['']*spawnCount]
     
     descs = [api_descriptions[bp_label] for bp_label in labels]
     
@@ -174,10 +175,30 @@ def spawn_items(roundNo):
      ]
     
     objects = [
-        {**desc, **imgURL, 'purchase_price':bp} for (desc, imgURL,bp) in zip(descs, img_urls, round_bps)
+        {**desc, **imgURL, 'base_price': bp, 'purchase_price': round(random.normalvariate(bp, 10000)*.95), 'purchase_round': roundNo} for (desc, imgURL, bp, roundNo) in zip(descs, img_urls, round_bps, [roundNo]*10)
+    ]
+    
+    houses = [
+        Spawn(**obj) for obj in objects
     ]
 
-    # Normal distribution. mu is the mean,
-    # return jsonify({'random': api_baseprices})
-    # return jsonify({'random': round_bps })
-    # return jsonify({'random': objects })
+    db.session.query(Spawn).delete()
+    
+    db.session.add_all(houses)
+    db.session.commit()
+
+    return jsonify( objects)
+
+@main.route('/purchase/<int:spawnIndex>')
+def purchase(spawnIndex):
+   pass
+   target = Spawn.query.get_or_404(spawnIndex)
+#    fixed = target.__dict__.pop('_sa_instance_state')
+   
+   d = {c.name: getattr(target, c.name) for c in target.__table__.columns}
+   d['forsale_price'] = round(random.normalvariate(d['base_price'], 10000))
+   d['forsale_round'] = d['purchase_round']
+   d.pop('id')
+   db.session.add(Purchased(**d))
+   db.session.commit()
+   return jsonify( d )
