@@ -1,5 +1,6 @@
 -- WORKS
 -- now drop the table try add again
+DROP TABLE public.post  CASCADE;
 DROP TABLE public.item  CASCADE;
 DROP TABLE public.user CASCADE;
 
