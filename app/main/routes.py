@@ -125,7 +125,7 @@ def spawn_items( spawnCount, roundNo ):
      ]
     
     objects = [
-        {**desc, **imgURL, 'base_price': bp, 'purchase_price': round(random.normalvariate(bp, 10000)*.95), 'purchase_round': roundNo} for (desc, imgURL, bp, roundNo) in zip(descs, img_urls, round_bps, [roundNo]*10)
+        {**desc, **imgURL, 'base_price': bp, 'purchase_price': round(random.normalvariate(bp, 10000)*.95), 'purchase_round': roundNo} for (desc, imgURL, bp, roundNo) in zip(descs, img_urls, round_bps, [roundNo]*spawnCount)
     ]
     
     houses = [
