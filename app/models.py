@@ -284,10 +284,6 @@ class Baseprice(db.Model):
     Round247 = db.Column(db.Integer, nullable=False)
     Round248 = db.Column(db.Integer, nullable=False)
 
-    def dynamic_price(self, roundNo):
-        pass
-        roundN0 = 'Round{}'.format(str(roundNo))
-        return self.Round2
 
     def __repr__(self):
         return f"base prices created"
@@ -295,6 +291,7 @@ class Baseprice(db.Model):
 
 class Spawn(db.Model):
     pass
+    img_url = db.Column(db.String(256), nullable=False)
     id = db.Column(db.Integer, primary_key=True)
     BasePriceLabel = db.Column(db.String(256), nullable=False)
     BedrmCt = db.Column(db.Integer, nullable=False)
@@ -305,11 +302,12 @@ class Spawn(db.Model):
     SizeRank = db.Column(db.Integer, nullable=False)
     State = db.Column(db.String(256), nullable=False)
     StateName = db.Column(db.String(256), nullable=False)
-
-    img_url = db.Column(db.String(256), nullable=False)
-    base_price = db.Column(db.Integer, nullable=False)
     purchase_price = db.Column(db.Integer, nullable=False)
     purchase_round = db.Column(db.Integer, nullable=False)
+    base_price = db.Column(db.Integer, nullable=False)
+    base_price01 = db.Column(db.Integer, nullable=False)
+    base_price02 = db.Column(db.Integer, nullable=False)
+    base_price03 = db.Column(db.Integer, nullable=False)    
 
 class Purchased(db.Model):
     pass
@@ -323,14 +321,16 @@ class Purchased(db.Model):
     SizeRank = db.Column(db.Integer, nullable=False)
     State = db.Column(db.String(256), nullable=False)
     StateName = db.Column(db.String(256), nullable=False)
-
     img_url = db.Column(db.String(256), nullable=False)
-    base_price = db.Column(db.Integer, nullable=False)
     purchase_price = db.Column(db.Integer, nullable=False)
     purchase_round = db.Column(db.Integer, nullable=False)
     forsale_price = db.Column(db.Integer, nullable=False)
     forsale_round = db.Column(db.Integer, nullable=False)
-
+    base_price = db.Column(db.Integer, nullable=False)
+    base_price01 = db.Column(db.Integer, nullable=False)
+    base_price02 = db.Column(db.Integer, nullable=False)
+    base_price03 = db.Column(db.Integer, nullable=False)
+    
 class Financials(db.Model):
     pass
     id = db.Column(db.Integer, primary_key=True)

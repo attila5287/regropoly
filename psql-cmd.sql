@@ -1,3 +1,5 @@
+DROP TABLE public.purchased  CASCADE;
+DROP TABLE public.spawn  CASCADE;
 CREATE TABLE "purchased" (
   "id"	BIGSERIAL NOT NULL PRIMARY KEY,
 	"BasePriceLabel"	VARCHAR(255),
@@ -11,6 +13,9 @@ CREATE TABLE "purchased" (
 	"StateName"	VARCHAR(255),
 	"img_url"	VARCHAR(255),
 	"base_price"	INTEGER,
+	"base_price01"	INTEGER,
+	"base_price02"	INTEGER,
+	"base_price03"	INTEGER,
 	"purchase_price"	INTEGER,
 	"purchase_round"	INTEGER,
 	"forsale_price"	INTEGER,
@@ -30,6 +35,9 @@ CREATE TABLE "spawn" (
 	"StateName"	VARCHAR(255),
 	"img_url"	VARCHAR(255),
 	"base_price"	INTEGER,
+	"base_price01"	INTEGER,
+	"base_price02"	INTEGER,
+	"base_price03"	INTEGER,
 	"purchase_price"	INTEGER,
 	"purchase_round"	INTEGER
 );

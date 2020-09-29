@@ -1,0 +1,101 @@
+====== <Bike> =======
+- bike_id
+- bike_type
+- bike_model
+- status
+- reason
+==================
+notes= passsive object no methods
+
+====== <BikeReturned> =======
+- employee_id
+- extra_charges
+==================
+notes= passsive object no methods
+
+Employee (super)
+  |_ Manager (sub)
+    |_ Owner (sub)
+
+notes: Employee is a superclass while all others are all subclasses
+means that managers and owners are already user with methods or attrs beyond, lastly Owner is also a subclass of Manager so that formar will have authorization of latter and beyond.
+
+====== <Customer> =======
+- customer_id
+- name
+- address
+- phone_number
+- status
+- password
+- user_name
+------------------
++ search_bike
++ reserve_bike
++ send_conf_receipt
+==================
+
+====== <Owner> ====
+------------------
++ generate_report
+==================
+notes: owners have unique method they can run financial reports
+
+* * * * * * * * * *
+
+====== <Manager> =======
+------------------
++ cancel_transaction
++ update_transaction
+==================
+notes: managers have special methods that allows them fix payment issues
+
+* * * * * * * * * *
+====== <Employee> =======
+------------------
++ return_bike
+==================
+notes: 
+
+====== <CreditCard> =======
+- cc_number
+- cc_type
+- name
+- address
+- exp_date
+==================
+notes: no methods for cc class
+
+====== <Reservation> =======
+- reservation_id
+- reservation_date
+- bike_id
+- customer_id
+- amount
+- status
+==================
+notes: no methods for rez class
+
+
+* * * * * * * * * *
+====== <Confirmation> =======
+- terms_and_conditions
+- applicable_fees
+- rez_id
+- customer_id
+- total_charge
+==================
+notes: no methods for conf. class
+
+
+* * * * * * * * * *
+====== <class_name> =======
+-
+-
+-
+------------------
++
++
++
+==================
+
+

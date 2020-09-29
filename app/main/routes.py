@@ -1,11 +1,12 @@
 import random
 import requests
 import csv
-from flask import render_template, request, Blueprint, jsonify
+from flask import render_template, url_for, flash, redirect,  Blueprint, jsonify, redirect
 from app import db, bcrypt
-from app.models import  Baseprice, Spawn, Purchased
+from app.models import Baseprice, Spawn, Purchased
 
 main = Blueprint('main', __name__)
+
 
 @main.route("/")
 @main.route("/test")
@@ -14,11 +15,23 @@ def test():
     return render_template('test.html')
 
 
+@main.route("/assets")
+def assets():
+    pass
+    return render_template('test.html')
+
+
+@main.route("/market")
+def market():
+    pass
+    return render_template('market.html')
+
+
 @main.route("/db/init/base")
 def db_init_baseprice():
     pass  # UPLOAD ZILLOW HOUSE VALUE INDEX CSV'S MERGED
     existing_data = Baseprice.query.filter_by(RegionName='Denver').first()
-    
+
     if existing_data:
         pass
         print('table data exists')
@@ -41,6 +54,7 @@ def db_init_baseprice():
 
         return jsonify(csv_dict)
 
+
 @main.route('/base/<int:round_no>')
 def base_price(round_no):
     pass  # base prices are from Zillow House Value:City
@@ -48,23 +62,23 @@ def base_price(round_no):
 
     base_prices = Baseprice.query.all()
     res = [
-        {getattr(bp, 'BasePriceLabel'): 
+        {getattr(bp, 'BasePriceLabel'):
             getattr(bp, price_column),
-        }
-            for bp in base_prices
+         }
+        for bp in base_prices
 
     ]
     flat = {}
-    
+
     for d in res:
         pass
-        for k,v in d.items():
+        for k, v in d.items():
             pass
             flat[k] = v
-    
-    
+
     return jsonify(flat)
     # return jsonify(res)
+
 
 @main.route('/desc')
 def zillow_desc():
@@ -90,7 +104,7 @@ def zillow_desc():
 
 
 @main.route('/spawn/<int:spawnCount>/<int:roundNo>')
-def spawn_items( spawnCount, roundNo ):
+def spawn_items(spawnCount, roundNo):
     pass
     web = 'http://regropoly.herokuapp.com'
     url_desc = web+'/desc'  # api route for desc
@@ -99,56 +113,168 @@ def spawn_items( spawnCount, roundNo ):
     # fetch all labels
     api_labels = [k[0] for k in api_descriptions.items()]
     # fetch base prices for the round
-    api_baseprices = requests.get(web + '/base/'+str(roundNo)).json() 
-    
+    api_baseprices = requests.get(web + '/base/'+str(roundNo)).json()
+
     labels = [slot + random.choice(api_labels) for slot in ['']*spawnCount]
-    
+
     descs = [api_descriptions[bp_label] for bp_label in labels]
-    
+
     round_bps = [api_baseprices[bp_label] for bp_label in labels]
     
-    bedroom_counts = [ # required to generate random img url
-        dsc.get('BedrmCt',3)
+    # these are the last three year's prices
+    try: # make it work for round 01 02 03
+        pass
+        api_bp_01 = requests.get(web + '/base/'+str(roundNo-1)).json()
+        bp_01 = [api_bp_01[bp_label] for bp_label in labels]
+        try:
+            pass
+            api_bp_02 = requests.get(web + '/base/'+str(roundNo-2)).json()
+            bp_02 = [api_bp_02[bp_label] for bp_label in labels]
+            try:
+                pass
+                api_bp_03 = requests.get(web + '/base/'+str(roundNo-3)).json()    
+                bp_03 = [api_bp_03[bp_label] for bp_label in labels]
+            except:
+                pass
+                bp_03 = bp_02
+        except:
+            pass
+            bp_02= bp_01
+            bp_03= bp_01
+    except:
+        pass
+        bp_01 = round_bps
+        bp_02 = round_bps
+        bp_03 = round_bps
+    
+
+    bedroom_counts = [  # required to generate random img url
+        dsc.get('BedrmCt', 3)
         for dsc in descs
     ]
-    img_ct = { # jpeg files per bedroom count
-       '1' : 10, '2' : 10, '3' : 10, '4' : 10, '5': 10,
+    img_ct = {  # jpeg files per bedroom count
+        '1': 10, '2': 10, '3': 10, '4': 10, '5': 10,
     }
-    img_urls = [ #random by br-count
-        {'img_url' : web
-        +'/static/img/photos/'
-        + str(br)
-        +'-'
-        +str(random.randint(0,img_ct[str(br)]-1))
-        +'.jpeg'}
+    img_urls = [  # random by br-count
+        {'img_url': web
+         + '/static/img/photos/'
+         + str(br)
+         + '-'
+         + str(random.randint(0, img_ct[str(br)]-1))
+         + '.jpeg'}
         for br in bedroom_counts
-     ]
-    
+    ]
+
+    diff_factor = 0.95 # adjust with difficulty level of game
+    _rv = random.normalvariate #localize a global var
     objects = [
-        {**desc, **imgURL, 'base_price': bp, 'purchase_price': round(random.normalvariate(bp, 10000)*.95), 'purchase_round': roundNo} for (desc, imgURL, bp, roundNo) in zip(descs, img_urls, round_bps, [roundNo]*spawnCount)
+        {
+            **desc, 
+            **imgURL, 
+            'base_price': bp, 
+            'base_price01': bp1, 
+            'base_price02': bp2, 
+            'base_price03': bp3, 
+            'purchase_price': round(_rv(bp, bp*.1) * diff_factor), 
+            'purchase_round': roundNo
+        } for (desc, imgURL, bp, roundNo, bp1, bp2, bp3 ) in zip(descs, img_urls, round_bps, [roundNo]*spawnCount, bp_01, bp_02, bp_03)
     ]
     
     houses = [
         Spawn(**obj) for obj in objects
     ]
+    
 
     db.session.query(Spawn).delete()
-    
     db.session.add_all(houses)
     db.session.commit()
 
-    return jsonify( objects)
+    q_all = Spawn.query.all()  # query for all in db
+
+    d = [{c.name: getattr(q, c.name)
+          for c in q.__table__.columns} for q in q_all]
+
+    return jsonify(d)
+
 
 @main.route('/purchase/<int:spawnIndex>')
 def purchase(spawnIndex):
-   pass
-   target = Spawn.query.get_or_404(spawnIndex)
-#    fixed = target.__dict__.pop('_sa_instance_state')
-   
-   d = {c.name: getattr(target, c.name) for c in target.__table__.columns}
-   d['forsale_price'] = round(random.normalvariate(d['base_price'], 10000))
-   d['forsale_round'] = d['purchase_round']
-   d.pop('id')
-   db.session.add(Purchased(**d))
-   db.session.commit()
-   return jsonify( d )
+    pass
+    target = Spawn.query.get_or_404(spawnIndex)
+    # cast into dictionaries 
+    d = {c.name: getattr(target, c.name) for c in target.__table__.columns}
+    _rv = random.normalvariate()
+    # then add a few more k,v pairs then db
+    d['forsale_price'] = round(_rv(d['base_price'], 10000))
+    
+    d['forsale_round'] = d['purchase_round']
+    
+    d.pop('id') # drop the spawned item id 
+    db.session.add(Purchased(**d))
+    db.session.commit()
+#    return jsonify( d )
+    return jsonify(d)
+
+
+@main.route('/purchased/<int:roundNo>')
+def purchased_api(roundNo):
+    pass
+    q_all = [p for p in Purchased.query.all()]
+    labels = [
+        p.BasePriceLabel for p in q_all
+    ]
+    web = 'http://regropoly.herokuapp.com'
+    url_base = web+'/base/'+ str(roundNo)  # fetch new prices
+    api_baseprices = requests.get(web + '/base/'+str(roundNo)).json()
+    round_bps = [api_baseprices[bp_label] for bp_label in labels]
+    
+    try: # make it work for round 01 02 03
+        pass
+        api_bp_01 = requests.get(web + '/base/'+str(roundNo-1)).json()
+        bp_01 = [api_bp_01[bp_label] for bp_label in labels]
+        try:
+            pass
+            api_bp_02 = requests.get(web + '/base/'+str(roundNo-2)).json()
+            bp_02 = [api_bp_02[bp_label] for bp_label in labels]
+            try:
+                pass
+                api_bp_03 = requests.get(web + '/base/'+str(roundNo-3)).json()    
+                bp_03 = [api_bp_03[bp_label] for bp_label in labels]
+            except:
+                pass
+                bp_03 = bp_02
+        except:
+            pass
+            bp_02= bp_01
+            bp_03= bp_01
+    except:
+        pass
+        bp_01 = round_bps
+        bp_02 = round_bps
+        bp_03 = round_bps
+    
+    
+    diff_factor = 1.05 # adjust with game difficulty level
+    _rv = random.normalvariate # localize global variable
+    
+    for (p, bp, bp1, bp2, bp3) in zip(q_all, round_bps, bp_01, bp_02, bp_03):
+        pass
+        p.base_price = bp
+        p.forsale_round = roundNo
+        mean = p.base_price * diff_factor
+        std = mean * .05
+        p.forsale_price = round(_rv(mean, std))
+        
+        p.base_price01 = bp1 # price history
+        p.base_price02 = bp2
+        p.base_price03 = bp3
+
+    d = [  # cast into dictionaries
+         {
+            c.name: getattr(q, c.name)
+            for c in q.__table__.columns
+        }
+        for q in q_all
+    ]
+    db.session.commit() #save updated prices on objects     
+    return jsonify(d)
