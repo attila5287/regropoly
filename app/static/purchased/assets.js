@@ -1,13 +1,14 @@
 const formatPrice = d3.format( "," )
 
-d3.json( `/purchased`, function ( err, data ) {
+d3.json( `/purchased/1`, function ( err, data ) {
   console.log( 'data :>> ', data );
 
   // console.table(data[0]);
-  let $Spawned = d3.select( '#market-spawn' )
+  let $Purchased = d3.select( '#assets-portfolio' )
     .data( data );
 
-  $row = $Spawned.append( 'div' )
+  $row = $Purchased
+    .append( 'div' )
     .attr( 'class', 'row no-gutters' );
 
   for ( let index = 0; index < data.length; index++ ) {
@@ -42,12 +43,12 @@ d3.json( `/purchased`, function ( err, data ) {
 
     $cb_left
       .append( 'p' )
-      .classed( 'my-0 mx-0 text-robo text-center text-italic text-xs opac-90', true )
+      .classed( 'my-0 mx-0 text-robo text-center text-italic text-xs', true )
       .text( `Sell price at round-${d.forsale_round}` );
 
     $button = $cb_left
       .append( 'a' )
-      .attr( 'class', 'btn btn-dark btn-outline-light btn-block bg-green my-1 py-0' )
+      .attr( 'class', 'btn btn-dark btn-outline-light btn-block bg-green my-1 py-0 text-sm' )
       .attr( 'href', `/sell/${d.id}` )
       .text( ` $${formatPrice( d.forsale_price )}` );
 
@@ -66,7 +67,7 @@ d3.json( `/purchased`, function ( err, data ) {
 
     $cb_list
       .append( 'li' )
-      .attr( 'class', 'list-group-item bg-transparent text-robo text-sm border-light py-0 opac-70' )
+      .attr( 'class', 'list-group-item bg-dark text-robo text-sm border-light py-0 opac-70' )
       .text( `${d.BasePriceLabel}` );
 
     $cb_list

@@ -62,7 +62,7 @@ d3.json(`/spawn/${displayCount}/${roundNo}`, function(err, data) {
       $cb_list
       .append('li')
       .attr('class', 'list-group-item bg-transparent py-1')
-      .text(`Marketid: ${d.id}`);
+      .text(`Market id: ${d.id}`);
 
   }
 
