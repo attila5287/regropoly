@@ -90,9 +90,9 @@ function update_assets (roundNo) {
 
       let $card = $row
         .append( 'div' )
-        .attr( 'class', 'col-sm-12 offset-sm-0' )
+        .attr( 'class', 'col-sm-6' )
         .append( 'div' )
-        .attr( 'class', 'card bg-transparent text-light text-comfo mx-1 rnd-2xl mb-2' );
+        .attr( 'class', 'card bg-transparent text-light text-comfo mx-1 rnd-2xl' );
 
 
       let $card_body = $card
@@ -103,59 +103,39 @@ function update_assets (roundNo) {
 
       $cb_left = $card_body
         .append( 'div' )
-        .classed( 'col-xs-4', true )
-        ;
-      
+        .classed( 'col-sm-5', true );
       $cb_left
         .append( 'p' )
         .classed( 'my-0 text-center text-italic text-xs', true )
-        .text( `${d.RegionName}, ${d.State}` )
-        ;
+        .text( `${d.RegionName}, ${d.State}` );
 
       $img = $cb_left
         .append( 'img' )
         .attr( 'class', 'card-img rnd-lg opac-60' )
         .attr( 'src', d.img_url )
-        .style( 'max-height', '50%' )
-        ;
+        .style( 'max-height', '50%' );
 
       $cb_left
         .append( 'p' )
-        .classed( 'my-0 mx-0 text-robo text-secondary text-center text-italic text-xs', true )
-        .text( `Blind offer` )
-        ;
+        .classed( 'my-0 mx-0 text-robo text-center text-italic text-xs', true )
+        .text( `Sell price at round-${d.forsale_round}` );
 
-      $btn_blind = $cb_left
+      $button = $cb_left
         .append( 'a' )
-        .attr( 'class', 'btn btn-info btn-outline-info btn-block bg-dark border-0 my-1 py-0 text-xs text-light' )
+        .attr( 'class', 'btn btn-dark btn-outline-light btn-block bg-green my-1 py-0 text-sm' )
         .attr( 'href', `/sell/${d.id}` )
-        .text( ` $${formatPrice( d.base_price )}` )
-        ;
-      $cb_left
-        .append( 'p' )
-        .classed( 'my-0 mx-0 text-robo text-secondary text-center text-italic text-xs', true )
-        .text( ` Best Offer` )
-        ;
-
-      $btn_best = $cb_left
-        .append( 'a' )
-        .attr( 'class', 'btn btn-dark btn-outline-light btn-block bg-green my-1 py-0 text-xs' )
-        .attr( 'href', `/sell/${d.id}` )
-        .text( ` $${formatPrice( d.forsale_price )}` )
-        ;
+        .text( ` $${formatPrice( d.forsale_price )}` );
 
       $cb_left
         .append( 'p' )
-        .classed( 'py-0 my-0 mx-0 text-cond text-center text-italic text-xs opac-90', true )
-        .text( `since Round-${d.purchase_round} for $${formatPrice( d.purchase_price )}` )
-        ;
+        .classed( 'my-0 mx-0 text-robo text-center text-italic text-xs opac-90', true )
+        .text( `Purchased at Round-${d.purchase_round} for $${formatPrice( d.purchase_price )}` );
 
-      let $cb_center = $card_body
+      let $cb_right = $card_body
         .append( 'div' )
-        .classed( 'col-xs-4', true )
-        ;
+        .classed( 'col-xs-7', true );
 
-      let $cb_list = $cb_center
+      let $cb_list = $cb_right
         .append( 'ul' )
         .attr( 'class', 'list-group list-group-flush mb-1 mt-2' );
 
@@ -177,73 +157,27 @@ function update_assets (roundNo) {
       $cb_list
         .append( 'li' )
         .attr( 'class', 'list-group-item bg-transparent py-1' )
-        .text( `${d.Metro}` )
-        ;
+        .text( `Purchased ID: ${d.id}` );
 
       $cb_list
-        .append( 'li' )
-        .attr( 'class', 'list-group-item bg-transparent py-1' )
-        .text( `${d.StateName}` )
-        ;
-
-      $cb_list
-        .append( 'li' )
-        .attr( 'class', 'list-group-item bg-transparent py-1' )
-        .text( `Purchased ID: ${d.id}` )
-        ;
-      $cb_list
-        .append( 'li' )
-        .attr( 'class', 'list-group-item bg-transparent py-1' )
-        .text( `RegionID: ${d.RegionID}` )
-        ;
-      $cb_list
-        .append( 'li' )
-        .attr( 'class', 'list-group-item bg-transparent py-1' )
-        .text( `SizeRank: ${d.SizeRank}` )
-        ;
-
-      let $cb_right = $card_body
-        .append( 'div' )
-        .classed( 'col-xs-4', true )
-        ;
-      let $cb_l1st = $cb_right
-        .append( 'ul' )
-        .attr( 'class', 'list-group list-group-flush mb-1 mt-2' );
-      
-
-      $cb_l1st
-        .append( 'li' )
-        .attr( 'class', 'list-group-item bg-transparent py-1' )
-        .text( `Rnd${d.purchase_round}  $${formatPrice( d.purchase_price )}` )
-        ;
-
-      $cb_l1st
-        .append( 'li' )
-        .attr( 'class', 'list-group-item bg-transparent py-1 border-light' )
-        .text( `Rnd${d.purchase_round}  $${formatPrice( d.purchase_price )}` )
-        ;
-      
-
-      $cb_l1st
         .append( 'li' )
         .attr( 'class', 'list-group-item bg-transparent py-1' )
         .text( `Rnd${roundNo}  $${formatPrice( d.base_price )}` );
 
-      $cb_l1st
+      $cb_list
         .append( 'li' )
         .attr( 'class', 'list-group-item bg-transparent py-1' )
         .text( `Rnd${roundNo - 1}:  $${formatPrice( d.base_price01 )}` );
-      $cb_l1st
+      $cb_list
         .append( 'li' )
         .attr( 'class', 'list-group-item bg-transparent py-1' )
         .text( `Rnd${roundNo - 2}:  $${formatPrice( d.base_price02 )}` );
-      
-      $cb_l1st
+      $cb_list
         .append( 'li' )
         .attr( 'class', 'list-group-item bg-transparent py-1' )
-        .text( `Rnd${roundNo - 3}:  $${formatPrice( d.base_price03 )}` )
-        ;      
-      }
+        .text( `Rnd${roundNo - 3}:  $${formatPrice( d.base_price03 )}` );
+    }
+
 
   } );
 }

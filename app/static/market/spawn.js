@@ -13,8 +13,9 @@ d3.json(`/spawn/${displayCount}/${roundNo}`, function(err, data) {
     .attr('class', 'row no-gutters');
   
   for (let index = 0; index <displayCount; index++) {
-    let d = data[index];
-
+    
+    let d = data[ index ];
+    
     let $card = $row
       .append('div')
       .attr('class', 'col-sm-3')

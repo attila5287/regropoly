@@ -114,8 +114,8 @@ def spawn_items(spawnCount, roundNo):
     api_labels = [k[0] for k in api_descriptions.items()]
     # fetch base prices for the round
     api_baseprices = requests.get(web + '/base/'+str(roundNo)).json()
-
-    labels = [slot + random.choice(api_labels) for slot in ['']*spawnCount]
+    _rc = random.choice
+    labels = [slot + _rc(api_labels) for slot in ['']*spawnCount]
 
     descs = [api_descriptions[bp_label] for bp_label in labels]
 
@@ -203,8 +203,8 @@ def purchase(spawnIndex):
     target = Spawn.query.get_or_404(spawnIndex)
     # cast into dictionaries 
     d = {c.name: getattr(target, c.name) for c in target.__table__.columns}
-    _rv = random.normalvariate()
-    # then add a few more k,v pairs then db
+    _rv = random.normalvariate
+    # # then add a few more k,v pairs then db
     d['forsale_price'] = round(_rv(d['base_price'], 10000))
     
     d['forsale_round'] = d['purchase_round']
@@ -228,7 +228,8 @@ def purchased_api(roundNo):
     api_baseprices = requests.get(web + '/base/'+str(roundNo)).json()
     round_bps = [api_baseprices[bp_label] for bp_label in labels]
     
-    try: # make it work for round 01 02 03
+    
+    try: # make it work for round 01 02 03 where no prev's three rounds avlb
         pass
         api_bp_01 = requests.get(web + '/base/'+str(roundNo-1)).json()
         bp_01 = [api_bp_01[bp_label] for bp_label in labels]
@@ -240,14 +241,14 @@ def purchased_api(roundNo):
                 pass
                 api_bp_03 = requests.get(web + '/base/'+str(roundNo-3)).json()    
                 bp_03 = [api_bp_03[bp_label] for bp_label in labels]
-            except:
+            except: # req'd for the first three rounds
                 pass
                 bp_03 = bp_02
-        except:
+        except: # req'd for the first three rounds
             pass
             bp_02= bp_01
             bp_03= bp_01
-    except:
+    except: # req'd for the first three rounds
         pass
         bp_01 = round_bps
         bp_02 = round_bps
@@ -276,5 +277,7 @@ def purchased_api(roundNo):
         }
         for q in q_all
     ]
+    
     db.session.commit() #save updated prices on objects     
+    
     return jsonify(d)
