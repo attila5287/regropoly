@@ -1,3 +1,4 @@
+DROP TABLE public.purchased CASCADE;
 DROP TABLE public.description CASCADE;
 CREATE TABLE "description" (
   "id"	SERIAL NOT NULL PRIMARY KEY,

@@ -429,7 +429,7 @@ _ndoRt.py	../_ref\_py\_ndoRt.py	1;"	kind:file	line:1
 about	../_ref\_py\_dispR.py	/^def about():$/;"	kind:function	line:185
 account	../_ref\_py\_dispR.py	/^def account():$/;"	kind:function	line:266
 account	../app\users\routes.py	/^def account():$/;"	kind:function	line:77
-add_player	../app\main\routes.py	/^def add_player(new_player):$/;"	kind:function	line:302
+add_player	../app\main\routes.py	/^def add_player(new_player_name):$/;"	kind:function	line:302
 add_property	../_ref\_regV1\classProperty.py	/^    def add_property(self):$/;"	kind:member	line:180
 add_property	../_ref\_regV1\objectHouseMarket.py	/^    def add_property(self):$/;"	kind:member	line:15
 add_task	../_ref\_py\_ndoRt.py	/^def add_task():$/;"	kind:function	line:99

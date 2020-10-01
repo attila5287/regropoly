@@ -142,9 +142,9 @@ def spawn_api(spawnCount, roundNo):
         '1': 10, '2': 10, '3': 10, '4': 10, '5': 10,
     }
     img_urls = [  # random by br-count
-        {'img_url': 'https://github.com/attila5287/regropoly-img/photos/'
+        {'img_url': 'https://raw.githubusercontent.com/attila5287/regropoly-img/master/photos/'
          + str(br)
-         + '-'
+         + '/'
          + str(random.randint(0, img_ct[str(br)]-1))
          + '.jpeg'}
         for br in bedroom_counts
@@ -298,13 +298,13 @@ def show_player(id):
       return jsonify( { 'player id {}'.format(id) : 'does not exist on Player database'}  )
       
       
-@main.route('/add/player/<string:new_player>')
-def add_player(new_player):
+@main.route('/add/player/<string:new_player_name>')
+def add_player(new_player_name):
     pass
-    already_exists = [
-        p.player_name for p in Player.query.filter(Player.player_name == new_player)
+    existing_names = [
+        p.player_name for p in Player.query.filter(Player.player_name == new_player_name)
     ]
-    if new_player in already_exists:
+    if new_player_name in existing_names:
         pass
         return jsonify({'player name':'already exists on Player database'})
         
@@ -312,14 +312,14 @@ def add_player(new_player):
         pass
         db.session.add(Player(
             avatar_url = 'https://raw.githubusercontent.com/attila5287/regropoly/master/app/static/profile_pics/attila.jpg', 
-            player_name = new_player, 
+            player_name = new_player_name, 
             avlb_funds = 10000000, 
             high_worth = 10000000,  
             low_worth = 10000000,  
             rtn_on_inv = 0, 
             num_of_inv = 0 
         ))
-        q_added = Player.query.filter(Player.player_name == new_player)
+        q_added = Player.query.filter(Player.player_name == new_player_name)
         
         d = [{c.name: getattr(q, c.name)
             for c in q.__table__.columns} for q in q_added]
