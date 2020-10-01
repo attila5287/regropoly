@@ -1,3 +1,4 @@
+display_modes_up();
 let roundNo = 1;
 
 round_input(roundNo);
@@ -21,7 +22,10 @@ function round_input(roundNo) {
       true
     );
 
-  $fast_backward.append("i").classed("fas fa-fast-backward text-xl my-2", true);
+  $fast_backward
+    .append("i")
+    .attr("id", "fast-backward-logo")
+    .classed("fas fa-fast-backward text-xl my-2", true);
   
   let $left_btn = $btn_grp
     .append("a")
@@ -30,7 +34,10 @@ function round_input(roundNo) {
       "change-round btn btn-dark btn-outline-light btn-block bg-themy px-4 my-0",
       true
     );
-  $left_btn.append("i").classed("fas fa-caret-left text-xl my-2", true);
+  $left_btn
+    .append( "i" )
+    .attr( "id", "prev-round-logo" )
+    .classed( "fas fa-caret-left text-xl my-2", true );
 
   let $round_board = $btn_grp
     .append("a")
@@ -54,7 +61,10 @@ function round_input(roundNo) {
       true
     );
 
-  $right_btn.append("i").classed("fas fa-caret-right text-xl my-2", true);
+  $right_btn
+  .append("i")
+  .attr("id", "next-round-logo")
+    .classed("fas fa-caret-right text-xl my-2", true);
   
   let $fast_forward = $btn_grp
     .append("a")
@@ -64,7 +74,10 @@ function round_input(roundNo) {
       true
     );
 
-  $fast_forward.append( "i" ).classed( "fas fa-fast-forward text-xl my-2", true )
+  $fast_forward
+    .append( "i" )
+    .attr( "id", "fast-forward-logo" )
+    .classed( "fas fa-fast-forward text-xl my-2", true )
     ;
   
 }
@@ -404,21 +417,42 @@ function update_assets(roundNo) {
     }
   });
 }
-display_selected("update_assets", roundNo);
+// display_selected("update_assets", roundNo);
 
-function display_selected(mode, roundNo) {
-  console.log("disp :>> ", mode);
+function display_selected ( mode, roundNo ) {
+  console.log('roundNo :>> ', roundNo);
+  console.log( "displayMode :>> ", mode );
   display = {
-    spawn_items_logo: spawn_items(roundNo),
-    spawn_items: spawn_items(roundNo),
-    update_assets_logo: update_assets(roundNo),
-    update_assets: update_assets(roundNo),
+    spawn_items_logo: "spawn_items",
+    spawn_items: "spawn_items",
+    update_assets: "update_assets",
+    update_assets_logo: "update_assets",
   };
 
-  display[mode];
+  const condition = ( mode == 'update_assets' );
+  if (condition) {
+    return update_assets( roundNo );
+    
+  } else {
+    return spawn_items(roundNo);
+    
+  }
 }
 
-// ====== EXE
+function display_sel3cted ( mode, roundNo ) {
+  console.log('roundNo :>> ', roundNo);
+  console.log("displayMode :>> ", mode);
+  display = {
+    // spawn_items_logo: spawn_items(roundNo),
+    spawn_items: spawn_items(roundNo),
+    update_assets: update_assets(roundNo),
+    // update_assets_logo: update_assets(roundNo),
+  };
+
+  return display[mode];
+}
+
+// ====== execute
 d3.selectAll( ".display-mode" ).on( "click", function ( event ) {
   d3.event.preventDefault();
   let selected = d3.event.target;
@@ -428,23 +462,85 @@ d3.selectAll( ".display-mode" ).on( "click", function ( event ) {
 
 
 d3.selectAll(".change-round").on("click", function (event) {
+  // d3.event.preventDefault();
   console.log("<<: test :>> ");
-  d3.event.preventDefault();
   const clicked = d3.event.target;
   let action = clicked.id.trim();
+
+  console.log('action :>> ', action);
   
   delta = {
-    "fast-backward" : -5,
-    "prev-round" : -1,
-    "next-round" : +1,
-    "fast-forward" : +5,
-
-  }
+    "fast-backward-logo": -5,
+    "fast-backward": -5,
+    "prev-round-logo": -1,
+    "prev-round": -1,
+    "next-round": +1,
+    "next-round-logo": +1,
+    "fast-forward": +5,
+    "fast-forward-logo": +5,
+  };
 
     roundNo = roundNo + delta[action];
     d3.select(".round-no").text(roundNo);
     // update_assets(roundNo);
-  
-    // display_selected(mode, roundNo);
+    // let mode = "spawn_items";
+    let mode = "update_assets";
+    display_selected(mode, roundNo);
   });
 
+function display_modes_up ( ) {
+  const menu = [
+    {
+      value:"0",
+      text: "Mode",
+      mode: "",
+      class : "disabled"
+    },
+    {
+      value:"1",
+      text:"Assets",
+      class : "",
+      mode: "update_assets",
+    },
+    {
+      value:"2",
+      text:"Market",
+      class: "",
+      mode: "spawn_items",
+    },
+  ];
+  $select = d3.select( "#select-display-mode" )
+    .selectAll('.dd')
+    .data( menu )
+    .enter()
+    ;
+  $opt = $select
+    .append("option")
+    .attr( "value", ( d ) => +d.value )
+    .text( ( d ) => d.text );
+}
+
+d3.select( "#select-display-mode" )
+  .on( "change", function () {
+    const menu = [
+      {
+        value: "0",
+        mode: "",
+      },
+      {
+        value: "1",
+        mode: "update_assets",
+      },
+      {
+        value: "2",
+        mode: "spawn_items",
+      },
+    ];
+    const $selected_option = this;
+    const value = $selected_option.value;
+    const mode = menu[ value ].mode;
+
+
+    display_selected(mode, roundNo)    
+  } )
+  ;
