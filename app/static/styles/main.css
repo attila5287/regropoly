@@ -125,6 +125,9 @@ border-width: 4px; */
   box-shadow: rgb(111, 230, 161) 5px 15px 15px;
 }
 
+.text-nonitalic {
+  font-style: normal;
+}
 .text-italic {
   font-style: italic;
 }
@@ -504,12 +507,11 @@ h6 {
 
 .bg-green {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#484e55), color-stop(60%, #3A3F44), to(#234e09));
-  background-image: linear-gradient(#1f7527, #16791d 60%, #234e09);
-  background-repeat: no-repeat;
+  background-image: linear-gradient(#198123c4, #008659c5 60%, #0c5a02b4);
   -webkit-filter: none;
   filter: none;
-  border: 0px solid #36b340;
-  box-shadow: 0px 0px 5px #36b34086, inset 0px 0px 2px #36b3407c;
+  border: 0px solid #02640a;
+  box-shadow: 0px 0px 5px #ad00a586, inset 0px 0px 2px #9636b37c;
 }
  
 .bg-brick {
@@ -1112,3 +1114,5 @@ input[type=range][orient=vertical]
 .footer text {
   font-size: 0.65rem;
 }
+
+.

@@ -1,0 +1,22 @@
+Spawn
+  ├── API-: /spawn/spawnCount/roundNo
+  ├── _db_: Spawn(db.model) 
+  └── HTML: /market, market.html
+
+Purchased
+  ├── API-: /purchased/roundNo
+  ├── _db_: Purchased(Spawn(**), xtra_args*)
+  └── HTML: /assets, assets.html
+
+Base Prices
+  ├── API-: /base/roundNo
+  ├── _db_: Baseprices(db.model)
+  └── HTML: no user front end
+
+Player
+  ├── Form:/register
+  ├── API-: /player/id
+  ├── _db_: Player(db.model)
+  ├── HTML: /assets, assets.html
+  └── HTML: /dashboard, dashboard.html
+            

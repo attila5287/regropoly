@@ -13,7 +13,7 @@ ApartmentRental	../_ref\_regV1\classProperty.py	/^class ApartmentRental(Rental, 
 BasePriceLabel	../app\models.py	/^    BasePriceLabel = db.Column(db.String(256), nullable=False)$/;"	kind:variable	line:29
 BasePriceLabel	../app\models.py	/^    BasePriceLabel = db.Column(db.String(256), nullable=False)$/;"	kind:variable	line:296
 BasePriceLabel	../app\models.py	/^    BasePriceLabel = db.Column(db.String(256), nullable=False)$/;"	kind:variable	line:315
-Baseprice	../app\main\routes.py	/^from app.models import Baseprice, Spawn, Purchased$/;"	kind:namespace	line:6
+Baseprice	../app\main\routes.py	/^from app.models import Baseprice, Spawn, Purchased, Player$/;"	kind:namespace	line:6
 Baseprice	../app\models.py	/^class Baseprice(db.Model):$/;"	kind:class	line:26
 Bcrypt	../app\__init__.py	/^from flask_bcrypt import Bcrypt$/;"	kind:namespace	line:3
 BedrmCt	../app\models.py	/^    BedrmCt = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:297
@@ -38,7 +38,6 @@ EqualTo	../app\users\forms.py	/^from wtforms.validators import DataRequired, Len
 FLASK_ENV	../app\config.py	/^    FLASK_ENV=os.environ.get('FLASK_ENV')$/;"	kind:variable	line:6
 FileAllowed	../app\users\forms.py	/^from flask_wtf.file import FileField, FileAllowed$/;"	kind:namespace	line:2
 FileField	../app\users\forms.py	/^from flask_wtf.file import FileField, FileAllowed$/;"	kind:namespace	line:2
-Financials	../app\models.py	/^class Financials(db.Model):$/;"	kind:class	line:334
 Flask	../_ref\_regV1\app.py	/^from flask import Flask, render_template$/;"	kind:namespace	line:6
 Flask	../_ref\int-hw\hw01\Data-Journalism-and-D3-master\app.py	/^from flask import Flask, render_template, jsonify$/;"	kind:namespace	line:1
 Flask	../_ref\int-hw\hw02\Data-Journalism-and-D3-master\app.py	/^from flask import Flask,render_template,jsonify$/;"	kind:namespace	line:1
@@ -84,6 +83,8 @@ OutOfStckStyler	../app\_ref_\_py\_dispR.py	/^    def OutOfStckStyler(yes_or_no):
 OutOfStckStylerGrid	../_ref\_py\_dispR.py	/^    def OutOfStckStylerGrid(yes_or_no):$/;"	kind:function	line:421
 OutOfStckStylerGrid	../app\_ref_\_py\_dispR.py	/^    def OutOfStckStylerGrid(yes_or_no):$/;"	kind:function	line:421
 PasswordField	../app\users\forms.py	/^from wtforms import StringField, PasswordField, SubmitField, BooleanField, SelectField$/;"	kind:namespace	line:3
+Player	../app\main\routes.py	/^from app.models import Baseprice, Spawn, Purchased, Player$/;"	kind:namespace	line:6
+Player	../app\models.py	/^class Player(db.Model):$/;"	kind:class	line:334
 PlotFieldList	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^def PlotFieldList(pivoted_Tdf,field_list):$/;"	kind:function	line:190
 Post	../_ref\_py\_berM.py	/^class Post(db.Model):$/;"	kind:class	line:40
 Post	../_ref\_py\_dispM.py	/^class Post(db.Model):$/;"	kind:class	line:25
@@ -96,7 +97,7 @@ Proday	../app\_ref_\_py\_ndoRp.py	/^from nodaysoff.models import Proday, User$/;
 Property	../_ref\_regV1\classProperty.py	/^class Property:$/;"	kind:class	line:3
 Property	../_ref\_regV1\classTextBookScratch.py	/^class Property:$/;"	kind:class	line:5
 Purchase	../_ref\_regV1\classProperty.py	/^class Purchase:$/;"	kind:class	line:97
-Purchased	../app\main\routes.py	/^from app.models import Baseprice, Spawn, Purchased$/;"	kind:namespace	line:6
+Purchased	../app\main\routes.py	/^from app.models import Baseprice, Spawn, Purchased, Player$/;"	kind:namespace	line:6
 Purchased	../app\models.py	/^class Purchased(db.Model):$/;"	kind:class	line:312
 PyMongo	../_ref\_regV1\app.py	/^from flask_pymongo import PyMongo$/;"	kind:namespace	line:7
 Py_ConditionalCheck.py	../_ref\12_JS\02_Evr_PythonToJavaScript\Py_ConditionalCheck.py	1;"	kind:file	line:1
@@ -371,7 +372,7 @@ Serializer	../app\models.py	/^from itsdangerous import TimedJSONWebSignatureSeri
 SizeRank	../app\models.py	/^    SizeRank = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:302
 SizeRank	../app\models.py	/^    SizeRank = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:321
 SizeRank	../app\models.py	/^    SizeRank = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:37
-Spawn	../app\main\routes.py	/^from app.models import Baseprice, Spawn, Purchased$/;"	kind:namespace	line:6
+Spawn	../app\main\routes.py	/^from app.models import Baseprice, Spawn, Purchased, Player$/;"	kind:namespace	line:6
 Spawn	../app\models.py	/^class Spawn(db.Model):$/;"	kind:class	line:292
 Square	../_ref\_py\_dispM.py	/^class Square(db.Model):$/;"	kind:class	line:260
 Square	../app\_ref_\_py\_dispM.py	/^class Square(db.Model):$/;"	kind:class	line:260
@@ -479,6 +480,7 @@ about	../app\_ref_\_py\_dispR.py	/^def about():$/;"	kind:function	line:185
 account	../_ref\_py\_dispR.py	/^def account():$/;"	kind:function	line:266
 account	../app\_ref_\_py\_dispR.py	/^def account():$/;"	kind:function	line:266
 account	../app\users\routes.py	/^def account():$/;"	kind:function	line:77
+add_player	../app\main\routes.py	/^def add_player(new_player):$/;"	kind:function	line:319
 add_property	../_ref\_regV1\classProperty.py	/^    def add_property(self):$/;"	kind:member	line:180
 add_property	../_ref\_regV1\objectHouseMarket.py	/^    def add_property(self):$/;"	kind:member	line:15
 add_task	../_ref\_py\_ndoRt.py	/^def add_task():$/;"	kind:function	line:99
@@ -513,7 +515,8 @@ app.py	../_ref\int-hw\hw01\Data-Journalism-and-D3-master\app.py	1;"	kind:file	li
 app.py	../_ref\int-hw\hw02\Data-Journalism-and-D3-master\app.py	1;"	kind:file	line:1
 assets	../_ref\_regV1\app.py	/^def assets():$/;"	kind:function	line:94
 assets	../app\main\routes.py	/^def assets():$/;"	kind:function	line:19
-available_funds	../app\models.py	/^    available_funds = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:337
+avatar_url	../app\models.py	/^    avatar_url =db.Column(db.String(256), nullable=False)$/;"	kind:variable	line:337
+avlb_funds	../app\models.py	/^    avlb_funds = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:340
 base_price	../app\main\routes.py	/^def base_price(round_no):$/;"	kind:function	line:59
 base_price	../app\models.py	/^    base_price = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:307
 base_price	../app\models.py	/^    base_price = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:329
@@ -758,6 +761,7 @@ hh_fin_04	../_ref\_py\forms - Copy.py	/^    hh_fin_04 = IntegerField(default='09
 hh_fin_05	../_ref\_py\forms - Copy.py	/^    hh_fin_05 = IntegerField(default='09')$/;"	kind:variable	line:48
 hh_fin_06	../_ref\_py\forms - Copy.py	/^    hh_fin_06 = IntegerField(default='09')$/;"	kind:variable	line:55
 hh_fin_07	../_ref\_py\forms - Copy.py	/^    hh_fin_07 = IntegerField(default='09')$/;"	kind:variable	line:62
+high_worth	../app\models.py	/^    high_worth = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:341
 hom3	../_ref\_py\_ndoRp.py	/^def hom3():$/;"	kind:function	line:32
 hom3	../app\_ref_\_py\_ndoRp.py	/^def hom3():$/;"	kind:function	line:32
 home	../_ref\_py\_dispR.py	/^def home():$/;"	kind:function	line:179
@@ -832,7 +836,6 @@ inv_lowinstock	../_ref\_py\_dispM.py	/^    inv_lowinstock = db.Column(db.String(
 inv_lowinstock	../app\_ref_\_py\_dispM.py	/^    inv_lowinstock = db.Column(db.String(32))$/;"	kind:variable	line:45
 inv_outofstock	../_ref\_py\_dispM.py	/^    inv_outofstock = db.Column(db.String(32))$/;"	kind:variable	line:46
 inv_outofstock	../app\_ref_\_py\_dispM.py	/^    inv_outofstock = db.Column(db.String(32))$/;"	kind:variable	line:46
-inv_real_estate	../app\models.py	/^    inv_real_estate = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:338
 is_adjustable	../_ref\_py\_dispM.py	/^    is_adjustable = db.Column(db.String(32))$/;"	kind:variable	line:47
 is_adjustable	../app\_ref_\_py\_dispM.py	/^    is_adjustable = db.Column(db.String(32))$/;"	kind:variable	line:47
 is_fitted	../_ref\_py\_dispM.py	/^    is_fitted = db.Column(db.String(32))$/;"	kind:variable	line:50
@@ -885,6 +888,7 @@ logout	../_ref\_py\_dispR.py	/^def logout():$/;"	kind:function	line:244
 logout	../app\_ref_\_py\_dispR.py	/^def logout():$/;"	kind:function	line:244
 logout	../app\users\routes.py	/^def logout():$/;"	kind:function	line:70
 logout_user	../app\users\routes.py	/^from flask_login import login_user, current_user, logout_user, login_required$/;"	kind:namespace	line:2
+low_worth	../app\models.py	/^    low_worth = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:342
 main	../app\__init__.py	/^    from app.main.routes import main$/;"	kind:namespace	line:24
 main	../app\main\routes.py	/^main = Blueprint('main', __name__)$/;"	kind:variable	line:8
 maininv_out	../_ref\_py\_dispM.py	/^    maininv_out = db.Column(db.String(32))$/;"	kind:variable	line:285
@@ -904,7 +908,6 @@ mark_as_lowinv	../app\_ref_\_py\_dispR.py	/^def mark_as_lowinv(item_id):$/;"	kin
 mark_as_outofstock	../_ref\_py\_dispR.py	/^def mark_as_outofstock(item_id):$/;"	kind:function	line:85
 mark_as_outofstock	../app\_ref_\_py\_dispR.py	/^def mark_as_outofstock(item_id):$/;"	kind:function	line:85
 market	../app\main\routes.py	/^def market():$/;"	kind:function	line:25
-market_return	../app\models.py	/^    market_return = db.Column(db.Numeric(5,2), nullable=False)$/;"	kind:variable	line:340
 masterFED_df	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^masterFED_df = fedDataframeFromCSV(fedFileList)$/;"	kind:variable	line:312
 matplotlib	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^import matplotlib.path as mpath$/;"	kind:namespace	line:38
 matplotlib	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^import matplotlib.pyplot as plt$/;"	kind:namespace	line:16
@@ -949,6 +952,7 @@ np	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^import numpy as np$/;"	kind:n
 np	../_ref\_regV1\buildHousesForSale.py	/^import numpy as np$/;"	kind:namespace	line:1
 np	../_ref\_regV1\classItem.py	/^ import numpy as np$/;"	kind:namespace	line:1
 np	../_ref\_regV1\descGenForClassItem.py	/^import numpy as np$/;"	kind:namespace	line:1
+num_of_inv	../app\models.py	/^    num_of_inv =db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:344
 objectHouseMarket.py	../_ref\_regV1\objectHouseMarket.py	1;"	kind:file	line:1
 oneBed_df	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^oneBed_df = stateDateTdf(file_stateOneBed)$/;"	kind:variable	line:240
 os	../_ref\_py\_dispR.py	/^import os$/;"	kind:namespace	line:5
@@ -972,6 +976,7 @@ pd	../_ref\int-hw\hw02\Data-Journalism-and-D3-master\app.py	/^import pandas as p
 percEmUp	../_ref\_py\_dispR.py	/^from squares.utils import percEmUp$/;"	kind:namespace	line:2
 percEmUp	../app\_ref_\_py\_dispR.py	/^from squares.utils import percEmUp$/;"	kind:namespace	line:2
 picture	../app\users\forms.py	/^    picture = FileField('Update Profile Picture', validators=[FileAllowed(['jpg', 'png'])])$/;"	kind:variable	line:50
+player_name	../app\models.py	/^    player_name =db.Column(db.String(256), nullable=False)$/;"	kind:variable	line:338
 plt	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^import matplotlib.pyplot as plt$/;"	kind:namespace	line:16
 pltPlotEZ	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^def pltPlotEZ(df,label):$/;"	kind:function	line:137
 pltPlotEZSeries	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^def pltPlotEZSeries(ser1es,labelUser):$/;"	kind:function	line:108
@@ -1071,13 +1076,13 @@ request	../app\users\routes.py	/^from flask import render_template, url_for, fla
 requests	../app\main\routes.py	/^import requests$/;"	kind:namespace	line:2
 resolve_task	../_ref\_py\_ndoRt.py	/^def resolve_task(task_id):$/;"	kind:function	line:123
 resolve_task	../app\_ref_\_py\_ndoRt.py	/^def resolve_task(task_id):$/;"	kind:function	line:123
-return_on_inv	../app\models.py	/^    return_on_inv = db.Column(db.Numeric(5,2), nullable=False)$/;"	kind:variable	line:339
 roundYearEndTdf	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^def roundYearEndTdf(file,yearStart,yearEnd):$/;"	kind:function	line:102
 routes - Copy.py	../_ref\_py\routes - Copy.py	1;"	kind:file	line:1
 routes.py	../app\main\routes.py	1;"	kind:file	line:1
 routes.py	../app\users\routes.py	1;"	kind:file	line:1
 row_count	../_ref\_py\_dispM.py	/^    row_count = db.Column(db.Integer)$/;"	kind:variable	line:266
 row_count	../app\_ref_\_py\_dispM.py	/^    row_count = db.Column(db.Integer)$/;"	kind:variable	line:266
+rtn_on_inv	../app\models.py	/^    rtn_on_inv =db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:343
 run.py	../run.py	1;"	kind:file	line:1
 running_low	../_ref\_py\_dispM.py	/^    def running_low(self):$/;"	kind:member	line:103
 running_low	../app\_ref_\_py\_dispM.py	/^    def running_low(self):$/;"	kind:member	line:103
@@ -1091,10 +1096,12 @@ second_act_done	../app\_ref_\_py\_ndoRp.py	/^def second_act_done(proday_id):$/;"
 secrets	../_ref\_py\_dispR.py	/^import secrets$/;"	kind:namespace	line:6
 secrets	../app\_ref_\_py\_dispR.py	/^import secrets$/;"	kind:namespace	line:6
 secrets	../app\users\utils.py	/^import secrets$/;"	kind:namespace	line:2
+sell	../app\main\routes.py	/^def sell(id, s_price):$/;"	kind:function	line:286
 ship_status	../_ref\_py\_berM.py	/^    ship_status = db.Column(db.String(16), nullable=False,default='0')$/;"	kind:variable	line:16
 ship_status	../app\_ref_\_py\_berM.py	/^    ship_status = db.Column(db.String(16), nullable=False,default='0')$/;"	kind:variable	line:16
 show_item	../_ref\_py\_dispR.py	/^def show_item(item_id):$/;"	kind:function	line:65
 show_item	../app\_ref_\_py\_dispR.py	/^def show_item(item_id):$/;"	kind:function	line:65
+show_player	../app\main\routes.py	/^def show_player(id):$/;"	kind:function	line:302
 showonly_invlow	../_ref\_py\_dispR.py	/^def showonly_invlow():$/;"	kind:function	line:509
 showonly_invlow	../app\_ref_\_py\_dispR.py	/^def showonly_invlow():$/;"	kind:function	line:509
 showonly_invout	../_ref\_py\_dispR.py	/^def showonly_invout():$/;"	kind:function	line:523

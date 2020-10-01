@@ -1,3 +1,14 @@
+CREATE TABLE "player" (
+  "id"	BIGSERIAL NOT NULL PRIMARY KEY,
+  "player_name" VARCHAR(32),
+	"avatar_url" VARCHAR(255),
+  "avlb_funds" INTEGER,
+  "high_worth" INTEGER,
+  "low_worth" INTEGER,
+  "rtn_on_inv" INTEGER,
+  "num_of_inv" INTEGER
+);
+
 DROP TABLE public.purchased  CASCADE;
 DROP TABLE public.spawn  CASCADE;
 CREATE TABLE "purchased" (

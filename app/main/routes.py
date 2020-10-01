@@ -3,7 +3,7 @@ import requests
 import csv
 from flask import render_template, url_for, flash, redirect,  Blueprint, jsonify, redirect
 from app import db, bcrypt
-from app.models import Baseprice, Spawn, Purchased
+from app.models import Baseprice, Spawn, Purchased, Player
 
 main = Blueprint('main', __name__)
 
@@ -281,3 +281,67 @@ def purchased_api(roundNo):
     db.session.commit() #save updated prices on objects     
     
     return jsonify(d)
+
+@main.route('/sell/<int:id>/<int:s_price>')
+def sell(id, s_price):
+    pass
+    q_sold = [Purchased.query.get_or_404(id)]
+    
+    d = [{c.name: getattr(q, c.name)
+          for c in q.__table__.columns} for q in q_sold]
+    
+    return jsonify({
+        'purchased_id': id,
+        'forsale_price': q_sold[0].forsale_price,
+        'base_price': q_sold[0].base_price,
+        'data' : d[0]
+    })
+
+
+@main.route('/show/player/<int:id>')
+def show_player(id):
+    pass
+    player_exists = Player.query.get(id)
+    if player_exists:
+        pass
+        # query for db model Player
+        q_display = [ Player.query.get(id) ]
+        # cast into dictionary
+        d = [{c.name: getattr(q, c.name)
+            for c in q.__table__.columns} for q in q_display]
+        return jsonify(  d[0]  )
+    else:
+      pass
+      return jsonify( { 'player id {}'.format(id) : 'does not exist on Player database'}  )
+      
+      
+@main.route('/add/player/<string:new_player>')
+def add_player(new_player):
+    pass
+    already_exists = [
+        p.player_name for p in Player.query.filter(Player.player_name == new_player)
+    ]
+    if new_player in already_exists:
+        pass
+        return jsonify({'player name':'already exists on Player database'})
+        
+    else:
+        pass
+        db.session.add(Player(
+            avatar_url = 'https://raw.githubusercontent.com/attila5287/regropoly/master/app/static/profile_pics/attila.jpg', 
+            player_name = new_player, 
+            avlb_funds = 10000000, 
+            high_worth = 10000000,  
+            low_worth = 10000000,  
+            rtn_on_inv = 0, 
+            num_of_inv = 0 
+        ))
+        q_added = Player.query.filter(Player.player_name == new_player)
+        
+        d = [{c.name: getattr(q, c.name)
+            for c in q.__table__.columns} for q in q_added]
+        
+        db.session.commit()
+        return jsonify(  d[0]  )
+
+        

@@ -331,11 +331,15 @@ class Purchased(db.Model):
     base_price02 = db.Column(db.Integer, nullable=False)
     base_price03 = db.Column(db.Integer, nullable=False)
     
-class Financials(db.Model):
+class Player(db.Model):
     pass
     id = db.Column(db.Integer, primary_key=True)
-    available_funds = db.Column(db.Integer, nullable=False)
-    inv_real_estate = db.Column(db.Integer, nullable=False)
-    return_on_inv = db.Column(db.Numeric(5,2), nullable=False)
-    market_return = db.Column(db.Numeric(5,2), nullable=False)
+    avatar_url =db.Column(db.String(256), nullable=False)
+    player_name =db.Column(db.String(256), nullable=False)
+    
+    avlb_funds = db.Column(db.Integer, nullable=False)
+    high_worth = db.Column(db.Integer, nullable=False)
+    low_worth = db.Column(db.Integer, nullable=False)
+    rtn_on_inv =db.Column(db.Integer, nullable=False)
+    num_of_inv =db.Column(db.Integer, nullable=False)
     

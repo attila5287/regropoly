@@ -1,3 +1,15 @@
+CREATE TABLE "player" (
+    "id"	INTEGER NOT NULL,
+    "player_name" VARCHAR(32),
+	"avatar_url" VARCHAR(255),
+    "avlb_funds" INTEGER,
+    "high_worth" INTEGER,
+    "low_worth" INTEGER,
+    "rtn_on_inv" INTEGER,
+    "num_of_inv" INTEGER,
+	PRIMARY KEY("id")
+);
+
 CREATE TABLE "item" (
 	"id"	INTEGER NOT NULL,
 	"make"	VARCHAR(16),
