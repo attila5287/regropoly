@@ -1,3 +1,17 @@
+
+
+CREATE TABLE "user" (
+    "id"	INTEGER NOT NULL,
+    "username"	VARCHAR(32) NOT NULL UNIQUE,
+		"email"	VARCHAR(120) NOT NULL UNIQUE,
+		"image_file"	VARCHAR(255),
+		"password"	VARCHAR(255),
+		"is_shipper"	VARCHAR(8),
+		"location_id"	INTEGER, 
+	PRIMARY KEY("id")
+);
+
+
 CREATE TABLE "player" (
     "id"	INTEGER NOT NULL,
     "player_name" VARCHAR(32),

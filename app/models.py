@@ -18,6 +18,8 @@ class User(db.Model, UserMixin):
     image_file = db.Column(db.String(20), nullable=False,
                            default='default.png')
     password = db.Column(db.String(60), nullable=False)
+    is_shipper = db.Column(db.String(8), nullable=False)
+    location_id = db.Column(db.Integer, nullable=False)
     # posts = db.relationship('Post', backref='author', lazy=True)
 
     def __repr__(self):

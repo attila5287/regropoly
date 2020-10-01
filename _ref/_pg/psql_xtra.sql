@@ -12,10 +12,10 @@ CREATE TABLE "user" (
 		"id"	BIGSERIAL NOT NULL PRIMARY KEY,
 		"username"	VARCHAR(20) NOT NULL UNIQUE,
 		"email"	VARCHAR(120) NOT NULL UNIQUE,
-		"image_file"	VARCHAR(255) NOT NULL,
-		"password"	VARCHAR(255) NOT NULL,
+		"image_file"	VARCHAR(255),
+		"password"	VARCHAR(255),
 		"is_shipper"	VARCHAR(8),
-		"location_id"	SMALLINT 
+		"location_id"	INTEGER
 	);
 
 -- delete all data and related records

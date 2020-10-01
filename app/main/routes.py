@@ -7,13 +7,15 @@ from app.models import Baseprice, Spawn, Purchased, Player
 
 main = Blueprint('main', __name__)
 
-
 @main.route("/")
 @main.route("/test")
 def test():
     pass
     return render_template('test.html')
-
+@main.route("/display")
+def display():
+    pass
+    return render_template('display.html')
 
 @main.route("/db/init/base")
 def db_init_baseprice():

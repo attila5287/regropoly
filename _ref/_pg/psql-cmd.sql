@@ -1,3 +1,19 @@
+-- user
+CREATE TABLE "user" (
+  "id"	BIGSERIAL NOT NULL PRIMARY KEY,
+  "username"	VARCHAR(20) NOT NULL UNIQUE,
+  "email"	VARCHAR(120) NOT NULL UNIQUE,
+  "image_file"	VARCHAR(255) NOT NULL,
+  "password"	VARCHAR(255) NOT NULL,
+  "imp_pts"	INTEGER,
+  "urg_pts"	INTEGER,
+  "total_pts"	INTEGER,
+  "imp_perc"	INTEGER,
+  "urg_perc"	INTEGER,
+  "avatar_img"	TEXT,
+  "avatar_mode"	TEXT
+);
+
 CREATE TABLE "player" (
   "id"	BIGSERIAL NOT NULL PRIMARY KEY,
   "player_name" VARCHAR(32),
@@ -66,6 +82,7 @@ CREATE TABLE post (
 	user_id BIGINT NOT NULL REFERENCES public.user 
 )
 ;
+ 
  -- user
 CREATE TABLE "user" (
   "id"	BIGSERIAL NOT NULL PRIMARY KEY,

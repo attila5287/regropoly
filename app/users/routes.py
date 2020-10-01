@@ -35,7 +35,7 @@ def regist3r():
 @users.route("/register", methods=['GET', 'POST'])
 def register():
     if current_user.is_authenticated:
-        return redirect(url_for('main.home'))
+        return redirect(url_for('main.display'))
     form = RegistrationForm()
     if form.validate_on_submit():
         hashed_password = bcrypt.generate_password_hash(form.password.data).decode('utf-8')
@@ -50,7 +50,7 @@ def register():
 @users.route("/login", methods=['GET', 'POST'])
 def login():
     if current_user.is_authenticated:
-        return redirect(url_for('main.home'))
+        return redirect(url_for('main.display'))
     form = LoginForm()
     if form.validate_on_submit():
         pass
@@ -59,7 +59,7 @@ def login():
         if user and bcrypt.check_password_hash(user.password, form.password.data):
             login_user(user, remember=form.remember.data)
             next_page = request.args.get('next')
-            return redirect(next_page) if next_page else redirect(url_for('main.home'))
+            return redirect(next_page) if next_page else redirect(url_for('main.display'))
         else:
             flash('Login Unsuccessful. Please check email and password', 'danger')
 
@@ -69,7 +69,7 @@ def login():
 @users.route("/logout")
 def logout():
     logout_user()
-    return redirect(url_for('main.home'))
+    return redirect(url_for('main.display'))
 
 
 @users.route("/account", methods=['GET', 'POST'])
@@ -108,6 +108,6 @@ def delete_user_by_ID(user_1d):
     User.query.filter_by(id=user_1d).delete()
     db.session.commit()
     flash('Test user have been deleted!', 'success')
-    return redirect(url_for('main.home'))
+    return redirect(url_for('main.display'))
 
     
