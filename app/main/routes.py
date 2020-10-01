@@ -15,18 +15,6 @@ def test():
     return render_template('test.html')
 
 
-@main.route("/assets")
-def assets():
-    pass
-    return render_template('test.html')
-
-
-@main.route("/market")
-def market():
-    pass
-    return render_template('market.html')
-
-
 @main.route("/db/init/base")
 def db_init_baseprice():
     pass  # UPLOAD ZILLOW HOUSE VALUE INDEX CSV'S MERGED
@@ -99,12 +87,10 @@ def zillow_desc():
             'SizeRank': bp.SizeRank,
         } for (bpL, bp) in zip(base_prices, base_prices)
     }
-#    print(res[0]['BR001RG0010181'])
     return jsonify(res)
 
-
 @main.route('/spawn/<int:spawnCount>/<int:roundNo>')
-def spawn_items(spawnCount, roundNo):
+def spawn_api(spawnCount, roundNo):
     pass
     web = 'http://regropoly.herokuapp.com'
     url_desc = web+'/desc'  # api route for desc
@@ -156,8 +142,7 @@ def spawn_items(spawnCount, roundNo):
         '1': 10, '2': 10, '3': 10, '4': 10, '5': 10,
     }
     img_urls = [  # random by br-count
-        {'img_url': web
-         + '/static/img/photos/'
+        {'img_url': 'https://github.com/attila5287/regropoly-img/photos/'
          + str(br)
          + '-'
          + str(random.randint(0, img_ct[str(br)]-1))
@@ -212,9 +197,7 @@ def purchase(spawnIndex):
     d.pop('id') # drop the spawned item id 
     db.session.add(Purchased(**d))
     db.session.commit()
-#    return jsonify( d )
     return jsonify(d)
-
 
 @main.route('/purchased/<int:roundNo>')
 def purchased_api(roundNo):

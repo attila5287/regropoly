@@ -1,0 +1,71 @@
+# tree summary of app through files, also review project-diagram for backend-frontend rltns.
+
+├── Regropoly/  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  * *  *  *  *  *  *  *  
+│   │    * Colorado Monopoly: real-time data real-estate web-game *  *  *  *  *  *  *         
+│   │    *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *        
+│   │    * generate a random player-name and start playing with no   *  *  *  *  *  *
+│   │    * player invests in 174 different types of property * *  *  *  *  *  *  *  *
+│   │    * these properties are zillow real-world data grouped segments *  *  *  *  *
+│   │    * Lakewood-three-bedroom i.e. BR003RG005519  *  *  *  *  *  *  *  *  *  *  *
+│   │    * zillow ZHVI data stored on database for median house price * *  *  *  *  *
+│   │    * app generates Monte-Carlo Simulation -like properties  *  *  *  *  *  *  *
+│   │    * player could move to next round and the prices will be updated  *  *  *  *
+│   │    * app will use pre-stored real-time "Base Price Labels" for new price   *  *
+│   │    * game is total of 248 rounds, which from Jan'2000 to Aug'2019    *  *  *  *
+│   │    *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *  *
+│   │ 
+│   │ 
+│   ├── __init__.py   // register blueprint modules of python flask server
+│   ├── config.py     // databaese uri pre-stored on env vars on heroku,local
+│   ├── models.py     // db models for BasePrice, Spawn, Purchased, Player
+│   ├── site.db       // sqlite for local testing postgresql on heroku
+│   │ 
+│   │ 
+│   ├── errors/
+│   │   ├── __init__.py
+│   │   └── handlers.py // incomp. err pgs custom made
+│   │ 
+│   │ 
+│   ├── main/
+│   │   ├── __init__.py
+│   │   └── routes.py     // server-side detailed in project-diagram.txt
+│   │ 
+│   │ 
+│   ├── static/
+│   │   └── main/
+│   │   │   ├── init.js   // interactive elements, events
+│   │   │   ├── spawn.js  // pull random generated objects spawn_api()
+│   │   │   └── assets.js // pull json data from purchased_api()
+│   │   │   
+│   │   │   
+│   │   └── theme/
+│   │   │   └── cerulean.css // bootswatch css library
+│   │   └── main.css         // app specific classes
+│   │   
+│   │   
+│   │   
+│   ├── templates/    // flask reqrmt for all html pages
+│   │   ├── errors/
+│   │   │   ├── 403.html
+│   │   │   ├── 404.html
+│   │   │   └── 500.html
+│   │   ├── layout.html // req'd for flask 
+│   │   └── main.html   // one-in-all app interface
+│   │       
+│   │       
+│   │       
+│   └── users/
+│       ├── __init__.py
+│       ├── forms.py  // register a new user
+│       └── routes.py // account info
+│       
+│       
+│       
+├── .gitignore 
+├── LICENSE
+├── projectLayout.txt
+├── README.md
+└── run.py
+
+
+github: @attila5287
