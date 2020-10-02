@@ -1,8 +1,9 @@
 {% extends "layout.html" %}
 {% block content %}
     <div class="content-section">
+
       <div class="media">
-        <img class="rounded-circle account-img" src="{{ image_file }}">
+        <img class="img-thumbnail bg-transparent border-0 rounded-circle account-img" src="https://raw.githubusercontent.com/attila5287/regropoly-img/master/avatars/0.png">
         <div class="media-body">
           <h2 class="account-heading">{{ current_user.username }}</h2>
           <p class="text-secondary">{{ current_user.email }}</p>
@@ -15,7 +16,7 @@
                 <legend class="border-bottom mb-4">Account Info</legend>
                 
                 <div class="form-group">
-                    {{ form.username.label(class="form-control-label") }}
+                    {{ form.username.label(class="form-control-label ") }}
 
                     {% if form.username.errors %}
                         {{ form.username(class="form-control form-control-lg is-invalid") }}

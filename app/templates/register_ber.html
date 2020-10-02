@@ -177,29 +177,65 @@
       </div>
     </header>
     <main class="main" id="main">
-      <div class="d-flex flex-row">
-        <div id="financial-summary"></div>
-      </div>
+        
+<div class="content-section">
+        <form method="POST" action="">
+        <div class="row">
+            {% for field in form %}
+            {% if field.label == 'csrf_token' %}
+            <i class="text-muted">
+                {{ field}}
+            </i>
+            {% else %}
 
-      <div id="avlb-funds"></div>
-      <div id="high_worth"></div>
-      <div id="low_worth"></div>
-      <div id="rtn_on_inv"></div>
-      <div id="num_of_inv"></div>
+            {% if field.errors %}
+            <div class="invalid-feedback">
+                {% for error in field.errors %}
+                <span>{{ error }}</span>
+                {% endfor %}
 
-      <div class="row no-gutters">
-        <div class="col-8 offset-2 text-center">
-          <div id="round-buttons"></div>
+            </div>
+            {% else %}
+            
+            <div class="col-sm-8 offset-2">
+                <div class="input-group bg-themy text-sm  text-italic rnd-xl border-0 mb-3">
+                    <div class="input-group-prepend border-0">
+                        <img class="img-fluid" src="https://raw.githubusercontent.com/attila5287/regropoly-img/master/flags/colorado_flag.ico" alt="">
+                        
+                        <span class="input-group-text bg-transparent text-light  border-0" >
+                            
+                            {{field.label }}
+                            
+                        </span>
+                        
+                        <span class="form-control text-lg bg-transparent text-light border-0 px-3" >
+                            {{field }}
+                        </span>
+
+                    </div>
+                </div>                
+            </div>
+
+            {% endif %}            
+            
+            {% endif %}
+            {% endfor %}
+            
         </div>
-      </div>
-
-      <div class="row no-gutters">
-        <div class="col-md-2"></div>
-        <div class="col-md-8">
-          <div id="assets-portfolio"></div>
+        <div class="col-sm-8 offset-2">
+            <button type="submit" class="btn btn-block btn-success btn-rounded btn-lg  box-shadow" style="border-radius: 9px;">
+                <i class="fas fa-user-plus"></i>
+                Welcome to team!
+        </button>        
         </div>
-        <div class="col-md-2"></div>
-      </div>
+    </form>
+    </div>
+    <div class="border-top pt-3">
+        <small class="text-muted">
+            Already Have An Account? <a class="ml-2" href="{{ url_for('users.login') }}">Sign In</a>
+        </small>
+    </div>
+
     </main>
 
     <footer class="footer mt-2">
@@ -264,3 +300,4 @@
     <script src="/static/main/test.js"></script>
   </body>
 </html>
+

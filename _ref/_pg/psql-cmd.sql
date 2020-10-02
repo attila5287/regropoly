@@ -1,17 +1,11 @@
+DROP TABLE public.user  CASCADE;
 -- user
 CREATE TABLE "user" (
   "id"	BIGSERIAL NOT NULL PRIMARY KEY,
   "username"	VARCHAR(20) NOT NULL UNIQUE,
   "email"	VARCHAR(120) NOT NULL UNIQUE,
-  "image_file"	VARCHAR(255) NOT NULL,
   "password"	VARCHAR(255) NOT NULL,
-  "imp_pts"	INTEGER,
-  "urg_pts"	INTEGER,
-  "total_pts"	INTEGER,
-  "imp_perc"	INTEGER,
-  "urg_perc"	INTEGER,
-  "avatar_img"	TEXT,
-  "avatar_mode"	TEXT
+  "img_url"	INTEGER
 );
 
 CREATE TABLE "player" (
