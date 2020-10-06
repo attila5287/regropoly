@@ -353,5 +353,5 @@ class Nickname(db.Model):
 class Cityname(db.Model):
     pass
     id = db.Column(db.Integer, primary_key=True)
-    city =db.Column(db.String(256), nullable=False)
+    city = db.Column(db.String(256), nullable=False)
     

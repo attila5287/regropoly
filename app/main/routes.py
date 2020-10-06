@@ -329,5 +329,3 @@ def add_player(new_player_name):
         
         db.session.commit()
         return jsonify(  d[0]  )
-
-        

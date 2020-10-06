@@ -105,6 +105,7 @@ def delete_user_by_ID(user_1d):
 def account():
   pass
   form = UpdateAccountForm()
+  form.img_url.data = random.choice(range(69))
   form.img_url.choices = [
       (n, 'suggested avatar #{} for: {}'.format(n,current_user.username)) for n in range(69)
   ]

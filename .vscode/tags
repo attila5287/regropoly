@@ -490,7 +490,7 @@ calc_daily_totals	../_ref\_py\forms - Copy.py	/^    def calc_daily_totals(self):
 catalog_fullname	../_ref\_py\_dispM.py	/^    catalog_fullname = db.Column(db.String(256))$/;"	kind:variable	line:42
 catalog_no	../_ref\_py\_dispM.py	/^    catalog_no = db.Column(db.String(32))$/;"	kind:variable	line:41
 choices	../app\users\forms.py	/^                              choices=[(0, 'first'), (1, 'second')],$/;"	kind:variable	line:23
-city	../app\models.py	/^    city =db.Column(db.String(256), nullable=False)$/;"	kind:variable	line:356
+city	../app\models.py	/^    city = db.Column(db.String(256), nullable=False)$/;"	kind:variable	line:356
 classItem.py	../_ref\_regV1\classItem.py	1;"	kind:file	line:1
 classProperty.py	../_ref\_regV1\classProperty.py	1;"	kind:file	line:1
 classTextBookScratch.py	../_ref\_regV1\classTextBookScratch.py	1;"	kind:file	line:1
@@ -544,8 +544,8 @@ db	../app\main\routes.py	/^from app import db, bcrypt$/;"	kind:namespace	line:5
 db	../app\models.py	/^from app import db, login_manager$/;"	kind:namespace	line:5
 db	../app\users\routes.py	/^from app import db, bcrypt$/;"	kind:namespace	line:6
 db_init_baseprice	../app\main\routes.py	/^def db_init_baseprice():$/;"	kind:function	line:22
-db_init_citynames	../app\users\routes.py	/^def db_init_citynames():$/;"	kind:function	line:159
-db_init_nicknames	../app\users\routes.py	/^def db_init_nicknames():$/;"	kind:function	line:130
+db_init_citynames	../app\users\routes.py	/^def db_init_citynames():$/;"	kind:function	line:160
+db_init_nicknames	../app\users\routes.py	/^def db_init_nicknames():$/;"	kind:function	line:131
 ddslick_master	../_ref\_py\_dispR.py	/^def ddslick_master():$/;"	kind:function	line:775
 default	../_ref\_py\_dispM.py	/^                            default=datetime.utcnow)$/;"	kind:variable	line:29
 default	../_ref\_py\_dispM.py	/^                           default='default.png')$/;"	kind:variable	line:17
