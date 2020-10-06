@@ -1,6 +1,8 @@
+DROP TABLE public.cityname CASCADE;
+
 CREATE TABLE "cityname" (
   "id"	SERIAL NOT NULL PRIMARY KEY,
-  "cityname"	VARCHAR(256)
+  "city"	VARCHAR(256)
 );
 
 CREATE TABLE "nickname" (

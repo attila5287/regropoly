@@ -1,0 +1,245 @@
+************ CLASS DIAGRAMS ************
+====== <<db wrapper>> =======
+====== <Inventory> ======
+- bike_id: (primary key, unique for each item in inventory)
+- bike_type: string (ie. mountain, racing, casual)
+- bike_image: .jpeg, .png file
+- availableDates: timestamp/dates
+- rentalPrice: integer
+=========================
++ createNewBike( input: all instance attributes, output: bikeID(pk))
++ readBikeFromDB( input: bikeID(pk), output: all attribures)
++ updateBike( input:all fields, output:)* 
++ delete(in: bikeID)
++ generateReport(in: bikeID, out: report)
+=========================
+* notes: single form that shows existing data for all instance attributes on its fields and will update all at once
+
+====== << db wrapper>> =======
+======  < Customer > =======
+- custID: integer(pk)
+- custName: string
+- custAddress: string
+- custPhone: string
+- password: crypted_string
+===================
++ createCustomer(in: custID)
++ readCustFromDB(in: custID, out: all instance attributes)
++ updateCustomer(in: all fields, out:) * 
++ delete(in:, out: )
+====================
+* notes: same approach with bike, single form that shows existing data on its fields so updates all at once with whichever is to be updated.
+
+=================================
+========<< db wrapper >> ==========
+========< creditCard > ==========
+- cardNumber: string (primary key, unique)
+- cardType: string
+- cardExpDate: date
+================================
++ createNewCard(in: cardNumber, out:)
++ deleteCardFromDB(in: , out:)
+================================
+notes: only add or delete cards no update for security purposes, if typo then delete card and re-create. this time no regular CRUD approach. 
+
+====== << db wrapper >> ======
+======  < reservation > ======
+- rezID: integer (primary key)
+- bikeID: integer 
+- startDate: timestamp
+- endDate: timestamp 
+- custID: integer
+============================
++ createNewRez(in: all fields , out:)
++ readRezFromDB(in: rezID, out: all instance attributes)
++ updateRezOnDB(in: all fields, out: all instance attributes)
++ delete(in: rezID , out:)
+============================
+
+
+====== << db wrapper >> ======
+======  < bikeIssue > ======
+- issueID: integer(primary key)
+- bikeID: integer
+- issueDesc: string
+- dateCreated: timestamp
+- statusReviewed: boolean
+- statusRevDate: timestamp
+============================
++ createIssue(in: issueID , out:)
++ readIssueFromDB(in: issueID , out: all instance attributes)
++ updateExistingIssue(in: all fields , out:) * 
++ changeStatusReview(in: issueID, statusReviewed, out: statusReviewed)
++ delete(in:  issueID, out:)
+============================
+* notes: single form approach to update all at once
+
+
+====== << db wrapper >> ======
+======  < Bike > ======
+- bikeID: integer (primary key)
+- bikeMake: string
+- bikeModel: string
+- bikeYear: string
+- bikeMaintenance: boolean
+- bikeType: string
+- bikeSize: string
+============================
++ createNewBike(in: bikeID , out:)
++ readBikeFromDB(in: bikeID  , out: all instance attributes)
++ updateExistingBike(in: all fields , out: )
++ delete(in: bikeID , out:)
+============================
+* notes: single form approach to update all at once
+
+
+============<<db wrapper >>================
+============ < rentalRate > ================
+- bikeID: integer (primary key) *
+- bikeType: string
+- rentalPrice: integer
+============================
++ createNewRentalRate(in: bikeID , out:)
++ readExistingRentalRate(in: bikeID , out: all instance attributes)
++ updateRentalRate(in: all fields , out:) ** 
++ delete(in: bikeID , out:)
+============================
+* notes: this way we make sure there are no duplicate records
+** notes: single form approach to update all three fields at once
+
+=========<<db wrapper >>============
+=====< bikeRentalHistory >========
+- bikeID: integer(primary key)
+- startDate: timestamp
+- endDate:  timestamp
+- durationHours: integer 
+============================
++ createNewRental(in: bikeID , out:)
++ readRentalFromDB(in: bikeID , out: all instance attributes)
++ update(in: all fields , out:) * 
++ delete(in: bikeID , out:)
+============================
+* notes: single page form to update all instance attributes with existing data on form fields at once
+
+
+=========<<db wrapper >>============
+=========< report >========
+- repID: integer (primary key)
+- dateGenerated: timestamp
+- reportType: string
+- reportDocument: Document
+============================
++ createReport(in: repID, out:)
++ readExistingReportFromDB(in: repID , out: all instance attributes)
++ delete(in: repID, out:)
++ displayHTML(in: repID , out: HTML-Document)
+============================
+
+
+=========<<db wrapper >>============
+=========< Employee* >========
+- eeID: integer(primary key)
+- eeName: string
+- eePhone: string
+- eeDOB: date
+- eeAddress: string
+- eeTitle: string **
+============================
++ create(in: eeID, out:)
++ read(in: eeID, out: all instance attributes)
++ update(in: all fields , out:)***
++ delete(in: eeID, out:)
+============================
+* notes: super class to Manager, Owner
+** notes: multiple selection ee/mgr/owner
+*** notes: all at once approac
+
+=========<<db wrapper >>============
+=========< payment >========
+- payID: integer(primary key)
+- payAmount: integer
+- custID: integer(foreign key)
+- payDate: timestamp
+============================
++ create(in: payID, out:)
++ read(in: payID, out: all instance attributes)
++ update(in: all fields , out:) * 
++ delete(in: payID, out:)
+============================
+* notes: single form to update all entries of record pulled from db
+
+=========<<data abstraction >>============
+=========< Manager >========
+- 
+============================
++ create(in:  , out:)
++ read(in:  , out:)
++ update(in:  , out:)
++ delete(in:  , out:)
+============================
+
+=========<<db wrapper >>============
+=========< Owner >========
+- 
+============================
++ create(in:  , out:)
++ read(in:  , out:)
++ update(in:  , out:)
++ delete(in:  , out:)
+============================
+
+======<< algorithm >>======
+======< inheritance>======
+Employee (super) 
+  |_ Manager (sub)
+    |_ Owner (sub)
+==========================
+notes: Employee is a superclass while all others are all subclasses means that managers and owners are already user with methods or attrs beyond, lastly Owner is also a subclass of Manager so that formar will have authorization of latter and beyond.
+
+====== <<data abstraction>> =======
+====== <Employee> =======
+- userName: string(primary key)
+- userPassword: crypted_string
+========================
++ activateEmployeeActions(in: userName)
+  >>  cancel_transaction(in: userName)
+  >>  update_transaction(in: userName)
+========================
+notes: managers have special methods that allows them fix payment issues
+
+
+====== <<data abstraction>> =======
+====== <Manager> =======
+================
++ activateEmployeeActions(in: userName)
++ activateManagerActions(in: userName)
+  >> make_schedule(in: userName)
+==================
+notes: managers have special methods that allows them fix payment issues while they already do have all employee options
+
+====== <<data abstraction>> ====
+========== <Owner> =============
+==================
++ activateEmployeeActions(in: userName)
++ activateManagerActions(in: userName)
++ activateOwnerActions(in: userName)
+  >> generate_report(in: userName)
+==================
+notes: owners have unique method they can run financial reports while they have access to super class methods 
+
+
+====== <<data abstraction>> ====
+========== <additionalFee> =============
+- rezID: int(primary key)
+- cancelled: boolean
+- changed: boolean
+- late: boolean
+- other: string
+- additionalFee: integer
+========================================
++ addCancelFee(in: rezID, out:)
++ addLateFee(in: rezID, out:)
++ addChangedFee(in: rezID, out:)
++ addOtherFee(in: rezID, out:)
++ calculateAddFee(in: rezID, out:)
+========================================
