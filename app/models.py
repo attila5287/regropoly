@@ -342,3 +342,16 @@ class Player(db.Model):
     rtn_on_inv =db.Column(db.Integer, nullable=False)
     num_of_inv =db.Column(db.Integer, nullable=False)
     
+    
+class Nickname(db.Model):
+    pass
+    id = db.Column(db.Integer, primary_key=True)
+    nickname =db.Column(db.String(256), nullable=False)
+    
+    
+    
+class Cityname(db.Model):
+    pass
+    id = db.Column(db.Integer, primary_key=True)
+    city =db.Column(db.String(256), nullable=False)
+    

@@ -22,8 +22,10 @@ BedrmCt	../app\models.py	/^    BedrmCt = db.Column(db.Integer, nullable=False)$/
 Blueprint	../_ref\_py\routes - Copy.py	/^from flask import render_template, url_for, flash, request, Blueprint$/;"	kind:namespace	line:1
 Blueprint	../app\errors\handlers.py	/^from flask import Blueprint, render_template$/;"	kind:namespace	line:1
 Blueprint	../app\main\routes.py	/^from flask import render_template, url_for, flash, redirect,  Blueprint, jsonify, redirect$/;"	kind:namespace	line:4
-Blueprint	../app\users\routes.py	/^from flask import render_template, url_for, flash, redirect, request, Blueprint$/;"	kind:namespace	line:1
+Blueprint	../app\users\routes.py	/^from flask import render_template, url_for, flash, redirect, request, jsonify,Blueprint$/;"	kind:namespace	line:4
 BooleanField	../app\users\forms.py	/^from wtforms import StringField, PasswordField, SubmitField, BooleanField, SelectField, DecimalField$/;"	kind:namespace	line:3
+Cityname	../app\models.py	/^class Cityname(db.Model):$/;"	kind:class	line:353
+Cityname	../app\users\routes.py	/^from app.models import User, Nickname, Cityname$/;"	kind:namespace	line:7
 Column	../_ref\_py\_berM.py	/^from sqlalchemy import Table, Column, Integer, String, MetaData, ForeignKey$/;"	kind:namespace	line:1
 Column	../app\models.py	/^from sqlalchemy import Table, Column, Integer, String, MetaData, ForeignKey$/;"	kind:namespace	line:1
 Config	../app\__init__.py	/^from app.config import Config$/;"	kind:namespace	line:5
@@ -68,6 +70,8 @@ MetaData	../app\models.py	/^from sqlalchemy import Table, Column, Integer, Strin
 Metro	../app\models.py	/^    Metro = db.Column(db.String(256), nullable=False)$/;"	kind:variable	line:298
 Metro	../app\models.py	/^    Metro = db.Column(db.String(256), nullable=False)$/;"	kind:variable	line:317
 Metro	../app\models.py	/^    Metro = db.Column(db.String(256), nullable=False)$/;"	kind:variable	line:32
+Nickname	../app\models.py	/^class Nickname(db.Model):$/;"	kind:class	line:346
+Nickname	../app\users\routes.py	/^from app.models import User, Nickname, Cityname$/;"	kind:namespace	line:7
 OutInvIconizer	../_ref\_py\_dispR.py	/^    def OutInvIconizer(yes_or_no):$/;"	kind:function	line:481
 OutOfStckStyler	../_ref\_py\_dispR.py	/^    def OutOfStckStyler(yes_or_no):$/;"	kind:function	line:406
 OutOfStckStylerGrid	../_ref\_py\_dispR.py	/^    def OutOfStckStylerGrid(yes_or_no):$/;"	kind:function	line:421
@@ -93,11 +97,11 @@ RegionID	../app\models.py	/^    RegionID = db.Column(db.Integer, nullable=False)
 RegionName	../app\models.py	/^    RegionName = db.Column(db.String(256), nullable=False)$/;"	kind:variable	line:300
 RegionName	../app\models.py	/^    RegionName = db.Column(db.String(256), nullable=False)$/;"	kind:variable	line:319
 RegionName	../app\models.py	/^    RegionName = db.Column(db.String(64), nullable=False)$/;"	kind:variable	line:29
-RegistrationForm	../app\users\forms.py	/^class RegistrationForm(FlaskForm):$/;"	kind:class	line:55
+RegistrationForm	../app\users\forms.py	/^class RegistrationForm(FlaskForm):$/;"	kind:class	line:57
 RegroPoly_jupyter_import2py.py	../_ref\_regV1\RegroPoly_jupyter_import2py.py	1;"	kind:file	line:1
 Rental	../_ref\_regV1\classProperty.py	/^class Rental:$/;"	kind:class	line:115
-RequestResetForm	../app\users\forms.py	/^class RequestResetForm(FlaskForm):$/;"	kind:class	line:38
-ResetPasswordForm	../app\users\forms.py	/^class ResetPasswordForm(FlaskForm):$/;"	kind:class	line:49
+RequestResetForm	../app\users\forms.py	/^class RequestResetForm(FlaskForm):$/;"	kind:class	line:40
+ResetPasswordForm	../app\users\forms.py	/^class ResetPasswordForm(FlaskForm):$/;"	kind:class	line:51
 Round1	../app\models.py	/^    Round1 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:37
 Round10	../app\models.py	/^    Round10 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:46
 Round100	../app\models.py	/^    Round100 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:136
@@ -387,7 +391,7 @@ User	../_ref\_py\_dispM.py	/^class User(db.Model, UserMixin):$/;"	kind:class	lin
 User	../_ref\_py\_ndoRp.py	/^from nodaysoff.models import Proday, User$/;"	kind:namespace	line:5
 User	../app\models.py	/^class User(db.Model, UserMixin):$/;"	kind:class	line:13
 User	../app\users\forms.py	/^from app.models import User$/;"	kind:namespace	line:6
-User	../app\users\routes.py	/^from app.models import User$/;"	kind:namespace	line:4
+User	../app\users\routes.py	/^from app.models import User, Nickname, Cityname$/;"	kind:namespace	line:7
 UserDemo	../_ref\_py\_ndoRt.py	/^from nodaysoff.models import Task, UserDemo, TaskDemo$/;"	kind:namespace	line:6
 UserMixin	../_ref\_py\_berM.py	/^from flask_login import UserMixin$/;"	kind:namespace	line:6
 UserMixin	../_ref\_py\_dispM.py	/^from flask_login import UserMixin$/;"	kind:namespace	line:3
@@ -429,7 +433,7 @@ _ndoRp.py	../_ref\_py\_ndoRp.py	1;"	kind:file	line:1
 _ndoRt.py	../_ref\_py\_ndoRt.py	1;"	kind:file	line:1
 about	../_ref\_py\_dispR.py	/^def about():$/;"	kind:function	line:185
 account	../_ref\_py\_dispR.py	/^def account():$/;"	kind:function	line:266
-account	../app\users\routes.py	/^def account():$/;"	kind:function	line:82
+account	../app\users\routes.py	/^def account():$/;"	kind:function	line:105
 add_player	../app\main\routes.py	/^def add_player(new_player_name):$/;"	kind:function	line:305
 add_property	../_ref\_regV1\classProperty.py	/^    def add_property(self):$/;"	kind:member	line:180
 add_property	../_ref\_regV1\objectHouseMarket.py	/^    def add_property(self):$/;"	kind:member	line:15
@@ -476,7 +480,7 @@ base_price03	../app\models.py	/^    base_price03 = db.Column(db.Integer, nullabl
 base_price03	../app\models.py	/^    base_price03 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:331
 bcrypt	../app\__init__.py	/^bcrypt = Bcrypt()$/;"	kind:variable	line:9
 bcrypt	../app\main\routes.py	/^from app import db, bcrypt$/;"	kind:namespace	line:5
-bcrypt	../app\users\routes.py	/^from app import db, bcrypt$/;"	kind:namespace	line:3
+bcrypt	../app\users\routes.py	/^from app import db, bcrypt$/;"	kind:namespace	line:6
 body_type	../_ref\_py\_berM.py	/^    body_type = db.Column(db.String(16), nullable=False, default='3')$/;"	kind:variable	line:14
 buildHousesForSale.py	../_ref\_regV1\buildHousesForSale.py	1;"	kind:file	line:1
 buildTenHouses	../_ref\_regV1\buildHousesForSale.py	/^def buildTenHouses():$/;"	kind:function	line:7
@@ -485,7 +489,8 @@ calc_daily_total	../_ref\_py\forms - Copy.py	/^    def calc_daily_total(self):$/
 calc_daily_totals	../_ref\_py\forms - Copy.py	/^    def calc_daily_totals(self):$/;"	kind:member	line:70
 catalog_fullname	../_ref\_py\_dispM.py	/^    catalog_fullname = db.Column(db.String(256))$/;"	kind:variable	line:42
 catalog_no	../_ref\_py\_dispM.py	/^    catalog_no = db.Column(db.String(32))$/;"	kind:variable	line:41
-choices	../app\users\forms.py	/^                              choices=[(0, 'first'), (1, 'second')], default=0)$/;"	kind:variable	line:64
+choices	../app\users\forms.py	/^                              choices=[(0, 'first'), (1, 'second')],$/;"	kind:variable	line:23
+city	../app\models.py	/^    city =db.Column(db.String(256), nullable=False)$/;"	kind:variable	line:356
 classItem.py	../_ref\_regV1\classItem.py	1;"	kind:file	line:1
 classProperty.py	../_ref\_regV1\classProperty.py	1;"	kind:file	line:1
 classTextBookScratch.py	../_ref\_regV1\classTextBookScratch.py	1;"	kind:file	line:1
@@ -497,8 +502,8 @@ color_primary	../_ref\_py\_dispM.py	/^    color_primary = db.Column(db.String(32
 color_secondary	../_ref\_py\_dispM.py	/^    color_secondary = db.Column(db.String(32))$/;"	kind:variable	line:44
 condo_df	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^condo_df = stateDateTdf(file_stateCondo)$/;"	kind:variable	line:261
 config.py	../app\config.py	1;"	kind:file	line:1
-confirm_password	../app\users\forms.py	/^    confirm_password = PasswordField('Confirm Password',$/;"	kind:variable	line:51
-confirm_password	../app\users\forms.py	/^    confirm_password = PasswordField('Confirm Password',$/;"	kind:variable	line:61
+confirm_password	../app\users\forms.py	/^    confirm_password = PasswordField('Confirm Password',$/;"	kind:variable	line:53
+confirm_password	../app\users\forms.py	/^    confirm_password = PasswordField('Confirm Password',$/;"	kind:variable	line:63
 content	../_ref\_py\_berM.py	/^    content = db.Column(db.Text, nullable=False)$/;"	kind:variable	line:45
 content	../_ref\_py\_dispM.py	/^    content = db.Column(db.Text, nullable=False)$/;"	kind:variable	line:30
 country	../_ref\12_JS\02_Evr_PythonToJavaScript\Py_HelloVariableWorld.py	/^country = "United States"$/;"	kind:variable	line:6
@@ -510,6 +515,7 @@ create_timesheet	../_ref\_py\routes - Copy.py	/^def create_timesheet():$/;"	kind
 createall_squares	../_ref\_py\_dispR.py	/^def createall_squares():$/;"	kind:function	line:1024
 csv	../_ref\_py\_dispR.py	/^import csv$/;"	kind:namespace	line:7
 csv	../app\main\routes.py	/^import csv$/;"	kind:namespace	line:3
+csv	../app\users\routes.py	/^import csv$/;"	kind:namespace	line:2
 csv_feed	../_ref\_py\_dispR.py	/^def csv_feed():$/;"	kind:function	line:142
 current_app	../_ref\_py\_berM.py	/^from flask import current_app$/;"	kind:namespace	line:4
 current_app	../app\models.py	/^from flask import current_app$/;"	kind:namespace	line:4
@@ -517,7 +523,7 @@ current_app	../app\users\utils.py	/^from flask import url_for, current_app$/;"	k
 current_user	../_ref\_py\_ndoRp.py	/^from flask_login import current_user, login_required$/;"	kind:namespace	line:3
 current_user	../_ref\_py\_ndoRt.py	/^from flask_login import current_user, login_required$/;"	kind:namespace	line:4
 current_user	../app\users\forms.py	/^from flask_login import current_user$/;"	kind:namespace	line:5
-current_user	../app\users\routes.py	/^from flask_login import login_user, current_user, logout_user, login_required$/;"	kind:namespace	line:2
+current_user	../app\users\routes.py	/^from flask_login import login_user, current_user, logout_user, login_required$/;"	kind:namespace	line:5
 cut_st4r	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^def cut_st4r(n):$/;"	kind:function	line:41
 daily_wage	../_ref\12_JS\02_Evr_PythonToJavaScript\Py_HelloVariableWorld.py	/^daily_wage = hourly_wage * 8$/;"	kind:variable	line:15
 dashboard	../_ref\_py\_dispR.py	/^def dashboard():$/;"	kind:function	line:1312
@@ -536,17 +542,20 @@ db	../_ref\_py\_ndoRt.py	/^from nodaysoff import db$/;"	kind:namespace	line:5
 db	../app\__init__.py	/^db = SQLAlchemy()$/;"	kind:variable	line:8
 db	../app\main\routes.py	/^from app import db, bcrypt$/;"	kind:namespace	line:5
 db	../app\models.py	/^from app import db, login_manager$/;"	kind:namespace	line:5
-db	../app\users\routes.py	/^from app import db, bcrypt$/;"	kind:namespace	line:3
+db	../app\users\routes.py	/^from app import db, bcrypt$/;"	kind:namespace	line:6
 db_init_baseprice	../app\main\routes.py	/^def db_init_baseprice():$/;"	kind:function	line:22
+db_init_citynames	../app\users\routes.py	/^def db_init_citynames():$/;"	kind:function	line:159
+db_init_nicknames	../app\users\routes.py	/^def db_init_nicknames():$/;"	kind:function	line:130
 ddslick_master	../_ref\_py\_dispR.py	/^def ddslick_master():$/;"	kind:function	line:775
 default	../_ref\_py\_dispM.py	/^                            default=datetime.utcnow)$/;"	kind:variable	line:29
 default	../_ref\_py\_dispM.py	/^                           default='default.png')$/;"	kind:variable	line:17
+default	../app\users\forms.py	/^                               default=0)$/;"	kind:variable	line:24
 defaultdict	../_ref\_py\_dispR.py	/^from collections import defaultdict$/;"	kind:namespace	line:3
 delete_item	../_ref\_py\_dispR.py	/^def delete_item(item_id):$/;"	kind:function	line:34
 delete_post	../_ref\_py\_dispR.py	/^def delete_post(post_id):$/;"	kind:function	line:329
 delete_proday	../_ref\_py\_ndoRp.py	/^def delete_proday(proday_id):$/;"	kind:function	line:117
 delete_task	../_ref\_py\_ndoRt.py	/^def delete_task(task_id):$/;"	kind:function	line:154
-delete_user_by_ID	../app\users\routes.py	/^def delete_user_by_ID(user_1d):$/;"	kind:function	line:107
+delete_user_by_ID	../app\users\routes.py	/^def delete_user_by_ID(user_1d):$/;"	kind:function	line:92
 descGenForClassItem.py	../_ref\_regV1\descGenForClassItem.py	1;"	kind:file	line:1
 describe_attrs	../_ref\_py\_dispM.py	/^    def describe_attrs(self):$/;"	kind:member	line:219
 dest_id	../_ref\_py\_berM.py	/^    dest_id = db.Column(db.String(16), nullable=False, default='0')$/;"	kind:variable	line:15
@@ -573,8 +582,8 @@ email	../_ref\_py\_dispM.py	/^    email = db.Column(db.String(120), unique=True,
 email	../app\models.py	/^    email = db.Column(db.String(120), unique=True, nullable=False)$/;"	kind:variable	line:17
 email	../app\users\forms.py	/^    email = StringField('Email',$/;"	kind:variable	line:10
 email	../app\users\forms.py	/^    email = StringField('Email',$/;"	kind:variable	line:20
-email	../app\users\forms.py	/^    email = StringField('Email',$/;"	kind:variable	line:39
-email	../app\users\forms.py	/^    email = StringField('Email',$/;"	kind:variable	line:58
+email	../app\users\forms.py	/^    email = StringField('Email',$/;"	kind:variable	line:41
+email	../app\users\forms.py	/^    email = StringField('Email',$/;"	kind:variable	line:60
 error_403	../app\errors\handlers.py	/^def error_403(error):$/;"	kind:function	line:12
 error_404	../app\errors\handlers.py	/^def error_404(error):$/;"	kind:function	line:7
 error_500	../app\errors\handlers.py	/^def error_500(error):$/;"	kind:function	line:17
@@ -608,7 +617,7 @@ first_act_done	../_ref\_py\_ndoRp.py	/^def first_act_done(proday_id):$/;"	kind:f
 flash	../_ref\_py\_ndoRp.py	/^from flask import (render_template, url_for, flash,$/;"	kind:namespace	line:1
 flash	../_ref\_py\routes - Copy.py	/^from flask import render_template, url_for, flash, request, Blueprint$/;"	kind:namespace	line:1
 flash	../app\main\routes.py	/^from flask import render_template, url_for, flash, redirect,  Blueprint, jsonify, redirect$/;"	kind:namespace	line:4
-flash	../app\users\routes.py	/^from flask import render_template, url_for, flash, redirect, request, Blueprint$/;"	kind:namespace	line:1
+flash	../app\users\routes.py	/^from flask import render_template, url_for, flash, redirect, request, jsonify,Blueprint$/;"	kind:namespace	line:4
 flask_debug	../_ref\_regV1\app.py	/^flask_debug = False$/;"	kind:variable	line:34
 forms - Copy.py	../_ref\_py\forms - Copy.py	1;"	kind:file	line:1
 forms.py	../app\users\forms.py	1;"	kind:file	line:1
@@ -659,6 +668,8 @@ id	../app\models.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:
 id	../app\models.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:294
 id	../app\models.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:313
 id	../app\models.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:335
+id	../app\models.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:348
+id	../app\models.py	/^    id = db.Column(db.Integer, primary_key=True)$/;"	kind:variable	line:355
 image_file	../_ref\_py\_berM.py	/^    image_file = db.Column(db.String(20), nullable=False, default='default.png')$/;"	kind:variable	line:34
 image_file	../_ref\_py\_dispM.py	/^    image_file = db.Column(db.String(20), nullable=False,$/;"	kind:variable	line:16
 imagegrid_url	../_ref\_py\_dispM.py	/^    imagegrid_url = db.Column(db.String(256))$/;"	kind:variable	line:56
@@ -666,7 +677,7 @@ imagelist_url	../_ref\_py\_dispM.py	/^    imagelist_url = db.Column(db.String(25
 img_url	../app\models.py	/^    img_url = db.Column(db.Integer, nullable=False, default =0)$/;"	kind:variable	line:19
 img_url	../app\models.py	/^    img_url = db.Column(db.String(256), nullable=False)$/;"	kind:variable	line:293
 img_url	../app\models.py	/^    img_url = db.Column(db.String(256), nullable=False)$/;"	kind:variable	line:323
-img_url	../app\users\forms.py	/^    img_url = SelectField('image',$/;"	kind:variable	line:63
+img_url	../app\users\forms.py	/^    img_url = SelectField('image',$/;"	kind:variable	line:22
 index	../_ref\_regV1\app.py	/^def index():$/;"	kind:function	line:45
 initFunctionsForClassItem	../_ref\_regV1\classItem.py	/^import initFunctionsForClassItem $/;"	kind:namespace	line:2
 inject_LowInvBts4Grid	../_ref\_py\_dispR.py	/^def inject_LowInvBts4Grid():$/;"	kind:function	line:433
@@ -699,6 +710,7 @@ json	../_ref\_regV1\app.py	/^import json$/;"	kind:namespace	line:8
 jsonify	../_ref\int-hw\hw01\Data-Journalism-and-D3-master\app.py	/^from flask import Flask, render_template, jsonify$/;"	kind:namespace	line:1
 jsonify	../_ref\int-hw\hw02\Data-Journalism-and-D3-master\app.py	/^from flask import Flask,render_template,jsonify$/;"	kind:namespace	line:1
 jsonify	../app\main\routes.py	/^from flask import render_template, url_for, flash, redirect,  Blueprint, jsonify, redirect$/;"	kind:namespace	line:4
+jsonify	../app\users\routes.py	/^from flask import render_template, url_for, flash, redirect, request, jsonify,Blueprint$/;"	kind:namespace	line:4
 just_ran_out	../_ref\_py\_dispM.py	/^    def just_ran_out(self):$/;"	kind:member	line:112
 listRoundLabels	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^def listRoundLabels(yearStart,yearEnd):$/;"	kind:function	line:92
 load_user	../_ref\_py\_berM.py	/^def load_user(user_id):$/;"	kind:function	line:24
@@ -706,18 +718,18 @@ load_user	../_ref\_py\_dispM.py	/^def load_user(user_id):$/;"	kind:function	line
 load_user	../app\models.py	/^def load_user(user_id):$/;"	kind:function	line:9
 location_id	../_ref\_py\_berM.py	/^    location_id = db.Column(db.String(1), nullable=False)$/;"	kind:variable	line:31
 login	../_ref\_py\_dispR.py	/^def login():$/;"	kind:function	line:228
-login	../app\users\routes.py	/^def login():$/;"	kind:function	line:56
+login	../app\users\routes.py	/^def login():$/;"	kind:function	line:59
 login_manager	../_ref\_py\_berM.py	/^from berenice import db, login_manager$/;"	kind:namespace	line:5
 login_manager	../_ref\_py\_dispM.py	/^from squares import db, login_manager$/;"	kind:namespace	line:2
 login_manager	../app\__init__.py	/^login_manager = LoginManager()$/;"	kind:variable	line:10
 login_manager	../app\models.py	/^from app import db, login_manager$/;"	kind:namespace	line:5
 login_required	../_ref\_py\_ndoRp.py	/^from flask_login import current_user, login_required$/;"	kind:namespace	line:3
 login_required	../_ref\_py\_ndoRt.py	/^from flask_login import current_user, login_required$/;"	kind:namespace	line:4
-login_required	../app\users\routes.py	/^from flask_login import login_user, current_user, logout_user, login_required$/;"	kind:namespace	line:2
-login_user	../app\users\routes.py	/^from flask_login import login_user, current_user, logout_user, login_required$/;"	kind:namespace	line:2
+login_required	../app\users\routes.py	/^from flask_login import login_user, current_user, logout_user, login_required$/;"	kind:namespace	line:5
+login_user	../app\users\routes.py	/^from flask_login import login_user, current_user, logout_user, login_required$/;"	kind:namespace	line:5
 logout	../_ref\_py\_dispR.py	/^def logout():$/;"	kind:function	line:244
-logout	../app\users\routes.py	/^def logout():$/;"	kind:function	line:75
-logout_user	../app\users\routes.py	/^from flask_login import login_user, current_user, logout_user, login_required$/;"	kind:namespace	line:2
+logout	../app\users\routes.py	/^def logout():$/;"	kind:function	line:78
+logout_user	../app\users\routes.py	/^from flask_login import login_user, current_user, logout_user, login_required$/;"	kind:namespace	line:5
 low_worth	../app\models.py	/^    low_worth = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:341
 main	../app\__init__.py	/^    from app.main.routes import main$/;"	kind:namespace	line:24
 main	../app\main\routes.py	/^main = Blueprint('main', __name__)$/;"	kind:variable	line:8
@@ -760,6 +772,7 @@ name	../_ref\_py\_dispM.py	/^    name = db.Column(db.String(32))$/;"	kind:variab
 new_post	../_ref\_py\_dispR.py	/^def new_post():$/;"	kind:function	line:288
 new_proday	../_ref\_py\_ndoRp.py	/^def new_proday():$/;"	kind:function	line:48
 new_task	../_ref\_py\_ndoRt.py	/^def new_task():$/;"	kind:function	line:29
+nickname	../app\models.py	/^    nickname =db.Column(db.String(256), nullable=False)$/;"	kind:variable	line:349
 now_restock3d	../_ref\_py\_dispM.py	/^    def now_restock3d(self):$/;"	kind:member	line:117
 now_restocked	../_ref\_py\_dispM.py	/^    def now_restocked(self):$/;"	kind:member	line:108
 np	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^import numpy as np$/;"	kind:namespace	line:10
@@ -777,14 +790,13 @@ password	../_ref\_py\_berM.py	/^    password = db.Column(db.String(60), nullable
 password	../_ref\_py\_dispM.py	/^    password = db.Column(db.String(60), nullable=False)$/;"	kind:variable	line:18
 password	../app\models.py	/^    password = db.Column(db.String(60), nullable=False)$/;"	kind:variable	line:18
 password	../app\users\forms.py	/^    password = PasswordField('Password', validators=[DataRequired()])$/;"	kind:variable	line:12
-password	../app\users\forms.py	/^    password = PasswordField('Password', validators=[DataRequired()])$/;"	kind:variable	line:50
-password	../app\users\forms.py	/^    password = PasswordField('Password', validators=[DataRequired()])$/;"	kind:variable	line:60
+password	../app\users\forms.py	/^    password = PasswordField('Password', validators=[DataRequired()])$/;"	kind:variable	line:52
+password	../app\users\forms.py	/^    password = PasswordField('Password', validators=[DataRequired()])$/;"	kind:variable	line:62
 pd	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^import pandas as pd$/;"	kind:namespace	line:9
 pd	../_ref\_regV1\app.py	/^import pandas as pd$/;"	kind:namespace	line:5
 pd	../_ref\int-hw\hw01\Data-Journalism-and-D3-master\app.py	/^import pandas as pd$/;"	kind:namespace	line:2
 pd	../_ref\int-hw\hw02\Data-Journalism-and-D3-master\app.py	/^import pandas as pd$/;"	kind:namespace	line:2
 percEmUp	../_ref\_py\_dispR.py	/^from squares.utils import percEmUp$/;"	kind:namespace	line:2
-picture	../app\users\forms.py	/^    picture = FileField('Update Profile Picture', validators=[FileAllowed(['jpg', 'png'])])$/;"	kind:variable	line:22
 player_name	../app\models.py	/^    player_name =db.Column(db.String(256), nullable=False)$/;"	kind:variable	line:337
 plt	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^import matplotlib.pyplot as plt$/;"	kind:namespace	line:16
 pltPlotEZ	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^def pltPlotEZ(df,label):$/;"	kind:function	line:137
@@ -835,6 +847,7 @@ randGen_itemDesc	../_ref\_regV1\descGenForClassItem.py	/^def randGen_itemDesc():
 randGen_itemState	../_ref\_regV1\classItem.py	/^from initFunctionsForClassItem import (randGen_itemState,$/;"	kind:namespace	line:3
 random	../_ref\_py\_dispR.py	/^import random$/;"	kind:namespace	line:4
 random	../app\main\routes.py	/^import random$/;"	kind:namespace	line:1
+random	../app\users\routes.py	/^import random$/;"	kind:namespace	line:1
 random_populate	../_ref\_py\_dispR.py	/^def random_populate(square_id):$/;"	kind:function	line:1049
 redir3ct_url	../_ref\_py\_dispR.py	/^    def redir3ct_url(default='inv_lister'):$/;"	kind:function	line:116
 redir3ct_url	../_ref\_py\_dispR.py	/^    def redir3ct_url(default='inv_lister'):$/;"	kind:function	line:541
@@ -846,10 +859,10 @@ redir3ct_url	../_ref\_py\_ndoRp.py	/^    def redir3ct_url(default=url_for('proda
 redir3ct_url	../_ref\_py\_ndoRp.py	/^    def redir3ct_url(default=url_for('prodays.hom3')):$/;"	kind:function	line:198
 redir3ct_url	../_ref\_py\_ndoRp.py	/^    def redir3ct_url(default=url_for('prodays.hom3')):$/;"	kind:function	line:229
 redirect	../app\main\routes.py	/^from flask import render_template, url_for, flash, redirect,  Blueprint, jsonify, redirect$/;"	kind:namespace	line:4
-redirect	../app\users\routes.py	/^from flask import render_template, url_for, flash, redirect, request, Blueprint$/;"	kind:namespace	line:1
-regist3r	../app\users\routes.py	/^def regist3r():$/;"	kind:function	line:15
+redirect	../app\users\routes.py	/^from flask import render_template, url_for, flash, redirect, request, jsonify,Blueprint$/;"	kind:namespace	line:4
+regist3r	../app\users\routes.py	/^def regist3r():$/;"	kind:function	line:18
 register	../_ref\_py\_dispR.py	/^def register():$/;"	kind:function	line:210
-register	../app\users\routes.py	/^def register():$/;"	kind:function	line:35
+register	../app\users\routes.py	/^def register():$/;"	kind:function	line:38
 remember	../app\users\forms.py	/^    remember = BooleanField('Remember Me')$/;"	kind:variable	line:13
 render_template	../_ref\_py\_ndoRp.py	/^from flask import (render_template, url_for, flash,$/;"	kind:namespace	line:1
 render_template	../_ref\_py\routes - Copy.py	/^from flask import render_template, url_for, flash, request, Blueprint$/;"	kind:namespace	line:1
@@ -858,10 +871,11 @@ render_template	../_ref\int-hw\hw01\Data-Journalism-and-D3-master\app.py	/^from 
 render_template	../_ref\int-hw\hw02\Data-Journalism-and-D3-master\app.py	/^from flask import Flask,render_template,jsonify$/;"	kind:namespace	line:1
 render_template	../app\errors\handlers.py	/^from flask import Blueprint, render_template$/;"	kind:namespace	line:1
 render_template	../app\main\routes.py	/^from flask import render_template, url_for, flash, redirect,  Blueprint, jsonify, redirect$/;"	kind:namespace	line:4
-render_template	../app\users\routes.py	/^from flask import render_template, url_for, flash, redirect, request, Blueprint$/;"	kind:namespace	line:1
+render_template	../app\users\routes.py	/^from flask import render_template, url_for, flash, redirect, request, jsonify,Blueprint$/;"	kind:namespace	line:4
 request	../_ref\_py\routes - Copy.py	/^from flask import render_template, url_for, flash, request, Blueprint$/;"	kind:namespace	line:1
-request	../app\users\routes.py	/^from flask import render_template, url_for, flash, redirect, request, Blueprint$/;"	kind:namespace	line:1
+request	../app\users\routes.py	/^from flask import render_template, url_for, flash, redirect, request, jsonify,Blueprint$/;"	kind:namespace	line:4
 requests	../app\main\routes.py	/^import requests$/;"	kind:namespace	line:2
+requests	../app\users\routes.py	/^import requests$/;"	kind:namespace	line:3
 resolve_task	../_ref\_py\_ndoRt.py	/^def resolve_task(task_id):$/;"	kind:function	line:123
 roundYearEndTdf	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^def roundYearEndTdf(file,yearStart,yearEnd):$/;"	kind:function	line:102
 routes - Copy.py	../_ref\_py\routes - Copy.py	1;"	kind:file	line:1
@@ -873,7 +887,7 @@ run.py	../run.py	1;"	kind:file	line:1
 running_low	../_ref\_py\_dispM.py	/^    def running_low(self):$/;"	kind:member	line:103
 satisfied	../_ref\12_JS\02_Evr_PythonToJavaScript\Py_HelloVariableWorld.py	/^satisfied = True$/;"	kind:variable	line:18
 save_picture	../_ref\_py\_dispR.py	/^def save_picture(form_picture):$/;"	kind:function	line:249
-save_picture	../app\users\routes.py	/^from app.users.utils import save_picture$/;"	kind:namespace	line:8
+save_picture	../app\users\routes.py	/^from app.users.utils import save_picture$/;"	kind:namespace	line:11
 save_picture	../app\users\utils.py	/^def save_picture(form_picture):$/;"	kind:function	line:7
 second_act_done	../_ref\_py\_ndoRp.py	/^def second_act_done(proday_id):$/;"	kind:function	line:161
 secrets	../_ref\_py\_dispR.py	/^import secrets$/;"	kind:namespace	line:6
@@ -898,9 +912,9 @@ stateDateTdf	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^def stateDateTdf(fi
 stateYrAvgTdf	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^def stateYrAvgTdf(file):$/;"	kind:function	line:73
 style	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^import matplotlib.style as style$/;"	kind:namespace	line:17
 submit	../app\users\forms.py	/^    submit = SubmitField('Login')$/;"	kind:variable	line:14
-submit	../app\users\forms.py	/^    submit = SubmitField('Request Password Reset')$/;"	kind:variable	line:41
-submit	../app\users\forms.py	/^    submit = SubmitField('Reset Password')$/;"	kind:variable	line:53
-submit	../app\users\forms.py	/^    submit = SubmitField('Update')$/;"	kind:variable	line:23
+submit	../app\users\forms.py	/^    submit = SubmitField('Request Password Reset')$/;"	kind:variable	line:43
+submit	../app\users\forms.py	/^    submit = SubmitField('Reset Password')$/;"	kind:variable	line:55
+submit	../app\users\forms.py	/^    submit = SubmitField('Update')$/;"	kind:variable	line:25
 task	../_ref\_py\_ndoRt.py	/^def task(task_id):$/;"	kind:function	line:53
 task_demo_home	../_ref\_py\_ndoRt.py	/^def task_demo_home():$/;"	kind:function	line:220
 taskcreator	../_ref\_py\_ndoRt.py	/^def taskcreator():$/;"	kind:function	line:91
@@ -934,7 +948,7 @@ url_for	../_ref\_py\_dispM.py	/^from flask import url_for$/;"	kind:namespace	lin
 url_for	../_ref\_py\_ndoRp.py	/^from flask import (render_template, url_for, flash,$/;"	kind:namespace	line:1
 url_for	../_ref\_py\routes - Copy.py	/^from flask import render_template, url_for, flash, request, Blueprint$/;"	kind:namespace	line:1
 url_for	../app\main\routes.py	/^from flask import render_template, url_for, flash, redirect,  Blueprint, jsonify, redirect$/;"	kind:namespace	line:4
-url_for	../app\users\routes.py	/^from flask import render_template, url_for, flash, redirect, request, Blueprint$/;"	kind:namespace	line:1
+url_for	../app\users\routes.py	/^from flask import render_template, url_for, flash, redirect, request, jsonify,Blueprint$/;"	kind:namespace	line:4
 url_for	../app\users\utils.py	/^from flask import url_for, current_app$/;"	kind:namespace	line:4
 user_id	../_ref\_py\_berM.py	/^    user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)$/;"	kind:variable	line:46
 user_id	../_ref\_py\_dispM.py	/^    user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)$/;"	kind:variable	line:31
@@ -942,9 +956,9 @@ username	../_ref\_py\_berM.py	/^    username = db.Column(db.String(20), unique=T
 username	../_ref\_py\_dispM.py	/^    username = db.Column(db.String(20), unique=True, nullable=False)$/;"	kind:variable	line:14
 username	../app\models.py	/^    username = db.Column(db.String(20), unique=True, nullable=False)$/;"	kind:variable	line:16
 username	../app\users\forms.py	/^    username = StringField('Username',$/;"	kind:variable	line:18
-username	../app\users\forms.py	/^    username = StringField('Username',$/;"	kind:variable	line:56
+username	../app\users\forms.py	/^    username = StringField('Username',$/;"	kind:variable	line:58
 users	../app\__init__.py	/^    from app.users.routes import users$/;"	kind:namespace	line:23
-users	../app\users\routes.py	/^users = Blueprint('users', __name__)$/;"	kind:variable	line:10
+users	../app\users\routes.py	/^users = Blueprint('users', __name__)$/;"	kind:variable	line:13
 utility_processor	../_ref\_py\_ndoRt.py	/^def utility_processor():$/;"	kind:function	line:164
 utils.py	../app\users\utils.py	1;"	kind:file	line:1
 valid_balconies	../_ref\_regV1\classProperty.py	/^    valid_balconies = ("yes", "no", "solarium")$/;"	kind:variable	line:34
@@ -955,19 +969,19 @@ valid_garage	../_ref\_regV1\classProperty.py	/^    valid_garage = ("attached", "
 valid_garage	../_ref\_regV1\classTextBookScratch.py	/^    valid_garage = ("attached", "detached", "none")$/;"	kind:variable	line:61
 valid_laundries	../_ref\_regV1\classProperty.py	/^    valid_laundries = ("coin", "ensuite", "none")$/;"	kind:variable	line:33
 valid_laundries	../_ref\_regV1\classTextBookScratch.py	/^    valid_laundries = ("coin", "ensuite", "none")$/;"	kind:variable	line:29
-validate_email	../app\users\forms.py	/^    def validate_email(self, email):$/;"	kind:member	line:31
-validate_email	../app\users\forms.py	/^    def validate_email(self, email):$/;"	kind:member	line:43
-validate_email	../app\users\forms.py	/^    def validate_email(self, email):$/;"	kind:member	line:73
-validate_username	../app\users\forms.py	/^    def validate_username(self, username):$/;"	kind:member	line:25
-validate_username	../app\users\forms.py	/^    def validate_username(self, username):$/;"	kind:member	line:68
-validators	../app\users\forms.py	/^                                     validators=[DataRequired(), EqualTo('password')])$/;"	kind:variable	line:52
-validators	../app\users\forms.py	/^                                     validators=[DataRequired(), EqualTo('password')])$/;"	kind:variable	line:62
+validate_email	../app\users\forms.py	/^    def validate_email(self, email):$/;"	kind:member	line:33
+validate_email	../app\users\forms.py	/^    def validate_email(self, email):$/;"	kind:member	line:45
+validate_email	../app\users\forms.py	/^    def validate_email(self, email):$/;"	kind:member	line:71
+validate_username	../app\users\forms.py	/^    def validate_username(self, username):$/;"	kind:member	line:27
+validate_username	../app\users\forms.py	/^    def validate_username(self, username):$/;"	kind:member	line:66
+validators	../app\users\forms.py	/^                                     validators=[DataRequired(), EqualTo('password')])$/;"	kind:variable	line:54
+validators	../app\users\forms.py	/^                                     validators=[DataRequired(), EqualTo('password')])$/;"	kind:variable	line:64
 validators	../app\users\forms.py	/^                           validators=[DataRequired(), Length(min=2, max=20)])$/;"	kind:variable	line:19
-validators	../app\users\forms.py	/^                           validators=[DataRequired(), Length(min=2, max=20)])$/;"	kind:variable	line:57
+validators	../app\users\forms.py	/^                           validators=[DataRequired(), Length(min=2, max=20)])$/;"	kind:variable	line:59
 validators	../app\users\forms.py	/^                        validators=[DataRequired(), Email()])$/;"	kind:variable	line:11
 validators	../app\users\forms.py	/^                        validators=[DataRequired(), Email()])$/;"	kind:variable	line:21
-validators	../app\users\forms.py	/^                        validators=[DataRequired(), Email()])$/;"	kind:variable	line:40
-validators	../app\users\forms.py	/^                        validators=[DataRequired(), Email()])$/;"	kind:variable	line:59
+validators	../app\users\forms.py	/^                        validators=[DataRequired(), Email()])$/;"	kind:variable	line:42
+validators	../app\users\forms.py	/^                        validators=[DataRequired(), Email()])$/;"	kind:variable	line:61
 x	../_ref\12_JS\02_Evr_PythonToJavaScript\Py_ConditionalCheck.py	/^x = 1$/;"	kind:variable	line:1
 y	../_ref\12_JS\02_Evr_PythonToJavaScript\Py_ConditionalCheck.py	/^y = 10$/;"	kind:variable	line:2
 year	../_ref\_py\_berM.py	/^    year = db.Column(db.String(16), nullable=False,default='2007')$/;"	kind:variable	line:13

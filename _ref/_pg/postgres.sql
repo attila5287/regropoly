@@ -1,5 +1,16 @@
+CREATE TABLE "cityname" (
+  "id"	SERIAL NOT NULL PRIMARY KEY,
+  "cityname"	VARCHAR(256)
+);
+
+CREATE TABLE "nickname" (
+  "id"	SERIAL NOT NULL PRIMARY KEY,
+  "nickname"	VARCHAR(256)
+);
+
 DROP TABLE public.purchased CASCADE;
 DROP TABLE public.description CASCADE;
+
 CREATE TABLE "description" (
   "id"	SERIAL NOT NULL PRIMARY KEY,
   "url"	VARCHAR(256),
