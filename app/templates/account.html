@@ -14,8 +14,7 @@
     <link rel="stylesheet" type="text/css" href="/static/styles/main.css" />
 
     <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
-      integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
-      crossorigin="anonymous" />
+      integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous" />
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.7.3/d3.js"></script>
 
@@ -46,9 +45,9 @@
             src="https://raw.githubusercontent.com/attila5287/regropoly-img/master/icons/favicon3.ico"
             style="height: 30px" alt="navbar-icon" />
         </a>
-        <button class="navbar-toggler bg-transparent border-light px-2 py-1" type="button"
-          data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
-          aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler bg-transparent border-light px-2 py-1" type="button" data-toggle="collapse"
+          data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+          aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse nav-mini text-center text-comfo mb-1" id="navbarCollapse">
@@ -133,25 +132,26 @@
                     style="max-width: 12rem;">
                 </div>
                 <div class="card bg-dark border-0 rnd-2xl">
-                <p class="mb-0 px-3 pt-1 pb-2 text-sm">
-                  <i class="fas fa-info-circle text-light text-lg mr-1 mt-1" aria-hidden="true"></i>
-                  <i class="text-light text-balo mt-1">
-                    Click on img
-                  </i>
-                </p>
-            </div>
+                  <p class="mb-0 px-3 pt-1 pb-2 text-sm">
+                    <i class="fas fa-info-circle text-light text-lg mr-1 mt-1" aria-hidden="true"></i>
+                    <i class="text-light text-balo mt-1">
+                      Click on img
+                    </i>
+                  </p>
+                </div>
 
-            <a type="button" name="" href="set/profile/picture/" class="btn btn-dark btn-outline-light btn-block bg-themy text-light">
-
-            </a>
-            <i class="text-light text-sm">above -second from top- for a random choice within gallery</i>
+                <a type="button" id="set_profile_pic" name="set_profile_pic" id="set/profile/picture/"
+                  class="btn btn-dark btn-outline-light btn-block bg-themy text-light text-sm text-bold my-2">
+                  Set as profile pic!
+                </a>
+                <i class="text-light text-sm">above -second from top- for a random choice within gallery</i>
                 <div id="img_url_index" class="bg-black text-center text-digi text-2xl text-primary">
-                    <span class="index">
-                        {{ form.img_url.data}}
-                    </span>
+                  <span class="index">
+                    {{ form.img_url.data}}
+                  </span>
                 </div>
               </div>
-              
+
               <div class="col-sm-9">
                 <h2 class="account-heading"></h2>
                 <form method="POST" action="">
@@ -165,7 +165,10 @@
                     </legend>
 
                     <div class="form-group">
-                      {{ form.username.label(class="form-control-dark form-control-label text-comfo text-md text-light bg-themy px-4 py-2 ") }}
+                      <span
+                        class="form-control-dark form-control-label text-comfo text-md text-light bg-themy px-4 py-2">
+                        Update {{ form.username.label }}
+                      </span>
                       {% if form.username.errors %}
                       {{ form.username(class="form-control-dark form-control form-control-dark form-control-lg is-invalid") }}
                       <div class="invalid-feedback">
@@ -179,7 +182,10 @@
 
                     </div>
                     <div class="form-group">
-                      {{ form.email.label(class="form-control-dark form-control-label text-comfo text-md text-light bg-themy px-4 py-2") }}
+                      <span
+                        class="form-control-dark form-control-label text-comfo text-md text-light bg-themy px-4 py-2">
+                        Update {{ form.email.label }}
+                      </span>
                       {% if form.email.errors %}
                       {{ form.email(class="form-control-dark form-control form-control-dark form-control-lg is-invalid") }}
                       <div class="invalid-feedback">
@@ -194,7 +200,10 @@
                       {% endif %}
                     </div>
                     <div class="form-group">
-                      {{ form.img_url.label(class="form-control-dark form-control-label text-comfo text-md text-light bg-themy px-4 py-2") }}
+                      <span
+                        class="form-control-dark form-control-label text-comfo text-md text-light bg-themy px-4 py-2">
+                        Update {{ form.img_url.label }}
+                      </span>
 
                       {% if form.img_url.errors %}
 

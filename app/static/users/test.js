@@ -16,8 +16,7 @@ d3.select( "#img_on_air" ).on( "click", function () {
   generated_randint = Math.floor( Math.random() * 70 );
   
   d3.select( "#img_url" )
-    .attr( "data", generated_randint)
-  ;  
+    .attr( "data", generated_randint );
 
   d3.select("#img_on_air")
     .select("img")
@@ -31,18 +30,28 @@ d3.select( "#img_on_air" ).on( "click", function () {
   $index = d3.select( '#img_url_index' )
     .selectAll('.index')
     .data( [ generated_randint ] );
-    $index
-      .enter()
-      .append( "div" )
-      .transition()
-      .ease(d3.easeElastic)
-      .duration(500)
-      .attr("class", "index")
-      .text((d) => {
-        console.log("d :>> ", d);
-        return d;
-      });
+    
+  $index
+    .enter()
+    .append( "div" )
+    .transition()
+    .ease(d3.easeElastic)
+    .duration(500)
+    .attr("class", "index")
+    .text((d) => {
+      console.log("d :>> ", d);
+      return d;
+    });
+    
+    d3.select( "#set_profile_pic" )
+      .on( "click", function () { 
+        d3.select( "#set_profile_pic" ).attr( "href", `set/profile/picture/${generated_randint}` );
+        
+        console.log('object :>> ');
+          
+       })
+    ;
+
+    
+  } );
   
-d3.select('#')
-  
-} );
