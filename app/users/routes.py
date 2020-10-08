@@ -100,24 +100,28 @@ def delete_user_by_ID(user_1d):
 
   return redirect(url_for('main.display'))
 
+@users.route("/set/profile/picture/<int:user_id>/<int:img_index>", methods=['GET', 'POST'])
+@login_required
+def set_profile_pic(user_id, img_index):
+  pass
+  current_user.img_url = img_index
+  db.session.commit()
+  return redirect( url_for('users.account' ))
+  
+  
 @users.route("/account", methods=['GET', 'POST'])
 @login_required
 def account():
   pass
   form = UpdateAccountForm()
-  form.img_url.data = random.choice(range(69))
-  form.img_url.choices = [
-      (n, 'suggested avatar #{} for: {}'.format(n,current_user.username)) for n in range(69)
-  ]
   
   if request.method == 'POST':
     pass
     current_user.username = form.username.data
     current_user.email = form.email.data
-    current_user.img_url = form.img_url.data
-    print(form.img_url.data)
     db.session.commit()
-    flash('Your account has been updated!', 'success')
+    flash('Username and/or Email updated!', 'success')
+    
     return redirect(url_for('users.account'))
   
   elif request.method == 'GET':

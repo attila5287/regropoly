@@ -64,6 +64,12 @@
                 Assets
               </span>
             </li>
+            <li class="nav-item text-light display-mode">
+              <span class="nav-link add-anime shd-themy rnd-lg mt-1 text-light">
+                <i class="fas fa-user-cogs text-xl"></i>
+                Account
+              </span>
+            </li>
             <li class="nav-item">
               <a class="nav-link add-anime rnd-lg text-comfo mt-1 text-secondary"
                 href="https://github.com/attila5287/regropoly">
@@ -122,7 +128,9 @@
                   <i class="fas fa-info-circle text-light mr-1" aria-hidden="true"></i>
                   <i class="text-light text-balo">
                     Selected profile pic is number
-                    {{ form.img_url.data }} in gallery
+                    
+                    <i> {{ current_user.img_url }} </i>
+                    in gallery
                   </i>
                 </p>
 
@@ -140,16 +148,21 @@
                   </p>
                 </div>
 
-                <a type="button" id="set_profile_pic" name="set_profile_pic" id="set/profile/picture/"
-                  class="btn btn-dark btn-outline-light btn-block bg-themy text-light text-sm text-bold my-2">
+                
+                <form method="get" action="">
+                <a type="button" id="set-as-profile-pic"
+                data="set/profile/picture/{{current_user.id}}/"
+                  data-title="set/profile/picture/{{current_user.id}}/"
+                  class="set_profile_pic btn btn-dark btn-outline-light btn-block bg-themy text-light text-sm text-bold my-2">
                   Set as profile pic!
                 </a>
-                <i class="text-light text-sm">above -second from top- for a random choice within gallery</i>
+                <i class="text-light text-sm"> above -second from top- for a random choice within gallery </i>
                 <div id="img_url_index" class="bg-black text-center text-digi text-2xl text-primary">
                   <span class="index">
-                    {{ form.img_url.data}}
                   </span>
                 </div>
+  
+</form>
               </div>
 
               <div class="col-sm-9">
@@ -199,52 +212,28 @@
 
                       {% endif %}
                     </div>
-                    <div class="form-group">
-                      <span
-                        class="form-control-dark form-control-label text-comfo text-md text-light bg-themy px-4 py-2">
-                        Update {{ form.img_url.label }}
-                      </span>
-
-                      {% if form.img_url.errors %}
-
-                      {{ form.img_url(class="form-control-dark form-control form-control-dark form-control-lg is-invalid") }}
-
-                      <div class="invalid-feedback">
-                        {% for error in form.img_url.errors %}
-                        <span>{{ error }}</span>
-                        {% endfor %}
-                      </div>
-
-                      {% else %}
-
-                      {{ form.img_url(class="custom-select custom-select-lg") }}
-
-                      {% endif %}
-                    </div>
-
                   </fieldset>
                   <div class="form-group">
                     {{ form.submit(class="btn btn-dark btn-outline-light btn-block bg-themy text-light") }}
                   </div>
+                  
                 </form>
               </div>
             </div>
           </div>
         </div>
-
       </div>
     </main>
 
     <footer class="footer mt-2">
-      <hr class="border-secondary mx-4" />
-      <div class="row">
-        <div class="col-sm-6">
+      <hr class="border-secondary mx-4 my-4" />
+      <div class="row no-gutters">
+        <div class="col-sm-4">
           <img class="p-0 float-right opac-80"
             src="https://raw.githubusercontent.com/attila5287/regropoly-img/master/img/site/regroPoly_newLogo_Md.png"
             alt="footer-logo" style="height: 10rem" />
         </div>
-
-        <div class="col-sm-3">
+        <div class="col-sm-4">
           <div class="d-flex flex-column justify-content-around text-secondary text-center">
             <a>Regropoly | regression monopoly </a>
             <a>Colorado Monopoly </a>
@@ -253,7 +242,7 @@
             <a>Flask Web FrameWork</a>
           </div>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-4">
           <div class="d-flex flex-column justify-content-between text-secondary text-center">
             <a>PostgreSQL</a>
             <a>Heroku </a>
@@ -263,6 +252,7 @@
         </div>
       </div>
     </footer>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

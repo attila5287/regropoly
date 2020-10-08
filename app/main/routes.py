@@ -92,7 +92,7 @@ def zillow_desc():
     }
     return jsonify(res)
 
-@main.route('/spawn/<int:spawnCount>/   <int:roundNo>')
+@main.route('/spawn/<int:spawnCount>/<int:roundNo>')
 def spawn_api(spawnCount, roundNo):
     pass
     web = 'http://regropoly.herokuapp.com'

@@ -433,7 +433,7 @@ _ndoRp.py	../_ref\_py\_ndoRp.py	1;"	kind:file	line:1
 _ndoRt.py	../_ref\_py\_ndoRt.py	1;"	kind:file	line:1
 about	../_ref\_py\_dispR.py	/^def about():$/;"	kind:function	line:185
 account	../_ref\_py\_dispR.py	/^def account():$/;"	kind:function	line:266
-account	../app\users\routes.py	/^def account():$/;"	kind:function	line:105
+account	../app\users\routes.py	/^def account():$/;"	kind:function	line:114
 add_player	../app\main\routes.py	/^def add_player(new_player_name):$/;"	kind:function	line:305
 add_property	../_ref\_regV1\classProperty.py	/^    def add_property(self):$/;"	kind:member	line:180
 add_property	../_ref\_regV1\objectHouseMarket.py	/^    def add_property(self):$/;"	kind:member	line:15
@@ -544,8 +544,8 @@ db	../app\main\routes.py	/^from app import db, bcrypt$/;"	kind:namespace	line:5
 db	../app\models.py	/^from app import db, login_manager$/;"	kind:namespace	line:5
 db	../app\users\routes.py	/^from app import db, bcrypt$/;"	kind:namespace	line:6
 db_init_baseprice	../app\main\routes.py	/^def db_init_baseprice():$/;"	kind:function	line:22
-db_init_citynames	../app\users\routes.py	/^def db_init_citynames():$/;"	kind:function	line:160
-db_init_nicknames	../app\users\routes.py	/^def db_init_nicknames():$/;"	kind:function	line:131
+db_init_citynames	../app\users\routes.py	/^def db_init_citynames():$/;"	kind:function	line:164
+db_init_nicknames	../app\users\routes.py	/^def db_init_nicknames():$/;"	kind:function	line:135
 ddslick_master	../_ref\_py\_dispR.py	/^def ddslick_master():$/;"	kind:function	line:775
 default	../_ref\_py\_dispM.py	/^                            default=datetime.utcnow)$/;"	kind:variable	line:29
 default	../_ref\_py\_dispM.py	/^                           default='default.png')$/;"	kind:variable	line:17
@@ -893,6 +893,7 @@ second_act_done	../_ref\_py\_ndoRp.py	/^def second_act_done(proday_id):$/;"	kind
 secrets	../_ref\_py\_dispR.py	/^import secrets$/;"	kind:namespace	line:6
 secrets	../app\users\utils.py	/^import secrets$/;"	kind:namespace	line:2
 sell	../app\main\routes.py	/^def sell(id, s_price):$/;"	kind:function	line:272
+set_profile_pic	../app\users\routes.py	/^def set_profile_pic(user_id, img_index):$/;"	kind:function	line:105
 ship_status	../_ref\_py\_berM.py	/^    ship_status = db.Column(db.String(16), nullable=False,default='0')$/;"	kind:variable	line:16
 show_item	../_ref\_py\_dispR.py	/^def show_item(item_id):$/;"	kind:function	line:65
 show_player	../app\main\routes.py	/^def show_player(id):$/;"	kind:function	line:288
