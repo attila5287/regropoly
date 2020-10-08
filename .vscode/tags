@@ -60,7 +60,7 @@ Item	../_ref\_py\_dispM.py	/^class Item(db.Model):$/;"	kind:class	line:37
 Item	../_ref\_regV1\classItem.py	/^class Item:$/;"	kind:class	line:18
 Length	../app\users\forms.py	/^from wtforms.validators import DataRequired, Length, Email, EqualTo, ValidationError$/;"	kind:namespace	line:4
 LinearRegression	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^from sklearn.linear_model import LinearRegression$/;"	kind:namespace	line:382
-LoginForm	../app\users\forms.py	/^class LoginForm(FlaskForm):$/;"	kind:class	line:9
+LoginForm	../app\users\forms.py	/^class LoginForm(FlaskForm):$/;"	kind:class	line:8
 LoginManager	../app\__init__.py	/^from flask_login import LoginManager$/;"	kind:namespace	line:4
 LowInStckStyler	../_ref\_py\_dispR.py	/^    def LowInStckStyler(yes_or_no):$/;"	kind:function	line:361
 LowInStckStylerGrid	../_ref\_py\_dispR.py	/^    def LowInStckStylerGrid(yes_or_no):$/;"	kind:function	line:436
@@ -97,11 +97,11 @@ RegionID	../app\models.py	/^    RegionID = db.Column(db.Integer, nullable=False)
 RegionName	../app\models.py	/^    RegionName = db.Column(db.String(256), nullable=False)$/;"	kind:variable	line:300
 RegionName	../app\models.py	/^    RegionName = db.Column(db.String(256), nullable=False)$/;"	kind:variable	line:319
 RegionName	../app\models.py	/^    RegionName = db.Column(db.String(64), nullable=False)$/;"	kind:variable	line:29
-RegistrationForm	../app\users\forms.py	/^class RegistrationForm(FlaskForm):$/;"	kind:class	line:57
+RegistrationForm	../app\users\forms.py	/^class RegistrationForm(FlaskForm):$/;"	kind:class	line:53
 RegroPoly_jupyter_import2py.py	../_ref\_regV1\RegroPoly_jupyter_import2py.py	1;"	kind:file	line:1
 Rental	../_ref\_regV1\classProperty.py	/^class Rental:$/;"	kind:class	line:115
-RequestResetForm	../app\users\forms.py	/^class RequestResetForm(FlaskForm):$/;"	kind:class	line:40
-ResetPasswordForm	../app\users\forms.py	/^class ResetPasswordForm(FlaskForm):$/;"	kind:class	line:51
+RequestResetForm	../app\users\forms.py	/^class RequestResetForm(FlaskForm):$/;"	kind:class	line:37
+ResetPasswordForm	../app\users\forms.py	/^class ResetPasswordForm(FlaskForm):$/;"	kind:class	line:47
 Round1	../app\models.py	/^    Round1 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:37
 Round10	../app\models.py	/^    Round10 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:46
 Round100	../app\models.py	/^    Round100 = db.Column(db.Integer, nullable=False)$/;"	kind:variable	line:136
@@ -385,7 +385,7 @@ USavg_list	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^USavg_list = allHomes
 Unit	../_ref\_py\_dispM.py	/^class Unit(db.Model):$/;"	kind:class	line:274
 UnitInvOutIconizer	../_ref\_py\_dispR.py	/^    def UnitInvOutIconizer(yes_or_no):$/;"	kind:function	line:391
 UnitInvOutStyler	../_ref\_py\_dispR.py	/^    def UnitInvOutStyler(yes_or_no):$/;"	kind:function	line:376
-UpdateAccountForm	../app\users\forms.py	/^class UpdateAccountForm(FlaskForm):$/;"	kind:class	line:17
+UpdateAccountForm	../app\users\forms.py	/^class UpdateAccountForm(FlaskForm):$/;"	kind:class	line:15
 User	../_ref\_py\_berM.py	/^class User(db.Model, UserMixin):$/;"	kind:class	line:27
 User	../_ref\_py\_dispM.py	/^class User(db.Model, UserMixin):$/;"	kind:class	line:12
 User	../_ref\_py\_ndoRp.py	/^from nodaysoff.models import Proday, User$/;"	kind:namespace	line:5
@@ -489,7 +489,7 @@ calc_daily_total	../_ref\_py\forms - Copy.py	/^    def calc_daily_total(self):$/
 calc_daily_totals	../_ref\_py\forms - Copy.py	/^    def calc_daily_totals(self):$/;"	kind:member	line:70
 catalog_fullname	../_ref\_py\_dispM.py	/^    catalog_fullname = db.Column(db.String(256))$/;"	kind:variable	line:42
 catalog_no	../_ref\_py\_dispM.py	/^    catalog_no = db.Column(db.String(32))$/;"	kind:variable	line:41
-choices	../app\users\forms.py	/^                              choices=[(0, 'first'), (1, 'second')],$/;"	kind:variable	line:23
+choices	../app\users\forms.py	/^                              choices=[(0, 'first'), (1, 'second')],$/;"	kind:variable	line:21
 city	../app\models.py	/^    city = db.Column(db.String(256), nullable=False)$/;"	kind:variable	line:356
 classItem.py	../_ref\_regV1\classItem.py	1;"	kind:file	line:1
 classProperty.py	../_ref\_regV1\classProperty.py	1;"	kind:file	line:1
@@ -502,8 +502,8 @@ color_primary	../_ref\_py\_dispM.py	/^    color_primary = db.Column(db.String(32
 color_secondary	../_ref\_py\_dispM.py	/^    color_secondary = db.Column(db.String(32))$/;"	kind:variable	line:44
 condo_df	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^condo_df = stateDateTdf(file_stateCondo)$/;"	kind:variable	line:261
 config.py	../app\config.py	1;"	kind:file	line:1
-confirm_password	../app\users\forms.py	/^    confirm_password = PasswordField('Confirm Password',$/;"	kind:variable	line:53
-confirm_password	../app\users\forms.py	/^    confirm_password = PasswordField('Confirm Password',$/;"	kind:variable	line:63
+confirm_password	../app\users\forms.py	/^    confirm_password = PasswordField('Confirm Password',$/;"	kind:variable	line:49
+confirm_password	../app\users\forms.py	/^    confirm_password = PasswordField('Confirm Password',$/;"	kind:variable	line:59
 content	../_ref\_py\_berM.py	/^    content = db.Column(db.Text, nullable=False)$/;"	kind:variable	line:45
 content	../_ref\_py\_dispM.py	/^    content = db.Column(db.Text, nullable=False)$/;"	kind:variable	line:30
 country	../_ref\12_JS\02_Evr_PythonToJavaScript\Py_HelloVariableWorld.py	/^country = "United States"$/;"	kind:variable	line:6
@@ -549,7 +549,7 @@ db_init_nicknames	../app\users\routes.py	/^def db_init_nicknames():$/;"	kind:fun
 ddslick_master	../_ref\_py\_dispR.py	/^def ddslick_master():$/;"	kind:function	line:775
 default	../_ref\_py\_dispM.py	/^                            default=datetime.utcnow)$/;"	kind:variable	line:29
 default	../_ref\_py\_dispM.py	/^                           default='default.png')$/;"	kind:variable	line:17
-default	../app\users\forms.py	/^                               default=0)$/;"	kind:variable	line:24
+default	../app\users\forms.py	/^                               default=0)$/;"	kind:variable	line:22
 defaultdict	../_ref\_py\_dispR.py	/^from collections import defaultdict$/;"	kind:namespace	line:3
 delete_item	../_ref\_py\_dispR.py	/^def delete_item(item_id):$/;"	kind:function	line:34
 delete_post	../_ref\_py\_dispR.py	/^def delete_post(post_id):$/;"	kind:function	line:329
@@ -580,10 +580,10 @@ edit_item	../_ref\_py\_dispR.py	/^def edit_item(item_id):$/;"	kind:function	line
 email	../_ref\_py\_berM.py	/^    email = db.Column(db.String(120), unique=True, nullable=False)$/;"	kind:variable	line:33
 email	../_ref\_py\_dispM.py	/^    email = db.Column(db.String(120), unique=True, nullable=False)$/;"	kind:variable	line:15
 email	../app\models.py	/^    email = db.Column(db.String(120), unique=True, nullable=False)$/;"	kind:variable	line:17
-email	../app\users\forms.py	/^    email = StringField('Email',$/;"	kind:variable	line:10
-email	../app\users\forms.py	/^    email = StringField('Email',$/;"	kind:variable	line:20
-email	../app\users\forms.py	/^    email = StringField('Email',$/;"	kind:variable	line:41
-email	../app\users\forms.py	/^    email = StringField('Email',$/;"	kind:variable	line:60
+email	../app\users\forms.py	/^    email = StringField('Email',$/;"	kind:variable	line:18
+email	../app\users\forms.py	/^    email = StringField('Email',$/;"	kind:variable	line:38
+email	../app\users\forms.py	/^    email = StringField('Email',$/;"	kind:variable	line:56
+email	../app\users\forms.py	/^    email = StringField('Email',$/;"	kind:variable	line:9
 error_403	../app\errors\handlers.py	/^def error_403(error):$/;"	kind:function	line:12
 error_404	../app\errors\handlers.py	/^def error_404(error):$/;"	kind:function	line:7
 error_500	../app\errors\handlers.py	/^def error_500(error):$/;"	kind:function	line:17
@@ -677,7 +677,7 @@ imagelist_url	../_ref\_py\_dispM.py	/^    imagelist_url = db.Column(db.String(25
 img_url	../app\models.py	/^    img_url = db.Column(db.Integer, nullable=False, default =0)$/;"	kind:variable	line:19
 img_url	../app\models.py	/^    img_url = db.Column(db.String(256), nullable=False)$/;"	kind:variable	line:293
 img_url	../app\models.py	/^    img_url = db.Column(db.String(256), nullable=False)$/;"	kind:variable	line:323
-img_url	../app\users\forms.py	/^    img_url = SelectField('image',$/;"	kind:variable	line:22
+img_url	../app\users\forms.py	/^    img_url = SelectField('image',$/;"	kind:variable	line:20
 index	../_ref\_regV1\app.py	/^def index():$/;"	kind:function	line:45
 initFunctionsForClassItem	../_ref\_regV1\classItem.py	/^import initFunctionsForClassItem $/;"	kind:namespace	line:2
 inject_LowInvBts4Grid	../_ref\_py\_dispR.py	/^def inject_LowInvBts4Grid():$/;"	kind:function	line:433
@@ -789,9 +789,9 @@ os	../app\users\utils.py	/^import os$/;"	kind:namespace	line:1
 password	../_ref\_py\_berM.py	/^    password = db.Column(db.String(60), nullable=False)$/;"	kind:variable	line:35
 password	../_ref\_py\_dispM.py	/^    password = db.Column(db.String(60), nullable=False)$/;"	kind:variable	line:18
 password	../app\models.py	/^    password = db.Column(db.String(60), nullable=False)$/;"	kind:variable	line:18
-password	../app\users\forms.py	/^    password = PasswordField('Password', validators=[DataRequired()])$/;"	kind:variable	line:12
-password	../app\users\forms.py	/^    password = PasswordField('Password', validators=[DataRequired()])$/;"	kind:variable	line:52
-password	../app\users\forms.py	/^    password = PasswordField('Password', validators=[DataRequired()])$/;"	kind:variable	line:62
+password	../app\users\forms.py	/^    password = PasswordField('Password', validators=[DataRequired()])$/;"	kind:variable	line:11
+password	../app\users\forms.py	/^    password = PasswordField('Password', validators=[DataRequired()])$/;"	kind:variable	line:48
+password	../app\users\forms.py	/^    password = PasswordField('Password', validators=[DataRequired()])$/;"	kind:variable	line:58
 pd	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^import pandas as pd$/;"	kind:namespace	line:9
 pd	../_ref\_regV1\app.py	/^import pandas as pd$/;"	kind:namespace	line:5
 pd	../_ref\int-hw\hw01\Data-Journalism-and-D3-master\app.py	/^import pandas as pd$/;"	kind:namespace	line:2
@@ -863,7 +863,7 @@ redirect	../app\users\routes.py	/^from flask import render_template, url_for, fl
 regist3r	../app\users\routes.py	/^def regist3r():$/;"	kind:function	line:18
 register	../_ref\_py\_dispR.py	/^def register():$/;"	kind:function	line:210
 register	../app\users\routes.py	/^def register():$/;"	kind:function	line:38
-remember	../app\users\forms.py	/^    remember = BooleanField('Remember Me')$/;"	kind:variable	line:13
+remember	../app\users\forms.py	/^    remember = BooleanField('Remember Me')$/;"	kind:variable	line:12
 render_template	../_ref\_py\_ndoRp.py	/^from flask import (render_template, url_for, flash,$/;"	kind:namespace	line:1
 render_template	../_ref\_py\routes - Copy.py	/^from flask import render_template, url_for, flash, request, Blueprint$/;"	kind:namespace	line:1
 render_template	../_ref\_regV1\app.py	/^from flask import Flask, render_template$/;"	kind:namespace	line:6
@@ -912,10 +912,10 @@ square_id	../_ref\_py\_dispM.py	/^    square_id = db.Column(db.Integer)$/;"	kind
 stateDateTdf	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^def stateDateTdf(file):$/;"	kind:function	line:56
 stateYrAvgTdf	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^def stateYrAvgTdf(file):$/;"	kind:function	line:73
 style	../_ref\_regV1\RegroPoly_jupyter_import2py.py	/^import matplotlib.style as style$/;"	kind:namespace	line:17
-submit	../app\users\forms.py	/^    submit = SubmitField('Login')$/;"	kind:variable	line:14
-submit	../app\users\forms.py	/^    submit = SubmitField('Request Password Reset')$/;"	kind:variable	line:43
-submit	../app\users\forms.py	/^    submit = SubmitField('Reset Password')$/;"	kind:variable	line:55
-submit	../app\users\forms.py	/^    submit = SubmitField('Update')$/;"	kind:variable	line:25
+submit	../app\users\forms.py	/^    submit = SubmitField('Login')$/;"	kind:variable	line:13
+submit	../app\users\forms.py	/^    submit = SubmitField('Request Password Reset')$/;"	kind:variable	line:40
+submit	../app\users\forms.py	/^    submit = SubmitField('Reset Password')$/;"	kind:variable	line:51
+submit	../app\users\forms.py	/^    submit = SubmitField('Update username\/email')$/;"	kind:variable	line:23
 task	../_ref\_py\_ndoRt.py	/^def task(task_id):$/;"	kind:function	line:53
 task_demo_home	../_ref\_py\_ndoRt.py	/^def task_demo_home():$/;"	kind:function	line:220
 taskcreator	../_ref\_py\_ndoRt.py	/^def taskcreator():$/;"	kind:function	line:91
@@ -956,8 +956,8 @@ user_id	../_ref\_py\_dispM.py	/^    user_id = db.Column(db.Integer, db.ForeignKe
 username	../_ref\_py\_berM.py	/^    username = db.Column(db.String(20), unique=True, nullable=False)$/;"	kind:variable	line:32
 username	../_ref\_py\_dispM.py	/^    username = db.Column(db.String(20), unique=True, nullable=False)$/;"	kind:variable	line:14
 username	../app\models.py	/^    username = db.Column(db.String(20), unique=True, nullable=False)$/;"	kind:variable	line:16
-username	../app\users\forms.py	/^    username = StringField('Username',$/;"	kind:variable	line:18
-username	../app\users\forms.py	/^    username = StringField('Username',$/;"	kind:variable	line:58
+username	../app\users\forms.py	/^    username = StringField('Username',$/;"	kind:variable	line:16
+username	../app\users\forms.py	/^    username = StringField('Username',$/;"	kind:variable	line:54
 users	../app\__init__.py	/^    from app.users.routes import users$/;"	kind:namespace	line:23
 users	../app\users\routes.py	/^users = Blueprint('users', __name__)$/;"	kind:variable	line:13
 utility_processor	../_ref\_py\_ndoRt.py	/^def utility_processor():$/;"	kind:function	line:164
@@ -970,19 +970,19 @@ valid_garage	../_ref\_regV1\classProperty.py	/^    valid_garage = ("attached", "
 valid_garage	../_ref\_regV1\classTextBookScratch.py	/^    valid_garage = ("attached", "detached", "none")$/;"	kind:variable	line:61
 valid_laundries	../_ref\_regV1\classProperty.py	/^    valid_laundries = ("coin", "ensuite", "none")$/;"	kind:variable	line:33
 valid_laundries	../_ref\_regV1\classTextBookScratch.py	/^    valid_laundries = ("coin", "ensuite", "none")$/;"	kind:variable	line:29
-validate_email	../app\users\forms.py	/^    def validate_email(self, email):$/;"	kind:member	line:33
-validate_email	../app\users\forms.py	/^    def validate_email(self, email):$/;"	kind:member	line:45
-validate_email	../app\users\forms.py	/^    def validate_email(self, email):$/;"	kind:member	line:71
-validate_username	../app\users\forms.py	/^    def validate_username(self, username):$/;"	kind:member	line:27
-validate_username	../app\users\forms.py	/^    def validate_username(self, username):$/;"	kind:member	line:66
-validators	../app\users\forms.py	/^                                     validators=[DataRequired(), EqualTo('password')])$/;"	kind:variable	line:54
-validators	../app\users\forms.py	/^                                     validators=[DataRequired(), EqualTo('password')])$/;"	kind:variable	line:64
-validators	../app\users\forms.py	/^                           validators=[DataRequired(), Length(min=2, max=20)])$/;"	kind:variable	line:19
-validators	../app\users\forms.py	/^                           validators=[DataRequired(), Length(min=2, max=20)])$/;"	kind:variable	line:59
-validators	../app\users\forms.py	/^                        validators=[DataRequired(), Email()])$/;"	kind:variable	line:11
-validators	../app\users\forms.py	/^                        validators=[DataRequired(), Email()])$/;"	kind:variable	line:21
-validators	../app\users\forms.py	/^                        validators=[DataRequired(), Email()])$/;"	kind:variable	line:42
-validators	../app\users\forms.py	/^                        validators=[DataRequired(), Email()])$/;"	kind:variable	line:61
+validate_email	../app\users\forms.py	/^    def validate_email(self, email):$/;"	kind:member	line:31
+validate_email	../app\users\forms.py	/^    def validate_email(self, email):$/;"	kind:member	line:42
+validate_email	../app\users\forms.py	/^    def validate_email(self, email):$/;"	kind:member	line:67
+validate_username	../app\users\forms.py	/^    def validate_username(self, username):$/;"	kind:member	line:25
+validate_username	../app\users\forms.py	/^    def validate_username(self, username):$/;"	kind:member	line:62
+validators	../app\users\forms.py	/^                                     validators=[DataRequired(), EqualTo('password')])$/;"	kind:variable	line:50
+validators	../app\users\forms.py	/^                                     validators=[DataRequired(), EqualTo('password')])$/;"	kind:variable	line:60
+validators	../app\users\forms.py	/^                           validators=[DataRequired(), Length(min=2, max=20)])$/;"	kind:variable	line:17
+validators	../app\users\forms.py	/^                           validators=[DataRequired(), Length(min=2, max=20)])$/;"	kind:variable	line:55
+validators	../app\users\forms.py	/^                        validators=[DataRequired(), Email()])$/;"	kind:variable	line:10
+validators	../app\users\forms.py	/^                        validators=[DataRequired(), Email()])$/;"	kind:variable	line:19
+validators	../app\users\forms.py	/^                        validators=[DataRequired(), Email()])$/;"	kind:variable	line:39
+validators	../app\users\forms.py	/^                        validators=[DataRequired(), Email()])$/;"	kind:variable	line:57
 x	../_ref\12_JS\02_Evr_PythonToJavaScript\Py_ConditionalCheck.py	/^x = 1$/;"	kind:variable	line:1
 y	../_ref\12_JS\02_Evr_PythonToJavaScript\Py_ConditionalCheck.py	/^y = 10$/;"	kind:variable	line:2
 year	../_ref\_py\_berM.py	/^    year = db.Column(db.String(16), nullable=False,default='2007')$/;"	kind:variable	line:13
